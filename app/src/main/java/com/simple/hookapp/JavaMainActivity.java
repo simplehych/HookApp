@@ -5,7 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.simple.hookapp.R.id;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -30,6 +32,35 @@ public class JavaMainActivity extends AppCompatActivity {
         TextView textView = findViewById(id.sample_text);
         Intrinsics.checkExpressionValueIsNotNull(textView, "sample_text");
         textView.setText(this.stringFromJNI());
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        findViewById(id.coinMoney).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CoinMoney coinMoney = new CoinMoney(6, "6.00");
+                Toast.makeText(JavaMainActivity.this, coinMoney.getMoney() + " - " + coinMoney.getValue(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        findViewById(id.utils).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String pwd = Utils.getPwd("123456");
+                Toast.makeText(JavaMainActivity.this, pwd, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     @Override
@@ -44,6 +75,7 @@ public class JavaMainActivity extends AppCompatActivity {
         Intrinsics.checkParameterIsNotNull(item, "item");
         switch (item.getItemId()) {
             case R.id.action_settings:
+
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

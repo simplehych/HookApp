@@ -18,4 +18,28 @@ public class CoinMoney {
         this.money = money;
         this.value = value;
     }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public int getExtMoney() {
+        return extMoney;
+    }
+
+    public void setExtMoney(int extMoney) {
+        this.extMoney = extMoney;
+    }
 }
