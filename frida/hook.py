@@ -30,6 +30,10 @@ setImmediate(function() {
 			var arg = arguments[0];
 			send("pwd 方式一 参数arguments获取:"+ arg);
 			send("pwd 获取方式二 参数声明: "+ pwd)
+			
+			// 抛出异常查看堆栈信息 adb logcat -s AndroidRuntime
+			throw Exception.$new("Utils getPwd Exception...")
+
 
 			// 修改方法的参数和返回值
 			var result = this.getPwd(arg + "_hook_")+"_hook";
@@ -67,14 +71,15 @@ setImmediate(function() {
 		send(testNewCoin2.value);
 
 		// 静态方法 脚本内使用没有调用hook
-		# var newPwd = utils.getPwd("654321");
+		var newPwd = utils.getPwd("654321");
 		send(newPwd);
 
     });                                                     
 }); 
 """
 
-rdev = frida.get_remote_device()
+# 采用 remote 方式必须进行端口转发  或者使用get_usb_device()
+rdev = frida.get_usb_device()
 session = rdev.attach("com.simple.hookapp")
 
 script = session.create_script(scr)

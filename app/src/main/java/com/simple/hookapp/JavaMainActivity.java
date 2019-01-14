@@ -1,5 +1,6 @@
 package com.simple.hookapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -28,7 +29,7 @@ public class JavaMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(id.toolbar);
-        this.setSupportActionBar(toolbar);
+//        this.setSupportActionBar(toolbar);
         TextView textView = findViewById(id.sample_text);
         Intrinsics.checkExpressionValueIsNotNull(textView, "sample_text");
         textView.setText(this.stringFromJNI());
