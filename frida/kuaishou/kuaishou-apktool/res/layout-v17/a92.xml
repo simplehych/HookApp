@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/slide_play_horizontal_comment_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="?PhotoLabelTextColor" android:autoLink="none" android:linksClickable="true" android:id="@id/label" android:scrollbars="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:layout_marginBottom="7.0dip" android:maxHeight="98.5dip" android:lineSpacingExtra="3.0dip" android:fadeScrollbars="true" android:textDirection="ltr" style="@style/Theme.Widget.Text" />
+    <android.support.v4.widget.Space android:id="@id/label_space" android:layout_width="wrap_content" android:layout_height="7.0dip" />
+    <com.yxcorp.gifshow.widget.HorizontalScrollViewEx android:id="@id/tag_layout" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:fillViewport="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tag_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.yxcorp.gifshow.widget.HorizontalScrollViewEx>
+    <ViewSwitcher android:id="@id/comment_marquee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/slide_play_horizontal_comment_margin_top" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/like_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="8.0dip">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color21_normal" android:ellipsize="end" android:id="@id/like_detail_text_view" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/slide_play_detail_like_detail" android:id="@id/like_detail_suffix" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_narrow" android:text="@string/already_liked" />
+        <View android:id="@id/like_detail_divider" android:background="@color/slide_play_detail_like_detail" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="@dimen/margin_default" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/slide_play_detail_like_detail" android:id="@id/detail_extra_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/photo_label" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/list_item_photo_player_detail" />
+    <include layout="@layout/list_item_photo_label" />
+    <include layout="@layout/list_item_similar_photos" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/live_chat_call_margin" android:paddingTop="@dimen/live_chat_call_margin" android:paddingRight="@dimen/live_chat_call_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:layout_width="@dimen/live_chat_call_avatar_size" android:layout_height="@dimen/live_chat_call_avatar_size" android:layout_centerHorizontal="true" app:roundAsCircle="true" />
+    <com.yxcorp.plugin.live.widget.DotAnimEmojiTextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:id="@id/user_name" android:layout_width="fill_parent" android:layout_marginTop="@dimen/live_chat_call_margin" android:layout_below="@id/avatar" android:layout_centerHorizontal="true" style="@style/Theme.ProfileTextView" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.live.entry.CoverShootOptionLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/close" android:visibility="invisible" android:layout_width="@dimen/record_top_bar_icon_size" android:layout_height="@dimen/record_top_bar_icon_size" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/live_nav_btn_return_normal" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/go_back" />
+    <com.yxcorp.gifshow.widget.SwitchCameraView android:id="@id/button_switch_camera" android:layout_width="@dimen/record_top_bar_icon_size" android:layout_height="@dimen/record_top_bar_icon_size" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentRight="true" />
+    <FrameLayout android:orientation="horizontal" android:id="@id/options_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_toLeftOf="@id/button_switch_camera" android:layout_toRightOf="@id/close">
+        <ImageView android:layout_gravity="center" android:id="@id/camera_flash_btn" android:background="@drawable/button_camera_flash" android:longClickable="false" android:layout_width="@dimen/record_top_bar_icon_size" android:layout_height="@dimen/record_top_bar_icon_size" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="center" android:id="@id/button_switch_prettify" android:background="@drawable/button_capture_prettify" android:visibility="gone" android:longClickable="false" android:layout_width="@dimen/record_top_bar_icon_size" android:layout_height="@dimen/record_top_bar_icon_size" android:scaleType="centerInside" />
+    </FrameLayout>
+</com.yxcorp.plugin.live.entry.CoverShootOptionLayout>

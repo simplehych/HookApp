@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.widget.viewpager.CustomViewPager android:layout_gravity="center|left|top" android:id="@id/guide_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yxcorp.gifshow.widget.CircleIndicator android:layout_gravity="bottom|center" android:id="@id/pager_indicator" android:layout_width="105.0dip" android:layout_height="25.0dip" app:ci_width="3.1999817dip" app:ci_height="3.1999817dip" app:ci_margin="3.0dip" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/layout_map_poi_header" />
+    <include android:visibility="gone" layout="@layout/layout_map_hot_spot_header" />
+    <include android:visibility="gone" layout="@layout/layout_map_local_header" />
+</FrameLayout>

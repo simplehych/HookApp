@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/background_dialog_white" android:layout_width="270.0dip" android:layout_height="wrap_content" android:minWidth="270.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/close" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/universal_icon_closepanel_grey_s" />
+    <FrameLayout android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <View android:layout_gravity="center_horizontal" android:background="@drawable/share_bg_colour_normal" android:layout_width="180.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.5dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/title_icon" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/detail_icon_location_share" />
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_22" android:textStyle="bold" android:textColor="@color/text_color1_normal" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color15_normal" android:layout_gravity="bottom|center" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.yxcorp.gifshow.account.kwaitoken.KwaiTokenGalleryView android:id="@id/gallery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" />
+    <Button android:id="@id/action" android:layout_width="200.0dip" android:layout_margin="20.0dip" style="@style/Kwai.Widget.Button.B12" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size4" android:textColor="@color/text_color15" android:gravity="center" android:id="@id/source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" android:drawableRight="@drawable/share_token_dialog_arrow" android:drawablePadding="3.0dip" />
+</LinearLayout>

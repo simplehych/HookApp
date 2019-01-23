@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/kwcontainer_adContent" android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/kwcontainer_thumb_01" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerInside" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center|left|top" android:id="@id/kwcontainer_avater_01" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="12.0dip" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1.5dip" fresco:roundingBorderColor="#66ffffff" fresco:roundingBorderPadding="0.5dip" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center|right|top" android:orientation="horizontal" android:background="@drawable/kwad_bg_roundrect_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="11.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@id/kwcontainer_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:layout_gravity="center_vertical" android:id="@id/kwcontainer_divider" android:background="#99ffffff" android:visibility="invisible" android:layout_width="0.5dip" android:layout_height="10.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@id/kwcontainer_close_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ksad_close_ad" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:background="#33000000" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/kwcontainer_title_01" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:drawableRight="@drawable/kwad_icon_arrow_normal" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+            <com.kwad.sdk.widget.TextProgressBar android:layout_gravity="center|right" android:id="@id/kwcontainer_downloadBtn" android:layout_width="87.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:indeterminateOnly="false" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

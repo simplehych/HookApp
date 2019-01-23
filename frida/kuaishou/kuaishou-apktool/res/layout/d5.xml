@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@color/surface_color1_normal" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/cobra_close" android:layout_width="@dimen/title_image_width" android:layout_height="@dimen/title_image_height" android:src="@drawable/nav_btn_close_black" android:scaleType="centerInside" />
+            <View android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/cobra_upgrade" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/cobra_btn_upgrade" />
+            <RelativeLayout android:id="@id/cobra_hd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip">
+                <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/cobra_btn_hd" android:layout_centerVertical="true" />
+                <View android:id="@id/hd_data_tips" android:background="@drawable/cobra_upgrade_tip_bg" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="23.0dip" android:layout_marginTop="8.0dip" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/cobra_edit" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/cobra_btn_edit" />
+            <RelativeLayout android:id="@id/cobra_setting" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="8.0dip">
+                <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/cobra_btn_setting" android:layout_centerVertical="true" />
+                <View android:id="@id/upgrade_tips" android:background="@drawable/cobra_upgrade_tip_bg" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="23.0dip" android:layout_marginTop="8.0dip" />
+            </RelativeLayout>
+            <TextView android:textSize="15.0sp" android:textColor="#ff525252" android:layout_gravity="center_vertical" android:id="@id/cobra_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/cobra_finish" />
+        </LinearLayout>
+        <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="8.0dip" android:src="@drawable/nav_btn_glasses_normal" android:scaleType="centerInside" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/cobra_device_name_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textColor="#ff576b95" android:ellipsize="middle" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/cobra_device_name" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:drawableRight="@drawable/glass_icon_triangle" android:drawablePadding="5.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="#ffff8000" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/cobra_status" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:singleLine="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff576b95" android:gravity="center_vertical" android:id="@id/cobra_connect_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cobra_connect_glasses" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/cobra_arrow" android:visibility="gone" android:layout_marginLeft="5.0dip" android:layout_marginRight="8.0dip" style="@style/Theme.Widget.Setting.RightArrow" />
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/cobra_battery_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nav_btn_battery_normal" />
+                <com.yxcorp.widget.BatteryView android:layout_gravity="center" android:id="@id/cobra_battery" android:layout_width="11.0dip" android:layout_height="13.0dip" android:layout_marginTop="1.0dip" />
+                <ImageView android:layout_gravity="center" android:id="@id/charge_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/glasses_icon_charge_l_normal" />
+            </FrameLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/cobra_import_thumb_layout" />
+            <com.yxcorp.cobra.view.CobraPhotoRecyclerView android:layout_below="@id/import_thumb_layout" style="@style/Kwai.Widget.RecyclerView" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/hd_tips_bg" android:background="#00ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/hd_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0dip" android:layout_marginRight="43.0dip" android:layout_alignParentRight="true">
+        <View android:layout_gravity="center_horizontal" android:background="@drawable/toast_bubbles_triangle_up_orange_light" android:layout_width="18.0dip" android:layout_height="5.5dip" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_default_color" android:gravity="center" android:layout_gravity="right" android:id="@id/bubble_hint" android:background="@drawable/button19" android:paddingLeft="6.0dip" android:paddingTop="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cobra_hd_tips" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/choose_glasses_layout" android:background="#66000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/choose_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/divider" />
+        <View android:id="@id/divider" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_above="@id/cancel_btn" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff576b95" android:gravity="center" android:id="@id/cancel_btn" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/cobra_cancel" android:layout_above="@id/bottom_divider" />
+        <View android:id="@id/bottom_divider" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/cancel_bottom_layout" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="#ff525252" android:gravity="center" android:id="@id/choose_all" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cobra_choose_all" android:layout_weight="1.0" />
+        <View android:layout_gravity="center_vertical" android:background="#ffe2e2e2" android:layout_width="1.0px" android:layout_height="15.0dip" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="#ffc6c6c6" android:gravity="center" android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cobra_delete" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/content_img_emptypicture_default" android:scaleType="centerCrop" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffc6c6c6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/cobra_file_empty" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff576b95" android:id="@id/about_glasses" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/cobra_know_glasses" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/open_wifi_layout" android:background="@drawable/cobra_open_wifi_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="19.0dip" android:paddingTop="17.0dip" android:paddingRight="19.0dip" android:paddingBottom="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="5.0dip" style="@style/Theme.Widget.Loading.Small" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cobra_open_wifi" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/high_video_guide" android:background="@color/cobra_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/guide_background" android:background="@color/cobra_import_text_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/guide_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="135.0dip" android:src="@drawable/glasses_high_guide_img" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/white_button_normal_color" android:id="@id/import_upgrade_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/cobra_import_upgrade_tip" android:width="303.0dip" android:layout_below="@id/guide_img" android:layout_centerHorizontal="true" />
+        <Button android:textSize="14.0dip" android:textColor="@color/white_button_normal_color" android:id="@id/glass_know_already_btn" android:background="@drawable/cobra_already_know_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="140.0dip" android:layout_height="30.0dip" android:layout_marginTop="84.0dip" android:text="@string/know_already" android:layout_below="@id/import_upgrade_tip" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

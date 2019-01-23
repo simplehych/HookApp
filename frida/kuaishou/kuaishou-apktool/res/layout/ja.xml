@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.IconifyRadioButton android:layout_width="wrap_content" android:minWidth="@dimen/tab_item_min_width" app:irb_maxTextSize="@dimen/text_size1" app:irb_textColor="@color/tab_item_text_color_home" style="@style/Theme.Navigator.RadioButton"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

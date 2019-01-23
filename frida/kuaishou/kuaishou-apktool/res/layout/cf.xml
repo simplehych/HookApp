@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/kmoji_appbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="257.0dip" android:layout_marginTop="50.0dip">
+            <com.yxcorp.gifshow.camera.record.widget.AnimCameraView android:id="@id/camera_preview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_scan_hint_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <ImageView android:id="@id/iv_scan" android:layout_width="170.0dip" android:layout_height="170.0dip" android:src="@drawable/produce_pic_scan_xxxl_normal" />
+                <TextView android:textColor="@color/text_black_light" android:id="@id/tv_scan_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/face_into_view_tips" />
+            </LinearLayout>
+            <View android:id="@id/mask" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <com.yxcorp.gifshow.widget.PagerSlidingTabStrip android:textSize="@dimen/text_size_15" android:textColor="@color/tab_item_text_color_kmoji" android:id="@id/kmoji_tabs" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="1.0dip" app:pstsIndicatorColor="#ffff8000" app:pstsUnderlineColor="@color/background_black" app:pstsIndicatorHeight="2.0dip" app:pstsDividerPadding="0.0dip" app:pstsTabPaddingLeftRight="20.0dip" app:pstsIndicatorPadding="8.0dip" style="@style/tab_strip.magicEmoji" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager android:id="@id/kmoji_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <RelativeLayout android:background="@color/text_white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_color1" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_color5" android:id="@id/tv_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/finish" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

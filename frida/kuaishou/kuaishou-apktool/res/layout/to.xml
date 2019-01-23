@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/tabs_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager android:id="@id/view_pager" android:background="@color/translucent_50_black" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginBottom="@dimen/magic_emoji_tab_item_height" />
+        <View android:layout_gravity="bottom" android:id="@id/tab_split_line" android:background="@color/live_magic_emoji_split_line_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="@dimen/magic_emoji_tab_item_height" />
+        <com.yxcorp.gifshow.widget.PagerSlidingTabStrip android:textColor="@color/tab_live_item_text_color_magic_emoji" android:layout_gravity="bottom" android:id="@id/tabs" android:background="@null" app:pstsUnderlineColor="@color/divider_color_transparent" style="@style/tab_strip.magicEmoji" />
+    </FrameLayout>
+</RelativeLayout>

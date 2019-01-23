@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/background_dialog_white_top_round" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/user_layout_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/text_black_color" android:gravity="center" android:id="@id/users_title" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        <View android:id="@id/divider_line" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView android:id="@id/like_users_list" android:layout_width="fill_parent" android:layout_height="260.0dip" />
+            <com.yxcorp.gifshow.widget.LoadingView android:id="@id/top_users_loading" android:layout_width="fill_parent" android:layout_height="260.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/no_top_users_layout" android:layout_width="fill_parent" android:layout_height="320.5dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/no_top_users_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="81.5dip" android:src="@drawable/content_img_nobody_xxxl_default" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/list_item_remark" android:layout_gravity="center_horizontal" android:id="@id/no_top_users_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/loading_failed" />
+    </LinearLayout>
+</FrameLayout>

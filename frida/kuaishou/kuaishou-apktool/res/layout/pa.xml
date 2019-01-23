@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_root" android:background="@drawable/background_list_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/checked_iv" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:layout_marginLeft="@dimen/dimen_15dp" android:src="@drawable/location_icon_locate_l_normal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/dimen_15dp" android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/checked_iv">
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_16" android:textColor="@color/list_item_black" android:ellipsize="end" android:id="@id/name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Theme.Widget.Text" />
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_14" android:ellipsize="end" android:id="@id/address_tv" android:singleLine="true" style="@style/Theme.ListItemDetail" />
+    </LinearLayout>
+</RelativeLayout>

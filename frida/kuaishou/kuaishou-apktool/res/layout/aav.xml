@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/kwai_title_right_text" />
+    <include layout="@layout/line_divider_grey" />
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableLayout android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow android:id="@id/avatar_layout" style="@style/Theme.Widget.Profile.Edit.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_color2_normal" android:id="@id/avatar_label" android:layout_height="69.0dip" android:text="@string/profile_setting_avatar" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <RelativeLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:background="@null" android:layout_width="39.0dip" android:layout_height="39.0dip" android:layout_marginLeft="@dimen/margin_default" android:src="@drawable/profile_btn_avatar_secret" android:scaleType="fitXY" app:roundAsCircle="true" app:roundingBorderWidth="0.5dip" app:roundingBorderColor="#16000000" />
+                        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/p_color_orange" android:id="@id/avatar_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_10dp" android:text="@string/edit_info_upload_avatar" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_arrow_right" />
+                </TableRow>
+                <View android:layout_marginLeft="@dimen/dimen_15dp" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <TableRow android:id="@id/nickname_layout" style="@style/Theme.Widget.Profile.Edit.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_color2_normal" android:id="@id/nickname_label" android:layout_height="@dimen/user_info_item_height_v2" android:text="@string/nickname_label" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:gravity="center_vertical" android:id="@id/nickname" android:background="@null" android:layout_height="@dimen/user_info_edit_text_height" android:layout_marginLeft="@dimen/margin_default" android:hint="@string/input_nick_name" android:singleLine="true" android:layout_weight="1.0" app:textSizeAdjustable="true" />
+                    <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_arrow_right" />
+                </TableRow>
+                <View android:layout_marginLeft="@dimen/dimen_15dp" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <TableRow android:id="@id/user_id_layout" style="@style/Theme.Widget.Profile.Edit.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_color2_normal" android:id="@id/id_text" android:layout_height="@dimen/user_info_item_height_v2" android:text="@string/user_id_label" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:id="@id/user_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" />
+                        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/p_color_orange" android:id="@id/user_id_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_10dp" android:text="@string/update_to_kwai_id" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <ImageView android:layout_gravity="center|right" android:id="@id/user_id_right_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_arrow_right" />
+                </TableRow>
+                <View android:layout_marginLeft="@dimen/dimen_15dp" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <TableRow android:id="@id/gender_layout" style="@style/Theme.Widget.Profile.Edit.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_color2_normal" android:id="@id/gender_label" android:layout_height="@dimen/user_info_item_height_v2" android:text="@string/gender_label" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_weight="1.0">
+                        <ImageView android:id="@id/gender_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_icon_unkown_m_normal_v2" />
+                        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:id="@id/gender_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sex_unknow" />
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_arrow_right" />
+                </TableRow>
+                <View android:layout_marginLeft="@dimen/dimen_15dp" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <TableRow android:id="@id/birthday_layout" style="@style/Theme.Widget.Profile.Edit.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_color2_normal" android:id="@id/birthday_label" android:layout_height="@dimen/user_info_item_height_v2" android:text="@string/profile_birthday" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:gravity="center_vertical" android:id="@id/birthday_tv" android:background="@null" android:layout_width="0.0dip" android:layout_height="@dimen/user_info_edit_text_height" android:layout_marginLeft="@dimen/margin_default" android:hint="@string/need_select_gender" android:singleLine="true" android:layout_weight="1.0" app:textSizeAdjustable="true" />
+                    <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_arrow_right" />
+                </TableRow>
+                <View android:layout_marginLeft="@dimen/dimen_15dp" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <TableRow android:id="@id/address_layout" android:visibility="gone" style="@style/Theme.Widget.Profile.Edit.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_color2_normal" android:id="@id/address_label" android:layout_height="@dimen/user_info_item_height_v2" android:text="@string/profile_location" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:gravity="center_vertical" android:id="@id/address_tv" android:background="@null" android:layout_width="0.0dip" android:layout_height="@dimen/user_info_edit_text_height" android:layout_marginLeft="@dimen/margin_default" android:hint="@string/need_select_gender" android:singleLine="true" android:layout_weight="1.0" app:textSizeAdjustable="true" />
+                    <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_arrow_right" />
+                </TableRow>
+                <View android:layout_marginLeft="@dimen/dimen_15dp" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <TableRow android:id="@id/intro_layout" style="@style/Theme.Widget.Profile.Edit.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_color2_normal" android:id="@id/intro_label" android:layout_height="@dimen/user_info_item_height_v2" android:text="@string/user_text" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_14" android:textColor="@color/profile_introduction_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/intro_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/dimen_10dp" android:hint="@string/profile_my_default_description" android:maxLines="1" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_arrow_right" />
+                </TableRow>
+                <View android:layout_marginLeft="@dimen/dimen_15dp" style="@style/Theme.Widget.DefaultDividerVertical" />
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

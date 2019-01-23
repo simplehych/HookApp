@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView android:id="@id/preview_image" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/preview" />
+    <com.yxcorp.gifshow.image.KwaiZoomImageView android:id="@id/preview_image_2" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:contentDescription="@string/preview" />
+</LinearLayout>

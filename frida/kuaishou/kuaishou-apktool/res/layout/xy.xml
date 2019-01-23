@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_content" android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:orientation="horizontal" android:id="@id/appbar" android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <FrameLayout android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" style="@style/Theme.Navigator.White">
+            <ImageButton android:id="@id/left_btn" android:src="@drawable/nav_btn_close_black" android:contentDescription="@string/go_back" style="@style/Theme.Navigator.ImageButton" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/title_tv_wrapper" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size1" android:textStyle="bold" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dip" style="@style/Theme.Navigator.Title.Dark" />
+                <ImageView android:id="@id/album_indicator" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_narrow" android:src="@drawable/nav_btn_arrow" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/text_size3" android:textColor="@color/send_text_color" android:gravity="center" android:layout_gravity="end|center" android:id="@id/right_btn" android:background="@drawable/message_photo_picker_send_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginRight="@dimen/default_margin" android:minWidth="70.0dip" android:text="@string/send" android:maxLines="1" android:contentDescription="@string/send" />
+        </FrameLayout>
+        <View android:id="@id/title_bar_divider" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="49.5dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/album_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.v7.widget.RecyclerView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/recyclerView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

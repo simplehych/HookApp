@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff576b95" android:ellipsize="end" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/kwcontainer_kxdesc_topad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:drawableRight="@drawable/ksad_ic_addetail_blue_s_normal" android:drawablePadding="4.0dip" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/kwcontainer_thumb_topad" android:layout_width="fill_parent" android:layout_height="100.0dip" android:scaleType="centerInside" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/kscontainer_adtip" android:background="@drawable/ksad_bg_rect_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/ksad_ad_tip" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="58.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="#ff303030" android:ellipsize="end" android:layout_gravity="center|left" android:id="@id/kwcontainer_addesc_topad" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxLines="2" android:layout_weight="1.0" />
+                <com.kwad.sdk.widget.TextProgressBar android:layout_gravity="center|right" android:id="@id/kwcontainer_downloadBtn_topad" android:layout_width="75.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:indeterminateOnly="false" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="15.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/kwcontainer_close_topad" android:background="@drawable/ksad_bg_rect_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/ksad_ic_closead_white_s_normal" />
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.widget.KwaiDeepLevelRadioGroup android:orientation="vertical" android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:radioButtonIds="@array/share_radio_buttons_names"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/share_custom_gender_all_wrapper" style="@style/ShareCustomGenderV2">
+        <ImageView android:id="@id/iv_all" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/release_icon_everyone_normal" android:layout_alignParentLeft="false" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_all" android:layout_centerVertical="true">
+            <TextView android:id="@id/share_custom_gender_all_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all" style="@style/ShareCustomGenderTitleV2" />
+            <TextView android:id="@id/share_custom_gender_all_hint" android:text="@string/share_custom_gender_all_hint" style="@style/ShareCustomGenderHintV2" />
+        </LinearLayout>
+        <RadioButton android:id="@id/share_custom_gender_all" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentLeft="false" android:layout_alignParentRight="true" style="@style/ShareCustomGenderRadioV2" />
+    </RelativeLayout>
+    <View android:background="@drawable/line_vertical_divider_50" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/share_custom_gender_male_wrapper" style="@style/ShareCustomGenderV2">
+        <ImageView android:id="@id/iv_male" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/release_icon_male_normal" android:layout_alignParentLeft="false" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_male" android:layout_centerVertical="true">
+            <TextView android:id="@id/share_custom_gender_male_text" android:text="@string/share_custom_gender_male_title" android:layout_toRightOf="@id/share_custom_gender_male" style="@style/ShareCustomGenderTitleV2" />
+            <TextView android:id="@id/share_custom_gender_male_hint" android:text="@string/share_custom_gender_hint" android:layout_toRightOf="@id/share_custom_gender_male" android:layout_below="@id/share_custom_gender_male_text" style="@style/ShareCustomGenderHintV2" />
+        </LinearLayout>
+        <RadioButton android:id="@id/share_custom_gender_male" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentLeft="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ShareCustomGenderRadioV2" />
+    </RelativeLayout>
+    <View android:background="@drawable/line_vertical_divider_50" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/share_custom_gender_female_wrapper" style="@style/ShareCustomGenderV2">
+        <ImageView android:id="@id/iv_female" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/release_icon_female_normal" android:layout_alignParentLeft="false" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_female" android:layout_centerVertical="true">
+            <TextView android:id="@id/share_custom_gender_female_text" android:text="@string/share_custom_gender_female_title" android:layout_toRightOf="@id/share_custom_gender_female" style="@style/ShareCustomGenderTitleV2" />
+            <TextView android:id="@id/share_custom_gender_female_hint" android:text="@string/share_custom_gender_hint" android:layout_toRightOf="@id/share_custom_gender_female" android:layout_below="@id/share_custom_gender_female_text" style="@style/ShareCustomGenderHintV2" />
+        </LinearLayout>
+        <RadioButton android:id="@id/share_custom_gender_female" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentLeft="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ShareCustomGenderRadioV2" />
+    </RelativeLayout>
+</com.yxcorp.widget.KwaiDeepLevelRadioGroup>

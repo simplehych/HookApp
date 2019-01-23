@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/background_dialog_white" android:layout_width="270.0dip" android:layout_height="wrap_content" android:minWidth="270.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/close" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/universal_icon_closepanel_grey_s" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color15_normal" android:gravity="center_horizontal" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:drawableTop="@drawable/tips_empty_people" android:drawablePadding="15.0dip" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size4" android:textColor="@color/text_color15" android:gravity="center" android:id="@id/source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" android:drawableRight="@drawable/share_token_dialog_arrow" android:drawablePadding="3.0dip" />
+</LinearLayout>

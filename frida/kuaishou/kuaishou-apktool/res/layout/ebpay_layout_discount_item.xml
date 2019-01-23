@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@color/ebpay_white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ebpay_discount_check" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ebpay_pwdpay_check_bg" android:scaleType="fitXY" android:contentDescription="@null" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ebpay_discount_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/ebpay_text_size_18" android:textColor="@color/ebpay_text_normal" android:ellipsize="end" android:id="@id/ebpay_discount_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/ebpay_text_size_12" android:textColor="@color/bd_wallet_pwdpay_light_gray" android:ellipsize="end" android:id="@id/ebpay_discount_expiration" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/ebpay_overdue_tip" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/ebpay_text_size_18" android:textColor="@color/ebpay_text_normal" android:id="@id/ebpay_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

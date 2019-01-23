@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cloud_face_verify_ll" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.webank.facelight.ui.component.PreviewFrameLayout android:id="@id/wbcf_live_preview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/wbcf_back_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="26.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/b" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/wbcf_white" android:id="@id/luxTv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/wbcf_white" android:id="@id/percentTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/luxTv" />
+        <TextView android:textColor="@color/wbcf_white" android:id="@id/pyrTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <View android:id="@id/tipHeight" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.webank.facelight.ui.component.AutoFitTextView android:textSize="22.0sp" android:textColor="@color/wbcf_white" android:gravity="center" android:id="@id/wbcf_live_tip_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="保持正脸对准框内" android:layout_alignBottom="@id/tipHeight" />
+    </RelativeLayout>
+    <com.tencent.youtufacelive.YTPreviewMask android:id="@id/wbcf_live_preview_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+</FrameLayout>

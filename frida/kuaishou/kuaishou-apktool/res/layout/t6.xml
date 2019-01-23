@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/title" android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height">
+        <ImageButton android:id="@id/left_btn" android:src="@drawable/guess_btn_close_black" android:onClick="onClick" android:contentDescription="@string/go_back" style="@style/Theme.Navigator.ImageButton" />
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_16" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/title_tv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginRight="@dimen/common_padding" android:singleLine="true" android:layout_weight="1.0" app:textSizeAdjustable="true" style="@style/Theme.Navigator.Title.Dark" />
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color17_normal" android:gravity="end|center" android:id="@id/right_btn" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/live_guess_awards" android:singleLine="true" app:textSizeAdjustable="true" app:minTextSize="@dimen/text_size_5" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/answer_stat" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title" />
+    <com.yxcorp.gifshow.widget.LoadingView android:id="@id/loading_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title" android:layout_alignParentBottom="true" />
+</RelativeLayout>

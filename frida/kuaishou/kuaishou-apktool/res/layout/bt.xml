@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_dialog_white" android:layout_width="260.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/background_iv" android:layout_width="fill_parent" android:layout_height="120.0dip" android:scaleType="fitStart" />
+    <ImageView android:id="@id/close_btn" android:background="@drawable/button_close_dialog" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/margin_default" android:layout_marginTop="@dimen/margin_default" android:contentDescription="close" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:gravity="center" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/background_iv" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_color" android:gravity="center" android:id="@id/content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/title_tv" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_grey_color" android:id="@id/tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/content_tv" android:layout_alignParentRight="true" android:contentDescription="tip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:layout_below="@id/content_tv">
+        <Button android:textSize="@dimen/text_size_14" android:id="@id/ignore_btn" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0" android:contentDescription="ignore" style="@style/Kwai.Widget.Button.B21" />
+        <View android:id="@id/ignore_bten_divider" android:layout_width="10.0dip" android:layout_height="1.0dip" />
+        <Button android:textSize="@dimen/text_size_14" android:id="@id/bind_btn" android:layout_width="fill_parent" android:layout_weight="1.0" android:layout_above="@id/ignore_btn" android:contentDescription="bind" style="@style/Kwai.Widget.Button.B2" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/switch_btn_wrapper" android:background="@color/background_light" android:layout_width="fill_parent" style="@style/Theme.Widget.Setting.Row">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/switch_icon" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_default" />
+        <TextView android:ellipsize="end" android:id="@id/switch_name_tv" android:background="@android:color/transparent" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" style="@style/Theme.Widget.Setting.ItemText" />
+        <com.yxcorp.gifshow.widget.SlipSwitchButton android:id="@id/switch_btn" android:background="@android:color/transparent" app:onBg="@drawable/setting_switch_bg_on" app:offBg="@drawable/setting_switch_bg_off" app:slipBg="@drawable/setting_handle_normal" app:switch_state="false" style="@style/Theme.Widget.Slip.Switch" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/entry_desc_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color2_normal" android:id="@id/switch_expain_tv" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginTop="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" android:layout_marginBottom="20.0dip" />
+    </FrameLayout>
+    <View android:id="@id/entry_splitter" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

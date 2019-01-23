@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/item_layout" android:background="@drawable/send_red_packet_select_item_normal_background" android:layout_width="70.0dip" android:layout_height="52.5dip" android:layout_margin="15.0dip">
+        <View android:id="@id/selected_line_background_view" android:background="@drawable/send_red_packet_select_item_selected_line_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.5dip" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/coin_num_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:minTextSize="14.0sp" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/coin_num_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/kwai_coin" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

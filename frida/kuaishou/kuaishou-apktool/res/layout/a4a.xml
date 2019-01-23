@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_grey_color" android:gravity="center" android:id="@id/qgrid_alert_dialog_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/profile_gender_btn_secret" android:drawablePadding="5.0dip" app:textSizeAdjustable="true" />
+</LinearLayout>

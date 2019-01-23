@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="?actionbarHeight" layout="@layout/message_group_create_title" />
+    <FrameLayout android:id="@id/select_fragment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+    <View android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Kwai.Widget.RefreshLayout">
+            <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView style="@style/Kwai.Widget.RecyclerView" />
+        </com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout>
+        <com.yxcorp.gifshow.widget.SideBarLayout android:id="@id/side_bar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/advertisement_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" fresco:fadeDuration="0" fresco:roundedCornerRadius="@dimen/home_page_item_corners" />
+    <ImageView android:layout_gravity="right" android:id="@id/close_btn" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/waterflow_banner_icon_close" android:scaleType="centerInside" />
+</FrameLayout>

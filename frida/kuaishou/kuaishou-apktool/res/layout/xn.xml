@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_list_item" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.CompositionAvatarView android:id="@id/group_portrait" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/margin_default" android:layout_toRightOf="@id/group_portrait">
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color1_normal" android:ellipsize="end" android:id="@id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240.0dip" android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="#99303030" android:id="@id/group_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/group_name" android:layout_centerVertical="true" />
+        <View android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

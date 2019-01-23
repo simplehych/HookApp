@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ebpay_selectbindcard_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/ebpay_line_margin_15" android:paddingRight="@dimen/ebpay_line_margin_15" android:layout_width="fill_parent" android:layout_height="@dimen/wallet_base_item_height_49dp">
+        <com.baidu.wallet.base.widget.NetImageView android:id="@id/bankcard_logo" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/wallet_base_pwdpay_logo_normal" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <LinearLayout android:orientation="vertical" android:id="@id/card_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebpay_line_margin_10" android:layout_toRightOf="@id/bankcard_logo" android:layout_centerVertical="true">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/ebpay_text_size_14" android:textColor="@color/ebpay_text_111111" android:id="@id/tv_bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/ebpay_text_size_14" android:textColor="@color/ebpay_text_111111" android:id="@id/tv_card_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_bank_name" android:layout_centerInParent="true" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/ebpay_text_size_12" android:textColor="@color/bd_wallet_text_gray2" android:id="@id/disable_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/tv_selected" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wallet_base_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <ImageView android:id="@id/divider" android:background="@color/bd_wallet_pwdpay_light_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebpay_line_margin_15" />
+</LinearLayout>

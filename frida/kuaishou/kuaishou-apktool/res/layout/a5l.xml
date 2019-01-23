@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_narrow" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="right" android:id="@id/background_view" android:background="@drawable/guesspassword_img_pendant_l_normal" android:layout_width="@dimen/red_packet_float_tips_view_size" android:layout_height="@dimen/red_packet_float_tips_view_size" />
+    <TextView android:textSize="@dimen/dimen_10dp" android:textColor="@color/p_color_red" android:gravity="center" android:layout_gravity="right" android:id="@id/count_down_view" android:layout_width="56.5dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="2.0dip" />
+</FrameLayout>

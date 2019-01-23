@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/prettify_radio_group" android:background="@color/translucent_50_black" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="110.0dip" android:layout_alignBottom="@id/fragment_container">
+        <RadioButton android:id="@id/beauty_radio_btn" android:visibility="gone" android:checked="false" android:text="@string/beauty_filter" style="@style/PrettifyBottomTab" />
+        <RadioButton android:id="@id/makeup_radio_btn" android:visibility="gone" android:checked="false" android:text="@string/makeup" style="@style/PrettifyBottomTab" />
+        <RadioButton android:id="@id/filter_radio_btn" android:visibility="gone" android:checked="false" android:text="@string/photo_filter" style="@style/PrettifyBottomTab" />
+    </RadioGroup>
+</RelativeLayout>

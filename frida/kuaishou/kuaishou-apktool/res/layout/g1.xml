@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <TableLayout android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="2"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TableRow android:gravity="center_vertical" android:background="@drawable/background_login_top_line" android:layout_width="fill_parent" android:layout_height="@dimen/signup_line_height">
+            <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:text="+86" android:singleLine="true" style="@style/Theme.Widget.Text.Signup" />
+            <View style="@style/Theme.Widget.HangDividerHorizontal" />
+            <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_color1_normal" android:id="@id/phone_text" android:maxLength="20" android:inputType="number" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Signup" />
+            <FrameLayout android:id="@id/clear_layout" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/signup_line_height">
+                <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/icon_clear" android:contentDescription="@string/delete_selected" />
+            </FrameLayout>
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="@drawable/background_login_top_line" android:layout_width="fill_parent" android:layout_height="@dimen/signup_line_height">
+            <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:gravity="center" android:id="@id/verify_code_tv" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:text="@string/verification_code" android:maxLines="1" android:drawableRight="@drawable/line_horizontal_divider" style="@style/Theme.Widget.Text.Signup" />
+            <View style="@style/Theme.Widget.HangDividerHorizontal" />
+            <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/verify_et" android:hint="@string/input_verification_code" android:inputType="number" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Signup" />
+            <FrameLayout android:id="@id/verify_layout" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/user_info_item_height" android:layout_marginRight="15.0dip">
+                <com.yxcorp.gifshow.widget.verifycode.GetVerifyCodeTextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_orange_color" android:gravity="end" android:layout_gravity="center" android:id="@id/get_verification_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80.0dip" android:text="@string/get_verification_code" />
+            </FrameLayout>
+        </TableRow>
+    </TableLayout>
+    <include layout="@layout/line_divider_grey" />
+    <TextView android:enabled="false" android:gravity="center" android:id="@id/verify_phone_confirm_tv" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/login_line_padding" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/login_line_padding" android:text="@string/ok" style="@style/Kwai.Widget.Button.B2" />
+</LinearLayout>

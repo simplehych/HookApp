@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/background_authenticate_start_button_pressed" />
+            <corners android:radius="@dimen/account_authenticate_button_radius" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/background_authenticate_start_button_pressed" />
+            <corners android:radius="@dimen/account_authenticate_button_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/background_authenticate_start_button" />
+            <corners android:radius="@dimen/account_authenticate_button_radius" />
+        </shape>
+    </item>
+</selector>

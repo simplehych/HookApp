@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/player" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/texture_view_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yxcorp.widget.SafeTextureView android:id="@id/texture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/blur_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.yxcorp.gifshow.widget.SmartScaleTypeImageView android:layout_gravity="center" android:id="@id/poster" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/photo" />
+    </FrameLayout>
+    <com.yxcorp.gifshow.widget.ScaleHelpView android:layout_gravity="center" android:id="@id/mask" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/photo_detail_lyric_layout" />
+    <ImageButton android:layout_gravity="right" android:id="@id/quality_switcher" android:visibility="gone" android:layout_width="@dimen/quality_switch_width" android:layout_height="@dimen/quality_switch_height" android:layout_marginTop="@dimen/quality_switch_margin" android:layout_marginRight="@dimen/quality_switch_margin" />
+</FrameLayout>

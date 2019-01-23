@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/photo_detail_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.viewpager.PhotosViewPager android:id="@id/view_pager_photos" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Kwai.Widget.RecyclerView" />
+    <com.yxcorp.gifshow.widget.ScaleHelpView android:layout_gravity="center" android:id="@id/mask" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color11_normal" android:gravity="center" android:id="@id/horizontal_indicator" android:background="@drawable/slide_play_horizontal_indicator_bg" android:layout_width="55.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/text_color_white" android:id="@id/toast" android:background="@drawable/background_round_corner_photos_toast" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/last_page_tips" android:layout_centerInParent="true" />
+</merge>

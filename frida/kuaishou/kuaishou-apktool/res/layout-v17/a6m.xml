@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_suggest_panel" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/search_tips_wrapper" android:background="@drawable/background_list_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@id/search_tips_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.5dip" android:src="@drawable/search_icon_big_search" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="17.5dip" android:layout_alignParentStart="true" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:ellipsize="end" android:id="@id/search_tips_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/search_tips_icon" android:layout_centerVertical="true" android:layout_marginStart="17.0dip" android:layout_marginEnd="10.0dip" android:layout_toEndOf="@id/search_tips_icon" />
+        <View android:id="@id/search_tips_divider" android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/search_suggest_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

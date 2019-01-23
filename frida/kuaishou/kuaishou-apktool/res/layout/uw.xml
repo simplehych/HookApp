@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.live.widget.FilledLinerLayout android:orientation="vertical" android:id="@id/item_layout" android:background="@drawable/live_bg_more_bg" android:layout_width="@dimen/live_more_layout_min_width" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:minWidth="@dimen/live_more_layout_min_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/live_quality_item_text_color" android:gravity="center" android:id="@id/live_super_quality" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/live_super_quality" />
+    <View android:id="@id/live_super_quality_divider" android:background="#1affffff" android:layout_width="fill_parent" android:layout_height="@dimen/live_more_layout_item_divider_height" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/live_quality_item_text_color" android:gravity="center" android:id="@id/live_high_quality" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/live_high_quality" />
+    <View android:id="@id/live_high_quality_divider" android:background="#1affffff" android:layout_width="fill_parent" android:layout_height="@dimen/live_more_layout_item_divider_height" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/live_quality_item_text_color" android:gravity="center" android:id="@id/live_standard_quality" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/live_standard_quality" />
+    <View android:id="@id/live_standard_quality_divider" android:background="#1affffff" android:layout_width="fill_parent" android:layout_height="@dimen/live_more_layout_item_divider_height" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/live_quality_item_text_color" android:gravity="center" android:id="@id/live_auto_quality" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/live_auto_quality" />
+</com.yxcorp.plugin.live.widget.FilledLinerLayout>

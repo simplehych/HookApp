@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/moment_write_content" android:background="@drawable/profile_moment_write_view" android:paddingLeft="@dimen/moment_write_tv_padding" android:paddingRight="@dimen/moment_write_tv_padding_right" android:layout_width="wrap_content" android:layout_height="@dimen/moment_write_tv_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon_iv" android:layout_width="@dimen/moment_write_iv_height" android:layout_height="@dimen/moment_write_iv_width" android:src="@drawable/profile_icon_pen_s" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/profile_moment_publish_text_color" android:ellipsize="none" android:id="@id/moment_write_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/moment_write_left_margin" android:text="@string/profile_moment_create" android:singleLine="true" />
+</LinearLayout>

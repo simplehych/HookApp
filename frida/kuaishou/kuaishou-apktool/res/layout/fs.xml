@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/emotion_switch_bar" android:background="@color/background_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/emotion_switch" android:layout_width="wrap_content" android:layout_height="20.0dip" android:src="@drawable/button_emotion_light" android:contentDescription="@string/emotion" />
+        <Button android:id="@id/complete_input" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" android:text="@string/finish" style="@style/Theme.Widget.GreenButton" />
+    </LinearLayout>
+    <View android:id="@id/emotion_divider" style="@style/Theme.Widget.DefaultDividerVertical" />
+    <GridView android:gravity="bottom" android:id="@id/emotions" android:background="@color/emotion_bg_color" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scrollingCache="true" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:stretchMode="spacingWidth" android:columnWidth="40.0dip" android:numColumns="auto_fit" />
+</LinearLayout>

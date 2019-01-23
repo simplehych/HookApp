@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/profile_moment_comment_tip" android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_comment_tip_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/p_color_light" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/p_color_orange" android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/profile_comment_long_click_hint" />
+    <View android:background="@color/p_color_light" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" />
+</LinearLayout>

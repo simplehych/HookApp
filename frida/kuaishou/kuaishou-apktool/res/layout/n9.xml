@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/photo_detail_next_page_divider" android:background="#ffe2e2e2" android:layout_width="0.5dip" android:layout_height="18.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@drawable/button_bg_detail_jump_to_next_text" android:id="@id/photo_detail_next_page_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="@string/tap_to_next_page_button_text" />
+    <ImageView android:id="@id/photo_detail_next_page_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

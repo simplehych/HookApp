@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.live.widget.HistogramSeekBar android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/left_btn" android:padding="5.0dip" android:layout_width="37.5dip" android:layout_height="37.5dip" android:src="@drawable/ktv_edit_offset_backward" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/right_btn" android:padding="5.0dip" android:layout_width="37.5dip" android:layout_height="37.5dip" android:src="@drawable/ktv_edit_offset_forward" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.yxcorp.plugin.live.widget.HistogramSeekView android:id="@id/histogram_seek_view" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="27.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_toLeftOf="@id/right_btn" android:layout_toRightOf="@id/left_btn" android:layout_centerVertical="true" />
+</com.yxcorp.plugin.live.widget.HistogramSeekBar>

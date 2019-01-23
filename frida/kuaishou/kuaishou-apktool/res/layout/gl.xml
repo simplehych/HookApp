@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/popup_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/popup_default_margin" android:layout_marginRight="@dimen/popup_default_margin">
+        <TextView android:textSize="@dimen/text_size2" android:textColor="@color/text_color2_normal" android:id="@id/im_send_to_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/popup_share_title_padding_left" android:layout_marginTop="@dimen/popup_share_title_padding_left" android:layout_marginBottom="@dimen/popup_title_margin_bottom" android:text="@string/share_send_message_to" />
+        <android.support.v7.widget.RecyclerView android:id="@id/share_im_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:overScrollMode="never" />
+        <View android:id="@id/share_im_divider" android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="@dimen/popup_default_divider_size" android:layout_marginTop="20.0dip" />
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="86.5dip" android:layout_marginTop="30.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/page_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+        <View android:id="@id/indicator_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/text_size1" android:textColor="@color/text_color1_normal" android:gravity="center" android:id="@id/cancel_button" android:background="@drawable/popup_one_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/popup_cancel_btn_height" android:layout_marginLeft="@dimen/popup_default_margin" android:layout_marginTop="@dimen/popup_default_margin" android:layout_marginRight="@dimen/popup_default_margin" android:text="@string/cancel" />
+    <android.support.v4.widget.Space android:id="@id/share_button_space" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

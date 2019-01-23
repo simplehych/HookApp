@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="3.0dip" />
+            <solid android:color="@color/news_moment_tag_bg_color_pressed" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="3.0dip" />
+            <solid android:color="@color/news_moment_tag_bg_color_pressed" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="3.0dip" />
+            <solid android:color="@color/news_moment_tag_bg_color_normal" />
+        </shape>
+    </item>
+</selector>

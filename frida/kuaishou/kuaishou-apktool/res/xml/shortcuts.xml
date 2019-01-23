@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/kwai_icon_round" android:enabled="true">
+        <intent android:targetPackage="com.smile.gifmaker" android:action="android.intent.action.VIEW" android:targetClass="com.yxcorp.gifshow.HomeActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

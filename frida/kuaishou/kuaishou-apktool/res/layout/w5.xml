@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.viewpager.CustomViewPager android:layout_gravity="center|left|top" android:id="@id/photos_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yxcorp.gifshow.widget.CircleIndicator android:layout_gravity="bottom|center" android:id="@id/pager_indicator" android:layout_width="105.0dip" android:layout_height="25.0dip" android:layout_marginBottom="@dimen/dimen_60dp" app:ci_width="3.1999817dip" app:ci_height="3.1999817dip" app:ci_margin="3.0dip" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_white" android:layout_gravity="bottom|center" android:id="@id/progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_80dp" android:shadowColor="@color/translucent_30_black" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" />
+</FrameLayout>

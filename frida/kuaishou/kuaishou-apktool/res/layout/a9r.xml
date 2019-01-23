@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.KwaiActionBar android:id="@id/title_root" android:background="@color/text_color_white" android:layout_width="fill_parent" android:layout_height="?actionbarHeight">
+        <ImageButton android:id="@id/left_btn" android:background="@null" android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight" android:src="@drawable/nav_btn_back_black" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </com.yxcorp.gifshow.widget.KwaiActionBar>
+    <View android:id="@id/tag_divider_line" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/title_bar_height" />
+    <FrameLayout android:id="@id/tips_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionbarHeight" />
+</FrameLayout>

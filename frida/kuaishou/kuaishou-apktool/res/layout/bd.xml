@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/app_header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/app_icon" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.5dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="25.0dip" />
+    <TextView android:textSize="@dimen/text_size6" android:textColor="?PhotoCommentUserTextColor" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.5dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="16.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/app_icon" />
+    <TextView android:textSize="@dimen/text_size3" android:textColor="?PhotoCommentEditTextColor" android:gravity="bottom" android:id="@id/category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/app_icon" android:layout_above="@id/size" android:layout_below="@id/title" />
+    <TextView android:textColor="@color/text_color11_normal" android:gravity="center" android:id="@id/download" android:background="?PhotoDownloadButtonStroke" android:layout_width="95.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:text="@string/download_right_now" android:layout_alignBottom="@id/app_icon" android:layout_alignParentRight="true" />
+    <TextView android:textSize="@dimen/text_size3" android:textColor="?PhotoCommentEditTextColor" android:id="@id/size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_toRightOf="@id/app_icon" android:layout_alignBottom="@id/download" />
+</RelativeLayout>

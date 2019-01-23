@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:placeholderImage="@color/live_close_bg" app:overlayImage="@color/live_close_bg" />
+    <android.support.percent.PercentRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:clickable="true" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/profile_btn_avatar_secret" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:contentDescription="@string/avatar" avatar:roundAsCircle="true" avatar:layout_marginBottomPercent="2.3180008%" xmlns:avatar="http://schemas.android.com/apk/res-auto" />
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/live_follow" android:maxLines="1" android:layout_below="@id/avatar" android:layout_centerHorizontal="true" app:layout_marginBottomPercent="2.2410035%" />
+        <ToggleButton android:textSize="@dimen/text_size_15" android:id="@id/follow_button" android:background="@drawable/background_live_closed_recommend_follow_button" android:layout_width="0.0dip" android:textOn="@string/followed" android:textOff="@string/make_follow" android:minWidth="100.0dip" android:text="@string/followed" android:maxLines="1" android:layout_below="@id/user_name" android:layout_centerHorizontal="true" app:layout_widthPercent="26.667%" app:layout_marginBottomPercent="5.4100037%" style="@style/Kwai.Widget.Button.B16" />
+        <TextView android:textSize="@dimen/text_size_25" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/live_is_closed" android:layout_width="wrap_content" android:layout_height="35.0dip" android:maxLines="1" android:layout_below="@id/follow_button" android:layout_centerHorizontal="true" app:layout_marginBottomPercent="3.0910015%" />
+        <View android:id="@id/separator_1" android:layout_below="@id/live_is_closed" style="@style/Theme.LiveEnd.VerticalDivider" />
+        <LinearLayout android:gravity="center" android:id="@id/live_info_panel" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/separator_1" app:layout_heightPercent="13.446999%">
+            <LinearLayout style="@style/Theme.LiveEnd.Row.Block">
+                <TextView android:id="@id/audience_count" style="@style/Theme.LiveEnd.Value" />
+                <TextView android:id="@id/audience_count_tip" android:text="@string/live_audiences" style="@style/Theme.LiveEnd.Label" />
+            </LinearLayout>
+            <LinearLayout style="@style/Theme.LiveEnd.Row.Block">
+                <TextView android:id="@id/like_count" style="@style/Theme.LiveEnd.Value" />
+                <TextView android:text="@string/live_likes_new" style="@style/Theme.LiveEnd.Label" />
+            </LinearLayout>
+            <LinearLayout style="@style/Theme.LiveEnd.Row.Block">
+                <TextView android:id="@id/live_duration" style="@style/Theme.LiveEnd.Value" />
+                <TextView android:text="@string/live_time" style="@style/Theme.LiveEnd.Label" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/separator_2" android:layout_below="@id/live_info_panel" style="@style/Theme.LiveEnd.VerticalDivider" />
+        <Button android:id="@id/view_profile" android:layout_width="0.0dip" android:text="@string/view_live_owner_profile" android:layout_below="@id/separator_2" android:layout_centerHorizontal="true" app:layout_widthPercent="79.99999%" app:layout_marginTopPercent="5.4100037%" app:layout_marginBottomPercent="2.3180008%" style="@style/Kwai.Widget.Button.B10" />
+        <Button android:id="@id/close" android:layout_width="0.0dip" android:text="@string/go_back" android:layout_below="@id/view_profile" android:layout_centerHorizontal="true" app:layout_widthPercent="79.99999%" style="@style/Kwai.Widget.Button.B15" />
+        <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color_white" android:id="@id/recommend_live_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="@dimen/live_play_closed_recommend_live_tips_top_margin" android:text="@string/live_recommend_title" android:layout_below="@id/separator_2" android:layout_alignParentLeft="true" />
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/recommend_live_countdown_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/live_play_closed_recommend_live_tips_top_margin" android:layout_marginRight="32.0dip" android:layout_below="@id/separator_2" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_end_recommand_change_feed" />
+            <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color_white" android:gravity="right" android:id="@id/recommend_live_countdown_view" android:layout_width="24.5dip" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/no_recommend_live_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/live_recommend_live_item_height" android:layout_marginTop="@dimen/live_play_closed_recommend_live_top_margin" android:layout_below="@id/recommend_live_tips">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/no_recommend_live_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/live_norecommend_live_normal" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#99ffffff" android:layout_gravity="center_horizontal" android:id="@id/no_recommend_live_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/live_no_recommend" />
+        </LinearLayout>
+        <com.yxcorp.gifshow.widget.LoadingView android:id="@id/recommend_live_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/live_recommend_live_item_height" android:layout_marginTop="@dimen/live_play_closed_recommend_live_top_margin" android:layout_below="@id/recommend_live_tips" android:layout_centerHorizontal="true" />
+        <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView android:id="@id/recommend_live_list_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/live_recommend_live_item_height" android:layout_marginLeft="32.0dip" android:layout_marginTop="@dimen/live_play_closed_recommend_live_top_margin" android:layout_marginRight="23.0dip" android:layout_below="@id/recommend_live_tips" />
+    </android.support.percent.PercentRelativeLayout>
+    <com.yxcorp.plugin.live.widget.LivePendantView android:id="@id/live_pendant" android:visibility="gone" android:layout_width="@dimen/live_pendant_width" android:layout_height="@dimen/live_pendant_height" android:layout_marginLeft="@dimen/margin_default" android:layout_marginTop="@dimen/live_pendant_margin_top" />
+    <ImageView android:id="@id/close_icon_view" android:background="@drawable/slide_play_detail_nav_btn_back_white" android:visibility="gone" android:layout_width="@dimen/slide_play_back_size" android:layout_height="@dimen/slide_play_back_size" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <stroke android:width="1.0dip" android:color="@color/download_notify_control_text_color_pressed" />
+            <solid android:color="@android:color/white" />
+            <corners android:radius="@dimen/download_notify_control_corners_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:width="1.0dip" android:color="@color/download_notify_control_text_color_normal" />
+            <solid android:color="@android:color/white" />
+            <corners android:radius="@dimen/download_notify_control_corners_radius" />
+        </shape>
+    </item>
+</selector>

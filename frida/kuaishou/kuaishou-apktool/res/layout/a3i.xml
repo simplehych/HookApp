@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_praise_parent_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color15_normal" android:gravity="center_vertical" android:id="@id/moment_user_profile_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/margin_default" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color15_normal" android:id="@id/publish_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/nickname" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/republish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_moment_publish_status_offset" android:src="@drawable/profile_icon_fail_s_normal" android:layout_toRightOf="@id/publish_state" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/profile_moment_operation" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/moment_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_moment_operation_vertical" />
+        <ImageView android:id="@id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_moment_praise_more_margin_left" android:layout_marginRight="@dimen/profile_moment_praise_comment_margin_right" android:src="@drawable/profile_moment_comment" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/like" android:layout_width="@dimen/profile_moment_praise_size" android:layout_height="@dimen/profile_moment_praise_size" />
+    </LinearLayout>
+</RelativeLayout>

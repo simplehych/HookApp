@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.plugin.media.player.PhotoVideoPlayerView android:id="@id/player" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/play_prompt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/photo_action_play" android:scaleType="centerInside" android:layout_alignTop="@id/player" android:layout_alignBottom="@id/player" />
+    <ImageView android:id="@id/like_image" android:visibility="invisible" android:layout_width="100.0dip" android:layout_height="90.0dip" android:src="@drawable/detail_icon_like_doublepressed" android:scaleType="fitCenter" android:layout_centerInParent="true" android:contentDescription="@string/liked" />
+    <View android:background="@color/list_divider_default_color" android:layout_width="@dimen/default_divider_size" android:layout_height="25.0dip" android:layout_below="@id/player" android:layout_alignLeft="@id/player" />
+    <View android:background="@color/list_divider_default_color" android:layout_width="@dimen/default_divider_size" android:layout_height="25.0dip" android:layout_below="@id/player" android:layout_alignRight="@id/player" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/created_time_color" android:gravity="center_vertical" android:id="@id/number_review" android:paddingLeft="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="25.0dip" android:singleLine="true" android:layout_below="@id/player" android:layout_alignLeft="@id/player" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/created_time_color" android:gravity="center_vertical" android:id="@id/created" android:paddingRight="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="25.0dip" android:singleLine="true" android:layout_below="@id/player" android:layout_alignRight="@id/player" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/profile_img_masknumber_gray_normal" />
+    <item android:drawable="@drawable/profile_img_masknumber_normal" />
+</selector>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/root" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cover" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/select_btn_touch_area" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentRight="true">
+        <ToggleButton android:id="@id/select_btn" android:background="@drawable/file_select_toggle_button_background" android:duplicateParentState="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/select_btn_touch_area" android:layout_toRightOf="@id/cover">
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:ellipsize="end" android:id="@id/file_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_12" android:textColor="@color/list_item_remark" android:ellipsize="end" android:id="@id/file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <View android:background="@color/list_item_remark" android:layout_width="1.0dip" android:layout_height="9.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_12" android:textColor="@color/list_item_remark" android:ellipsize="end" android:id="@id/file_modify_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

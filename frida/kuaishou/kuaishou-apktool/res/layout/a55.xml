@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="14.0sp" android:textColor="#ffcf9136" android:id="@id/name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="45.0sp" android:textColor="#fff04b48" android:id="@id/coin_num_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/name_view" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#fff04b48" android:id="@id/coin_num_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginBottom="8.5dip" android:text="@string/kwai_coin" android:layout_toRightOf="@id/coin_num_view" android:layout_alignBottom="@id/coin_num_view" />
+    <TextView android:textSize="12.0sp" android:textColor="#80cf9036" android:id="@id/note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/see_other_lucky" android:layout_below="@id/coin_num_view" android:layout_centerHorizontal="true" />
+    <View android:id="@id/see_header_spit_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" android:layout_below="@id/note" />
+</RelativeLayout>

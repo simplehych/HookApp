@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_14" android:textColor="@color/list_item_light_black" android:gravity="center" android:id="@id/music_offline" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/music_offline"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_to_layout_im" android:layout_width="@dimen/popup_recycle_item_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center" android:id="@id/im_avatar" android:background="@null" android:layout_width="@dimen/list_avatar_size" android:layout_height="@dimen/list_avatar_size" android:scaleType="fitXY" android:contentDescription="@string/avatar" app:roundAsCircle="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_12" android:textColor="#ff777777" android:ellipsize="end" android:gravity="center" android:id="@id/im_avatar_name" android:layout_height="wrap_content" android:layout_marginTop="@dimen/popup_share_item_image_text_margin" android:maxWidth="70.0dip" android:text="@string/facebook" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Text.Black" />
+</LinearLayout>

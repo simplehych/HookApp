@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/text_region" android:layout_width="fill_parent" android:layout_height="38.5dip">
+        <TextView android:textSize="@dimen/text_size_15" android:textStyle="bold" android:textColor="@color/music_tab_text_color" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/template" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/new_label" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="9.5dip" android:layout_marginLeft="-3.5dip" android:layout_marginTop="7.5dip" android:src="@drawable/nav_badge_new" android:layout_toRightOf="@id/text" android:layout_alignTop="@id/text" />
+    </RelativeLayout>
+    <View android:layout_gravity="center" android:id="@id/indicator" android:background="@color/p_color_orange" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.5dip" />
+</LinearLayout>

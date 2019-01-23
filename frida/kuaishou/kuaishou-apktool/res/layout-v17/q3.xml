@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/reminder_list_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/header_padding" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/header_divider" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:layout_marginLeft="10.0dip" android:layout_below="@id/header_padding" android:layout_alignParentTop="false" app:roundAsCircle="true" style="@style/Theme.ReminderAvatar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <include layout="@layout/news_avatar_pendant" />
+    <TextView android:id="@id/comment" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="0.0dip" android:layout_toRightOf="@id/avatar" android:layout_below="@id/header_padding" android:textDirection="ltr" style="@style/Theme.ReminderText" />
+    <com.yxcorp.gifshow.fragment.RecommendUserRecyclerView android:id="@id/rv_follow_cards" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="3.0dip" android:layout_toRightOf="@id/avatar" android:layout_below="@id/comment" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color3_normal" android:id="@id/tv_time_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/avatar" android:layout_below="@id/rv_follow_cards" android:textDirection="ltr" />
+    <View android:id="@id/footer_divider" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="60.0dip" android:layout_marginTop="9.0dip" android:layout_below="@id/tv_time_container" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/ktv_melody_selection_item_pressed_middle" />
+    <item android:drawable="@color/ktv_melody_selection_item_normal" />
+</selector>

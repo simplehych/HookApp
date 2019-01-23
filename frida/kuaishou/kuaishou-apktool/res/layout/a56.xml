@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.tag.common.view.RefreshHeader android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="72.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.recycler.widget.ShootRefreshView android:layout_gravity="center_horizontal" android:id="@id/loading_view" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginBottom="-30.0dip" />
+    <FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" />
+</com.yxcorp.plugin.tag.common.view.RefreshHeader>

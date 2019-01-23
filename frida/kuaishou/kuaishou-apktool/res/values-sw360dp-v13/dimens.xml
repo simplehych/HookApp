@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bubble_edit_blue_red_blue_orange_banner_max_width">298.0dip</dimen>
+    <dimen name="bubble_edit_blue_red_blue_orange_banner_width">320.0dip</dimen>
+    <dimen name="bubble_edit_cube_text_banner_max_width">278.0dip</dimen>
+    <dimen name="bubble_edit_cube_text_left_right_padding">41.0dip</dimen>
+</resources>

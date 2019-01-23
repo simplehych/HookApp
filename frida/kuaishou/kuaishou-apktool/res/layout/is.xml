@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_site_info" />
+    <include layout="@layout/layout_site_address" />
+    <include layout="@layout/layout_site_recent_activity" />
+</LinearLayout>

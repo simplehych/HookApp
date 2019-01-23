@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="18.0dip">
+        <shape>
+            <solid android:color="@color/surface_color1_normal" />
+        </shape>
+    </item>
+    <item android:drawable="@color/line_color4_normal" android:top="67.5dip" />
+    <item android:drawable="@color/action_bar_color" android:top="68.0dip" />
+</layer-list>

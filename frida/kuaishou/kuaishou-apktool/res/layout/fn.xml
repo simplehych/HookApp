@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_round_corner_border" android:descendantFocusability="blocksDescendants" android:layout_width="@dimen/emoji_popup_width" android:layout_height="@dimen/emoji_popup_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiBindableImageView android:id="@id/emoji_item" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="6.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:contentDescription="@string/emotion" />
+    <TextView android:textSize="10.0sp" android:gravity="center" android:id="@id/emoji_name" android:layout_width="50.0dip" android:layout_height="24.0dip" android:text="emoji" android:layout_below="@id/emoji_item" />
+</RelativeLayout>

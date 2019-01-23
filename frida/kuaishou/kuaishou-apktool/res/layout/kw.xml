@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ktv_song_panel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/ktv_sing_song_action_bar" android:layout_width="fill_parent" android:layout_height="190.0dip" android:layout_alignParentBottom="true" layout="@layout/ktv_sing_song_action_bar_v2" />
+    <include android:id="@id/ktv_record_song_progress_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:layout_alignParentTop="true" layout="@layout/ktv_record_song_progress_layout" />
+    <TextView android:textColor="@color/record_primary_color" android:gravity="center" android:id="@id/ktv_record_skip_prelude" android:background="@drawable/ktv_background_skip_prelude" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="117.0dip" android:text="@string/ktv_skip_prelude" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

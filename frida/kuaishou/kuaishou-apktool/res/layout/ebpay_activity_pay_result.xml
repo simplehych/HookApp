@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ebpay_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.BdActionBar android:id="@id/bdactionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:background="@color/ebpay_gray" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <LinearLayout android:orientation="vertical" android:id="@id/payresult_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/payresult_maininfo" android:layout_width="fill_parent" android:layout_height="82.0dip">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/payresult_maininfo_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:src="@drawable/wallet_base_result_success" android:contentDescription="@null" />
+                        <LinearLayout android:gravity="left" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                            <TextView android:textSize="@dimen/ebpay_text_size_20" android:textColor="@color/ebpay_text_222222" android:id="@id/payresult_maininfo_main_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebpay_pay_success" />
+                            <TextView android:textSize="@dimen/ebpay_text_size_12" android:textColor="@color/ebpay_text_red_queqiao" android:id="@id/ebpay_maininfo_sub_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/payresult_money_layout" android:background="@color/ebpay_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:background="@color/ebpay_item_divider_d9d9d9" android:layout_width="fill_parent" android:layout_height="@dimen/bd_wallet_fix_line_width_1px" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/payresult_real_money_layout" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                            <TextView android:textSize="@dimen/ebpay_text_size_35" android:textColor="@color/ebpay_black" android:id="@id/payresult_real_money_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/payresult_order_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <View android:id="@id/payresult_order_layout_line" android:background="@color/ebpay_item_divider_e5e5e5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bd_wallet_fix_line_width_1px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+                            <RelativeLayout android:gravity="center_vertical" android:id="@id/payresult_order_amount_layout" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                                <TextView android:textSize="@dimen/ebpay_text_size_14" android:textColor="@color/ebpay_gray_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebpay_payresult_order_amount" android:layout_alignParentLeft="true" />
+                                <TextView android:textSize="@dimen/ebpay_text_size_16" android:textColor="@color/ebpay_gray_999999" android:id="@id/payresult_order_amount_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                            </RelativeLayout>
+                            <RelativeLayout android:gravity="center_vertical" android:id="@id/payresult_order_coupon_layout" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                                <TextView android:textSize="@dimen/ebpay_text_size_14" android:textColor="@color/ebpay_gray_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebpay_payresult_order_discount" android:layout_alignParentLeft="true" />
+                                <TextView android:textSize="@dimen/ebpay_text_size_16" android:textColor="@color/bd_wallet_red" android:id="@id/payresult_order_coupon_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/payresult_union_pay_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                            <View android:id="@id/payresult_union_pay_line" android:background="@color/ebpay_item_divider_e5e5e5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bd_wallet_fix_line_width_1px" />
+                        </LinearLayout>
+                        <View android:background="@color/ebpay_item_divider_d9d9d9" android:layout_width="fill_parent" android:layout_height="@dimen/bd_wallet_fix_line_width_1px" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/payresult_btn_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/ebpay_white" android:id="@id/pay_success_bt" android:background="@drawable/wallet_base_btn" android:layout_width="fill_parent" android:layout_height="@dimen/ebpay_bt_height" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="@string/ebpay_confirm" />
+                </LinearLayout>
+                <include android:id="@id/hongbao_layout" android:visibility="gone" layout="@layout/ebpay_layout_pay_result_benefit" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <include layout="@layout/bd_wallet_logo_layout" />
+</LinearLayout>

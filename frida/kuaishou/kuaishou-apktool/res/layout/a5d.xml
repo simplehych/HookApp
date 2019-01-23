@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_download_share_dialog_white" android:layout_width="280.0dip" android:layout_height="320.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/background_iv" android:layout_width="200.0dip" android:layout_height="125.0dip" android:layout_marginTop="35.0dip" android:src="@drawable/pic_download_xxl_normal" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/fl_status_container" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_45dp" android:layout_marginLeft="24.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="24.0dip" android:layout_below="@id/background_iv" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_black_color" android:gravity="center" android:layout_gravity="center" android:id="@id/status_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/downloading" android:maxLines="2" />
+    </FrameLayout>
+    <ImageView android:id="@id/close_iv" android:padding="8.0dip" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/dialog_icon_close_normal" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="24.0dip" android:layout_below="@id/fl_status_container">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/download_btn" android:text="@string/fail_download" style="@style/Kwai.Widget.Button.B12" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/download_progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_5dp" android:max="1000" android:progressDrawable="@drawable/background_resource_download_progress_v2" style="?android:attr/progressBarStyleHorizontal" />
+    </FrameLayout>
+</RelativeLayout>

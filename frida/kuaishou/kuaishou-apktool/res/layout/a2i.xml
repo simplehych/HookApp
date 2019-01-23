@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/profile_top_bottom_divider_line" android:paddingLeft="@dimen/dimen_15dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:background="@drawable/profile_fill_info_icon" android:layout_width="@dimen/dimen_35dp" android:layout_height="@dimen/dimen_35dp" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color1_normal" android:ellipsize="end" android:id="@id/profile_fill_info_hint_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_15dp" android:maxLines="2" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/text_size3" android:textColor="@color/p_color_orange" android:background="@drawable/profile_fill_info_go_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/profile_fill_info_edit" />
+    <ImageView android:id="@id/profile_fill_info_hint_close" android:layout_width="@dimen/dimen_35dp" android:layout_height="@dimen/dimen_35dp" android:layout_marginRight="@dimen/dimen_5dp" android:src="@drawable/nav_btn_close_black" />
+</LinearLayout>

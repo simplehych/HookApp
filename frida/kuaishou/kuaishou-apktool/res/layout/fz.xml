@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pic_contact_xxl_color" android:contentDescription="@string/empty_prompt" />
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/list_item_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/empty_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/login_guide_view_contacts_play_gifshow" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color15_normal" android:gravity="center" android:id="@id/empty_subtitle" android:layout_width="295.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_default" android:text="@string/login_guide_follow_to_view_works" />
+    <Button android:gravity="center" android:id="@id/empty_button" android:layout_width="250.0dip" android:layout_marginTop="25.0dip" android:text="@string/view_contacts_friends" style="@style/Kwai.Widget.Button.B12" />
+</LinearLayout>

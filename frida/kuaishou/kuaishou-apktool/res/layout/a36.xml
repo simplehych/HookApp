@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.profile.widget.ForegroundFrameLayout android:gravity="center_vertical" android:id="@id/moment_item_foreground" android:paddingLeft="@dimen/profile_moment_time_width" android:paddingRight="@dimen/margin_large" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_comment_operation_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/profile_bg_moment_comment_corners_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color4_normal" android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/comment_expand" android:paddingLeft="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/profile_moment_text_expand" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color4_normal" android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/comment_collapse_less" android:paddingLeft="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/profile_moment_text_collapse" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color4_normal" android:gravity="center_vertical" android:layout_gravity="end" android:id="@id/comment_collapse" android:paddingRight="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/profile_moment_text_collapse" />
+</com.yxcorp.gifshow.profile.widget.ForegroundFrameLayout>

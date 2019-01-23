@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/wallet_base_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.BdActionBar android:id="@id/bdactionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bd_wallet_unlogin_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/bdactionbar">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/wallet_balance_empty_view_logo" />
+        <Button android:textSize="@dimen/bd_wallet_text_size_large" android:textColor="@color/bd_wallet_black" android:gravity="center" android:id="@id/bd_wallet_balance_loginbtn" android:background="@drawable/wallet_base_btn" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="10.0dip" android:text="@string/bd_wallet_login_now" />
+    </LinearLayout>
+    <ScrollView android:scrollbarSize="5.0dip" android:scrollbarThumbHorizontal="@drawable/wallet_base_shape_scrollbar" android:scrollbarThumbVertical="@drawable/wallet_base_shape_scrollbar" android:scrollbarStyle="outsideOverlay" android:id="@id/content" android:background="@color/wallet_base_window_bg2" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/wallet_pay_pp_top_banner_ll">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/bd_wallet_balance_layout" android:background="@color/bd_wallet_white" android:paddingLeft="15.0dip" android:paddingTop="22.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="horizontal" android:id="@id/bd_wallet_balance_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/bd_wallet_text_size_normal" android:textColor="@color/bd_wallet_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallet_balance_titile" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/bd_wallet_balance_info_img" android:padding="8.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wallet_base_icon_info_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                </RelativeLayout>
+                <TextView android:textSize="44.0sp" android:textColor="@color/ebpay_text_re3" android:id="@id/bd_wallet_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="__.__" android:layout_below="@id/bd_wallet_balance_title_layout" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/bd_wallet_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" android:layout_toRightOf="@id/bd_wallet_balance" android:layout_alignBaseline="@id/bd_wallet_balance" />
+                <TextView android:textColor="@color/bd_wallet_black" android:id="@id/wallet_balance_charge_tip" android:padding="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/bd_wallet_balance" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/bd_wallet_black" android:id="@id/bd_wallet_balance_virtual_account" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/bd_wallet_balance_freeze_account_tips" android:layout_below="@id/wallet_balance_charge_tip" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/balance_item_layout" android:background="@color/bd_wallet_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bd_wallet_balance_layout">
+                <View android:background="@color/ebpay_item_divider_d9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/bd_wallet_balance_history" android:background="@drawable/wallet_base_bank_item_selector" android:clickable="false" android:layout_width="fill_parent" android:layout_height="57.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/bd_wallet_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/wallet_balance_history" android:layout_centerVertical="true" />
+                    <com.baidu.wallet.base.widget.NetImageView android:id="@id/bd_wallet_balance_tag_image" android:visibility="gone" android:layout_width="38.0dip" android:layout_height="18.0dip" android:layout_marginRight="35.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/wallet_base_indicator_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                </RelativeLayout>
+                <View android:background="@color/ebpay_item_divider_d9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/bd_wallet_balance_pay_item_layout" android:background="@drawable/wallet_base_bank_item_selector" android:layout_width="fill_parent" android:layout_height="57.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/bd_wallet_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/bd_wallet_balance_charge" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/wallet_base_indicator_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                </RelativeLayout>
+                <View android:background="@color/ebpay_item_divider_d9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/bd_wallet_fetchcash_to_bankcard_item_layout" android:background="@drawable/wallet_base_bank_item_selector" android:layout_width="fill_parent" android:layout_height="57.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/bd_wallet_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/bd_wallet_fetch_cash_to_bankcard" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/wallet_base_indicator_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                </RelativeLayout>
+                <View android:background="@color/ebpay_item_divider_d9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/set_pwd_layout" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/balance_item_layout">
+                <ImageView android:layout_gravity="center" android:layout_width="19.0dip" android:layout_height="19.0dip" android:src="@drawable/wallet_base_icon_info_selector" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/bd_wallet_dialog_contenttext" android:id="@id/set_pwd_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/wallet_pay_pp_top_banner_ll" android:background="@color/bd_wallet_bank_card_e6e6e6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bdactionbar">
+        <Button android:textSize="13.0sp" android:textColor="@color/bd_wallet_text_999999" android:gravity="center" android:background="@color/ebpay_transparent" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/wallet_base_security_pp_top_banner" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/wallet_pay_pp_top_banner_ib" android:background="@color/ebpay_transparent" android:padding="10.0dip" android:clickable="true" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/wallet_base_bg_clear_selector" />
+    </LinearLayout>
+</RelativeLayout>

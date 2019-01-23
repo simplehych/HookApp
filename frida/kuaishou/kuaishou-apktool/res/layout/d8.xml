@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/img_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/left_btn" android:visibility="invisible" android:src="@drawable/nav_btn_back_white" android:onClick="onCancelClick" style="@style/Theme.PhotoOperationView.Large" />
+    <Button android:gravity="center" android:id="@id/edit" android:visibility="invisible" android:layout_width="70.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:text="@string/next" android:layout_alignParentRight="true" style="@style/Kwai.Widget.Button.B9" />
+    <ImageView android:id="@id/delete" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/cobra_btn_delete" android:layout_toLeftOf="@id/edit" />
+    <ImageView android:id="@id/download" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/cobra_btn_download" android:layout_toLeftOf="@id/delete" />
+    <RelativeLayout android:id="@id/connect_wifi_layout" android:background="#1a000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/low_video_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/cobra_preview_connect_wifi" android:layout_toLeftOf="@id/open_wifi" android:layout_centerVertical="true" />
+        <Button android:id="@id/open_wifi" android:layout_width="80.0dip" android:layout_marginRight="10.0dip" android:text="@string/cobra_go_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Kwai.Widget.Button.B9" />
+    </RelativeLayout>
+</RelativeLayout>

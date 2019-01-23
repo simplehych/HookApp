@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <TextView android:textSize="@dimen/text_size2" android:textColor="@color/text_color2_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/verify_id_reason" />
+    <include android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="20.0dip" layout="@layout/line_divider_grey" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_hint_black_color" android:text="@string/name" style="@style/Theme.Widget.Payment.Label.Left" />
+        <com.yxcorp.gifshow.widget.SafeEditText android:textColorHint="@color/text_hint_black_color" android:gravity="center|left" android:id="@id/enter_name_edit" android:background="@null" android:paddingLeft="15.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:hint="@string/enter_name_hint" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Payment.Label" />
+    </LinearLayout>
+    <include layout="@layout/line_divider_grey" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_hint_black_color" android:text="@string/id_number" style="@style/Theme.Widget.Payment.Label.Left" />
+        <com.yxcorp.gifshow.widget.SafeEditText android:textColorHint="@color/text_hint_black_color" android:gravity="center|left" android:id="@id/enter_id_edit" android:background="@null" android:paddingLeft="15.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:hint="@string/enter_id_hint" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Payment.Label" />
+    </LinearLayout>
+    <include layout="@layout/line_divider_grey" />
+    <TextView android:id="@id/confirm_button" android:text="@string/ok" style="@style/Theme.Widget.Payment.Button" />
+</LinearLayout>

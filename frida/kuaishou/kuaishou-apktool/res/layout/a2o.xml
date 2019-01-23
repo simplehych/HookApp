@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/no_cover_place_holder" android:background="@color/p_color_white" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <include layout="@layout/profile_header_user_content" />
+    <include layout="@layout/profile_header_user_info" />
+    <include layout="@layout/profile_course_shop" />
+    <View android:background="@color/profile_divide_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <include layout="@layout/profile_switcher" />
+    <View android:id="@id/profile_switcher_divider" android:background="@color/p_color_light" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <android.support.v7.widget.RecyclerView android:id="@id/profile_moment_tags" android:paddingTop="@dimen/margin_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+</LinearLayout>

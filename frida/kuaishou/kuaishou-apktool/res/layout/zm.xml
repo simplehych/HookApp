@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/slide_left_cover" android:background="#ff1a1a1a" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+    <View android:id="@id/slide_top_cover" android:background="#ff000001" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <View android:id="@id/slide_right_cover" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <View android:id="@id/slide_bottom_cover" android:background="#ff000001" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+    <View android:id="@id/slide_left_top_corner" android:background="@drawable/music_station_corner_left_top" android:layout_width="@dimen/music_station_corner_size" android:layout_height="@dimen/music_station_corner_size" android:layout_toRightOf="@id/slide_left_cover" android:layout_below="@id/slide_top_cover" />
+    <View android:id="@id/slide_left_bottom_corner" android:background="@drawable/music_station_corner_left_bottom" android:layout_width="@dimen/music_station_corner_size" android:layout_height="@dimen/music_station_corner_size" android:layout_toRightOf="@id/slide_left_cover" android:layout_above="@id/slide_bottom_cover" />
+    <View android:id="@id/slide_right_top_corner" android:background="@drawable/music_station_corner_right_top" android:layout_width="@dimen/music_station_corner_size" android:layout_height="@dimen/music_station_corner_size" android:layout_toLeftOf="@id/slide_right_cover" android:layout_below="@id/slide_top_cover" />
+    <View android:id="@id/slide_right_bottom_corner" android:background="@drawable/music_station_corner_right_bottom" android:layout_width="@dimen/music_station_corner_size" android:layout_height="@dimen/music_station_corner_size" android:layout_toLeftOf="@id/slide_right_cover" android:layout_above="@id/slide_bottom_cover" />
+    <View android:id="@id/slide_play_bottom_float_cover" android:background="@drawable/music_station_float_cover_shadow" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

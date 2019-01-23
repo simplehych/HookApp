@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <include android:id="@id/ll_public" layout="@layout/share_photo_visibility_item" />
+    <View android:layout_marginLeft="15.0dip" style="@style/Theme.Widget.ShareDividerVertical" />
+    <include android:id="@id/ll_private" layout="@layout/share_photo_visibility_item" />
+    <View android:layout_marginLeft="15.0dip" style="@style/Theme.Widget.ShareDividerVertical" />
+    <include android:id="@id/ll_friends" layout="@layout/share_photo_visibility_item" />
+    <View android:layout_marginLeft="15.0dip" style="@style/Theme.Widget.ShareDividerVertical" />
+    <include android:id="@id/ll_group" layout="@layout/share_photo_visibility_item" />
+    <include android:id="@id/im_group_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" layout="@layout/share_to_im_group" />
+    <View android:layout_marginLeft="15.0dip" style="@style/Theme.Widget.ShareDividerVertical" />
+</LinearLayout>

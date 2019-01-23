@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/import_thumb_layout" android:background="@color/cobra_thumb_import_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/cobra_import_thumb_height" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/cobra_import_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/click_import_layout" android:visibility="visible" android:layout_width="71.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <TextView android:textSize="9.0dip" android:textColor="@color/white_button_normal_color" android:id="@id/new_num_text" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/import_icon_id" android:layout_above="@id/import_icon_id" style="@style/Kwai.Widget.Button.B12" />
+            <RelativeLayout android:id="@id/import_icon_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/click_import_str" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/glass_import_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/glasses_import_icon" android:layout_centerHorizontal="true" />
+                <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" style="@style/Theme.Widget.Loading.Small" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0dip" android:textColor="@color/cobra_import_text_color" android:id="@id/glass_import_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/click_import_str" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0dip" android:textColor="@color/cobra_import_text_color" android:id="@id/click_import_str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/cobra_click_to_import" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/cobra_import_thumb_recycler_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/click_import_layout" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/import_finish_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/import_finish_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/cobra_import_finish_icon" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/cobra_import_text_color" android:id="@id/import_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cobra_hd_import_done" android:layout_toRightOf="@id/import_finish_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

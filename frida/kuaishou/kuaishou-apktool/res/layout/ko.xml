@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ktv_record_mv_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="80.0sp" android:textColor="@color/text_color11_normal" android:layout_gravity="center" android:id="@id/ktv_mv_countdown_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="2.0dip" />
+</FrameLayout>

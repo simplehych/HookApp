@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="@dimen/text_size1" android:textColor="@color/text_color1_normal" android:id="@id/input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_default" android:text="\#ffffff" android:hint="输入背景色" android:singleLine="true" android:imeOptions="actionDone" />
+        <Button android:enabled="false" android:layout_margin="@dimen/margin_default" android:text="Button.B12" style="@style/Kwai.Widget.Button.B12" />
+        <com.yxcorp.gifshow.widget.SizeAdjustableToggleButton android:textColor="@color/p_color_white" android:background="@drawable/background_button12_normal" android:layout_margin="@dimen/margin_default" android:text="Button.B12@2" style="@style/Kwai.Widget.Button.B12" />
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B9" style="@style/Kwai.Widget.Button.B9" />
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B2" style="@style/Kwai.Widget.Button.B2" />
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B1" style="@style/Kwai.Widget.Button.B1" />
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B8" style="@style/Kwai.Widget.Button.B8" />
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B5" style="@style/Kwai.Widget.Button.B5" />
+        <LinearLayout android:orientation="vertical" android:background="@color/surface_color11_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B10" style="@style/Kwai.Widget.Button.B10" />
+        </LinearLayout>
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B13" style="@style/Kwai.Widget.Button.B13" />
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B14" style="@style/Kwai.Widget.Button.B14" />
+        <LinearLayout android:orientation="vertical" android:background="@color/surface_color11_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B15" style="@style/Kwai.Widget.Button.B15" />
+            <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B16" style="@style/Kwai.Widget.Button.B16" />
+        </LinearLayout>
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B17" style="@style/Kwai.Widget.Button.B17" />
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B18" style="@style/Kwai.Widget.Button.B18" />
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B19" style="@style/Kwai.Widget.Button.B19" />
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B20" style="@style/Kwai.Widget.Button.B20" />
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B21" style="@style/Kwai.Widget.Button.B21" />
+        <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B22" style="@style/Kwai.Widget.Button.B22" />
+        <LinearLayout android:orientation="vertical" android:background="@color/surface_color11_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_width="fill_parent" android:layout_margin="@dimen/margin_default" android:text="Button.B23" style="@style/Kwai.Widget.Button.B23" />
+        </LinearLayout>
+        <TextView android:layout_margin="@dimen/margin_default" android:text="Tag.T1" style="@style/Kwai.Widget.Tag.T1" />
+    </LinearLayout>
+</ScrollView>

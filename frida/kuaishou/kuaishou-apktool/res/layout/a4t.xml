@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.camera.record.widget.RecordButtonFullScreenV2 android:layout_gravity="center" android:id="@id/record_btn_layout" android:clipChildren="false" android:layout_width="90.0dip" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/record_btn" android:background="@drawable/record_out_oval_bg" android:layout_width="75.0dip" android:layout_height="75.0dip">
+        <View android:id="@id/record_ring" android:background="@drawable/record_ring_oval_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.yxcorp.gifshow.widget.record.RoundProgressView android:layout_gravity="center" android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="0" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <com.yxcorp.gifshow.camera.record.breakpoint.BreakpointIndicator android:id="@id/record_btn_breakpoint_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <View android:layout_gravity="center" android:id="@id/inner_oval" android:background="@drawable/record_inner_oval_bg" android:layout_width="63.0dip" android:layout_height="63.0dip" />
+    <View android:layout_gravity="center" android:id="@id/icon_record" android:background="@drawable/shoot_btn_play" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+    <View android:layout_gravity="center" android:id="@id/icon_pause" android:background="@drawable/shoot_btn_pause" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+</com.yxcorp.gifshow.camera.record.widget.RecordButtonFullScreenV2>

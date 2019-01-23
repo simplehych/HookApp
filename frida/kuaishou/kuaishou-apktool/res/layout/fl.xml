@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.v3.widget.MoreEditorsView android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom|center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/editor_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0" />
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/more_btn" android:background="@drawable/background_circle_take_photo" android:layout_width="40.0dip" android:layout_height="@dimen/editor_more_bottom_height" android:src="@drawable/edit_more_filter" android:scaleType="centerInside" />
+</com.yxcorp.gifshow.v3.widget.MoreEditorsView>

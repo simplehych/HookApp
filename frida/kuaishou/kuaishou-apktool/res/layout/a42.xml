@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="27.0dip" android:paddingTop="12.0dip" android:paddingRight="27.0dip" android:paddingBottom="9.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:progressDrawable="@drawable/progressbar_update_circle_loading_layer" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textSize="@dimen/text_size_14" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.5dip" android:text="@string/model_loading" android:singleLine="true" style="@style/Theme.Navigator.Title" />
+    <Button android:id="@id/button" android:visibility="gone" android:layout_marginTop="12.5dip" style="@style/Kwai.Widget.Progress.Cancel" />
+</LinearLayout>

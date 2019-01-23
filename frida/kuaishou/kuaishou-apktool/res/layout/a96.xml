@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_14" android:textColor="@color/p_color_white" android:orientation="horizontal" android:id="@id/slide_play_pause_btn_single" android:background="@drawable/slide_play_detail_pause_background" android:paddingLeft="@dimen/margin_large" android:paddingTop="@dimen/margin_narrow" android:paddingRight="@dimen/margin_large" android:paddingBottom="@dimen/margin_narrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/slide_play_pause" android:drawableLeft="@drawable/slide_play_detail_play_small_icon" android:drawablePadding="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

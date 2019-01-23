@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/live_grant_enter_permission_hint_view" android:background="@color/translucent_90_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/live_entry_button_close" android:src="@drawable/nav_btn_close_black" android:contentDescription="@string/go_back" style="@style/Theme.Navigator.ImageButton" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginTop="190.0dip" android:src="@drawable/live_ic_live_xxl_normal" />
+        <TextView android:textSize="25.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/live_entry_permission_title" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/live_entry_permission_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/live_entry_permission_content" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_color_white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/live_grant_enter_permission_button" android:background="@drawable/live_entry_permission_button_bg" android:layout_width="325.0dip" android:layout_height="48.0dip" android:layout_marginBottom="80.0dip" android:text="@string/live_entry_permission_button" />
+</FrameLayout>

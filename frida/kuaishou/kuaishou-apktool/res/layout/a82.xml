@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_save_album_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:gravity="center" android:id="@id/cb_save_album" android:background="@drawable/share_save_album_selector" android:layout_width="15.0dip" android:layout_height="15.0dip" android:checked="false" android:button="@null" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color2_normal" android:id="@id/tv_save_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/save_to_album" />
+</LinearLayout>

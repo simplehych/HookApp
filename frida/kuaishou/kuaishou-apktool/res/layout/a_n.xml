@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.trimvideo.LinearBitmapContainer android:id="@id/thumbs" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <View android:id="@id/border_view" android:background="@drawable/background_editor_cut_thumbs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

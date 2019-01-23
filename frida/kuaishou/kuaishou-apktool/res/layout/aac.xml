@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/Theme.Navigator.Black"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:id="@id/left_btn" android:src="@drawable/nav_btn_back_white" android:onClick="onClick" android:contentDescription="@string/go_back" style="@style/Theme.Navigator.ImageButton" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textStyle="bold" android:id="@id/title_tv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/common_padding" android:layout_marginRight="@dimen/common_padding" android:singleLine="true" android:layout_weight="1.0" app:textSizeAdjustable="true" style="@style/Theme.Navigator.Title" />
+    <ImageButton android:id="@id/right_btn" android:visibility="invisible" android:onClick="onClick" android:contentDescription="@string/send_message" style="@style/Theme.Navigator.ImageButton" />
+</LinearLayout>

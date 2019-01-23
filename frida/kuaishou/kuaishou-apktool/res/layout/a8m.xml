@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yxcorp.gifshow.detail.slideplay.NestedParentRelativeLayout android:id="@id/slide_play_comment_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView android:scrollbars="none" android:layout_height="300.0dip" android:layout_alignParentBottom="true" android:overScrollMode="never" style="@style/Kwai.Widget.RecyclerView" />
+            <com.yxcorp.gifshow.detail.slideplay.NestedChildRelativeLayout android:id="@id/comment_header" android:background="@drawable/slide_play_comment_bg" android:layout_width="fill_parent" android:layout_height="@dimen/slide_play_comment_height_height" android:layout_above="@id/recycler_view">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="#99ffffff" android:id="@id/comment_header_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:text="@string/comment" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/comment_header_close" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/slide_play_detail_icon_close" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <View android:background="@color/slide_play_detail_comment_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+            </com.yxcorp.gifshow.detail.slideplay.NestedChildRelativeLayout>
+            <include android:id="@id/slide_play_comment_empty_tips" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/recycler_view" layout="@layout/slide_play_comment_empty_tips" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="#ffffffff" android:textColorHint="#7fffffff" android:gravity="center_vertical" android:id="@id/comment_editor_holder_text" android:background="@color/slide_play_comment_edit_holder" android:paddingLeft="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="@dimen/slide_play_bottom_edit_height" android:hint="@string/please_input" android:layout_alignParentBottom="true" />
+        </com.yxcorp.gifshow.detail.slideplay.NestedParentRelativeLayout>
+        <View android:id="@id/comment_placeholder_view" android:background="@color/slide_play_comment_edit_holder" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </LinearLayout>
+</FrameLayout>

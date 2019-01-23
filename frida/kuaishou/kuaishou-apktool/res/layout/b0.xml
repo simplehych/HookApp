@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/ad_layout" android:layout_width="fill_parent" android:layout_height="@dimen/ad_action_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/normal_layout" android:background="?AdvertisementNormalBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size6" android:textColor="?AdvertisementNormalTextColor" android:gravity="center_vertical" android:layout_gravity="center|left" android:id="@id/install_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/install_now" android:includeFontPadding="false" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="?AdvertisementNormalArrow" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/progress_adv" android:visibility="gone" android:layout_width="65.0dip" android:layout_height="23.0dip" android:layout_marginRight="10.0dip" />
+    </FrameLayout>
+    <View android:layout_gravity="bottom" android:background="?dividerColor" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <FrameLayout android:id="@id/enhance_layout" android:background="?AdvertisementEnhanceBackgroundGreen" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size6" android:textColor="?AdvertisementEnhanceTextColor" android:gravity="center_vertical" android:layout_gravity="center|left" android:id="@id/enhance_install_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/install_now" android:includeFontPadding="false" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/enhance_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="?AdvertisementEnhanceArrow" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/enhance_progress" android:visibility="gone" android:layout_width="65.0dip" android:layout_height="23.0dip" android:layout_marginRight="10.0dip" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,48 @@
+{
+    "api": [
+        "api.gifshow.com",
+        "api.ksapisrv.com",
+        "114.118.4.4",
+        "124.243.205.129"
+    ],
+    "upload": [
+        "upload.gifshow.com",
+        "upload.ksapisrv.com",
+        "114.118.4.4",
+        "124.243.205.129"
+    ],
+    "ulog": [
+        "ulog.gifshow.com",
+        "ulog.ksapisrv.com"
+    ],
+    "https": [
+        "apissl.ksapisrv.com",
+        "apissl.gifshow.com"
+    ],
+    "pay": [
+        "api1.kuaishoupay.com",
+        "api2.kuaishoupay.com",
+        "pay.ssl.kuaishou.com"
+    ],
+    "pay_check":[
+        "apissl.ksapisrv.com",
+        "apissl.kuaishou.com",
+        "apissl.gifshow.com"
+    ],
+    "live":[
+        "live.gifshow.com",
+        "live.ksapisrv.com"
+    ],
+    "push":[
+        "push.gifshow.com",
+        "push.ksapisrv.com"
+    ],
+    "ad":[
+        "api.e.kuaishou.com",
+        "api2.e.kuaishou.com"
+    ],
+    "redPackRain":[
+        "live-redpackrain.gifshow.com",
+        "live-redpackrain.ksapisrv.com"
+    ]
+}

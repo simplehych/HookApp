@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:background="@drawable/wallet_base_safekeyboard_six_number_rect_black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/six_circle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.5dip">
+            <RelativeLayout android:id="@id/pwd_warp1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/pwd_iv_1" android:background="@drawable/wallet_base_safekeyboard_six_number_circle_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/ebpay_img" />
+            </RelativeLayout>
+            <View android:background="@color/ebpay_six_number_pwd_cccccc" android:layout_width="@dimen/ebpay_line_width_0.5" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/pwd_warp2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/pwd_iv_2" android:background="@drawable/wallet_base_safekeyboard_six_number_circle_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/ebpay_img" />
+            </RelativeLayout>
+            <View android:background="@color/ebpay_six_number_pwd_cccccc" android:layout_width="@dimen/ebpay_line_width_0.5" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/pwd_warp3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/pwd_iv_3" android:background="@drawable/wallet_base_safekeyboard_six_number_circle_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/ebpay_img" />
+            </RelativeLayout>
+            <View android:background="@color/ebpay_six_number_pwd_cccccc" android:layout_width="@dimen/ebpay_line_width_0.5" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/pwd_warp4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/pwd_iv_4" android:background="@drawable/wallet_base_safekeyboard_six_number_circle_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/ebpay_img" />
+            </RelativeLayout>
+            <View android:background="@color/ebpay_six_number_pwd_cccccc" android:layout_width="@dimen/ebpay_line_width_0.5" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/pwd_warp5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/pwd_iv_5" android:background="@drawable/wallet_base_safekeyboard_six_number_circle_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/ebpay_img" />
+            </RelativeLayout>
+            <View android:background="@color/ebpay_six_number_pwd_cccccc" android:layout_width="@dimen/ebpay_line_width_0.5" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/pwd_warp6" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/pwd_iv_6" android:background="@drawable/wallet_base_safekeyboard_six_number_circle_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/ebpay_img" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.baidu.wallet.base.widget.SafeKeyBoardEditText android:textSize="1.0sp" android:textColor="#000000ff" android:id="@id/pwd_input" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cursorVisible="false" android:maxLength="6" android:inputType="number" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/p_color_white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/dialog_normal_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size1" android:textColor="@color/text_color1_normal" android:gravity="center_horizontal" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="19.0dip" android:lineSpacingExtra="5.0dip" />
+    <View android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50dp">
+        <TextView android:textSize="@dimen/text_size1" android:textColor="@color/text_color2_normal" android:gravity="center" android:id="@id/negative_button" android:background="@drawable/background_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:background="@color/divider_color_grey" android:layout_width="@dimen/divider_width" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/text_size1" android:textColor="@color/p_color_orange" android:gravity="center" android:id="@id/positive_button" android:background="@drawable/background_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="oval"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#4dffffff" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="oval"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#4dffffff" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/camera_button_round_background_dark" />
+</selector>

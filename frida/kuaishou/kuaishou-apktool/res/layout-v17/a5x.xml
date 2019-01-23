@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.tag.common.view.KwaiPullToRefreshContainer android:id="@id/tag_page_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.PullToRefreshGroup android:id="@id/refresh_group" android:background="@android:color/white" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:headerLayout="@layout/a56">
+        <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.constraint.ConstraintLayout android:id="@id/scale_fade_header_part" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/rect_photo_cover_image" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="?actionbarHeight" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <ImageView android:id="@id/rect_photo_control_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/release_icon_preview_l_normal" app:layout_constraintCircle="@id/rect_photo_cover_image" app:layout_constraintCircleAngle="0" app:layout_constraintCircleRadius="0.0dip" />
+                <com.lsjwzh.widget.text.FastTextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_black_color" android:ellipsize="middle" android:gravity="center" android:id="@id/long_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:singleLine="true" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rect_photo_cover_image" app:layout_constraintWidth_percent="0.8" />
+                <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/text_black_light" android:id="@id/photo_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/long_title" />
+            </android.support.constraint.ConstraintLayout>
+            <View android:id="@id/camera_btn_bottom_guide" android:layout_width="fill_parent" android:layout_height="25.0dip" app:layout_constraintTop_toBottomOf="@id/scale_fade_header_part" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/camera_btn_bottom_guide" layout="@layout/similar_tag_layout" />
+            <android.support.constraint.Barrier android:id="@id/tab_barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="similar_tags_layout, camera_btn_bottom_guide" />
+            <include android:id="@id/tab_top_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" app:layout_constraintTop_toBottomOf="@id/tab_barrier" layout="@layout/line_divider_grey" />
+            <android.support.design.widget.TabLayout android:id="@id/tab_layout" app:layout_constraintTop_toBottomOf="@id/tab_top_divider" style="@style/TabLayoutStyle" />
+            <include android:id="@id/tab_bottom_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" app:layout_constraintTop_toBottomOf="@id/tab_layout" layout="@layout/line_divider_grey" />
+            <RelativeLayout android:id="@id/tips_container" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintTop_toBottomOf="@id/tab_bottom_divider" />
+            <com.lsjwzh.widget.multirvcontainer.CoordinateScrollRecyclerView android:id="@id/recycler_view_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tips_container" style="@style/Kwai.Widget.RecyclerView"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.lsjwzh.widget.multirvcontainer.CoordinateScrollRecyclerView android:id="@id/recycler_view_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tips_container" style="@style/Kwai.Widget.RecyclerView"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.design.widget.PullToRefreshGroup>
+    <include layout="@layout/tag_title_layout" />
+    <View android:id="@id/tag_divider_line" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/title_bar_height" app:actionType="sticky" />
+    <com.yxcorp.gifshow.widget.LoadingView android:layout_gravity="bottom" android:id="@id/loading_more" android:layout_width="fill_parent" android:layout_height="wrap_content" app:actionType="sticky" />
+    <include android:id="@id/float_camera_btn" app:actionType="sticky" style="@style/CameraButtonStyle" layout="@layout/camera_button" />
+</com.yxcorp.plugin.tag.common.view.KwaiPullToRefreshContainer>

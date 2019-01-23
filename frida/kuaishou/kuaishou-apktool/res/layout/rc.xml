@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_black_light" android:gravity="center_vertical" android:id="@id/first_letter" android:background="@color/background" android:paddingLeft="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/item_root" android:background="@drawable/bg_list_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/checked_button" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="" android:contentDescription="@string/ok" style="@style/Theme.Widget.SimpleBox" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip">
+            <FrameLayout android:id="@id/avatar_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/vip_badge" android:visibility="gone" android:layout_width="@dimen/list_item_gender_size" android:layout_height="@dimen/list_item_gender_size" android:layout_marginRight="-2.0dip" android:layout_marginBottom="-2.0dip" android:src="@drawable/universal_icon_authenticatede_yellow_s_normal" android:scaleType="centerInside" android:layout_alignRight="@id/avatar_wrapper" android:layout_alignBottom="@id/avatar_wrapper" android:contentDescription="@string/gender" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_16" android:textColor="@color/list_item_black" android:gravity="center|left" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kwai_app_name" android:maxLines="1" style="@style/Theme.Widget.Text.Medium" />
+                <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_14" android:textColor="@color/list_item_black" android:gravity="center|left" android:id="@id/nick_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kwai_app_name" android:maxLines="1" style="@style/Theme.Widget.Text.Medium" />
+                <TextView android:textSize="@dimen/text_size_10" android:textColor="#fff60000" android:gravity="center|left" android:id="@id/latest_used" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/latest_contact" android:maxLines="1" android:drawablePadding="4.0dip" style="@style/Theme.Widget.Text" />
+            </LinearLayout>
+            <View android:id="@id/bottom_divider" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

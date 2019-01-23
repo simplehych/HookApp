@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/guess_question_body" android:background="@drawable/live_guess_dialog_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_default_color" android:layout_gravity="right" android:id="@id/wrong_answer" android:background="@drawable/mark_wrong_answer_background" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_guess_wrong_answer" app:textSizeAdjustable="true" />
+    <View android:id="@id/add_margin" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:id="@id/question_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1." />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:layout_gravity="center_horizontal" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    </LinearLayout>
+    <include layout="@layout/line_divider_grey" />
+    <include layout="@layout/guess_option_statistics" />
+</LinearLayout>

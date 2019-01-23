@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/player" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/texture_view_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yxcorp.widget.SafeTextureView android:id="@id/texture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/blur_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <com.yxcorp.gifshow.widget.SmartScaleTypeImageView android:layout_gravity="center" android:id="@id/poster" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/photo" />
+            <include layout="@layout/photo_detail_lyric_layout" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yxcorp.gifshow.widget.ScaleHelpView android:layout_gravity="center" android:id="@id/mask" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/debug_info_expand_toggle_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:src="@drawable/detail_nav_btn_back_white_normal" android:rotation="90.0" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="#fff7101d" android:id="@id/video_info" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/debug_info_expand_toggle_button" android:layout_alignLeft="@id/debug_info_expand_toggle_button" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/player_controller" android:background="@drawable/detail_progress_bg_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/slide_play_progress_layout_height">
+            <ImageView android:id="@id/player_control_btn" android:paddingLeft="@dimen/margin_large" android:paddingRight="@dimen/margin_large" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/slide_play_detail_play_icon" android:scaleType="center" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/p_color_white" android:gravity="center" android:id="@id/player_current_position" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/slide_play_progress_layout_height" android:text="00:00" />
+            <SeekBar android:id="@id/player_seekbar" android:paddingTop="@dimen/margin_default" android:paddingBottom="@dimen/margin_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:indeterminate="false" android:thumb="@drawable/photo_video_progress_thumb" android:layout_weight="1.0" android:paddingStart="@dimen/dimen_10dp" android:paddingEnd="@dimen/dimen_10dp" style="@style/Theme.Widget.ProgressBar.PhotoVideo.SlidePlay" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/p_color_white" android:gravity="center" android:id="@id/player_duration" android:layout_width="wrap_content" android:layout_height="@dimen/slide_play_progress_layout_height" android:layout_marginRight="@dimen/margin_default" android:minWidth="@dimen/slide_play_progress_layout_height" android:text="00:00" />
+            <ToggleButton android:layout_gravity="center_vertical" android:id="@id/player_lyric_btn" android:background="@drawable/ktv_player_icon_lyric" android:layout_width="@dimen/slide_play_progress_button_size" android:layout_height="@dimen/slide_play_progress_button_size" android:layout_marginRight="@dimen/margin_large" android:textOn="" android:textOff="" android:text="" />
+            <FrameLayout android:id="@id/player_switch_orientation_btn_wrapper" android:visibility="gone" android:layout_width="@dimen/slide_play_progress_layout_button_wrapper" android:layout_height="@dimen/slide_play_progress_layout_height">
+                <ToggleButton android:layout_gravity="center_vertical" android:id="@id/player_switch_orientation_btn" android:background="@drawable/slide_play_detail_icon_switch_orientation_btn" android:layout_width="@dimen/slide_play_progress_button_size" android:layout_height="@dimen/slide_play_progress_button_size" android:layout_marginRight="@dimen/margin_large" android:textOn="" android:textOff="" android:text="" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/kwai_title_default" />
+    <View android:id="@id/photo_detail_back_btn" android:background="@drawable/slide_play_detail_nav_btn_back_white" android:visibility="gone" android:layout_width="@dimen/slide_play_back_size" android:layout_height="@dimen/slide_play_back_size" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:contentDescription="@string/go_back" />
+</RelativeLayout>

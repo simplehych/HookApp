@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textStyle="bold" android:textColor="#b3ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/live_push_summary_tab_text" android:layout_width="wrap_content" android:layout_height="48.5dip" android:singleLine="true" />
+    <View android:layout_gravity="center_horizontal" android:id="@id/live_push_summary_indicator" android:background="@color/p_color_orange" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.5dip" />
+</LinearLayout>

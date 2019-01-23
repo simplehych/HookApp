@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.ReverseDrawingOrderLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <FrameLayout android:id="@id/content_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-1.0dip" />
+</com.yxcorp.gifshow.widget.ReverseDrawingOrderLinearLayout>

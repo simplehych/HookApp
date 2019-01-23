@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/fragment_root" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/cover_mode_switch" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/shoot_icon_puzzle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/text_box" android:paddingTop="30.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView android:id="@id/text_gallery" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView android:id="@id/thumb_list" android:layout_width="wrap_content" android:layout_height="@dimen/cover_editor_thumbnail_height_v3" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" />
+            <com.yxcorp.gifshow.widget.CoverSeekBar android:id="@id/seekBar" android:layout_width="wrap_content" android:layout_height="@dimen/cover_editor_thumbnail_height_v3" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.yxcorp.gifshow.v3.widget.ExpandFoldHelperView android:id="@id/opview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

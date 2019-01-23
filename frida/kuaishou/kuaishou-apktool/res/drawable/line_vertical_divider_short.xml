@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/surface_color1_normal" />
+            <size android:height="@dimen/default_divider_size" />
+        </shape>
+    </item>
+    <item android:left="@dimen/margin_default">
+        <shape>
+            <solid android:color="@color/list_divider_default_color" />
+            <size android:height="@dimen/default_divider_size" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.live.widget.LivePlayTextureView android:id="@id/live_closed_recommend_play_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/thumb1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:roundedCornerRadius="5.0dip" />
+    <ImageView android:id="@id/image_mark1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_narrow" android:layout_marginTop="@dimen/margin_narrow" android:src="@drawable/feed_tag_live_orange_normal" />
+    <View android:id="@id/live_close_recommend_bottom_shadow_view" android:background="@drawable/live_recommend_item_small_background" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_alignParentBottom="true" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/user_avatar" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="@dimen/margin_narrow" android:layout_marginBottom="6.0dip" android:layout_alignParentBottom="true" app:roundAsCircle="true" app:roundingBorderWidth="0.6600001dip" app:roundingBorderColor="@color/text_color_white" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_default_color" android:ellipsize="end" android:id="@id/user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_narrow" android:layout_marginRight="@dimen/margin_narrow" android:layout_marginBottom="6.0dip" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/user_avatar" android:layout_alignParentBottom="true" />
+</RelativeLayout>

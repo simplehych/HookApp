@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.NoticeView android:layout_width="fill_parent" android:layout_height="wrap_content" app:content_padding="@dimen/private_msg_window_base_padding" app:content_height="@dimen/private_msg_window_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.ScrollViewEx android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/anim_layout" android:background="@color/background_light" android:padding="@dimen/private_msg_window_base_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar_iv" android:layout_width="@dimen/private_msg_window_avatar_size" android:layout_height="@dimen/private_msg_window_avatar_size" app:placeholderImage="@drawable/account_authenticate_area" app:roundAsCircle="true" />
+                <TextView android:textSize="@dimen/private_msg_window_txt_size" android:textColor="@color/text_black_color" android:ellipsize="end" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/private_msg_window_item_padding" android:maxLines="1" android:layout_toRightOf="@id/avatar_iv" />
+                <TextView android:textSize="@dimen/private_msg_window_txt_size" android:textColor="@color/text_black_light" android:ellipsize="end" android:id="@id/content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/title_tv" android:layout_alignLeft="@id/title_tv" />
+            </RelativeLayout>
+            <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="@dimen/private_msg_window_height" />
+        </LinearLayout>
+    </com.yxcorp.gifshow.widget.ScrollViewEx>
+</com.yxcorp.gifshow.widget.NoticeView>

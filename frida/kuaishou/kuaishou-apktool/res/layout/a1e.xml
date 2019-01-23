@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/intensity_layout" android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip">
+        <com.yxcorp.widget.KwaiSeekBar android:id="@id/intensity_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Theme.Widget.SeekBar.Kwai" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="12.0dip">
+        <ImageView android:id="@id/cancel_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/nav_btn_close_black" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ok_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/nav_btn_done_black" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

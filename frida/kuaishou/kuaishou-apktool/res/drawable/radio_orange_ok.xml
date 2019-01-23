@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_checked="false" android:drawable="@drawable/setting_multiselect_select_normal" />
+    <item android:state_focused="true" android:state_checked="true" android:drawable="@drawable/setting_multiselect_select_confirm" />
+    <item android:state_checked="false" android:drawable="@drawable/setting_multiselect_select_normal" />
+    <item android:state_checked="true" android:drawable="@drawable/setting_multiselect_select_confirm" />
+</selector>

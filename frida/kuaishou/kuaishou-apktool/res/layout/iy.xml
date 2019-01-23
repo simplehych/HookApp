@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/background_dark" android:paddingTop="25.0dip" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff303030" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/new_user_reco_tag_title" />
+    <android.support.v7.widget.RecyclerView android:id="@id/card_content" android:paddingTop="17.0dip" android:paddingBottom="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foregroundGravity="center_horizontal" />
+    <CheckedTextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/card_btn" android:background="@drawable/home_card_finish_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/new_user_reco_tag_done_title" />
+</LinearLayout>

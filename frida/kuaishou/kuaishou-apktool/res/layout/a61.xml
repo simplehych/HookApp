@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/background_list_selector" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/default_link_color" android:gravity="center" android:id="@id/clear_history_button" android:layout_width="wrap_content" android:layout_height="49.0dip" android:text="@string/clear_history" />
+    <View android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

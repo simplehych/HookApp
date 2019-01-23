@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.detail.slideplay.NestedChildRelativeLayout android:gravity="center_vertical" android:paddingBottom="@dimen/slide_play_bottom_edit_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/comment_tips_img" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginBottom="19.5dip" android:src="@drawable/slide_play_tips_empty_comment" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="#99ffffff" android:id="@id/comment_tips_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/comment_tips_img" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@id/comment_tips_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" style="@style/Theme.Widget.Loading.Small" />
+</com.yxcorp.gifshow.detail.slideplay.NestedChildRelativeLayout>

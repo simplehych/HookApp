@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:id="@android:id/title" android:background="@drawable/tips_empty_people" android:layout_width="@dimen/follow_empty_icon_width" android:layout_height="@dimen/follow_empty_icon_width" />
+        <TextView android:textSize="@dimen/follow_empty_title_text_size" android:textColor="@color/text_color1_normal" android:gravity="center" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/follow_empty_margin_top" android:text="@string/explore_friend_welcome" />
+        <TextView android:textSize="@dimen/follow_empty_title_prompt_size" android:textColor="@color/text_color3_normal" android:id="@android:id/title" android:paddingLeft="54.0dip" android:paddingRight="54.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/follow_empty_margin_top" android:text="@string/explore_friend_post_tip" />
+        <TextView android:gravity="center" android:id="@id/recommend_friends" android:layout_width="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginTop="@dimen/follow_empty_recommend_margin_top" android:layout_marginRight="40.0dip" android:text="@string/explore_friend_follow_interested_people" style="@style/Kwai.Widget.Button.B2" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/guide_card_layout" android:background="@color/background_grey" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:paddingLeft="10.0dip" android:paddingTop="@dimen/follow_empty_card_layout_margin" android:paddingBottom="@dimen/follow_empty_card_layout_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_with_kuaishou" />
+        <android.support.v7.widget.RecyclerView android:id="@id/guide_card_list" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    </LinearLayout>
+</LinearLayout>

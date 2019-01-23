@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_root" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/platform_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:src="@drawable/waterflow_icon_interested_address" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/platform_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_size2" android:textColor="@color/text_color_black_fair" android:id="@id/platform_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/explore_friend_connect_contact" />
+        <TextView android:textSize="@dimen/text_size4" android:textColor="@color/text_color15_normal" android:id="@id/platform_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/explore_friend_connect_contact" />
+    </LinearLayout>
+    <Button android:id="@id/platform_connect" android:layout_width="wrap_content" android:layout_marginRight="@dimen/margin_default" android:minWidth="@dimen/common_follow_btn_width" android:text="@string/explore_friend_connect" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Kwai.Widget.Button.B14" />
+</RelativeLayout>

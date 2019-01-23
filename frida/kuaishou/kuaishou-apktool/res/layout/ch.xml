@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/camera_magic_banner_layout" android:visibility="invisible" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/camera_magic_banner_image" android:clickable="true" android:layout_width="75.0dip" android:layout_height="75.0dip" fresco:actualImageScaleType="fitXY" />
+    <ImageButton android:id="@id/camera_magic_banner_close_btn" android:background="@drawable/button_close_camera_magic_banner" android:visibility="invisible" android:clickable="true" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_toRightOf="@id/camera_magic_banner_image" />
+</RelativeLayout>

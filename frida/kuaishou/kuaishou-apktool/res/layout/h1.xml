@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#99000000" android:layout_width="fill_parent" android:layout_height="175.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.widget.CustomFadeEdgeRecyclerView android:id="@id/thumbs_recycler_view" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:layout_alignParentTop="true" />
+    <com.yxcorp.widget.CustomFadeEdgeRecyclerView android:id="@id/calibration_view" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/thumbs_recycler_view" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/indicator" android:layout_width="3.0dip" android:layout_height="125.5dip" android:layout_marginTop="9.5dip" android:src="@drawable/edit_clip_progress_indicator" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/play_btn" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/edit_clip_play_btn" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/pause_btn" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/edit_clip_pause_btn" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/undo_btn" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/edit_clip_undo_btn" />
+        </FrameLayout>
+        <ImageView android:id="@id/cut_btn" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/edit_clip_cut_btn" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/delete_btn" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/edit_clip_delete_btn" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_vertical" android:background="?PhotoPanelSummaryTextColor" android:layout_width="1.0dip" android:layout_height="10.0dip" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="?PhotoPanelSummaryTextColor" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/visible_to_fans" android:paddingLeft="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="190.0dip" android:text="@string/only_visible_to_fans" android:maxLines="1" android:includeFontPadding="false" />
+</LinearLayout>

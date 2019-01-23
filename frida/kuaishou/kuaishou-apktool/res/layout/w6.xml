@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/red_button_normal_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/default_link_color" android:gravity="center" android:layout_gravity="top" android:background="@drawable/background_list_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/clear_history" />
+    <View style="@style/Theme.Widget.DefaultDividerVertical" />
+</LinearLayout>

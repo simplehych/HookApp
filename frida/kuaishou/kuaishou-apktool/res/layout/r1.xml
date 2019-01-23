@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/player_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/player_operate_layout" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/photo_detail_video_player" />
+        <ImageView android:id="@id/play_prompt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/photo_action_play" android:scaleType="centerInside" android:layout_alignTop="@id/player" android:layout_alignBottom="@id/player" />
+        <ImageView android:id="@id/like_image" android:visibility="invisible" android:layout_width="100.0dip" android:layout_height="90.0dip" android:src="@drawable/detail_icon_like_doublepressed" android:scaleType="fitCenter" android:layout_centerInParent="true" android:contentDescription="@string/liked" />
+        <FrameLayout android:id="@id/like_anim_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/player" android:layout_alignBottom="@id/player" />
+        <FrameLayout android:id="@id/fl_cover_player_tag_group_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_alignBottom="@id/player" android:layout_alignParentLeft="true">
+            <include layout="@layout/photo_label_group" />
+        </FrameLayout>
+        <include android:visibility="gone" android:layout_width="125.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:translationX="130.0dip" layout="@layout/detail_ease_in_tag" />
+        <include android:id="@id/photo_ad_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/player" android:layout_alignBottom="@id/player" layout="@layout/list_item_photo_advertisement_guide" />
+        <RelativeLayout android:id="@id/ad_floating_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/player" android:layout_alignTop="@id/player" android:layout_alignRight="@id/player" android:layout_alignBottom="@id/player" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_default_color" android:id="@id/fans_top_data_tips" android:background="@drawable/bubble_text_view_background" android:paddingLeft="9.0dip" android:paddingTop="6.0dip" android:paddingRight="9.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/photo_fans_top_tips_margin" android:layout_marginTop="-30.0dip" android:layout_marginRight="@dimen/photo_fans_top_tips_margin" android:text="@string/fanstop_data_promoting" />
+    <ImageView android:id="@id/fans_top_data_tips_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="85.0dip" android:layout_marginBottom="-7.0dip" android:src="@drawable/toast_bubbles_triangle_down_black" />
+    <FrameLayout android:id="@id/ad_dummy_action_bar_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/detail_player_message_layout" />
+</LinearLayout>

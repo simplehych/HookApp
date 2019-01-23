@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/withdraw_view" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.lsjwzh.widget.text.FastTextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_color" android:gravity="center_vertical" android:id="@id/provider_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_withdraw_edit_text" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="25.0sp" android:textColor="@color/text_black_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" />
+            <FrameLayout android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_hint_black_color" android:layout_gravity="center_vertical" android:id="@id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.yxcorp.gifshow.widget.EmojiEditText android:textSize="25.0sp" android:textColor="@color/text_black_color" android:id="@id/withdraw_amount" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="10" android:inputType="number" android:textCursorDrawable="@drawable/icon_withdraw_cursor" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.5dip">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_light" android:id="@id/withdraw_remaining" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/withdraw_remaining" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff576b95" android:id="@id/all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/withdraw_action" />
+        </LinearLayout>
+        <Button android:enabled="false" android:id="@id/withdraw_button" android:layout_width="fill_parent" android:layout_marginTop="36.0dip" android:text="@string/withdraw" style="@style/Kwai.Widget.Button.B2" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_light" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/funds_to_account_in_24hours" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff576b95" android:layout_gravity="bottom|center" android:id="@id/unbind" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/unbind_alipay" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bind_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="121.5dip" android:src="@drawable/tips_empty_wechat" android:scaleType="centerInside" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.5dip" android:text="@string/bind_wechat" />
+        <TextView android:id="@id/bind" android:layout_width="250.0dip" android:layout_marginTop="25.0dip" android:text="@string/goto_bind" style="@style/Kwai.Widget.Button.B2" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="#ffababab" android:textColorLink="@color/default_link_color" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/bind_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:maxLines="1" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

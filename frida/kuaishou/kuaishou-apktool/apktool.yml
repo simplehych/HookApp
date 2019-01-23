@@ -1,0 +1,76 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: kuaishou.apk
+compressionType: false
+doNotCompress:
+- assets/anim_fs.glsl.ex
+- assets/anim_vs.glsl.ex
+- assets/animation.glsl.ex
+- assets/animation_fs.glsl.ex
+- assets/animation_vs.glsl.ex
+- assets/ar_env_particle_fs.glsl.ex
+- assets/ar_env_particle_vs.glsl.ex
+- assets/ar_env_skybox_fs.glsl.ex
+- assets/ar_env_skybox_vs.glsl.ex
+- assets/blend_fs.glsl.ex
+- assets/blend_vs.glsl.ex
+- assets/delay_fs.glsl.ex
+- assets/delay_vs.glsl.ex
+- assets/eye.glsl.ex
+- properties
+- assets/fsaa_fs.glsl.ex
+- assets/lookup_mask_fs.glsl.ex
+- assets/lookup_mask_vs.glsl.ex
+- assets/makeup_fs.glsl.ex
+- assets/makeup_vs.glsl.ex
+- assets/paint_fs.glsl.ex
+- assets/paint_vs.glsl.ex
+- assets/pixel_fs.glsl.ex
+- assets/searchlight_fs.glsl.ex
+- assets/stretch_fs.glsl.ex
+- assets/stretch_vs.glsl.ex
+- assets/swap_fs.glsl.ex
+- assets/swap_pic_fs.glsl.ex
+- assets/swap_pic_vs.glsl.ex
+- assets/swap_same_fs.glsl.ex
+- assets/swap_same_vs.glsl.ex
+- assets/swap_vs.glsl.ex
+- assets/tex_merge_fs.glsl.ex
+- assets/tex_merge_vs.glsl.ex
+- mf
+- assets/blend/anim_colorburn.glsl.ex
+- assets/blend/anim_colordodge.glsl.ex
+- assets/blend/anim_darken.glsl.ex
+- assets/blend/anim_hardlight.glsl.ex
+- assets/blend/anim_lighten.glsl.ex
+- assets/blend/anim_linearburn.glsl.ex
+- assets/blend/anim_multiply.glsl.ex
+- assets/blend/anim_normal.glsl.ex
+- assets/blend/anim_overlay.glsl.ex
+- assets/blend/anim_screen.glsl.ex
+- assets/blend/anim_softlight.glsl.ex
+- rpnproto
+- webp
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '23'
+sharedLibrary: false
+unknownFiles:
+  LICENSE_OFL: '8'
+  LICENSE_UNICODE: '8'
+  androidsupportmultidexversion.txt: '0'
+  git.properties: '8'
+  messages.properties: '8'
+  miui_push_version: '0'
+  push_version: '0'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.1
+versionInfo:
+  versionCode: '7751'
+  versionName: 6.0.0.7751

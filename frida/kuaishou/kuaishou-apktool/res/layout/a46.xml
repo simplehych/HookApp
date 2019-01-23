@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background_round_corner_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/dialog_cancel_image_button" android:background="@null" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_alert_dialog_close_button" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:src="@drawable/authority_boot_follow_authorization_img" android:scaleType="fitStart" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="#ff303030" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/guide_notification_push_open_title" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffababab" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/sub_title" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/guide_notification_push_open_dialog_sub_title" />
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/push_open_button" android:layout_width="230.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="27.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="27.0dip" android:text="@string/guide_notification_push_open" style="@style/Kwai.Widget.Button.B2" />
+</LinearLayout>

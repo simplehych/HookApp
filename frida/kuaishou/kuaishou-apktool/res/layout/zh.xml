@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.SmartScaleTypeImageView android:layout_gravity="center" android:id="@id/music_station_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/photo" />
+    <View android:id="@id/music_station_top_shadow" android:layout_width="fill_parent" android:layout_height="87.0dip" android:layout_alignParentTop="true" />
+    <View android:background="@drawable/music_station_bottom_background" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/music_station_top" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="8.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/music_station_icon" android:layout_width="137.0dip" android:layout_height="46.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/music_station_icon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/music_station_back" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/music_station_close_icon" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/music_station_music_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginBottom="90.0dip" android:src="@drawable/music_station_music_icon" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#e6ffffff" android:id="@id/music_station_music_name" android:layout_width="wrap_content" android:layout_height="21.0dip" android:layout_marginBottom="90.0dip" android:layout_toRightOf="@id/music_station_music_icon" android:layout_alignParentBottom="true" />
+    <com.yxcorp.gifshow.detail.view.SlidePlayAlphaRelativeLayout android:id="@id/avatar_background" android:layout_width="45.0dip" android:layout_height="57.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="214.5dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@null" android:scaleType="fitXY" android:layout_centerInParent="true" android:layout_centerVertical="true" android:contentDescription="@string/avatar" app:roundAsCircle="true" />
+    </com.yxcorp.gifshow.detail.view.SlidePlayAlphaRelativeLayout>
+    <View android:gravity="center" android:id="@id/follow" android:background="@drawable/music_station_follow_icon" android:layout_width="30.0dip" android:layout_height="18.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="216.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/like_button" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_marginRight="13.5dip" android:layout_marginBottom="149.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <View android:id="@id/like_icon" android:background="@drawable/slide_play_bottom_like_icon" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_centerInParent="true" />
+    </LinearLayout>
+    <com.yxcorp.gifshow.detail.musicstation.widget.MusicStationDiskLayout android:id="@id/music_station_disk_layout" android:layout_width="113.0dip" android:layout_height="113.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="55.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/music_station_loading" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/spinner_0" android:scaleType="centerInside" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.HorizontalSlideView android:id="@id/sliding_layout" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/item_root" android:background="@drawable/live_music_item" android:paddingLeft="10.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:textColor="@color/music_play_name_color" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:singleLine="true" android:layout_toLeftOf="@id/music_button" android:layout_alignParentLeft="true" style="@style/Theme.Widget.Text" />
+                <TextView android:id="@id/tag" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/music_part" android:singleLine="true" android:layout_below="@id/name" style="@style/Kwai.Widget.Tag.T2" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/music_play_desc_color" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" android:layout_toLeftOf="@id/music_button" android:layout_toRightOf="@id/tag" android:layout_below="@id/name" android:layout_alignWithParentIfMissing="true" />
+                <ImageView android:id="@id/music_playing_image" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:scaleType="centerInside" android:layout_toRightOf="@id/name" />
+                <com.yxcorp.plugin.live.music.LiveMusicButton android:textSize="@dimen/text_size_12" android:textColor="@color/text_grey_color" android:gravity="center" android:id="@id/music_button" android:background="@drawable/button_round_corner_grey_line_transparent_normal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minWidth="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/delete_button" android:background="@color/slide_menu_bg_red" android:layout_width="70.0dip" android:layout_height="fill_parent" android:src="@drawable/detail_comment_btn_delete" android:scaleType="centerInside" android:contentDescription="@string/ok_for_delete" />
+        </LinearLayout>
+    </com.yxcorp.gifshow.widget.HorizontalSlideView>
+</LinearLayout>

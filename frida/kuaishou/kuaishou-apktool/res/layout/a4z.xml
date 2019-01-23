@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.camera.record.speed.ControlSpeedLayout android:id="@id/control_speed_layout" android:background="@drawable/record_speed_background" android:layout_width="275.0dip" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/slide_indicator" android:background="@drawable/control_speed_btn_v2" android:layout_width="55.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/slide_button_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/speed_point_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0dip" android:textColor="@color/record_speed_text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_speed_very_slow_0dot33x" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/speed_point_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0dip" android:textColor="@color/record_speed_text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_speed_slow" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/speed_point_3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0dip" android:textColor="@color/record_speed_text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_speed_normal" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/speed_point_4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0dip" android:textColor="@color/record_speed_text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_speed_fast" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/speed_point_5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0dip" android:textColor="@color/record_speed_text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_speed_very_fast_3x" />
+        </FrameLayout>
+    </LinearLayout>
+</com.yxcorp.gifshow.camera.record.speed.ControlSpeedLayout>

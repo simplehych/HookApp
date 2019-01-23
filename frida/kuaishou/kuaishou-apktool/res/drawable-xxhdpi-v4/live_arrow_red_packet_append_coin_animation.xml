@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_0" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_1" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_2" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_3" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_4" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_5" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_6" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_7" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_8" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_9" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_10" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_11" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_12" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_13" />
+    <item android:duration="60" android:drawable="@drawable/live_arrow_red_packet_light_points_14" />
+</animation-list>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/white" />
+    <item android:gravity="center|top" android:id="@id/center_icon" android:height="70.0dip" android:width="70.0dip" android:drawable="@drawable/welcome_img_logo" android:top="180.0dip" />
+    <item android:gravity="bottom|center" android:id="@id/bottom_icon" android:height="10.0dip" android:width="125.0dip" android:drawable="@drawable/welcome_img_words" android:bottom="44.0dip" />
+</layer-list>

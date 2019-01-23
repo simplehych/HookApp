@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:paddingBottom="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:background="@null" android:padding="0.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" android:contentDescription="@string/message" app:roundAsCircle="true" />
+    <View android:id="@id/mask" android:background="@drawable/background_head_mask" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+</RelativeLayout>

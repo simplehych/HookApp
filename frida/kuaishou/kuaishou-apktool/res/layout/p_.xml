@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="50.0dip" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/icon" android:background="@drawable/makeup_filter_item_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:actualImageScaleType="fitCenter" app:roundAsCircle="true" />
+    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_12" android:textColor="@color/filter_list_item_color" android:gravity="center" android:id="@id/name" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_below="@id/icon" app:textSizeAdjustable="true" app:textSizeAdjustWithHeight="false" />
+    <ImageView android:id="@id/undownload_flag" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/camera_magic_emoji_undownload" android:layout_alignRight="@id/icon" android:layout_alignBottom="@id/icon" />
+    <com.yxcorp.gifshow.widget.DownloadProgressBar android:id="@id/download_progressbar" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="23.0dip" android:max="100" android:indeterminate="false" android:indeterminateOnly="false" android:layout_centerHorizontal="true" />
+</RelativeLayout>

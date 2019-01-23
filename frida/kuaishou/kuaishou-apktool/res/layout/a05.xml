@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_edit_info_title_layout" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/edit_user_info_input_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/dimen_30dp" android:layout_marginRight="@dimen/margin_large">
+        <com.yxcorp.gifshow.widget.EmojiEditText android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:textColorHint="@color/text_hint_black_color" android:id="@id/input" android:background="@null" android:paddingLeft="@dimen/dimen_20dp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/input_nick_name" android:maxLength="12" android:layout_weight="1.0" android:textCursorDrawable="@drawable/user_info_edit_cursor" />
+        <FrameLayout android:id="@id/clear" android:paddingLeft="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_clear" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_search_hint_color" android:layout_gravity="center|right" android:id="@id/text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_20dp" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color15_normal" android:id="@id/hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_35dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_35dp" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.profile.widget.ProfileHeaderViewPager android:id="@id/background" android:layout_width="fill_parent" android:layout_height="@dimen/user_background_height" />
+    <RelativeLayout android:id="@id/profile_indicator_layout" android:background="@drawable/profile_cover_indicator_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/background">
+        <com.yxcorp.gifshow.profile.widget.ProfilePagerIndicator android:id="@id/profile_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="6.0dip" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_10dp" android:layout_alignParentRight="true" app:itemMargin="4.0dip" app:normalColor="@color/translucent_40_white" app:selectedColor="@color/background_light" />
+    </RelativeLayout>
+</RelativeLayout>

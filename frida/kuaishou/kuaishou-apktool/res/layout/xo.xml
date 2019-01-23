@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_root" android:layout_width="fill_parent" android:layout_height="?actionbarHeight" layout="@layout/kwai_title_default" />
+    <View android:id="@id/divider_line" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center_horizontal" android:id="@id/inviter_avatar" android:background="@null" android:padding="0.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="35.0dip" android:scaleType="fitXY" app:roundAsCircle="true" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/actionbar_enabled_gray_color" android:id="@id/inviter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/actionbar_enabled_gray_color" android:id="@id/invite_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/message_light_grey" android:id="@id/invite_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" />
+            <View android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="25.0dip" />
+            <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView android:paddingTop="20.0dip" android:layout_height="wrap_content" app:maxHeight="150.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/Kwai.Widget.RecyclerView" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/approve" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/margin_default" android:layout_marginTop="45.0dip" android:layout_marginRight="@dimen/margin_default" android:text="@string/message_confirm_approve_invite" style="@style/Kwai.Widget.Button.B2" />
+            <com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout android:layout_height="0.0dip" style="@style/Kwai.Widget.RefreshLayout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

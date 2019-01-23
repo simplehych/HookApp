@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.ImageViewRatioExtension android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/login_bg_cover" android:scaleType="centerCrop" android:contentDescription="@string/background" ratioimage:ratio="0.841121" xmlns:ratioimage="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/kwai_title_default" />
+        <com.yxcorp.gifshow.widget.KeyboardListenView android:id="@id/keybord_listen_view" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="158.0dip" />
+        <ScrollView android:id="@id/scrollView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/title_bar_height" android:overScrollMode="never">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="320.0dip" android:layout_marginTop="110.0dip" />
+                <FrameLayout android:id="@id/header_layout" android:background="@drawable/background_circle" android:layout_width="88.0dip" android:layout_height="88.0dip" android:layout_marginTop="66.0dip" android:layout_centerHorizontal="true" android:onClick="onClick">
+                    <com.yxcorp.gifshow.widget.RoundedImageViewWithForeground android:id="@id/avatar" android:padding="4.0dip" android:layout_width="88.0dip" android:layout_height="88.0dip" android:src="@drawable/register_avatar_btn_image" android:contentDescription="@string/avatar" />
+                </FrameLayout>
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_lint_color" android:gravity="center" android:id="@id/set_avatar_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="@dimen/margin_default" android:text="@string/user_info_set_avatar" android:layout_below="@id/header_layout" />
+                <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/set_avatar_tv" />
+                <View android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="@dimen/login_line_divider_size" android:layout_below="@id/container" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="#ffd6d6d6" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/protocol_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="76.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="76.0dip" android:layout_marginBottom="10.0dip" android:text="@string/protocol_info" android:layout_below="@id/container" />
+            </RelativeLayout>
+        </ScrollView>
+    </FrameLayout>
+</RelativeLayout>

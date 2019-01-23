@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="33.0dip" android:layout_height="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center" android:id="@id/avatar" android:layout_width="33.0dip" android:layout_height="33.0dip" app:roundAsCircle="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <include layout="@layout/live_audience_coin_text_view" />
+</FrameLayout>

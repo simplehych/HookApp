@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bd_wallet_contact_name_width">100.0dip</dimen>
+    <dimen name="bubble_edit_blue_red_blue_orange_banner_max_width">278.0dip</dimen>
+    <dimen name="bubble_edit_blue_red_blue_orange_banner_width">280.0dip</dimen>
+    <dimen name="bubble_edit_cube_text_banner_max_width">240.0dip</dimen>
+    <dimen name="bubble_edit_cube_text_left_right_padding">31.0dip</dimen>
+</resources>

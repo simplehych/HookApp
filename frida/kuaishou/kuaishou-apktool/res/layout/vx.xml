@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/live_wish_list_pendant_container" android:background="@drawable/live_bg_wish_list_broadcast" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="25.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/live_icon_wish_m_normal" android:scaleType="centerCrop" />
+    <ViewFlipper android:id="@id/live_wish_list_filpper_view" android:paddingLeft="5.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:inAnimation="@anim/slide_in_from_bottom" android:outAnimation="@anim/slide_out_to_top" android:flipInterval="2500" android:autoStart="true" />
+</LinearLayout>

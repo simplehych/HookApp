@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/list_item_black" android:gravity="center" android:layout_gravity="center" android:id="@id/message_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/live_dialog_default_padding" android:layout_marginTop="@dimen/live_share_platform_image_size" android:layout_marginRight="@dimen/live_dialog_default_padding" android:layout_marginBottom="@dimen/live_share_platform_image_size" android:includeFontPadding="false" />
+</merge>

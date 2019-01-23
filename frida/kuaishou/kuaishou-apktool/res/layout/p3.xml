@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_root" android:background="@drawable/background_list_selector" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/checked_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_default" android:src="@drawable/universal_icon_check_m_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" android:layout_toLeftOf="@id/checked_iv">
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_15" android:textColor="@color/list_item_black" android:ellipsize="end" android:id="@id/name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Theme.Widget.Text" />
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_12" android:ellipsize="end" android:id="@id/address_tv" android:paddingTop="6.0dip" android:visibility="gone" android:singleLine="true" style="@style/Theme.ListItemDetail" />
+    </LinearLayout>
+</RelativeLayout>

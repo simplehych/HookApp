@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/player_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" app:placeholderImage="@drawable/placeholder" app:roundedCornerRadius="3.0dip" />
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/live_mark" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/waterflow_icon_live_normal" />
+</FrameLayout>

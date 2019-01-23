@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/touch_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/live_beauty_filter_category_list" android:layout_alignParentTop="true" />
+    <android.support.v7.widget.RecyclerView android:id="@id/live_beauty_filter_category_list" android:background="@color/translucent_50_black" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_alignParentBottom="true" style="@style/Kwai.Widget.RecyclerView" />
+    <com.yxcorp.gifshow.camera.record.magic.beautify.BeautifyFilterConfigView android:id="@id/live_beauty_filter_config_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

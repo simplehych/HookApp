@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.pk.widget.LivePkPeerInfoView android:orientation="horizontal" android:paddingLeft="8.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="22.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lsjwzh.widget.text.FastTextView android:textSize="@dimen/text_size_10" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/pk_peer_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:maxLines="1" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center_vertical" android:id="@id/pk_peer_avatar" android:background="@drawable/background_purple_circle" android:padding="1.0dip" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/profile_btn_avatar_secret" avatar:roundAsCircle="true" xmlns:avatar="http://schemas.android.com/apk/res-auto" />
+</com.yxcorp.plugin.pk.widget.LivePkPeerInfoView>

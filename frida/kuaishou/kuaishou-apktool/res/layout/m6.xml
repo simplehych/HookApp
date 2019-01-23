@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:layout_width="@dimen/share_token_gallery_photo_size2" android:layout_height="@dimen/share_token_gallery_photo_size2" android:scaleType="centerCrop" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:layout_width="@dimen/share_token_gallery_photo_size2" android:layout_height="@dimen/share_token_gallery_photo_size2" android:layout_marginLeft="@dimen/share_token_gallery_photo_margin" android:scaleType="centerCrop" />
+</LinearLayout>

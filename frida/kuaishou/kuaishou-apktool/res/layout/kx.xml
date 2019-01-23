@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ktv_record_song_progress_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center|top" android:id="@id/ktv_song_progress" android:layout_width="fill_parent" android:layout_height="2.0dip" android:maxHeight="2.0dip" android:indeterminate="false" android:progressDrawable="@drawable/ktv_record_song_progressbar" android:minHeight="2.0dip" style="@style/Theme.Widget.ProgressBar.Thin" />
+    <RelativeLayout android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/ktv_song_progress">
+        <ImageView android:id="@id/ktv_song_player_status_icon" android:layout_width="12.0dip" android:layout_height="12.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@id/ktv_song_player_status_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/ktv_song_player_status_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/ktv_song_player_current_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="00:00" android:layout_toRightOf="@id/ktv_song_player_status_btn" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/ktv_song_player_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

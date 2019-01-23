@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar3" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="30.0dip" android:scaleType="fitXY" android:contentDescription="@string/avatar" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1.0dip" fresco:roundingBorderColor="@color/p_color_white" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar2" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:scaleType="fitXY" android:contentDescription="@string/avatar" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1.0dip" fresco:roundingBorderColor="@color/p_color_white" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar1" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitXY" android:contentDescription="@string/avatar" fresco:roundAsCircle="true" fresco:roundingBorderWidth="1.0dip" fresco:roundingBorderColor="@color/p_color_white" />
+</FrameLayout>

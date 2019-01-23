@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/moment_op_container" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_praise_parent_height" android:layout_marginRight="@dimen/profile_moment_aggregation_praise_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color15_normal" android:gravity="center_vertical" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/like" android:layout_width="@dimen/profile_moment_praise_size" android:layout_height="@dimen/profile_moment_praise_size" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/profile_moment_praise_comment_margin_right" android:src="@drawable/profile_moment_comment" android:layout_toLeftOf="@id/like" android:layout_centerVertical="true" />
+</RelativeLayout>

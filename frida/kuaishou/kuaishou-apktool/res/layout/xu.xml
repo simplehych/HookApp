@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_image_text_text_msg" />
+    <include layout="@layout/line_divider_grey" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_15" android:textColor="#ff303030" android:gravity="start|center|top" android:id="@id/desc" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="25.0dip" android:paddingRight="@dimen/dimen_15dp" android:paddingBottom="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Theme.Widget.Text" />
+</LinearLayout>

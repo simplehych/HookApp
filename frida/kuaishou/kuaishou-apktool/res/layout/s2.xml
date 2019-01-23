@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.SquareChildLinearLayout android:orientation="horizontal" android:id="@id/photo_list_layout" android:paddingLeft="70.0dip" android:paddingRight="@dimen/margin_default" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:sll_item_margin="@dimen/margin_narrow" app:sll_item_count="3" />
+</merge>

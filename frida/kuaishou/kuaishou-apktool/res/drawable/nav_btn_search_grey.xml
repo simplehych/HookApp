@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/nav_icon_search_grey_pressed" />
+    </item>
+    <item android:drawable="@drawable/nav_icon_search_grey_normal" />
+</selector>

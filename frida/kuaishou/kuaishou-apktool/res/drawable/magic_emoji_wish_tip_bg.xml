@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/magic_emoji_wish_tip_start_color" android:endColor="@color/magic_emoji_wish_tip_end_color" />
+    <corners android:radius="50.0dip" />
+</shape>

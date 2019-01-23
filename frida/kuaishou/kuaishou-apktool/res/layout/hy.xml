@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/image_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@color/translucent_60_black" style="@style/Theme.Navigator">
+            <ImageButton android:id="@id/left_btn" android:src="@drawable/close_btn_selector" android:layout_alignParentLeft="true" android:contentDescription="@string/go_back" style="@style/Theme.Navigator.ImageButton" />
+            <TextView android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pick_stranger" android:singleLine="true" android:layout_centerInParent="true" style="@style/Theme.Navigator.Title" />
+            <ImageButton android:id="@id/right_btn" android:background="@drawable/filter_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/translucent_60_black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/match_animation_view" android:layout_width="fill_parent" android:layout_height="375.0dip" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/translucent_50_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/start_pick_tip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+            <Button android:textSize="@dimen/text_size_16" android:textColor="@color/text_white_color_selector" android:layout_gravity="center_horizontal" android:id="@id/start_pick_btn" android:background="@drawable/button_round_corner_white_50" android:layout_width="167.5dip" android:layout_height="40.0dip" android:layout_marginTop="15.0dip" android:text="@string/pick_stranger" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

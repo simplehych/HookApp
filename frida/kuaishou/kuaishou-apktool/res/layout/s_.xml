@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/preview_wrapper" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/album_img_takephoto_xxxl_default" android:contentDescription="@string/preview" />
+        <ImageView android:id="@id/star_iv" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginTop="0.0dip" android:src="@drawable/star_shining" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="#ffffffff" android:id="@id/take_picture_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/take_photo" android:layout_below="@id/star_iv" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/checked_iv" android:background="@null" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/button_delete" android:scaleType="fitXY" android:contentDescription="@string/remove" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/video_marker" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/gallery_ic_movie" android:scaleType="fitCenter" android:contentDescription="@string/video" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/background_light" android:gravity="center|right" android:id="@id/label" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:text="@string/kwai_app_name" android:shadowColor="#5e000000" android:shadowRadius="1.0" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:id="@id/disable_mask" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/preview" />
+    </RelativeLayout>
+</LinearLayout>

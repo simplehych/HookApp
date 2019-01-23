@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/slide_play_photo_detail_video_player" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/slide_play_pause_bottom_margin" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/slide_play_play_pause_layout" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/slide_play_progress_layout" />
+    <ViewStub android:id="@id/share_container" android:visibility="gone" android:layout="@layout/mq" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginTop="12.5dip" android:layout_centerHorizontal="true" />
+    <include layout="@layout/slide_play_bottom_photo_controller" />
+</RelativeLayout>

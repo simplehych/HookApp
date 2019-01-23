@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:gravity="center_vertical" android:background="@drawable/background_login_top_line" android:layout_width="fill_parent" android:layout_height="@dimen/signup_line_height">
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:text="@string/email" style="@style/Theme.Widget.Text.Signup" />
+        <View style="@style/Theme.Widget.HangDividerHorizontal" />
+        <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/name_et" android:hint="@string/email_hint" android:inputType="textEmailAddress" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Signup" />
+        <FrameLayout android:id="@id/clear_layout" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/signup_line_height" android:onClick="onClick">
+            <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/icon_clear" android:contentDescription="@string/delete_selected" />
+        </FrameLayout>
+    </TableRow>
+</TableLayout>

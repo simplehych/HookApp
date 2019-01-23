@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tag_container" android:layout_width="wrap_content" android:layout_height="26.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color2" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tag_text" android:background="@drawable/background_moment_tag" android:paddingLeft="8.0dip" android:paddingRight="6.5dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="170.0dip" android:singleLine="true" android:drawableLeft="@drawable/shuoshuo_icon_tag_orange_s" />
+</FrameLayout>

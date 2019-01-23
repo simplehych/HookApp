@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/wallet_home_item_bg" android:layout_width="89.5dip" android:layout_height="75.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.NetImageView android:id="@id/wallet_asset_new" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="13.0dip" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    <RelativeLayout android:id="@id/wallet_home_asset_title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ff222222" android:id="@id/wallet_home_asset_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/wallet_home_asset_value_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_below="@id/wallet_home_asset_title_layout" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@id/wallet_home_asset_value_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </FrameLayout>
+</RelativeLayout>

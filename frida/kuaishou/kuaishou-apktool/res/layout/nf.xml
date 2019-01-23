@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/kwai_title_default" />
+    <RelativeLayout android:id="@id/way_layout" android:layout_width="fill_parent" android:layout_height="@dimen/retrive_psd_nav_height" android:layout_below="@id/title_root">
+        <RadioGroup android:orientation="horizontal" android:id="@id/retrieve_radiogroup" android:layout_width="fill_parent" android:layout_height="@dimen/retrive_psd_nav_height" android:checkedButton="@id/phone_radio">
+            <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="@dimen/text_size_15" android:textColor="@color/retrieve_color" android:gravity="center" android:id="@id/phone_radio" android:background="@color/background_light" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="0.0dip" android:layout_height="@dimen/retrive_psd_nav_height" android:checked="true" android:button="@null" android:text="@string/reset_psd_by_phone" android:layout_weight="1.0" app:textSizeAdjustable="true" />
+            <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="@dimen/text_size_15" android:textColor="@color/retrieve_color" android:gravity="center" android:id="@id/email_radio" android:background="@color/background_light" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="0.0dip" android:layout_height="@dimen/retrive_psd_nav_height" android:button="@null" android:text="@string/reset_psd_by_email" android:layout_weight="1.0" app:textSizeAdjustable="true" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_alignParentBottom="true">
+            <View android:id="@id/phone_checked_view" android:background="@color/orange_color" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:id="@id/email_checked_view" android:background="@color/orange_color" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="@dimen/margin_default" android:layout_below="@id/way_layout" />
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_default" android:layout_below="@id/way_layout" />
+    <View android:id="@id/divider_view" android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="@dimen/login_line_divider_size" android:layout_below="@id/container" />
+    <TextView android:id="@id/confirm_btn" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/login_line_padding" android:layout_marginTop="@dimen/margin_default" android:layout_marginRight="@dimen/login_line_padding" android:text="@string/next_step" android:layout_below="@id/divider_view" style="@style/Kwai.Widget.Button.B12" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/default_link_color" android:textColorLink="@color/default_link_color" android:id="@id/link" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebpay_line_margin_15" android:text="@string/can_not_receive_sms" android:layout_below="@id/confirm_btn" android:layout_centerHorizontal="true" />
+</RelativeLayout>

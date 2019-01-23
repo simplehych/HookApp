@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView android:scrollbarSize="2.0dip" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:clipToPadding="false" style="@style/Kwai.Widget.RecyclerView"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

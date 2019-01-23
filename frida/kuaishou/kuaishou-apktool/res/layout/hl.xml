@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/preview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.camera.record.widget.AnimCameraView android:id="@id/camera_preview_layout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/record_layout" />
+    <FrameLayout android:orientation="vertical" android:id="@id/record_layout" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="30.0sp" android:textColor="@color/text_default_color" android:gravity="center" android:layout_gravity="center" android:id="@id/record_btn" android:background="@drawable/button_capture_record" style="@style/Theme.CameraCaptureButton" />
+        <com.yxcorp.gifshow.widget.BlinkProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="6.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/progress_horizontal" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    </FrameLayout>
+    <android.support.percent.PercentFrameLayout android:id="@id/camera_flash_bar" android:layout_width="fill_parent" android:layout_height="@dimen/record_flash_bar_height" android:layout_above="@id/record_layout">
+        <FrameLayout android:layout_gravity="left" android:id="@id/button_photoflash_wrapper" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:layout_widthPercent="33.000004%">
+            <ImageView android:layout_gravity="center|left" android:id="@id/button_photoflash" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/button_camera_flash" />
+        </FrameLayout>
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_16" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_shoot_tips" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_widthPercent="34.000004%" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="1.5dip" />
+        <FrameLayout android:layout_gravity="right" android:id="@id/button_switch_camera_wrapper" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_widthPercent="33.000004%">
+            <com.yxcorp.gifshow.widget.SwitchCameraView android:layout_gravity="center|right" android:id="@id/button_switch_camera" android:background="@null" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:contentDescription="@string/switch_cam" />
+        </FrameLayout>
+    </android.support.percent.PercentFrameLayout>
+    <ImageButton android:id="@id/button_close" android:src="@drawable/live_nav_btn_close" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/go_back" style="@style/Theme.Navigator.ImageButton" />
+    <ImageView android:id="@id/person_outline" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/live_camera_outline" android:scaleType="fitXY" android:layout_above="@id/camera_flash_bar" />
+</RelativeLayout>

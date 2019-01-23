@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/background_round_dialog_white" android:padding="0.0dip" android:layout_width="268.0dip" android:layout_height="136.5dip" android:layout_margin="0.0dip">
+        <TextView android:id="@id/tv_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_list_title_height" />
+        <View android:id="@id/top_divider_line" android:background="@color/divider_color_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_black_color" android:gravity="center" android:id="@id/tv_desc" android:paddingLeft="24.0dip" android:paddingTop="4.0dip" android:paddingRight="24.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/message_group_announce_post_tip" android:layout_weight="1.0" android:lineSpacingExtra="8.0sp" />
+        <View android:id="@id/bottom_divider_line" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50dp">
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/dialog_btn_text_color" android:gravity="center" android:id="@id/tv_positive_action" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+            <View android:id="@id/btn_divider_line" android:background="@color/divider_color_grey" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/dialog_btn_text_color" android:gravity="center" android:id="@id/tv_negative_action" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/publish" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

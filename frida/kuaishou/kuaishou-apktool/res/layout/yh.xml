@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/preview_container" android:background="@color/background_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiZoomImageView android:id="@id/zoom_iv_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" fresco:failureImageScaleType="centerInside" fresco:actualImageScaleType="fitCenter" />
+</FrameLayout>

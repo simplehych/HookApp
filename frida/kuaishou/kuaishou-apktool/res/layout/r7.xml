@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/photo_list_layout" android:paddingBottom="@dimen/margin_default" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/search_recommend_photo_frame_margin" android:layout_marginRight="@dimen/margin_default"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/photo_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/photo_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/photo_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+</LinearLayout>

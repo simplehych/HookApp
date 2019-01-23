@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.v3.widget.StrokeColorPicker android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/color_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/edit_btn_magic_color_normal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:id="@id/color_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/magic_finger_stroke_color" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:alpha="0.0" />
+    <android.support.v7.widget.RecyclerView android:id="@id/color_list" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_toRightOf="@id/color_label" android:layout_centerVertical="true" android:overScrollMode="never" />
+</com.yxcorp.gifshow.v3.widget.StrokeColorPicker>

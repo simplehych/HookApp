@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/wallet_home_item_bg" android:layout_width="90.0dip" android:layout_height="99.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.baidu.wallet.base.widget.NetImageView android:id="@id/wallet_service_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitCenter" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/ebpay_text_333" android:id="@id/wallet_service_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <com.baidu.wallet.base.widget.NetImageView android:id="@id/wallet_service_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wallet_home_service_new" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null" />
+</RelativeLayout>

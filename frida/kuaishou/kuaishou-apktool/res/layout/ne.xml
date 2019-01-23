@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/follow_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/line_color2_normal" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/follow_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/follow_icon_follow_with_normal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:id="@id/follow_btn_select_iv" android:background="@drawable/follow_btn_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_default" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff525252" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:text="@string/only_show_follow_eachother" android:layout_toLeftOf="@id/follow_btn_select_iv" android:layout_toRightOf="@id/follow_icon_iv" android:layout_centerVertical="true" />
+    <View android:id="@id/title_bar_divider" android:background="@color/line_color2_normal" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

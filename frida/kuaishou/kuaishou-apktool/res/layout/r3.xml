@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiZoomImageView android:id="@id/preview" android:background="@color/background_black" android:layout_width="fill_parent" android:layout_height="fill_parent" fresco:failureImage="@drawable/message_load_image_fail" fresco:failureImageScaleType="centerInside" fresco:actualImageScaleType="fitCenter" />
+    <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color3_normal" android:gravity="center" android:id="@id/download_failed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="246.0dip" android:text="@string/image_download_failed" android:layout_alignParentBottom="true" />
+</RelativeLayout>

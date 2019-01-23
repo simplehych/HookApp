@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color1" android:gravity="center|left" android:id="@id/title" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/contact_list_number_play_kwai" android:drawableLeft="@drawable/contact_icon_friends_black_normal" android:drawablePadding="5.0dip" />
+    <View android:background="?dividerColor" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" />
+</LinearLayout>

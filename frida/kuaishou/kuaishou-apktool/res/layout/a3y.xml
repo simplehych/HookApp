@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.SizeAdjustableButton android:textStyle="bold" android:textColor="@color/text_color22" android:id="@id/send_message" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="@string/send_message" android:layout_weight="1.0" app:textSizeAdjustable="true" style="@style/Kwai.Widget.Button.B22" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="32.0sp" android:textColor="@color/text_color_white" android:layout_gravity="left" android:id="@id/filter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="2.0dip" />
+    <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_white" android:layout_gravity="left" android:id="@id/filter_subname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="2.0dip" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="55.0dip" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/animation_v" android:background="@drawable/background_magic_emoji_remove" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/forbidden_magic_emoji" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/camera_magic_emoji_nothing_new" android:layout_centerInParent="true" />
+</RelativeLayout>

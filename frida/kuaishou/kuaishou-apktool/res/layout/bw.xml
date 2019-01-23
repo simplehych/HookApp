@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff777777" android:id="@id/captcha_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="10.0dip" android:text="@string/captcha_sent_prompt" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/captcha_line" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="@dimen/login_cell_height" android:layout_marginTop="11.0dip">
+        <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/captcha_edit" android:paddingLeft="10.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:hint="@string/input_verify_code_hint" android:maxLength="6" android:layout_weight="1.0" android:inputType="numberSigned" android:textCursorDrawable="@drawable/icon_text_cursor_blue" style="@style/Theme.Widget.Edit.Login" />
+        <FrameLayout android:id="@id/captcha_clear_layout" android:paddingRight="20.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/login_cell_height">
+            <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_clear" />
+        </FrameLayout>
+        <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="@color/verification_code_text" android:id="@id/captcha_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+    </LinearLayout>
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/password_line" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="@dimen/login_cell_height">
+        <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/password_edit" android:paddingLeft="10.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:hint="@string/setup_login_password_hint" android:maxLength="16" android:layout_weight="1.0" android:inputType="textVisiblePassword" android:imeOptions="actionGo" android:textCursorDrawable="@drawable/icon_text_cursor_blue" style="@style/Theme.Widget.Edit.Login" />
+        <FrameLayout android:id="@id/password_clear_layout" android:paddingRight="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/login_cell_height">
+            <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_clear" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/show_password_layout" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <Switch android:layout_gravity="center_vertical" android:id="@id/password_switch" android:background="@drawable/login_password_edit" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="21.0dip" android:checked="true" android:thumb="@android:color/transparent" android:track="@android:color/transparent" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_hint_black_color" android:id="@id/password_prompt" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/signup_password_prompt" />
+    <TextView android:enabled="false" android:layout_gravity="center" android:id="@id/finish" android:layout_width="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="10.0dip" android:text="@string/finish" style="@style/Kwai.Widget.Button.B12" />
+</LinearLayout>

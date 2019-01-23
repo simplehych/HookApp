@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/p_color_white" />
+            <corners android:topLeftRadius="@dimen/ebpay_dimen_0dp" android:topRightRadius="@dimen/ebpay_dimen_0dp" android:bottomLeftRadius="@dimen/button_radius1" android:bottomRightRadius="@dimen/button_radius1" />
+        </shape>
+    </item>
+</selector>

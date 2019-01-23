@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notice_bubble_container" android:background="@drawable/live_bg_wish_list_broadcast" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/notice_icon_promotion_white_s_normal" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="#fdffffff" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/notice_icon_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快币余额不足，推广直播已结束" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/notice_icon_more" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="@dimen/dimen_5dp" android:layout_marginBottom="6.0dip" android:src="@drawable/universal_icon_arrow_black_s_normal" />
+</LinearLayout>

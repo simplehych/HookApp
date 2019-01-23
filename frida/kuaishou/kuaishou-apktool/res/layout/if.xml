@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.widget.CommonPopupView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/background" android:background="@color/drawing_gift_background" android:layout_width="fill_parent" android:layout_height="@dimen/live_gift_box_height" />
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yxcorp.plugin.gift.DrawingGiftEditView android:id="@id/drawing_gift_edit_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" app:drawing_gift_size="40.0dip" app:drawing_point_distance="35.0dip" app:drawing_empty_layout="@layout/ff" />
+    <View android:layout_gravity="right" android:id="@id/close_gift" android:layout_width="40.0dip" android:layout_height="35.0dip" android:layout_marginTop="10.0dip" />
+</com.yxcorp.widget.CommonPopupView>

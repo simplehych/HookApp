@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/emotion_detail_action_bar" />
+    <include layout="@layout/line_divider_grey" />
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.yxcorp.gifshow.image.KwaiBindableImageView android:id="@id/emotion_image" android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@drawable/detail_avatar_male" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffababab" android:gravity="center" android:id="@id/emotion_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/emotion_image" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include layout="@layout/line_divider_grey" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_emotion_pkg_info_panel" android:background="@drawable/tab_action_button" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <com.yxcorp.gifshow.image.KwaiBindableImageView android:id="@id/emotion_pkg_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/message_placeholder_img_icon" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/emotion" android:layout_alignParentStart="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/emotion_pkg_icon" android:layout_centerVertical="true" android:layout_marginStart="15.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:id="@id/emotion_pkg_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffababab" android:id="@id/emotion_pkg_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView android:id="@id/platforms_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:verticalSpacing="20.0dip" android:stretchMode="columnWidth" android:numColumns="4"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

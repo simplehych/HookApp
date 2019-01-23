@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.live.music.LivePushPlayerView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lyric_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/lrc_countdown_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" layout="@layout/live_ktv_lyric_countdown" />
+        <com.yxcorp.plugin.live.music.LiveKtvLyricView android:id="@id/lrc_view" android:background="#010000ff" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/lrc_countdown_view" lrc:lrcHighlightColor="#ffffffff" lrc:lrcColor="@color/ktv_lyric_dim_color" lrc:lrcTextSize="@dimen/text_size_14" lrc:lrcPadding="3.0dip" lrc:lrcEnableGradient="false" lrc:lrcEnableStroke="false" lrc:lrcMaxLine="4" lrc:lrcLayoutType="top" xmlns:lrc="http://schemas.android.com/apk/res-auto" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/lrc_view" layout="@layout/live_ktv_seek_bar" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/music_progress" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_marginTop="5.0dip" android:maxHeight="2.0dip" android:max="10000" android:indeterminate="false" android:progressDrawable="@drawable/progressbar_thin_white" android:minHeight="2.0dip" style="@style/Theme.Widget.ProgressBar.Thin" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/operation_bar" android:background="@drawable/background_live_music_operation_bar" android:layout_width="wrap_content" android:layout_height="41.0dip" android:layout_marginTop="18.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/live_music_btn_text_color" android:gravity="center" android:id="@id/player_remix_btn" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="20.0dip" android:text="@string/original_sound" />
+        <View android:id="@id/player_sound_effect" android:background="@drawable/button_live_music_sound_effect" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" />
+        <View android:id="@id/player_lyric_location" android:background="@drawable/button_live_music_lyric_location" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" />
+        <View android:id="@id/player_lyrics_btn" android:background="@drawable/button_live_music_lyric" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" />
+        <View android:id="@id/player_pause_resume_btn" android:background="@drawable/live_player_icon_pause_resume" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" />
+        <View android:id="@id/player_close_btn" android:background="@drawable/button_live_music_close_button" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="9.5dip" />
+    </LinearLayout>
+</com.yxcorp.plugin.live.music.LivePushPlayerView>

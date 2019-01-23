@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background_list_selector" android:layout_width="fill_parent" android:layout_height="@dimen/tag_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tag_text" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/tag" android:singleLine="true" android:drawablePadding="@dimen/margin_default" android:layout_weight="1.0" />
+    <View android:id="@id/bottom_divider" android:layout_marginLeft="16.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+</LinearLayout>

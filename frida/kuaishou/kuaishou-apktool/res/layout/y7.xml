@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/sidebar_chat_img_normal" android:layout_width="140.0dip" android:layout_height="139.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/single" android:layout_width="140.0dip" android:layout_height="43.0dip" android:layout_marginTop="8.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="@dimen/margin_default" android:src="@drawable/sidebar_icon_chat_black_m_normal" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_black_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_message" />
+    </LinearLayout>
+    <View android:background="@color/divider_color_grey" android:layout_width="138.0dip" android:layout_height="0.5dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/group" android:layout_width="140.0dip" android:layout_height="43.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="@dimen/margin_default" android:src="@drawable/sidebar_icon_addfriends_black_m_normal" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/text_black_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_begin_group_chat" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/group_notify" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_dot_notify" android:scaleType="centerInside" />
+    </LinearLayout>
+    <View android:id="@id/stranger_bottom_line" android:background="@color/divider_color_grey" android:layout_width="138.0dip" android:layout_height="0.5dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/stranger_ll" android:layout_width="140.0dip" android:layout_height="43.0dip" android:layout_marginBottom="6.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="@dimen/margin_default" android:src="@drawable/chat_icon_mate_s_normal" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/text_black_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pick_stranger" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/stranger_notify" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_dot_notify" android:scaleType="centerInside" />
+    </LinearLayout>
+</LinearLayout>

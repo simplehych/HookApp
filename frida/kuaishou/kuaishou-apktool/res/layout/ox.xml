@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_12" android:textColor="@color/list_item_black" android:gravity="center_vertical" android:background="@color/background" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/recommend_users"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

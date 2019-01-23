@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.KwaiActionBar android:id="@id/title_root" android:background="?actionbarBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/status_bar_padding_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="?actionbarHeight" android:layout_below="@id/status_bar_padding_view">
+        <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/back_btn" android:contentDescription="@string/go_back" style="@style/Theme.PhotoOperationView.Back" />
+        <com.yxcorp.gifshow.detail.view.LikeView android:id="@id/like_layout" android:layout_toRightOf="@id/back_btn" style="@style/Theme.PhotoOperationView.Large"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/like_button" android:contentDescription="@string/like" android:importantForAccessibility="no" style="@style/Theme.PhotoOperationView.Large" />
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/iv_like_help" android:visibility="gone" android:scaleType="centerInside" android:contentDescription="@string/like" android:importantForAccessibility="no" style="@style/Theme.PhotoOperationView.Large" />
+        </com.yxcorp.gifshow.detail.view.LikeView>
+        <LinearLayout android:orientation="horizontal" android:id="@id/more_inform_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/like_layout">
+            <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/inform_button" android:contentDescription="@string/inform" style="@style/Theme.PhotoOperationView.Large" />
+            <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/more_button" android:contentDescription="@string/more" style="@style/Theme.PhotoOperationView.Large" />
+            <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/forward_button" android:contentDescription="@string/forward_successfully" style="@style/Theme.PhotoOperationView.Large" />
+            <com.airbnb.lottie.LottieAnimationViewCopy android:id="@id/forward_button_lottie" android:visibility="gone" android:contentDescription="@string/forward_successfully" style="@style/Theme.PhotoOperationView.Large.lottie" />
+            <com.airbnb.lottie.LottieAnimationViewCopy android:id="@id/forward_button_lottie_loop" android:visibility="gone" android:contentDescription="@string/forward_successfully" style="@style/Theme.PhotoOperationView.Large.lottie" />
+        </LinearLayout>
+        <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/download_button" android:visibility="gone" android:layout_toRightOf="@id/more_inform_layout" style="@style/Theme.PhotoOperationView.Large" />
+        <FrameLayout android:id="@id/avatar_wrapper" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="17.5dip">
+                <com.yxcorp.gifshow.widget.DetailFollowLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/follow" android:background="?PhotoActionBarFollowBackground" android:paddingLeft="@dimen/detail_follow_panel_padding_left" android:paddingRight="@dimen/detail_follow_panel_padding_right" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <FrameLayout android:id="@id/follow_button_layout" android:layout_width="18.0dip" android:layout_height="18.0dip" style="@style/Theme.PhotoOperationView.Large">
+                        <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/follow_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/follow_successfully" />
+                        <com.airbnb.lottie.LottieAnimationView android:id="@id/follow_button_lottie_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+                        <com.airbnb.lottie.LottieAnimationView android:id="@id/follow_button_lottie_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+                    </FrameLayout>
+                    <com.yxcorp.gifshow.detail.view.DoubleFloorsTextView android:id="@id/follow_text_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/detail_follow_text_margin_left">
+                        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_15" android:textColor="?PhotoActionBarFollowWhiteTextColor" android:gravity="center" android:id="@id/text_bottom" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/follow" android:maxLines="1" android:alpha="0.0" app:textSizeAdjustable="true" app:minTextSize="5.0sp" />
+                        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_15" android:textColor="?PhotoActionBarFollowTextColor" android:gravity="center" android:id="@id/text_top" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/follow" android:maxLines="1" app:textSizeAdjustable="true" app:minTextSize="5.0sp" />
+                    </com.yxcorp.gifshow.detail.view.DoubleFloorsTextView>
+                </com.yxcorp.gifshow.widget.DetailFollowLinearLayout>
+            </FrameLayout>
+            <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center|right" android:id="@id/avatar" android:layout_width="@dimen/photo_opertion_avatar_size" android:layout_height="@dimen/photo_opertion_avatar_size" android:src="@null" android:scaleType="fitXY" android:contentDescription="@string/avatar" app:fadeDuration="0" app:roundAsCircle="true" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <View android:id="@id/live_tip_ring" android:background="@drawable/slide_play_circle_yellow_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/text_size_8" android:textColor="@color/text_color11_normal" android:gravity="center" android:id="@id/live_tip_text" android:background="@drawable/slide_play_corner_live_tip" android:paddingLeft="4.5dip" android:paddingRight="4.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12.0dip" android:text="LIVE" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <View android:id="@id/moment_dot_view" android:background="@drawable/slide_play_dot_moment_background" android:visibility="gone" android:layout_width="@dimen/dimen_10dp" android:layout_height="@dimen/dimen_10dp" android:layout_marginRight="1.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.yxcorp.gifshow.widget.KwaiActionBar>

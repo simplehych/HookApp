@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/Theme.BottomSheet"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <FrameLayout android:layout_gravity="left" android:id="@id/live_pk_history_back_btn" android:layout_width="40.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/nav_btn_back_white" android:scaleType="fitXY" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pk_history_title" />
+    </FrameLayout>
+    <View android:background="@color/translucent_10_white" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/base_refresh_recycler_list_layout" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/wallet_home_item_bg" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.NetImageView android:id="@id/wallet_basic_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="20.0dip" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/ebpay_text_333" android:id="@id/wallet_basic_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_below="@id/wallet_basic_icon" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/ebpay_text_gray" android:id="@id/wallet_basic_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_below="@id/wallet_basic_type" android:layout_centerHorizontal="true" />
+    <View android:id="@id/wallet_basic_point" android:background="@drawable/wallet_home_shape_red_point" android:visibility="gone" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="-10.0dip" android:layout_toRightOf="@id/wallet_basic_type" android:layout_above="@id/wallet_basic_type" />
+    <com.baidu.wallet.base.widget.NetImageView android:id="@id/wallet_basic_new" android:visibility="gone" android:layout_width="47.0dip" android:layout_height="25.0dip" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null" />
+</RelativeLayout>

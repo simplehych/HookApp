@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_round_dialog_white" android:layout_width="280.0dip" android:layout_height="346.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="#ff303030" android:id="@id/live_pk_standard_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/live_pk_standard_popup_title" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color2_normal" android:id="@id/live_pk_standard_content" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="206.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="24.0dip" android:text="@string/live_pk_standard_popup_content" android:maxLines="666" android:layout_below="@id/live_pk_standard_title" android:lineSpacingExtra="4.0dip" />
+    <View android:id="@id/live_pk_standard_split_line" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="24.0dip" android:layout_below="@id/live_pk_standard_content" />
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="#ffff8000" android:gravity="center" android:id="@id/live_pk_standard_agree_btn" android:background="@drawable/background_live_pk_standard_popup_agree_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/live_pk_standard_popup_agree" android:layout_below="@id/live_pk_standard_split_line" />
+</RelativeLayout>

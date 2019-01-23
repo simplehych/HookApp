@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="#80000000" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="135.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/same_frame_layout_mode_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="12.0dip" android:textColor="@color/sameframe_layout_mode_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/same_frame_layout_txt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/same_frame_left_screen" android:drawableTop="@drawable/sameframe_layout_icon_large_left" android:drawablePadding="10.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/same_frame_layout_mode_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="12.0dip" android:textColor="@color/sameframe_layout_mode_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/same_frame_layout_txt_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/same_frame_left_screen" android:drawableTop="@drawable/sameframe_layout_icon_large_left" android:drawablePadding="10.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/same_frame_layout_mode_3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="12.0dip" android:textColor="@color/sameframe_layout_mode_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/same_frame_layout_txt_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/same_frame_left_screen" android:drawableTop="@drawable/sameframe_layout_icon_large_left" android:drawablePadding="10.0dip" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/profile_moment_comment_corner" android:topRightRadius="@dimen/profile_moment_comment_corner" />
+    <solid android:color="@color/surface_color7_normal" />
+</shape>

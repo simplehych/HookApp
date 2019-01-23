@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_image_text_text" />
+    <include android:id="@id/search_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_root" layout="@layout/search_layout" />
+    <FrameLayout android:id="@id/tabs_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_layout">
+        <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="39.0dip" />
+        <com.yxcorp.gifshow.widget.PagerSlidingTabStrip android:id="@id/tabs" style="@style/tab_strip.music.fullscreen" />
+    </FrameLayout>
+    <View android:background="@drawable/ktv_bottom_shade_background" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

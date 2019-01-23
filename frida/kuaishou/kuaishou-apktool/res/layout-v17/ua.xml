@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Theme.BottomSheet"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <FrameLayout android:layout_gravity="left" android:id="@id/back_btn" android:layout_width="40.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/nav_btn_back_white" android:scaleType="fitXY" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pk_invite_friends" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/translucent_60_white" android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/collapse" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/margin_default" android:text="@string/collapse" />
+    </FrameLayout>
+    <View android:background="@color/translucent_10_white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="50.0dip" />
+    <FrameLayout android:id="@id/loading_container" android:layout_width="fill_parent" android:layout_height="204.0dip" android:layout_marginTop="51.0dip">
+        <FrameLayout android:layout_gravity="center" android:layout_width="264.0dip" android:layout_height="110.0dip">
+            <FrameLayout android:layout_gravity="center|left" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center_horizontal" android:id="@id/my_avatar" android:background="@drawable/background_orange_circle2" android:padding="2.0dip" android:layout_width="74.0dip" android:layout_height="74.0dip" android:src="@drawable/profile_btn_avatar_secret" avatar:roundAsCircle="true" xmlns:avatar="http://schemas.android.com/apk/res-auto" />
+                <com.lsjwzh.widget.text.FastTextView android:textSize="@dimen/text_size_14" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/my_name" android:layout_width="74.0dip" android:layout_height="wrap_content" android:layout_marginTop="87.0dip" android:maxLines="1" android:textAlignment="center" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center|right" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center_horizontal" android:id="@id/friend_avatar" android:background="@drawable/background_purple_circle" android:padding="2.0dip" android:layout_width="74.0dip" android:layout_height="74.0dip" android:src="@drawable/profile_btn_avatar_secret" avatar:roundAsCircle="true" xmlns:avatar="http://schemas.android.com/apk/res-auto" />
+                <com.lsjwzh.widget.text.FastTextView android:textSize="@dimen/text_size_14" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/friend_name" android:layout_width="74.0dip" android:layout_height="wrap_content" android:layout_marginTop="87.0dip" android:maxLines="1" android:textAlignment="center" />
+            </FrameLayout>
+        </FrameLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/low_version_loading" android:layout_width="73.0dip" android:layout_height="7.0dip" android:layout_marginTop="85.0dip" android:src="@drawable/live_icon_pk_loading_xxl_normal" android:scaleType="fitXY" />
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@id/loading" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="37.0dip" app:lottie_rawRes="@raw/lottie_live_pk_connecting" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_scale="0.4" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/low_version_start_pk" android:visibility="gone" android:layout_width="84.0dip" android:layout_height="69.0dip" android:layout_marginTop="50.0dip" android:src="@drawable/live_icon_pk_vs_xxl_normal" android:scaleType="fitXY" />
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@id/start_pk" android:visibility="gone" android:layout_width="158.0dip" android:layout_height="158.0dip" android:layout_marginTop="0.0dip" app:lottie_rawRes="@raw/lottie_live_pk_vs" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/translucent_40_white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/hint" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/invite_success" android:textAlignment="center" />
+    <FrameLayout android:id="@id/timeout_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_marginTop="51.0dip">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/timeout_friend_avatar" android:background="@drawable/background_purple_circle" android:padding="2.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginBottom="25.0dip" android:src="@drawable/profile_btn_avatar_secret" android:layout_centerHorizontal="true" avatar:roundAsCircle="true" xmlns:avatar="http://schemas.android.com/apk/res-auto" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="#ffffffff" android:id="@id/waiting_failed_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/live_pk_friend_busy_try_again_later" android:layout_below="@id/timeout_friend_avatar" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/text_size_16" android:id="@id/invite_other_friends" android:paddingLeft="@dimen/margin_large" android:paddingRight="@dimen/margin_large" android:layout_width="wrap_content" android:text="@string/live_pk_invite_other_friends" android:layout_below="@id/waiting_failed_text_view" android:layout_centerHorizontal="true" style="@style/Kwai.Widget.Button.B12" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

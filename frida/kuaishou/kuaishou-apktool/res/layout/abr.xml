@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_root" layout="@layout/kwai_title_webview" />
+    <com.yxcorp.gifshow.webview.view.KwaiWebView android:scrollbarStyle="insideOverlay" android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_root" />
+    <FrameLayout android:id="@id/webview_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/retry_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionbarHeight" layout="@layout/kwai_webview_retry" />
+</RelativeLayout>

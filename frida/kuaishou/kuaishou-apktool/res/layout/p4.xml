@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@android:drawable/ic_menu_gallery" android:layout_centerInParent="true" fresco:actualImageScaleType="fitCenter" />
+</RelativeLayout>

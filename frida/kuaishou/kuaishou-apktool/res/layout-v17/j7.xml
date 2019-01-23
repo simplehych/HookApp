@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.homepage.wiget.SimpleSlideView android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_below="@id/title_root" app:slide_width="@dimen/moment_tip_close_width"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="right" android:id="@id/moment_tip_delete" android:background="@color/text_color3_normal" android:layout_width="@dimen/moment_tip_close_width" android:layout_height="fill_parent" android:src="@drawable/home_moment_tip_close" android:scaleType="centerInside" />
+    <RelativeLayout android:id="@id/moment_tip" android:background="@color/p_color_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/moment_avatar_container" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/moment_avatar1" android:background="@drawable/home_moment_tip_avatar_border" android:padding="2.0dip" android:visibility="gone" android:layout_width="@dimen/moment_tip_avatar_size" android:layout_height="@dimen/moment_tip_avatar_size" android:layout_marginLeft="14.0dip" android:scaleType="centerCrop" app:roundAsCircle="true" />
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/moment_avatar2" android:background="@drawable/home_moment_tip_avatar_border" android:padding="2.0dip" android:visibility="gone" android:layout_width="@dimen/moment_tip_avatar_size" android:layout_height="@dimen/moment_tip_avatar_size" android:layout_marginLeft="-10.0dip" android:scaleType="centerCrop" app:roundAsCircle="true" />
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/moment_avatar3" android:background="@drawable/home_moment_tip_avatar_border" android:padding="2.0dip" android:visibility="gone" android:layout_width="@dimen/moment_tip_avatar_size" android:layout_height="@dimen/moment_tip_avatar_size" android:layout_marginLeft="-10.0dip" android:scaleType="centerCrop" app:roundAsCircle="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="50.0dip" android:layout_toRightOf="@id/moment_avatar_container" android:layout_toEndOf="@id/moment_avatar_container">
+            <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/text_color1_normal" android:gravity="right" android:id="@id/moment_tip_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/universal_icon_rightarrow_black_s_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.yxcorp.gifshow.homepage.wiget.SimpleSlideView>

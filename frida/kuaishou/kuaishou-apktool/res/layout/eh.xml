@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/bg_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" fresco:placeholderImage="@color/translucent_60_black" fresco:overlayImage="@color/translucent_60_black" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" fresco:progressBarAutoRotateInterval="1000" />
+    <View android:id="@id/fill" android:background="?contentBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yxcorp.gifshow.widget.PhotosScaleHelpView android:layout_gravity="center" android:id="@id/mask" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/loading_progress_bar" android:layout_centerInParent="true" style="@style/Theme.Widget.Loading.Small" />
+</RelativeLayout>

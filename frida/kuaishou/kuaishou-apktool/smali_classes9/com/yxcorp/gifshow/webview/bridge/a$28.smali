@@ -1,0 +1,112 @@
+.class final Lcom/yxcorp/gifshow/webview/bridge/a$28;
+.super Lcom/yxcorp/gifshow/webview/bridge/dy;
+.source "JsInjectKwai.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/yxcorp/gifshow/webview/bridge/a;->launchApp(Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/yxcorp/gifshow/webview/bridge/dy",
+        "<",
+        "Lcom/yxcorp/gifshow/webview/jsmodel/system/JsAppIdentifierParams;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/yxcorp/gifshow/webview/bridge/a;
+
+
+# direct methods
+.method constructor <init>(Lcom/yxcorp/gifshow/webview/bridge/a;Landroid/app/Activity;Landroid/webkit/WebView;)V
+    .locals 0
+
+    .prologue
+    .line 1455
+    iput-object p1, p0, Lcom/yxcorp/gifshow/webview/bridge/a$28;->a:Lcom/yxcorp/gifshow/webview/bridge/a;
+
+    invoke-direct {p0, p2, p3}, Lcom/yxcorp/gifshow/webview/bridge/dy;-><init>(Landroid/app/Activity;Landroid/webkit/WebView;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a(Ljava/io/Serializable;)V
+    .locals 4
+
+    .prologue
+    .line 1455
+    check-cast p1, Lcom/yxcorp/gifshow/webview/jsmodel/system/JsAppIdentifierParams;
+
+    .line 2460
+    :try_start_0
+    iget-object v0, p0, Lcom/yxcorp/gifshow/webview/bridge/a$28;->a:Lcom/yxcorp/gifshow/webview/bridge/a;
+
+    iget-object v0, v0, Lcom/yxcorp/gifshow/webview/bridge/a;->b:Lcom/yxcorp/gifshow/activity/GifshowActivity;
+
+    iget-object v1, p0, Lcom/yxcorp/gifshow/webview/bridge/a$28;->a:Lcom/yxcorp/gifshow/webview/bridge/a;
+
+    iget-object v1, v1, Lcom/yxcorp/gifshow/webview/bridge/a;->b:Lcom/yxcorp/gifshow/activity/GifshowActivity;
+
+    invoke-virtual {v1}, Lcom/yxcorp/gifshow/activity/GifshowActivity;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v1
+
+    iget-object v2, p1, Lcom/yxcorp/gifshow/webview/jsmodel/system/JsAppIdentifierParams;->mIdentifier:Ljava/lang/String;
+
+    .line 2461
+    invoke-virtual {v1, v2}, Landroid/content/pm/PackageManager;->getLaunchIntentForPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v1
+
+    .line 2460
+    invoke-virtual {v0, v1}, Lcom/yxcorp/gifshow/activity/GifshowActivity;->startActivity(Landroid/content/Intent;)V
+
+    .line 2462
+    iget-object v0, p1, Lcom/yxcorp/gifshow/webview/jsmodel/system/JsAppIdentifierParams;->mCallback:Ljava/lang/String;
+
+    new-instance v1, Lcom/yxcorp/gifshow/webview/bridge/JsSuccessResult;
+
+    invoke-direct {v1}, Lcom/yxcorp/gifshow/webview/bridge/JsSuccessResult;-><init>()V
+
+    invoke-virtual {p0, v0, v1}, Lcom/yxcorp/gifshow/webview/bridge/a$28;->a(Ljava/lang/String;Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 2467
+    :goto_0
+    return-void
+
+    .line 2463
+    :catch_0
+    move-exception v0
+
+    .line 2464
+    invoke-static {v0}, Lcom/google/a/a/a/a/a/a;->a(Ljava/lang/Throwable;)V
+
+    .line 2465
+    iget-object v0, p1, Lcom/yxcorp/gifshow/webview/jsmodel/system/JsAppIdentifierParams;->mCallback:Ljava/lang/String;
+
+    new-instance v1, Lcom/yxcorp/gifshow/webview/bridge/JsErrorResult;
+
+    const/16 v2, 0x1b0
+
+    const/4 v3, 0x0
+
+    invoke-direct {v1, v2, v3}, Lcom/yxcorp/gifshow/webview/bridge/JsErrorResult;-><init>(ILjava/lang/String;)V
+
+    invoke-virtual {p0, v0, v1}, Lcom/yxcorp/gifshow/webview/bridge/a$28;->a(Ljava/lang/String;Ljava/lang/Object;)V
+
+    goto :goto_0
+.end method

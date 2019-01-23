@@ -1,0 +1,35 @@
+.class public Lcom/yxcorp/gifshow/activity/share/model/TopicSearchResultPlaceHolderItem;
+.super Lcom/yxcorp/gifshow/activity/share/model/TopicSearchResultItem;
+.source "TopicSearchResultPlaceHolderItem.java"
+
+
+# static fields
+.field private static final serialVersionUID:J = -0x3b9e310e208cf88dL
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 6
+    invoke-direct {p0}, Lcom/yxcorp/gifshow/activity/share/model/TopicSearchResultItem;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getType()I
+    .locals 1
+
+    .prologue
+    .line 12
+    sget-object v0, Lcom/yxcorp/gifshow/activity/share/model/TopicItemType;->SEARCH_RESULT_PLACE_HOLDER:Lcom/yxcorp/gifshow/activity/share/model/TopicItemType;
+
+    invoke-virtual {v0}, Lcom/yxcorp/gifshow/activity/share/model/TopicItemType;->getValue()I
+
+    move-result v0
+
+    return v0
+.end method

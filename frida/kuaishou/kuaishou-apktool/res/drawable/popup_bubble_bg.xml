@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:paddingBottom="10.659973dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/toast_bubbles_content_bg_white" android:bottom="10.659973dip" />
+    <item android:gravity="bottom|center" android:drawable="@drawable/toast_bubbles_triangle_bg_white" />
+</layer-list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@android:color/white" android:paddingTop="20.0dip" android:paddingBottom="45.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:background="@drawable/pic_contact_xxl" android:layout_width="110.0dip" android:layout_height="110.0dip" />
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/text_color1_normal" android:gravity="center" android:id="@id/empty_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_default" android:text="@string/follow_empty_contact_auth_title" />
+    <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color15_normal" android:gravity="center" android:id="@id/empty_subtitle" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/follow_empty_contact_follow_tip" />
+    <Button android:id="@id/auth_button" android:layout_width="250.0dip" android:layout_marginTop="20.0dip" android:text="@string/view_contacts_friends" style="@style/Kwai.Widget.Button.B12" />
+    <Button android:id="@id/view_button" android:layout_width="100.0dip" android:layout_marginTop="20.0dip" android:text="@string/follow_empty_go_and_see" style="@style/Kwai.Widget.Button.B14" />
+</LinearLayout>

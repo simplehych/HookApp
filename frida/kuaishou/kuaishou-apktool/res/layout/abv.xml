@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/list_divider_default_color" android:showDividers="middle">
+        <TableRow android:id="@id/withdraw_amount_container" android:showDividers="middle" style="@style/Theme.Widget.Payment.Row">
+            <TextView android:textColor="@color/text_hint_black_color" android:id="@id/diamond_name" android:layout_height="@dimen/user_info_item_height" android:layout_column="0" android:text="@string/yellow_diamond" android:singleLine="true" android:layout_weight="1.0" style="@style/Theme.Widget.Payment.Label.Left" />
+            <TextView android:textColor="@color/text_black_color" android:id="@id/diamond_amount" android:layout_height="@dimen/user_info_item_height" android:layout_column="1" android:singleLine="true" android:layout_weight="3.0" style="@style/Theme.Widget.Payment.Label" />
+        </TableRow>
+        <View style="@style/Theme.Widget.DefaultDividerVertical" />
+        <TableRow style="@style/Theme.Widget.Payment.Row">
+            <TextView android:textColor="@color/text_hint_black_color" android:layout_height="@dimen/user_info_item_height" android:layout_column="0" android:text="@string/money" android:singleLine="true" android:layout_weight="1.0" style="@style/Theme.Widget.Payment.Label.Left" />
+            <TextView android:textColor="@color/text_black_color" android:id="@id/money_amount" android:layout_height="@dimen/user_info_item_height" android:layout_column="1" android:singleLine="true" android:layout_weight="3.0" style="@style/Theme.Widget.Payment.Label" />
+        </TableRow>
+        <View style="@style/Theme.Widget.DefaultDividerVertical" />
+    </TableLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/text_default_color" android:id="@id/cancel_button" android:background="@drawable/button6" android:layout_marginBottom="20.0dip" android:text="@string/cancel" android:layout_weight="1.0" style="@style/Theme.Widget.Payment.Button" />
+        <Button android:id="@id/confirm_button" android:layout_marginLeft="0.0dip" android:layout_marginBottom="20.0dip" android:text="@string/ok" android:layout_weight="1.0" style="@style/Theme.Widget.Payment.Button" />
+    </LinearLayout>
+</LinearLayout>

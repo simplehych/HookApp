@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialog_activity_bg" android:layout_width="280.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/activity_head_view" android:layout_width="fill_parent" android:layout_height="160.0dip" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/close_view" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_margin="8.0dip" android:src="@drawable/button_close_activity_dialog" android:scaleType="centerInside" android:layout_alignParentTop="true" />
+    <TextView android:textSize="@dimen/text_size_17" android:textStyle="bold" android:id="@id/card_window_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_below="@id/activity_head_view" android:layout_centerHorizontal="true" />
+    <TextView android:gravity="center" android:id="@id/card_window_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/card_window_title" android:layout_centerHorizontal="true" android:lineSpacingExtra="3.0dip" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/background_light" android:gravity="center" android:id="@id/join_activity" android:background="@drawable/dialog_activity_join_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="232.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/card_window_content" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/not_show_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.5dip" android:layout_marginBottom="21.5dip" android:layout_below="@id/join_activity" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/not_show_dialog_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tx_phone_card_guide_not_show_unselected_icon" />
+        <TextView android:id="@id/not_show_dialog_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/not_show_dialog" />
+    </LinearLayout>
+</RelativeLayout>

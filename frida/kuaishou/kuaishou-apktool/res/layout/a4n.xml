@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/recommend_user_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_light" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggested_users" />
+        <ImageView android:layout_gravity="right" android:id="@id/close_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/follow_recommend_close" />
+    </FrameLayout>
+    <com.yxcorp.gifshow.recycler.widget.HorizontalScrollingRecyclerView android:id="@id/content_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/bottom_divide" android:layout_width="fill_parent" android:layout_height="11.5dip" />
+</LinearLayout>

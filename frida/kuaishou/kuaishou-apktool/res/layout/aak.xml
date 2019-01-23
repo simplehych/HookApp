@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" class="com.yxcorp.gifshow.widget.snackbar.Snackbar$SnackbarLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:layout_gravity="top" android:id="@id/snackbar_content_layout" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" class="com.yxcorp.gifshow.widget.snackbar.SnackbarContentLayout">
+        <RelativeLayout android:id="@id/toast_content" android:background="@color/toast_info_color" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="14.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/snackbar_action" android:background="@null" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30.0dip" android:drawableRight="@drawable/handle_icon_arrow_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="14.0dip" android:textColor="@android:color/white" android:gravity="center|left" android:id="@id/snackbar_text" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="30.0dip" android:layout_toLeftOf="@id/snackbar_action" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </view>
+</view>

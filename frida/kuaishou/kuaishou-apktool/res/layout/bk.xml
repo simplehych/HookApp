@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_white" />
+    <include layout="@layout/line_divider_grey" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="160.0dip">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/kwai_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/kwai_icon" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff303030" android:gravity="center" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kwai_app_name" android:layout_below="@id/kwai_icon" />
+            <ImageView android:id="@id/bind_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="18.0dip" android:src="@drawable/authorization_bind_icon" android:layout_toRightOf="@id/kwai_icon" />
+            <ImageView android:id="@id/auth_app_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_toRightOf="@id/bind_icon" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff303030" android:gravity="center" android:id="@id/name_tv" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/auth_app_icon" android:layout_alignLeft="@id/auth_app_icon" />
+        </RelativeLayout>
+    </FrameLayout>
+    <include layout="@layout/line_divider_grey" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="40.0dip" android:text="@string/authorization_title" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:text="@string/authorization_list" />
+    <Button android:id="@id/confirm_btn" android:layout_width="fill_parent" android:layout_marginLeft="25.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="25.0dip" android:text="@string/qrcode_web_login_ok" style="@style/Kwai.Widget.Button.B2" />
+</LinearLayout>

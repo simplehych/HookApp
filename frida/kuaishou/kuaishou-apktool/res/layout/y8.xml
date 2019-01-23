@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/capture_finish_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cover_imageview" android:background="@color/record_camera_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/photo_take_btn_margin_bottom" android:layout_alignParentBottom="true">
+        <FrameLayout android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/reshoot_iv" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/send_image_btn_back" />
+        </FrameLayout>
+        <FrameLayout android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/send_image_iv" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/send_image_btn_confirm" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

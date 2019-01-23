@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/camera_flash_bar_root" android:layout_width="fill_parent" android:layout_height="@dimen/record_flash_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/button_close_wrapper" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/button_close" android:background="@null" android:src="@drawable/live_nav_btn_close" style="@style/RecordTopBar" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/button_photoflash_wrapper" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/button_photoflash" android:src="@drawable/button_camera_flash" style="@style/RecordTopBar" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/button_switch_prettify_wrapper" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/button_switch_prettify" android:src="@drawable/button_capture_prettify" style="@style/RecordTopBar" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/button_switch_camera_wrapper" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <com.yxcorp.gifshow.widget.SwitchCameraView android:id="@id/button_switch_camera" android:background="@null" android:contentDescription="@string/switch_cam" style="@style/RecordTopBar" />
+    </FrameLayout>
+</LinearLayout>

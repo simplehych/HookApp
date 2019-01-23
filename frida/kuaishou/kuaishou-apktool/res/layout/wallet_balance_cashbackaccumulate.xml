@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/wallet_base_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.BdActionBar android:id="@id/bdactionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/bd_wallet_balance_layout" android:background="@drawable/wallet_base_item_bg" android:paddingLeft="15.0dip" android:paddingTop="22.0dip" android:paddingRight="15.0dip" android:paddingBottom="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bdactionbar">
+        <TextView android:textSize="@dimen/bd_wallet_text_size_normal" android:textColor="@color/ebpay_text_111111" android:id="@id/wallet_baizhuanfen_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallet_cashback_desc" />
+        <TextView android:textSize="44.0sp" android:textColor="@color/bd_wallet_red" android:id="@id/bd_wallet_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_below="@id/wallet_baizhuanfen_tip" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="@color/ebpay_text_111111" android:id="@id/wallet_balance_charge_tip" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/bd_wallet_balance" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="@color/ebpay_text_111111" android:id="@id/bd_wallet_balance_virtual_account" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/bd_wallet_balance_freeze_account_tips" android:layout_below="@id/wallet_balance_charge_tip" />
+    </RelativeLayout>
+    <include android:orientation="vertical" android:id="@id/bd_wallet_trans_records" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/bd_wallet_balance_layout" layout="@layout/wallet_balance_baizhuanfen_records_content" />
+</RelativeLayout>

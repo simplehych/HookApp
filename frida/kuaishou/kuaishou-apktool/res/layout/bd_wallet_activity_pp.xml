@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wallet_base_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.BdActionBar android:id="@id/bdactionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/security_item_layout" android:background="@color/bd_wallet_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bd_wallet_normal_item_top_margin">
+        <View android:background="@color/bd_wallet_security_center_queqiao_d9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:id="@id/bd_wallet_security_item_layout" android:background="@drawable/wallet_base_bank_item_selector" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/bd_wallet_normal_item_height">
+            <TextView android:textSize="16.0sp" android:textColor="@color/bd_wallet_security_center_queqiao_111111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bd_wallet_normal_item_left_margin" android:text="@string/bd_wallet_pay_security_pp" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/bd_wallet_security_switch" android:background="@drawable/wallet_base_btn_switch" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bd_wallet_normal_item_left_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/bd_wallet_security_center_queqiao_d9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/ebpay_text_size_12" android:textColor="@color/ebpay_sub_text_color" android:id="@id/bd_wallet_security_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bd_wallet_normal_item_left_margin" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/bd_wallet_normal_item_left_margin" android:text="@string/bd_wallet_pay_security_pp_tip" />
+</LinearLayout>

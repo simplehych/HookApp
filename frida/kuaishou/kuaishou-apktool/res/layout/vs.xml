@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/live_wish_list_detail_gridview_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/live_wish_list_gift_content_layout" android:layout_width="fill_parent" android:layout_height="@dimen/live_wish_list_detail_gridview_item_height">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/live_wish_list_gift_image_view" android:layout_width="@dimen/live_wish_list_detail_gift_size" android:layout_height="@dimen/live_wish_list_detail_gift_size" android:layout_marginTop="28.0dip" />
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/live_wish_list_gift_progressbar" android:layout_width="@dimen/live_wish_list_detail_progressbar_width" android:layout_height="@dimen/live_wish_list_detail_progressbar_height" android:layout_marginTop="10.0dip" android:progressDrawable="@drawable/background_live_wish_list_detail_progressbar" style="?android:attr/progressBarStyleHorizontal" />
+        <TextView android:textSize="@dimen/text_size_15" android:textStyle="bold" android:textColor="@color/text_orange_color_2" android:layout_gravity="center_horizontal" android:id="@id/live_wish_list_gift_progress_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/text_color_black_fair" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/live_wish_list_item_description_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:maxLines="2" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/live_wish_detail_icon_image_view" android:layout_width="43.0dip" android:layout_height="27.0dip" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/live_wish_complete_tag_image_view" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/live_icon_conclude_xxl_normal" android:scaleType="center" />
+</FrameLayout>

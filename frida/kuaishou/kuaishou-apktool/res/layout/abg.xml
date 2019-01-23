@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/kwai_title_default" />
+    <com.yxcorp.gifshow.widget.PagerSlidingTabStrip android:id="@id/tabs" android:background="@null" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@id/title_root" app:pstsIndicatorColor="@android:color/transparent" app:pstsDividerColor="@android:color/transparent" app:pstsUnderlineHeight="0.5dip" />
+    <com.yxcorp.gifshow.log.widget.CommonLogViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-1.0dip" android:layout_below="@id/tabs" />
+</RelativeLayout>

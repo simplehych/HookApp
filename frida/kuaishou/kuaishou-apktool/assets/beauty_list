@@ -1,0 +1,348 @@
+[
+    {
+        "makeup": {
+          "blush": {
+            "index": -1,
+            "intensity": 0
+          },
+          "eyeBrow": {
+            "index": -1,
+            "intensity": 0
+          },
+          "PuffyEyes": {
+            "index": -1,
+            "intensity": 0
+          },
+          "eyeShadow": {
+            "index": -1,
+            "intensity": 0
+          },
+          "Mustache": {
+            "index": 0,
+            "intensity": 0
+          },
+          "lipStick": {
+            "index": -1,
+            "intensity": 0
+          },
+          "EyeBags": {
+            "index": -1,
+            "intensity": 0
+          },
+          "cosmeticLenses": {
+            "index": -1,
+            "intensity": 0
+          },
+          "eyeLash": {
+            "index": -1,
+            "intensity": 0
+          },
+          "faceShadow": {
+            "index": -1,
+            "intensity": 0
+          },
+          "eyeLiner": {
+            "index": -1,
+            "intensity": 0
+          },
+          "doubleEyeLids": {
+            "index": -1,
+            "intensity": 0
+          }
+        },
+        "smoothSkin": {
+          "bright": 29,
+          "beauty": 38
+        },
+        "faceDeform": {
+          "enlargeEye": 8,
+          "canthus": 0,
+          "longNose": 0,
+          "jaw": 0,
+          "thinNose": 0,
+          "tinyFace": 11,
+          "thinFace": 15,
+          "eyeDistance": 0,
+          "cutFace": 14,
+          "foreHead": 0,
+          "mouseShape": 0
+        }
+      },
+  {
+    "makeup": {
+      "blush": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeBrow": {
+        "index": -1,
+        "intensity": 0
+      },
+      "PuffyEyes": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeShadow": {
+        "index": -1,
+        "intensity": 0
+      },
+      "Mustache": {
+        "index": 0,
+        "intensity": 0
+      },
+      "lipStick": {
+        "index": -1,
+        "intensity": 0
+      },
+      "EyeBags": {
+        "index": -1,
+        "intensity": 0
+      },
+      "cosmeticLenses": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeLash": {
+        "index": -1,
+        "intensity": 0
+      },
+      "faceShadow": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeLiner": {
+        "index": -1,
+        "intensity": 0
+      },
+      "doubleEyeLids": {
+        "index": -1,
+        "intensity": 0
+      }
+    },
+    "smoothSkin": {
+      "bright": 50,
+      "beauty": 49
+    },
+    "faceDeform": {
+      "enlargeEye": 13,
+      "canthus": 0,
+      "longNose": 0,
+      "jaw": 0,
+      "thinNose": 36,
+      "tinyFace": 30,
+      "thinFace": 15,
+      "eyeDistance": 0,
+      "cutFace": 14,
+      "foreHead": 0,
+      "mouseShape": 0
+    }
+  },
+
+  {
+    "makeup": {
+      "blush": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeBrow": {
+        "index": -1,
+        "intensity": 0
+      },
+      "PuffyEyes": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeShadow": {
+        "index": -1,
+        "intensity": 0
+      },
+      "Mustache": {
+        "index": 0,
+        "intensity": 0
+      },
+      "lipStick": {
+        "index": -1,
+        "intensity": 0
+      },
+      "EyeBags": {
+        "index": -1,
+        "intensity": 0
+      },
+      "cosmeticLenses": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeLash": {
+        "index": -1,
+        "intensity": 0
+      },
+      "faceShadow": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeLiner": {
+        "index": -1,
+        "intensity": 0
+      },
+      "doubleEyeLids": {
+        "index": -1,
+        "intensity": 0
+      }
+    },
+    "smoothSkin": {
+      "bright": 77,
+      "beauty": 76
+    },
+    "faceDeform": {
+      "enlargeEye": 19,
+      "canthus": 0,
+      "longNose": 0,
+      "jaw": 0,
+      "thinNose": 50,
+      "tinyFace": 40,
+      "thinFace": 20,
+      "eyeDistance": 0,
+      "cutFace": 30,
+      "foreHead": 0,
+      "mouseShape": 0
+    }
+  },
+  {
+    "makeup": {
+      "blush": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeBrow": {
+        "index": -1,
+        "intensity": 0
+      },
+      "PuffyEyes": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeShadow": {
+        "index": -1,
+        "intensity": 0
+      },
+      "Mustache": {
+        "index": 0,
+        "intensity": 0
+      },
+      "lipStick": {
+        "index": -1,
+        "intensity": 0
+      },
+      "EyeBags": {
+        "index": -1,
+        "intensity": 0
+      },
+      "cosmeticLenses": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeLash": {
+        "index": -1,
+        "intensity": 0
+      },
+      "faceShadow": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeLiner": {
+        "index": -1,
+        "intensity": 0
+      },
+      "doubleEyeLids": {
+        "index": -1,
+        "intensity": 0
+      }
+    },
+    "smoothSkin": {
+      "bright": 86,
+      "beauty": 84
+    },
+    "faceDeform": {
+      "enlargeEye": 23,
+      "canthus": 0,
+      "longNose": 0,
+      "jaw": 0,
+      "thinNose": 52,
+      "tinyFace": 40,
+      "thinFace": 32,
+      "eyeDistance": 0,
+      "cutFace": 37,
+      "foreHead": 0,
+      "mouseShape": 0
+    }
+  },
+  {
+    "makeup": {
+      "blush": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeBrow": {
+        "index": -1,
+        "intensity": 0
+      },
+      "PuffyEyes": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeShadow": {
+        "index": -1,
+        "intensity": 0
+      },
+      "Mustache": {
+        "index": 0,
+        "intensity": 0
+      },
+      "lipStick": {
+        "index": -1,
+        "intensity": 0
+      },
+      "EyeBags": {
+        "index": -1,
+        "intensity": 0
+      },
+      "cosmeticLenses": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeLash": {
+        "index": -1,
+        "intensity": 0
+      },
+      "faceShadow": {
+        "index": -1,
+        "intensity": 0
+      },
+      "eyeLiner": {
+        "index": -1,
+        "intensity": 0
+      },
+      "doubleEyeLids": {
+        "index": -1,
+        "intensity": 0
+      }
+    },
+    "smoothSkin": {
+      "bright": 92,
+      "beauty": 94
+    },
+    "faceDeform": {
+      "enlargeEye": 29,
+      "canthus": 0,
+      "longNose": 0,
+      "jaw": 0,
+      "thinNose": 60,
+      "tinyFace": 46,
+      "thinFace": 37,
+      "eyeDistance": 0,
+      "cutFace": 46,
+      "foreHead": 0,
+      "mouseShape": 0
+    }
+  }
+]

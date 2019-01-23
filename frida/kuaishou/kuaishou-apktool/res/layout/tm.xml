@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_gift_item" android:layout_width="80.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="60.0dip" android:layout_height="60.0dip">
+        <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center" android:id="@id/magic_emoji_cover" android:layout_width="54.0dip" android:layout_height="54.0dip" android:scaleType="fitCenter" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/undownload_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_magic_emoji_undownload" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/notify_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_magic_face_notify" />
+    </FrameLayout>
+    <com.yxcorp.gifshow.widget.DownloadProgressBar android:layout_gravity="center" android:id="@id/download_progress" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminate="false" android:indeterminateOnly="false" />
+</FrameLayout>

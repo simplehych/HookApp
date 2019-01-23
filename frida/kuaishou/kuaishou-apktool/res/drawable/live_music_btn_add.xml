@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/live_video_btn_complete_normal" />
+    <item android:drawable="@drawable/live_video_btn_complete_normal" android:state_activated="true" />
+    <item android:drawable="@drawable/live_music_btn_add_normal" />
+</selector>

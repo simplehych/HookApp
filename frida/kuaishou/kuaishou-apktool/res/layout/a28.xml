@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/triangle_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toast_bubbles_triangle_bg_orange" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/white_gray" android:gravity="center" android:id="@id/tv_content" android:background="@drawable/toast_bubbles_rectangle_bg_orange" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="150.0dip" android:minHeight="28.0dip" android:text="@string/long_click_add_effect" android:layout_above="@id/triangle_indicator" />
+</RelativeLayout>

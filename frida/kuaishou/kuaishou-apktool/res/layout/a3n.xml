@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_title_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:layout_width="@dimen/profile_moment_avatar_size" android:layout_height="@dimen/profile_moment_avatar_size" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_large" app:roundAsCircle="true" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/moment_avatar_pendant" android:layout_width="@dimen/avatar_pendant_size_moment_aggr" android:layout_height="@dimen/avatar_pendant_size_moment_aggr" android:layout_marginLeft="@dimen/margin_default" android:layout_marginTop="@dimen/margin_narrow" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/text_color4" android:ellipsize="end" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:singleLine="true" android:layout_toLeftOf="@id/moment_more_container" android:layout_toRightOf="@id/avatar" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/moment_more_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_large" android:layout_alignParentRight="true">
+        <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/button_height2" android:layout_marginRight="@dimen/profile_moment_title_follow_margin_right" layout="@layout/list_follow_btn" />
+        <ImageView android:id="@id/moment_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/profile_moment_aggregation_more_margin_right" android:src="@drawable/profile_icon_moredt_m" />
+    </LinearLayout>
+</RelativeLayout>

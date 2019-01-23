@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <include layout="@layout/layout_account_third_item" />
+    <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/certification" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:visibility="gone" android:layout_width="fill_parent" style="@style/Theme.Widget.Setting.Row">
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="15.0sp" android:textColor="@color/text_black_color" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/setting_certification" android:layout_weight="1.0" app:textSizeAdjustable="true" app:textSizeAdjustWithHeight="true" />
+        <ImageView android:id="@id/entry_arrow" android:background="@android:color/transparent" style="@style/Theme.Widget.Setting.RightArrow" />
+    </LinearLayout>
+    <View android:id="@id/entry_splitter" android:background="@drawable/line_vertical_divider_short" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" />
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:clickable="false" android:layout_width="fill_parent" style="@style/Theme.Widget.Setting.Row">
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="15.0sp" android:textColor="@color/text_black_color" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/account_security" android:layout_weight="1.0" app:textSizeAdjustable="true" app:textSizeAdjustWithHeight="true" />
+        <com.yxcorp.gifshow.widget.SlipSwitchButton android:id="@id/protect_account_switch" app:onBg="@drawable/setting_switch_bg_on" app:offBg="@drawable/setting_switch_bg_off" app:slipBg="@drawable/setting_handle_normal" app:switch_state="false" style="@style/Theme.Widget.Slip.Switch" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_grey_color" android:padding="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_security_open_description" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_black_color" android:id="@id/trust_device_title" android:padding="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/in_use_device" />
+    <android.support.v7.widget.RecyclerView android:id="@id/trust_device_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/tips_loading_failed" />
+</LinearLayout>

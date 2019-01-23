@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/photo_products_boost_fanstop_mask" android:background="@color/translucent_60_black" android:layout_width="fill_parent" android:layout_height="110.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/photo_products_boost_fanstop_close" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/feed_icon_close_white_m_normal" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_default_color" android:id="@id/photo_products_boost_fanstop_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/fanstop_promotion_works_tip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_default_color" android:id="@id/photo_products_boost_fanstop_go" android:background="@drawable/background_follow_boost_fanstop_icon" android:paddingLeft="15.0dip" android:paddingTop="4.0dip" android:paddingRight="15.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/fanstop_promote_works" android:layout_below="@id/photo_products_boost_fanstop_tips" android:layout_centerHorizontal="true" />
+</RelativeLayout>

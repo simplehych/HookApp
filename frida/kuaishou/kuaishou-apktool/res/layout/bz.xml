@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.gift.BroadcastGiftStyleV2BannerView android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:background="@drawable/background_broadcast_thanos_banner" android:padding="1.0dip" android:layout_width="90.0dip" android:layout_height="160.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" app:actualImageScaleType="centerCrop" />
+    <ImageView android:background="@drawable/live_broadcast_thanos_label_bg" android:layout_width="100.5dip" android:layout_height="20.0dip" android:layout_marginBottom="5.0dip" android:layout_alignBottom="@id/avatar" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_white" android:ellipsize="end" android:gravity="center" android:id="@id/info" android:layout_width="100.0dip" android:layout_height="20.0dip" android:layout_marginBottom="4.0dip" android:maxLines="1" android:singleLine="true" android:layout_alignBottom="@id/avatar" />
+    <ImageView android:id="@id/live_arrow_red_packet_icon_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:src="@drawable/live_ic_evenpacket_m_normal" android:layout_alignRight="@id/avatar" />
+</com.yxcorp.plugin.gift.BroadcastGiftStyleV2BannerView>

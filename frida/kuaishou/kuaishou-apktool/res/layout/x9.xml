@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_custom" />
+    <View android:id="@id/bottom_seperator" android:background="#ff424242" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/dir_select_panel" />
+    <View android:id="@id/top_seperator" android:background="#ffe3e3e3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/tab_group" />
+    <GridView android:gravity="center" android:id="@id/grid" android:background="#fff7f7f7" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="4" android:layout_above="@id/bottom_seperator" android:layout_below="@id/top_seperator" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/empty" android:padding="@dimen/common_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_seperator" android:layout_below="@id/top_seperator">
+        <ProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" style="@style/Theme.Widget.Loading.Small" />
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/gray" android:gravity="center_vertical" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:singleLine="true" style="@style/Theme.Widget.Text" />
+    </LinearLayout>
+    <com.yxcorp.gifshow.widget.HorizontalListView android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/checked" android:background="#ff232323" android:padding="2.0dip" android:visibility="invisible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_above="@id/bottom_seperator" android:overScrollMode="never" app:dividerWidth="0.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/dir_select_panel" android:background="#ff303030" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/text_size_15" android:textColor="#ffc0c0c0" android:id="@id/dir_select_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="75.0dip" android:text="@string/all_photos" android:singleLine="true" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/dir_select_btn_trangle" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="6.0dip" android:layout_marginBottom="-4.0dip" android:src="@drawable/spinner_trangle" />
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_15" android:textColor="#ffc0c0c0" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/checked_prompt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" app:textSizeAdjustable="true" />
+    </LinearLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@id/tab_group" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" android:layout_marginTop="@dimen/title_bar_height">
+        <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="@dimen/text_size_17" android:textColor="@color/textcolor_horizontal_tab" android:gravity="center" android:id="@id/tab_photo" android:background="@drawable/background_horizontal_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:checked="true" android:button="@android:color/transparent" android:text="@string/photograph" android:layout_weight="1.0" app:textSizeAdjustable="true" />
+        <View style="@style/Theme.Widget.DefaultDividerHorizontal" />
+        <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="@dimen/text_size_17" android:textColor="@color/textcolor_horizontal_tab" android:gravity="center" android:id="@id/tab_video" android:background="@drawable/background_horizontal_tab" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@android:color/transparent" android:text="@string/video" android:layout_weight="1.0" app:textSizeAdjustable="true" />
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:id="@id/album_list_wrapper" android:background="#6e000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_seperator">
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+        <ListView android:id="@id/album_list" android:background="@drawable/background_album_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="#ffe3e3e3" android:dividerHeight="1.0px" android:layout_weight="7.0" />
+    </LinearLayout>
+</RelativeLayout>

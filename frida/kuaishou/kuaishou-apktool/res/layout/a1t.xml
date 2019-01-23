@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_light" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color2_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/admire_kwaicoin_photo" />
+    <GridView android:id="@id/photo_reward_gridview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/margin_large" android:verticalSpacing="@dimen/margin_large" android:numColumns="3" android:overScrollMode="never" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color2_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/choose_reward_type" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/photo_reward_wechat" android:background="@drawable/background_photo_reward" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color1_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wechat_pay_recharge" android:drawableLeft="@drawable/pay_icon_wechat_normal_new" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/photo_reward_alipay" android:background="@drawable/background_photo_reward" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="17.5dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color1_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alipay_recharge" android:drawableLeft="@drawable/wallet_icon_alipay_normal" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/background_photo_reward" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="17.5dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color1_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/baidu_recharge_kwai_coin" android:drawableLeft="@drawable/wallet_icon_baidu_normal" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:enabled="false" android:id="@id/photo_reward_btn" android:layout_width="fill_parent" android:layout_marginTop="25.0dip" android:text="@string/admire_kwaicoin" style="@style/Kwai.Widget.Button.B12" />
+</LinearLayout>

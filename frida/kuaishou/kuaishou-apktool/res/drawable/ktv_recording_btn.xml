@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_00" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_01" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_02" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_03" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_04" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_05" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_06" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_07" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_08" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_09" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_10" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_11" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_12" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_13" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_14" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_15" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_16" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_17" />
+    <item android:duration="83" android:drawable="@drawable/ktv_recording_btn_18" />
+</animation-list>

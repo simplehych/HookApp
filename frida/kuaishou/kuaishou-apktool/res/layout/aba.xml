@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.lrc.LyricsView android:id="@id/lrc_view" android:layout_width="fill_parent" android:layout_height="fill_parent" lrc:lrcHighlightColor="@color/lyrics_highlight_text_color" lrc:lrcColor="@color/lyrics_normal_text_color" lrc:lrcTextSize="@dimen/text_size_15" lrc:lrcPadding="@dimen/normal_lrc_padding" lrc:lrcEnableStroke="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lrc="http://schemas.android.com/apk/res-auto" />

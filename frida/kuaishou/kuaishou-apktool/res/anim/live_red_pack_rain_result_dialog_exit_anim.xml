@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:interpolator="@anim/live_red_pack_rain_hide_decelerate_interpolator" android:duration="300" android:shareInterpolator="true" android:factor="1.5"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale android:pivotX="50.0%" android:pivotY="50.0%" android:fromXScale="1.0" android:toXScale="0.6" android:fromYScale="1.0" android:toYScale="0.6" />
+    <alpha android:fromAlpha="1.0" android:toAlpha="0.0" />
+</set>

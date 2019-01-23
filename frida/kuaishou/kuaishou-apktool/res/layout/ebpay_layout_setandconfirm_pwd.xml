@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/ebpay_bg_fafafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.BdActionBar android:id="@id/bdactionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.baidu.wallet.base.widget.SafeScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bdactionbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.baidu.paysdk.ui.widget.CashdeskProgessView android:id="@id/stepbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_below="@id/bdactionbar" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="96.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_set" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bdactionbar">
+                    <TextView android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/ebpay_text_111111" android:layout_gravity="center" android:id="@id/pwd_tip_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebpay_pwd_set_tip" />
+                    <com.baidu.wallet.base.widget.SixNumberPwdView android:id="@id/pwd_input_box_set" android:background="@color/ebpay_white" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="19.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_confirm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bdactionbar">
+                    <TextView android:textSize="@dimen/ebpay_text_size_16" android:textColor="@color/ebpay_text_111111" android:gravity="center_horizontal" android:id="@id/pwd_tip_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ebpay_pwd_confim_tip" />
+                    <com.baidu.wallet.base.widget.SixNumberPwdView android:id="@id/pwd_input_box_confirm" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="19.0dip" />
+                    <RelativeLayout android:id="@id/error_area_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textColor="@color/ebpay_red" android:id="@id/error_tip_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebpay_pwd_changed" android:layout_alignParentLeft="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/protocol_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <CheckBox android:textSize="@dimen/ebpay_text_size_12" android:textColor="@color/ebpay_black" android:id="@id/ebpay_protocol" android:clickable="true" android:layout_width="17.0dip" android:layout_height="17.0dip" android:checked="true" android:button="@drawable/wallet_base_pwdfree_checkbox_selector" />
+                        <TextView android:textSize="@dimen/ebpay_text_size_12" android:textColor="@color/bd_wallet_pwdfree_gray" android:layout_gravity="center_vertical" android:id="@id/ebpay_protocol_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.baidu.wallet.base.widget.SafeScrollView>
+</RelativeLayout>

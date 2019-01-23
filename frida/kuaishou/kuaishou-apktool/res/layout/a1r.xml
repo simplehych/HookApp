@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/reduce_reason_root" android:paddingLeft="@dimen/dimen_10dp" android:paddingTop="@dimen/dimen_6dp" android:paddingRight="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_6dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/checkbox" android:background="@drawable/background_photo_reduce_checkbox" android:layout_width="@dimen/dimen_15dp" android:layout_height="@dimen/dimen_15dp" android:scaleType="centerInside" />
+        <TextView android:textColor="@color/text_color2_normal" android:ellipsize="end" android:id="@id/reason_text" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</FrameLayout>

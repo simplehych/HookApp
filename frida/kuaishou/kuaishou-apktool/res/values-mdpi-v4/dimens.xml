@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bd_wallet_safekeyboard_button_height">45.0dip</dimen>
+    <dimen name="bd_wallet_safekeyboard_closebtn_marginright">14.0dip</dimen>
+    <dimen name="bd_wallet_safekeyboard_grayline_width_0.5">1.0px</dimen>
+    <dimen name="bd_wallet_safekeyboard_grayline_width_1">1.0px</dimen>
+    <dimen name="bd_wallet_safekeyboard_keynum_textsize">23.0sp</dimen>
+    <dimen name="bd_wallet_safekeyboard_logo_marginright">5.0dip</dimen>
+    <dimen name="bd_wallet_safekeyboard_title_height">30.0dip</dimen>
+    <dimen name="bd_wallet_safekeyboard_title_textsize">11.0sp</dimen>
+    <dimen name="ebpay_order_padding_bottom">13.0dip</dimen>
+    <dimen name="ebpay_order_padding_top">18.0dip</dimen>
+    <dimen name="ebpay_order_text_pitch">16.0dip</dimen>
+    <dimen name="wallet_base_sendsms_button_width">100.0dip</dimen>
+    <dimen name="wallet_fp_button_padding_top">10.0dip</dimen>
+    <dimen name="wallet_fp_face_padding_top">10.0dip</dimen>
+    <dimen name="wallet_base_sendsms_edittext_marginleft">5.0dip</dimen>
+</resources>

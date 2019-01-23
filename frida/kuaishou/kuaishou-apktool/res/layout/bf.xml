@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/app_thumbnail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size6" android:textColor="?PhotoCommentUserTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ad_app_photos" />
+    <android.support.v7.widget.RecyclerView android:id="@id/thumbnail_recycler_view" android:layout_width="fill_parent" android:layout_height="266.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="25.0dip" />
+</LinearLayout>

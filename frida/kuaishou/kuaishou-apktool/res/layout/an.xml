@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.TabLayout android:id="@id/tab_config" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" app:tabIndicatorColor="@color/text_orange_color_2" app:tabMode="scrollable" app:tabTextColor="@color/text_grey_color" app:tabSelectedTextColor="@color/text_black_color" />
+    <com.yxcorp.gifshow.fragment.RecommendUserRecyclerView android:id="@id/recycler_view_config" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="90.0dip" android:layout_below="@id/tab_config" />
+    <TextView android:id="@id/config_confirm" android:layout_marginLeft="40.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="25.0dip" android:text="完成设置" android:layout_alignParentBottom="true" style="@style/Kwai.Widget.Button.B12" />
+</RelativeLayout>

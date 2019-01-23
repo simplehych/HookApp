@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.record.widget.CameraView android:layout_gravity="center" android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/anim_layout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yxcorp.widget.ForegroundImageView android:id="@id/preview_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.yxcorp.widget.ForegroundImageView android:id="@id/blur_preview_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </FrameLayout>
+</merge>

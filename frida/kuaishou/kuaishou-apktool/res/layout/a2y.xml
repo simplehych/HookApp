@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/profile_list_nomore_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="@dimen/profile_list_nomore_height">
+        <com.yxcorp.gifshow.profile.widget.ProfileMomentFooterView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color15" android:gravity="center|right" android:id="@id/profile_no_more" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" android:drawableRight="@drawable/profile_icon_arrow_grey_s" android:drawablePadding="4.0dip" />
+    </FrameLayout>
+</FrameLayout>

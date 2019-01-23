@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/translucent_20_black" />
+                    <stroke android:width="2.0dip" android:color="#ffff8000" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/beauty_icon_adjust_white_xxl_normal" />
+        </layer-list>
+    </item>
+</selector>

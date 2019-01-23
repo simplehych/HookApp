@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/location_iv" android:layout_width="33.0dip" android:layout_height="37.0dip" app:lottie_rawRes="@raw/lottie_map_loaction" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_repeatMode="restart" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/location_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/translucent_80_white" android:ellipsize="end" android:id="@id/caption_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="6.0dip" android:singleLine="true" />
+</LinearLayout>

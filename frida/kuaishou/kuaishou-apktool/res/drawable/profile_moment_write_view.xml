@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/profile_moment_write_bg_start_color_pressed" android:endColor="@color/profile_moment_write_bg_end_color_pressed" android:angle="0.0" />
+            <corners android:radius="@dimen/moment_write_btn_corner_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/profile_moment_write_bg_start_color_normal" android:endColor="@color/profile_moment_write_bg_end_color_normal" android:angle="0.0" />
+            <corners android:radius="@dimen/moment_write_btn_corner_radius" />
+        </shape>
+    </item>
+</selector>

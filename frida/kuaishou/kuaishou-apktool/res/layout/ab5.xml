@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.trimvideo.CustomHorizontalScroller android:id="@id/video_scroller" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/horizontal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <com.yxcorp.gifshow.widget.trimvideo.LinearBitmapContainer android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/video_frame_container" android:layout_width="wrap_content" android:layout_height="@dimen/frame_height" android:layout_marginLeft="@dimen/slider_width" android:layout_marginRight="25.0dip" />
+            <com.yxcorp.gifshow.widget.trimvideo.GraduationRulerView android:id="@id/graduation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/new_edit_frame_height" />
+        </LinearLayout>
+    </com.yxcorp.gifshow.widget.trimvideo.CustomHorizontalScroller>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/left_dim_cover" android:layout_width="20.0dip" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:src="#96ffffff" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/right_dim_cover" android:layout_width="20.0dip" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:src="#96ffffff" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.yxcorp.gifshow.widget.trimvideo.RangeSeeker android:id="@id/range_seeker" android:paddingLeft="@dimen/horizontal_padding" android:paddingRight="@dimen/horizontal_padding" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+</merge>

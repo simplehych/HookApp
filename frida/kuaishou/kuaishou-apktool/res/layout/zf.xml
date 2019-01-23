@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/music_station_home_local_item" android:layout_width="fill_parent" android:layout_height="@dimen/music_station_home_local_holder_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/music_station_home_local_background" android:layout_width="fill_parent" android:layout_height="186.5dip" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/music_station_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.5dip" android:layout_marginTop="104.5dip" android:text="快手音悦台" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/music_station_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.5dip" android:layout_marginTop="6.0dip" android:text="每日直播间精选歌曲片段" android:layout_below="@id/music_station_title" />
+    <ImageView android:layout_width="7.0dip" android:layout_height="10.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/music_station_home_feed_arrow" android:layout_toRightOf="@id/music_station_content" android:layout_alignTop="@id/music_station_content" />
+    <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="6.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/music_station_home_feed_head" android:layout_alignParentBottom="true" />
+</RelativeLayout>

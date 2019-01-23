@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingRight="@dimen/margin_large" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.widget.text.MovementTextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color14_normal" android:id="@id/content" android:background="@drawable/profile_moment_text_pressed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/profile_moment_content_text_margin_top" android:lineSpacingExtra="@dimen/profile_moment_content_text_line_space_extra" android:textDirection="ltr" />
+    <FrameLayout android:layout_width="180.0dip" android:layout_height="113.0dip" android:layout_marginTop="@dimen/profile_moment_content_text_margin_image" android:layout_marginBottom="@dimen/profile_moment_content_image_margin_bottom">
+        <RelativeLayout android:id="@id/pre_moment_image" android:layout_width="180.0dip" android:layout_height="113.0dip">
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/picture" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" fresco:pressedStateOverlayImage="@drawable/profile_moment_picture_foreground" fresco:foregroundImage="@drawable/profile_pre_moment_picture_foreground" />
+            <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/p_color_white" android:id="@id/pre_moment_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.5dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/p_color_white_alpha70" android:id="@id/pre_moment_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_narrow" android:layout_below="@id/pre_moment_desc" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.yxcorp.gifshow.profile.widget.PreMomentConnerView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

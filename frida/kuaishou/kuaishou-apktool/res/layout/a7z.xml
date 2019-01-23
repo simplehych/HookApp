@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/publish_button_container" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/text_size6" android:textColor="@color/text_color_button21" android:id="@id/btn_save_draft" android:background="@drawable/share_draft_background" android:layout_width="@dimen/ebpay_dimen_0dp" android:layout_height="@dimen/button_height1" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/share_save_to_draft" android:layout_weight="1.0" />
+    <Button android:id="@id/publish_button" android:layout_width="@dimen/ebpay_dimen_0dp" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="15.0dip" android:text="@string/publish" android:layout_weight="2.0" style="@style/Kwai.Widget.Button.B12" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/shoot_btn_white_selected_normal_fullscreen" android:dither="true" android:alpha="0.4"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

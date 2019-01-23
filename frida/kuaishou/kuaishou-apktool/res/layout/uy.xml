@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.live.widget.FadeClickLinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/live_recharge_item_bg" android:layout_width="100.0dip" android:layout_height="66.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_kwai_coin" android:layout_width="wrap_content" android:layout_height="38.0dip" android:drawableLeft="@drawable/live_gift_kcoin_normal" android:drawablePadding="3.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txt_fen" android:layout_width="fill_parent" android:layout_height="28.0dip" />
+</com.yxcorp.plugin.live.widget.FadeClickLinearLayout>

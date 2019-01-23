@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_config_prefDialogWidth">440.0dip</dimen>
+    <item type="dimen" name="abc_dialog_fixed_height_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_height_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_min_width_major">55.000008%</item>
+    <item type="dimen" name="abc_dialog_min_width_minor">79.99999%</item>
+    <dimen name="common_avatar_size">66.0dip</dimen>
+    <dimen name="common_padding">12.0dip</dimen>
+    <dimen name="home_grid_space">2.0dip</dimen>
+    <dimen name="home_groupbar_height">60.0dip</dimen>
+    <dimen name="media_select_refresh_btn_height">44.0dip</dimen>
+    <dimen name="media_select_refresh_btn_width">90.0dip</dimen>
+    <dimen name="photo_box">100.0dip</dimen>
+    <dimen name="side_menu_tab_button_height">64.0dip</dimen>
+    <dimen name="sub_comment_horizontal_line_width">33.0dip</dimen>
+    <dimen name="sub_comment_vertical_line_margin">43.0dip</dimen>
+</resources>

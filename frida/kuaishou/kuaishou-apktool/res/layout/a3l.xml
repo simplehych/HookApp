@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/margin_large" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_22" android:textColor="@color/profile_moment_time_text_color" android:gravity="end" android:id="@id/moment_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:singleLine="true" />
+    <ImageView android:id="@id/moment_time_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-13.0dip" android:layout_marginTop="@dimen/margin_default" android:src="@drawable/profile_moment_time_divider" android:layout_toRightOf="@id/moment_day" />
+    <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/profile_moment_time_text_color" android:gravity="center_vertical" android:id="@id/moment_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_toRightOf="@id/moment_day" />
+</RelativeLayout>

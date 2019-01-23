@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="75.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_black_light" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/magic_emoji_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/none" android:layout_alignParentBottom="true" />
+    <ImageView android:layout_gravity="center" android:id="@id/forbidden_magic_emoji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/camera_magic_emoji_nothing" android:layout_above="@id/magic_emoji_name" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="true" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <TextView android:textSize="25.0sp" android:textColor="#ff303030" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginTop="8.0dip" android:text="@string/captcha_login_title" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff777777" android:id="@id/captcha_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/login_content_margin" android:text="@string/captcha_sent_prompt" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/captcha_line" android:layout_width="fill_parent" android:layout_height="@dimen/login_cell_height" android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginTop="20.0dip" android:layout_marginRight="32.0dip">
+        <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/captcha_et" android:paddingLeft="0.0dip" android:layout_width="0.0dip" android:hint="@string/input_verify_code_hint" android:layout_weight="1.0" android:inputType="numberSigned" android:imeOptions="actionGo" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Login" />
+        <FrameLayout android:id="@id/clear_layout" android:paddingRight="30.0dip" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/login_cell_height">
+            <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_clear" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/verification_code_text" android:id="@id/captcha_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resend" />
+    </LinearLayout>
+    <View android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginRight="@dimen/login_content_margin" style="@style/Theme.Widget.LoginDividerVertical" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/list_item_red" android:id="@id/error_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginTop="5.0dip" android:singleLine="true" />
+    <TextView android:enabled="false" android:layout_gravity="center" android:id="@id/captcha_finish" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginTop="18.0dip" android:layout_marginRight="@dimen/login_content_margin" android:text="@string/ok" style="@style/Kwai.Widget.Button.B12" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/default_link_color" android:gravity="center" android:layout_gravity="center" android:id="@id/forget_psd_btn" android:background="@null" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/forget_psd_layout_top_margin" android:text="@string/can_not_receive_sms" />
+</LinearLayout>

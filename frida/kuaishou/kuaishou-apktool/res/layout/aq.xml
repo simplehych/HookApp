@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.detail.slideplay.SlidePlayViewPager android:id="@id/vertical_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/user_profile_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/fragment_loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Theme.Widget.Loading.Small" />
+    <com.yxcorp.gifshow.detail.slideplay.SlidePlayRefreshView style="@style/Kwai.Widget.RefreshLayout">
+        <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.yxcorp.gifshow.detail.slideplay.SlidePlayRefreshView>
+    <View android:id="@id/photo_detail_back_btn" android:background="@drawable/slide_play_detail_nav_btn_back_white" android:layout_width="@dimen/slide_play_back_size" android:layout_height="@dimen/slide_play_back_size" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:contentDescription="@string/go_back" />
+</FrameLayout>

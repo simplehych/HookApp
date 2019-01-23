@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/preview_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/preview" android:background="@drawable/placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:contentDescription="@string/preview" />
+        <View android:id="@id/preview_border" android:background="@drawable/photo_item_border" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/preview" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/video_marker" android:background="@drawable/background_local_video_mask" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/shoot_album_icon_time" android:scaleType="fitCenter" android:contentDescription="@string/video" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/background_light" android:gravity="center|right" android:id="@id/label" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:text="@string/kwai_app_name" android:shadowRadius="1.0" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:id="@id/disable_mask" android:background="@color/translucent_80_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/preview" />
+    </RelativeLayout>
+</LinearLayout>

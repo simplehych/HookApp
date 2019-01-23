@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.HorizontalDivideEquallyLayout style="@style/ThirdPlatformGroup"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/line_login_view" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/login_button_line" android:onClick="onClick" />
+    <ImageView android:id="@id/facebook_login_view" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/login_button_facebook" android:onClick="onClick" android:contentDescription="@string/facebook" />
+    <ImageView android:id="@id/mail_login_view" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/login_button_mail" android:onClick="onClick" />
+    <ImageView android:id="@id/twitter_login_view" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/login_button_twitter" android:onClick="onClick" android:contentDescription="@string/twitter" />
+    <ImageView android:id="@id/google_login_view" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/login_button_google" android:onClick="onClick" android:contentDescription="@string/twitter" />
+    <ImageView android:id="@id/wechat_login_view" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/login_button_wechat" android:onClick="onClick" />
+    <ImageView android:id="@id/sina_login_view" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/login_button_sina" android:onClick="onClick" android:contentDescription="@string/sinaweibo_login_button" />
+    <ImageView android:id="@id/qq_login_view" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/login_button_qq" android:onClick="onClick" android:contentDescription="@string/tencent_login_button" />
+</com.yxcorp.gifshow.widget.HorizontalDivideEquallyLayout>

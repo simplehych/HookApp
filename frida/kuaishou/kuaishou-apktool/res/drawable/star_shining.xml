@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:variablePadding="true" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/star00" />
+    <item android:duration="40" android:drawable="@drawable/star01" />
+    <item android:duration="40" android:drawable="@drawable/star02" />
+    <item android:duration="40" android:drawable="@drawable/star03" />
+    <item android:duration="40" android:drawable="@drawable/star04" />
+    <item android:duration="40" android:drawable="@drawable/star05" />
+    <item android:duration="40" android:drawable="@drawable/star06" />
+    <item android:duration="40" android:drawable="@drawable/star07" />
+    <item android:duration="40" android:drawable="@drawable/star08" />
+    <item android:duration="40" android:drawable="@drawable/star09" />
+    <item android:duration="40" android:drawable="@drawable/star10" />
+    <item android:duration="40" android:drawable="@drawable/star11" />
+    <item android:duration="40" android:drawable="@drawable/star12" />
+    <item android:duration="40" android:drawable="@drawable/star13" />
+    <item android:duration="40" android:drawable="@drawable/star14" />
+    <item android:duration="40" android:drawable="@drawable/star15" />
+    <item android:duration="40" android:drawable="@drawable/star16" />
+    <item android:duration="40" android:drawable="@drawable/star17" />
+    <item android:duration="40" android:drawable="@drawable/star18" />
+    <item android:duration="40" android:drawable="@drawable/star19" />
+    <item android:duration="40" android:drawable="@drawable/star20" />
+    <item android:duration="40" android:drawable="@drawable/star21" />
+    <item android:duration="40" android:drawable="@drawable/star22" />
+    <item android:duration="40" android:drawable="@drawable/star23" />
+    <item android:duration="40" android:drawable="@drawable/star24" />
+    <item android:duration="40" android:drawable="@drawable/star25" />
+    <item android:duration="40" android:drawable="@drawable/star26" />
+    <item android:duration="40" android:drawable="@drawable/star27" />
+    <item android:duration="40" android:drawable="@drawable/star28" />
+    <item android:duration="40" android:drawable="@drawable/star29" />
+    <item android:duration="40" android:drawable="@drawable/star30" />
+    <item android:duration="40" android:drawable="@drawable/star31" />
+    <item android:duration="40" android:drawable="@drawable/star32" />
+    <item android:duration="40" android:drawable="@drawable/star33" />
+    <item android:duration="40" android:drawable="@drawable/star34" />
+    <item android:duration="40" android:drawable="@drawable/star35" />
+    <item android:duration="40" android:drawable="@drawable/star36" />
+    <item android:duration="40" android:drawable="@drawable/star37" />
+    <item android:duration="40" android:drawable="@drawable/star38" />
+    <item android:duration="40" android:drawable="@drawable/star39" />
+    <item android:duration="40" android:drawable="@drawable/star40" />
+    <item android:duration="40" android:drawable="@drawable/star41" />
+</animation-list>

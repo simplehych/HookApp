@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/my_qrcode_card" />
+    <TextView android:id="@id/scan_code_txt" android:layout_marginLeft="45.5dip" android:text="@string/tab_menu_qrcode_scan" android:drawableTop="@drawable/codepage_icon_scan_press" android:layout_alignParentLeft="true" style="@style/Theme.MyQrCodeTextView" />
+    <TextView android:id="@id/save_code_txt" android:text="@string/save_qrcode_to_album" android:drawableTop="@drawable/codepage_icon_download_press" android:layout_centerHorizontal="true" style="@style/Theme.MyQrCodeTextView" />
+    <TextView android:id="@id/share_code_txt" android:layout_marginRight="45.5dip" android:text="@string/share" android:drawableTop="@drawable/codepage_icon_share_press" android:layout_alignParentRight="true" style="@style/Theme.MyQrCodeTextView" />
+    <ScrollView android:id="@id/card_for_share_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

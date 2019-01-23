@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tag_layout" android:background="@drawable/background_sensitive_word_item" android:paddingLeft="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:orientation="vertical" android:id="@id/tag_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="w" />
+    <ImageView android:id="@id/tag_remove" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="17.0dip" android:paddingBottom="10.0dip" android:layout_width="37.0dip" android:layout_height="30.0dip" android:src="@drawable/live_btn_sensitivewords_delet" />
+</LinearLayout>

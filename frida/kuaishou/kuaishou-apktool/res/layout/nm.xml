@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/kiv_icon" android:layout_width="26.0dip" android:layout_height="26.0dip" android:scaleType="centerInside" />
+    <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_primary_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/translucent_80_white" android:ellipsize="end" android:id="@id/tv_secondary_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="6.0dip" android:singleLine="true" />
+</LinearLayout>

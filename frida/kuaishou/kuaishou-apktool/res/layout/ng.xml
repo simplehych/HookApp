@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_address" android:background="@android:color/white" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/site_address_title_text_color" android:id="@id/tv_address_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_5dp" android:layout_toLeftOf="@id/divider" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/site_address_sub_title_text_color" android:id="@id/tv_address_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_address_title" />
+    <ImageView android:id="@id/iv_address_icon" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:src="@drawable/location_button_background" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/divider" android:background="@drawable/gray_vertical_divider" android:layout_width="@dimen/default_divider_size" android:layout_height="@dimen/dimen_20dp" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_toLeftOf="@id/iv_address_icon" android:layout_centerVertical="true" />
+</RelativeLayout>

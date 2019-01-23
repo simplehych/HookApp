@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.ScrollViewEx android:background="@drawable/live_gift_bg_number_normal" android:layout_width="140.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="140.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/number_1314" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_orange_color" android:gravity="center" android:layout_width="50.0dip" android:layout_height="40.0dip" android:text="1314" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color2_normal" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/number_1314" />
+        </LinearLayout>
+        <include android:id="@id/divider_1314" layout="@layout/line_divider_grey" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/number_520" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_orange_color" android:gravity="center" android:layout_width="50.0dip" android:layout_height="40.0dip" android:text="520" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color2_normal" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/number_520" />
+        </LinearLayout>
+        <include android:id="@id/divider_520" layout="@layout/line_divider_grey" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/number_188" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_orange_color" android:gravity="center" android:layout_width="50.0dip" android:layout_height="40.0dip" android:text="188" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color2_normal" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/number_188" />
+        </LinearLayout>
+        <include android:id="@id/divider_188" layout="@layout/line_divider_grey" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/number_66" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_orange_color" android:gravity="center" android:layout_width="50.0dip" android:layout_height="40.0dip" android:text="66" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color2_normal" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/number_66" />
+        </LinearLayout>
+        <include android:id="@id/divider_66" layout="@layout/line_divider_grey" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/number_30" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_orange_color" android:gravity="center" android:layout_width="50.0dip" android:layout_height="40.0dip" android:text="30" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color2_normal" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/number_30" />
+        </LinearLayout>
+        <include android:id="@id/divider_30" layout="@layout/line_divider_grey" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/number_10" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_orange_color" android:gravity="center" android:layout_width="50.0dip" android:layout_height="40.0dip" android:text="10" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color2_normal" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/number_10" />
+        </LinearLayout>
+        <include android:id="@id/divider_10" layout="@layout/line_divider_grey" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/number_1" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_orange_color" android:gravity="center" android:layout_width="50.0dip" android:layout_height="40.0dip" android:text="1" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color2_normal" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/number_1" />
+        </LinearLayout>
+        <include android:id="@id/divider_1" layout="@layout/line_divider_grey" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_orange_color" android:gravity="center" android:id="@id/number_other" android:background="@drawable/popup_bottom_item_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/number_other" />
+    </LinearLayout>
+</com.yxcorp.gifshow.widget.ScrollViewEx>

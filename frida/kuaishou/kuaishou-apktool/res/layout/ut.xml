@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/surface_color11_normal" android:layout_width="fill_parent" android:layout_height="@dimen/live_push_summary_view_height">
+        <android.support.design.widget.TabLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="50.0dip" app:tabIndicatorHeight="0.0dip" app:tabBackground="@android:color/transparent" app:tabTextAppearance="@style/tab_layout" app:tabPaddingStart="0.0dip" app:tabPaddingEnd="0.0dip" />
+        <View android:id="@id/divider" android:background="@color/white_with_10_alpha" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

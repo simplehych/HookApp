@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@color/surface_color8_normal" />
+            <item android:drawable="@color/edit_effect_background" />
+        </layer-list>
+    </item>
+    <item android:drawable="@color/surface_color8_normal" />
+</selector>

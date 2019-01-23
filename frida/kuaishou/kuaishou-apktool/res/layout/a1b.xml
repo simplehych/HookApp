@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/player" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/texture_view_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yxcorp.widget.SafeTextureView android:id="@id/texture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/blur_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.yxcorp.gifshow.widget.SmartScaleTypeImageView android:layout_gravity="center" android:id="@id/poster" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/photo" />
+        <include layout="@layout/photo_detail_lyric_layout" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/long_player_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:id="@id/progress_large" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" style="@style/Theme.Widget.Loading" />
+            <TextView android:textSize="@dimen/dimen_14sp" android:textColor="#fcffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_15dp" android:text="@string/pay_course_loading" android:includeFontPadding="false" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yxcorp.gifshow.widget.ScaleHelpView android:layout_gravity="center" android:id="@id/mask" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_white" android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/inappropriate" android:background="@drawable/detail_tips_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/not_suitable_public" android:alpha="0.8" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="1.5dip" />
+        <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/photo_tip" android:background="@drawable/photo_tip_border" android:paddingLeft="13.0dip" android:paddingTop="8.0dip" android:paddingRight="13.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/photo_tip" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="1.5dip" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/image_hint" android:background="@drawable/background_image_hint" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="33.0dip" android:text="@string/photo_tip" android:includeFontPadding="false" />
+    </FrameLayout>
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/slide_play_progress_layout" />
+    <ProgressBar android:layout_gravity="bottom|center" android:id="@id/progress" android:visibility="invisible" android:layout_width="fill_parent" android:indeterminate="false" style="@style/Theme.Widget.ProgressBar.Thin" />
+    <ImageView android:layout_gravity="right" android:id="@id/image_mark" android:visibility="gone" android:layout_width="37.0dip" android:layout_height="27.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/feed_tag_picture_normal" />
+    <ImageButton android:layout_gravity="right" android:id="@id/quality_switcher" android:visibility="gone" android:layout_width="@dimen/quality_switch_width" android:layout_height="@dimen/quality_switch_height" android:layout_marginTop="@dimen/quality_switch_margin" android:layout_marginRight="@dimen/quality_switch_margin" />
+    <FrameLayout android:id="@id/detail_player_subcontainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

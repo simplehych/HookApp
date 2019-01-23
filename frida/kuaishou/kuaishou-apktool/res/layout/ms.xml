@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/feed_aggregate_template_icon_lottie" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="38.0dip" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_repeatMode="restart" />
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/feed_aggregate_template_icon" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:scaleType="center" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/p_color_white" android:id="@id/feed_aggregate_template_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+</LinearLayout>

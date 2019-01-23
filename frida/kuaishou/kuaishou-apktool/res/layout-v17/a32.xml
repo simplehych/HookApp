@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.profile.widget.ForegroundFrameLayout android:orientation="vertical" android:id="@id/moment_item_foreground" android:paddingLeft="@dimen/profile_moment_time_width" android:paddingRight="@dimen/margin_large" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.profile.widget.ForegroundLinearLayout android:orientation="vertical" android:id="@id/moment_comment_foreground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/comment_top" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_comment_corner" />
+        <View android:id="@id/comment_top_margin" android:background="@drawable/profile_bg_moment_comment_corners_none" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_comment_margin" />
+        <com.yxcorp.widget.text.FoldingTextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color14_normal" android:gravity="center_vertical" android:id="@id/comment" android:background="@drawable/profile_moment_comment_pressed" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/profile_moment_comment_min_height" android:lineSpacingExtra="@dimen/profile_moment_comment_line_space_extra" android:textDirection="ltr" app:collapseText="@string/profile_moment_text_collapse" app:expandText="@string/profile_moment_text_expand" app:spannedNewline="true" app:spannedTextColor="@color/text_color4_normal" />
+        <View android:id="@id/comment_bottom_margin" android:background="@drawable/profile_bg_moment_comment_corners_none" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_comment_margin" />
+        <View android:id="@id/comment_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_comment_corner" />
+    </com.yxcorp.gifshow.profile.widget.ForegroundLinearLayout>
+</com.yxcorp.gifshow.profile.widget.ForegroundFrameLayout>

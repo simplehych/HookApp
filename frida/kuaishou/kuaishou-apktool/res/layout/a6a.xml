@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/tag_layout" android:paddingLeft="@dimen/search_tag_padding_horizontal" android:paddingRight="@dimen/margin_large" android:layout_width="fill_parent" android:layout_height="@dimen/search_recommend_tag_height">
+        <ImageView android:id="@id/icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/search_icon_tag_m" android:scaleType="center" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/title" android:layout_centerVertical="true" layout="@layout/list_item_search_tip" />
+    </RelativeLayout>
+</LinearLayout>

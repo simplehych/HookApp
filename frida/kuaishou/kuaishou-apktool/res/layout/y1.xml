@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/translucent_20_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.KwaiActionBar android:id="@id/title_root" android:background="@color/text_color_white" android:layout_width="fill_parent" android:layout_height="?actionbarHeight">
+        <ImageButton android:id="@id/left_btn" android:background="@null" android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight" android:src="@drawable/nav_btn_back_black" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/text_color17_normal" android:gravity="center" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" app:textSizeAdjustable="true" />
+    </com.yxcorp.gifshow.widget.KwaiActionBar>
+    <View android:id="@id/title_bar_divider" android:background="@color/line_color2_normal" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/title_root" />
+    <com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout android:layout_below="@id/title_bar_divider" style="@style/Kwai.Widget.RefreshLayout" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView android:background="@color/surface_color1_normal" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/Kwai.Widget.RecyclerView" />
+    </com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout>
+</RelativeLayout>

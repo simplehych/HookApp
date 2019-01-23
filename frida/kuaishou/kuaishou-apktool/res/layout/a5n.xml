@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_black_normal" android:gravity="center" android:layout_gravity="center" android:id="@id/error_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/live_share_platform_image_margin" android:layout_marginRight="@dimen/live_share_platform_image_margin" />
+</merge>

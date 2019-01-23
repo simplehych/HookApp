@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/profile_course_shop_group" android:background="@drawable/profile_top_bottom_divider_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_45dp">
+        <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/list_item_blue" android:gravity="center" android:id="@id/course_group_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:layout_gravity="center_vertical" android:background="@color/divider_color_grey" android:layout_width="0.5dip" android:layout_height="14.0dip" />
+        <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/list_item_blue" android:gravity="center" android:id="@id/shop_group_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/profile_course_shop_item" android:background="@drawable/profile_top_bottom_divider_line" android:paddingLeft="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_20dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_80dp">
+        <RelativeLayout android:id="@id/profile_course_shop_layout" android:background="@color/profile_shop_bg_color" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp" android:layout_centerVertical="true">
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/profile_course_shop_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_toRightOf="@id/profile_course_shop_layout" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color17_normal" android:ellipsize="end" android:id="@id/profile_course_shop_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/text_size_9" android:textColor="@color/text_default_color" android:id="@id/profile_course_shop_label" android:background="@drawable/profile_shop_label_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:layout_below="@id/profile_course_shop_title" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/profile_introduction_text_color" android:ellipsize="end" android:id="@id/profile_course_shop_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.5dip" android:maxLines="1" android:layout_toRightOf="@id/profile_course_shop_label" android:layout_alignBaseline="@id/profile_course_shop_label" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_icon_arrow_grey_s_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

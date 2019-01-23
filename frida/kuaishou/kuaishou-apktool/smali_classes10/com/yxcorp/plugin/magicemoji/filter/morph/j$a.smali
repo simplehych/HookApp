@@ -1,0 +1,42 @@
+.class public final Lcom/yxcorp/plugin/magicemoji/filter/morph/j$a;
+.super Ljava/lang/Object;
+.source "GPUImageFaceSpriteInterChangeExt2Filter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/yxcorp/plugin/magicemoji/filter/morph/j;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field a:I
+
+.field b:I
+
+.field c:I
+
+.field d:F
+
+.field e:F
+
+.field f:F
+
+.field g:F
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 39
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

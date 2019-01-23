@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/list_item_remark" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/kwai_file_cache" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="36.0dip" android:textColor="@color/list_item_black" android:id="@id/cache_size_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/list_item_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MB" android:layout_toRightOf="@id/cache_size_tv" android:layout_alignBaseline="@id/cache_size_tv" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/clear_up_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/clean_up_view" android:background="@drawable/login_phone_button" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="37.5dip" android:layout_marginTop="40.0dip" android:layout_marginRight="37.5dip" android:text="@string/cleanup" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/list_item_black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/download_view" android:background="@drawable/button_white_circle_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="37.5dip" android:layout_marginTop="15.0dip" android:layout_marginRight="37.5dip" android:text="@string/tencent_clear_cache" />
+</LinearLayout>

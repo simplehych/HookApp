@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/take_picture_btn" android:background="@drawable/take_picture_btn_bg" android:clickable="true" android:layout_width="@dimen/take_picture_btn_height" android:layout_height="@dimen/take_picture_btn_height" android:contentDescription="shoot_cover_iv" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_chainStyle="spread" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/take_picture_inner_iv" android:background="@drawable/take_picture_btn_inner" android:layout_width="63.0dip" android:layout_height="63.0dip" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/live_pk_history_operator_content_layout" android:background="@drawable/background_round_dialog_white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/live_pk_history_operator_detest" android:background="@drawable/bg_list_item_top_round_corner" android:text="@string/live_pk_history_never_match" style="@style/LivePkHistoryOperatorsButton" />
+        <View android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:id="@id/live_pk_history_operator_report" android:background="@drawable/bg_list_item_bottom_round_corner" android:layout_width="fill_parent" android:text="@string/live_pk_history_report" style="@style/LivePkHistoryOperatorsButton" />
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:layout_marginRight="@dimen/dimen_5dp" android:src="@drawable/toast_bubbles_triangle_bg_white" android:layout_below="@id/live_pk_history_operator_content_layout" android:layout_alignRight="@id/live_pk_history_operator_content_layout" />
+</RelativeLayout>

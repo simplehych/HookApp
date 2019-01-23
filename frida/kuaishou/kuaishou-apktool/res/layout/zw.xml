@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/login_bg_cover" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginBottom="10.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/kwai_coin_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="12.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/kwai_coin_text_view" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="30.0dip" android:text="@string/kwai_coin" app:textSizeAdjustable="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/kwai_coin_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:includeFontPadding="false" />
+            </LinearLayout>
+            <View android:layout_gravity="center_vertical" android:id="@id/yellow_diamond_divider" android:background="@color/divider_white" android:layout_width="0.5dip" android:layout_height="60.0dip" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/yellow_diamond_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="12.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/yellow_diamond_text_view" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="30.0dip" android:text="@string/yellow_diamond" android:singleLine="true" app:textSizeAdjustable="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/yellow_diamond_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:singleLine="true" android:includeFontPadding="false" />
+            </LinearLayout>
+            <View android:layout_gravity="center_vertical" android:id="@id/withdraw_amount_divider" android:background="@color/divider_white" android:layout_width="0.5dip" android:layout_height="60.0dip" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/withdraw_amount_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="12.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/withdraw_amount_text_view" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="30.0dip" android:text="@string/withdraw_amount" android:singleLine="true" app:textSizeAdjustable="true" />
+                <RelativeLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/text_default_color" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/withdraw_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+                    <TextView android:textSize="10.0dip" android:textColor="@color/text_default_color" android:gravity="bottom" android:paddingBottom="1.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yuan" android:includeFontPadding="false" android:layout_toRightOf="@id/withdraw_amount" android:layout_alignTop="@id/withdraw_amount" android:layout_alignBottom="@id/withdraw_amount" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/yellow_diamond_withdraw_button" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:clickable="false" android:text="@string/yellow_diamond_withdraw" android:drawableLeft="@drawable/wallet_icon_diamond_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+                <View android:layout_marginLeft="50.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/recharge_kwai_coin_button" android:text="@string/recharge_kwai_coin" android:drawableLeft="@drawable/wallet_icon_kwaicoin_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+                <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_orange_color_2" android:id="@id/recharge_first_time_notice" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/coupon_button" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_marginLeft="50.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <Button android:text="@string/coupon" android:drawableLeft="@drawable/wallet_icon_giftcard_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/musician_withdraw_button" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_marginLeft="50.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <Button android:text="@string/music_withdraw" android:drawableLeft="@drawable/music_icon_kwaicoin_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/new_user_reflect_bag_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_marginLeft="50.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:layout_gravity="center_vertical" android:text="@string/withdraw_new_user_red_envelope" android:drawableLeft="@drawable/wallet_icon_redpocket" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+                    <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/new_user_reflect_bag_layout_dot" android:background="@android:color/transparent" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="144.0dip" android:maxWidth="200.0dip" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/tx_card_reflect_bag_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_marginLeft="50.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <Button android:text="@string/king_card_new_user_reflect" android:drawableLeft="@drawable/wallet_icon_redpocket" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/yellow_diamond_to_kwai_coin_button" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_marginLeft="50.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <Button android:text="@string/yellow_diamond_to_kwai_coin" android:drawableLeft="@drawable/wallet_icon_diamondexchange_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <Button android:id="@id/my_bill_button" android:text="@string/my_bill" android:drawableLeft="@drawable/wallet_icon_bill_black_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+            <View android:layout_marginLeft="50.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+            <Button android:id="@id/profit_analysis_button" android:text="@string/received_gifts" android:drawableLeft="@drawable/wallet_icon_giftin_black_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+            <View android:layout_marginLeft="50.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+            <Button android:id="@id/gifts_given_button" android:text="@string/gifts_given" android:drawableLeft="@drawable/wallet_icon_giftout_black_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+            <View android:layout_marginLeft="50.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+            <Button android:id="@id/red_packet_list_button" android:text="@string/red_packet_history" android:drawableLeft="@drawable/wallet_icon_redpacketrecord_black_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+            <LinearLayout android:orientation="vertical" android:id="@id/live_promotion_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_marginLeft="50.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <Button android:id="@id/live_promotion_button" android:text="@string/live_promotion_records" android:drawableLeft="@drawable/wallet_icon_promotion_black_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/reward_record_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_marginLeft="50.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <Button android:id="@id/reward_record_button" android:text="@string/admire_kwaicoin_record" android:drawableLeft="@drawable/wallet_icon_kwairecord_black_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/charity_gift_layout" android:background="@color/background_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <Button android:id="@id/charity_gift_button" android:paddingLeft="@dimen/margin_default" android:layout_width="wrap_content" android:text="@string/charity_entry_title" android:drawableLeft="@drawable/wallet_icon_publicwelfare_black_l_normal" android:drawablePadding="10.0dip" style="@style/Theme.Widget.Payment.Row" />
+            <TextView android:gravity="right" android:id="@id/charity_gift_joined_label" android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/charity_joined" android:drawableRight="@drawable/button_arrow_right" android:drawablePadding="@dimen/margin_default" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/live_guess_record_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_marginLeft="50.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+            <Button android:id="@id/live_guess_joined_history" android:text="@string/live_guess_joined_history" android:drawableLeft="@drawable/wallet_icon_qa_black_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/buyer_order_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+            <Button android:text="@string/my_store_buyer_order" android:drawableLeft="@drawable/wallet_icon_order_black_l_normal" style="@style/Theme.Widget.Payment.Button.RightArrow" />
+            <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/buyer_order_layout_dot" android:background="@android:color/transparent" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="144.0dip" android:maxWidth="200.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

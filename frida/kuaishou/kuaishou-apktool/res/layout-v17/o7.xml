@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/comment_frame" android:background="?PhotoCommentBackground" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:background="@null" android:layout_width="@dimen/comment_avatar_size" android:layout_height="@dimen/comment_avatar_size" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_large" android:layout_marginRight="@dimen/margin_default" android:scaleType="fitCenter" android:contentDescription="@string/comment" app:roundAsCircle="true" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/detail_comment_avatar_pendant" android:visibility="gone" android:layout_width="@dimen/avatar_pendant_size_detail_comment" android:layout_height="@dimen/avatar_pendant_size_detail_comment" android:layout_marginLeft="@dimen/margin_narrow" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/name_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar">
+        <include layout="@layout/list_item_comment_author" />
+        <FrameLayout android:id="@id/comment_operation_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/comment_like_frame" android:paddingLeft="@dimen/margin_default" android:paddingTop="9.5dip" android:paddingRight="@dimen/margin_default" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="35.5dip">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="?PhotoCommentLikeCountTextColor" android:id="@id/comment_like_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/comment_like" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="?PhotoNewCommentLikeIcon" />
+            </LinearLayout>
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="right" android:id="@id/comment_anim_like" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="9.5dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip" app:lottie_rawRes="?PhotoNewCommentLikeAnimIcon" />
+            <ImageView android:id="@id/send_fail_img" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="12.5dip" android:layout_marginTop="14.0dip" android:layout_marginRight="12.5dip" android:src="@drawable/mail_btn_warning" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/comment_content_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_large" android:layout_below="@id/name_frame" android:layout_alignLeft="@id/name_frame">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="?PhotoCommentTextColor" android:id="@id/comment" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kwai_app_name" android:lineSpacingExtra="3.0dip" android:textDirection="ltr" style="@style/Theme.ListItemDetail.Comment" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="?PhotoCommentSummaryTextColor" android:id="@id/created" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/comment_content_frame" android:layout_alignLeft="@id/name_frame" android:textDirection="ltr" />
+    <TextView android:textSize="@dimen/text_size_13" android:textColor="?PhotoCommentAuthorPraiseTvColor" android:gravity="center" android:id="@id/author_praise_tv" android:background="?PhotoCommentAuthorPraiseBg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/comment_author_praised" android:layout_below="@id/created" android:layout_alignLeft="@id/name_frame" />
+    <View android:id="@id/comment_bottom_space" android:layout_width="fill_parent" android:layout_height="@dimen/margin_large" android:layout_below="@id/author_praise_tv" />
+    <View android:id="@id/comment_divider" android:background="?PhotoNewCommentDividerColor" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/comment_bottom_space" />
+</RelativeLayout>

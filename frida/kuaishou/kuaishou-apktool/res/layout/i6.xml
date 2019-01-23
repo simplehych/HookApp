@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/empty_face_im" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="136.0dip" android:src="@drawable/login_empty_qq" android:contentDescription="@string/empty_prompt" />
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/list_item_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/empty_face_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/list_item_remark" android:layout_gravity="center_horizontal" android:id="@id/empty_face_sub_title" android:layout_width="294.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/operation_btn" android:layout_width="300.0dip" android:layout_marginTop="25.0dip" android:onClick="onClick" style="@style/Kwai.Widget.Button.B2" />
+</LinearLayout>

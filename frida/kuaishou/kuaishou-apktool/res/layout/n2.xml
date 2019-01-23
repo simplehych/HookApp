@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_more" android:background="@android:color/white" android:paddingTop="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_15dp" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_icon_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.5dip">
+        <View android:background="#ff303030" android:layout_width="22.0px" android:layout_height="3.0px" />
+        <View android:background="#ff303030" android:layout_width="22.0px" android:layout_height="3.0px" android:layout_marginTop="5.0px" />
+        <View android:background="#ff303030" android:layout_width="22.0px" android:layout_height="3.0px" android:layout_marginTop="5.0px" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/site_address_title_text_color" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_more_details" />
+</LinearLayout>

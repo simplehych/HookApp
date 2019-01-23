@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:background="@color/edit_fragment_background" android:paddingLeft="0.0dip" android:paddingTop="15.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_height="wrap_content" style="@style/Theme.Preview.EditItemsList" />
+    <com.yxcorp.gifshow.v3.widget.ExpandFoldHelperView android:id="@id/opview" android:background="@color/edit_fragment_background" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

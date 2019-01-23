@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/title_root" android:background="?actionbarBackground" android:layout_width="fill_parent" android:layout_height="?actionbarHeight">
+        <ImageButton android:id="@id/left_btn" android:background="@null" android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight" android:src="@drawable/nav_btn_back_black" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/right_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="@dimen/margin_default" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:roundAsCircle="true" app:roundingBorderWidth="1.0dip" app:roundingBorderColor="#ffffffff" />
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="?actionbarTitleTextSize" android:textStyle="bold" android:textColor="?actionbarTitleTextColor" android:gravity="center" android:id="@id/title_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/common_padding" android:layout_marginRight="@dimen/common_padding" android:singleLine="true" android:layout_toLeftOf="@id/right_btn" android:layout_toRightOf="@id/left_btn" android:layout_centerInParent="true" app:textSizeAdjustable="true" />
+    </RelativeLayout>
+    <include layout="@layout/line_divider_grey" />
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

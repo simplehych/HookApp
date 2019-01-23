@@ -1,0 +1,1243 @@
+{
+  "version" : "2.2",
+  "author" : "gifshow",
+  "scale" : "2x",
+  "shapes" : [
+
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1,
+      "imageName" : "bubble_cartoon_1.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        36,
+        42,
+        74,
+        42
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+       "textAlign" : 1 ,
+      "imageName" : "bubble_cartoon_2.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        34,
+        44,
+        44,
+        46
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_cartoon_3.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        30,
+        45,
+        60,
+        40
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_cartoon_4.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        32,
+        52,
+        74,
+        28
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_cartoon_5.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        16,
+        20,
+        80,
+        16
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_cartoon_6.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        50,
+        60,
+        60,
+        70
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_draw_1.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        20,
+        24,
+        50,
+        24
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_draw_2.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        22,
+        20,
+        54,
+        24
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_draw_3.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        30,
+        35,
+        84,
+        40
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_draw_4.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        15,
+        45,
+        15,
+        10
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_draw_5.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        30,
+        34,
+        30,
+        50
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_draw_6.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        10,
+        20,
+        50,
+        20
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_lovely_1.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        30,
+        30,
+        60,
+        30
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_lovely_2.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        16,
+        16,
+        50,
+        16
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_lovely_3.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        40,
+        30,
+        40,
+        30
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_lovely_4.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        20,
+        30,
+        54,
+        30
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "467122",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_lovely_5.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        30,
+        40,
+        40,
+        30
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_lovely_6.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        40,
+        50,
+        40,
+        46
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "b87143",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_normal_1.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        18,
+        18,
+        50,
+        18
+      ],
+      "imageCapInsets" : [
+        6,
+        6,
+        36,
+        62
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 3
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_normal_10.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        32,
+        32,
+        62,
+        32
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_normal_11.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        14,
+        14,
+        50,
+        14
+      ],
+      "imageCapInsets" : [
+        22,
+        22,
+        52,
+        86
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 3
+    },
+    {
+      "textColorString" : "fff2c6",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_normal_12.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        34,
+        34,
+        70,
+        34
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_normal_2.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        36,
+        30,
+        68,
+        30
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_normal_3.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        10,
+        10,
+        56,
+        10
+      ],
+      "imageCapInsets" : [
+        20,
+        140,
+        60,
+        20
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 3
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_normal_4.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        8,
+        8,
+        30,
+        8
+      ],
+      "imageCapInsets" : [
+        10,
+        10,
+        32,
+        40
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 3
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_normal_5.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        20,
+        20,
+        40,
+        20
+      ],
+      "imageCapInsets" : [
+        22,
+        152,
+        52,
+        22
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 3
+    },
+    {
+      "textColorString" : "5fb2fe",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_normal_6.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        10,
+        40,
+        50,
+        40
+      ],
+      "imageCapInsets" : [
+        0,
+        60,
+        0,
+        110
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_normal_7.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        6,
+        6,
+        28,
+        6
+      ],
+      "imageCapInsets" : [
+        10,
+        42,
+        32,
+        10
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 3
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_normal_8.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        6,
+        42,
+        28,
+        42
+      ],
+      "imageCapInsets" : [
+        0,
+        80,
+        0,
+        42
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_normal_9.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        40,
+        30,
+        40,
+        30
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_rectangle_1.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        10,
+        12,
+        10,
+        12
+      ],
+      "imageCapInsets" : [
+        2,
+        2,
+        2,
+        2
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_rectangle_2.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+         10,
+        12,
+        10,
+        12
+      ],
+      "imageCapInsets" : [
+        2,
+        2,
+        2,
+        2
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_rectangle_3.png",
+      "thumbnailName" : "bubble_rectangle_3_thumbnail.png",
+      "contentCapInsets" : [
+        10,
+        12,
+        10,
+        12
+      ],
+      "imageCapInsets" : [
+        2,
+        2,
+        2,
+        2
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_rectangle_4.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+         10,
+        12,
+        10,
+        12
+      ],
+      "imageCapInsets" : [
+        2,
+        2,
+        2,
+        2
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_rectangle_5.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        10,
+        12,
+        10,
+        12
+      ],
+      "imageCapInsets" : [
+        2,
+        2,
+        2,
+        2
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_rectangle_6.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        10,
+        12,
+        10,
+        12
+      ],
+      "imageCapInsets" : [
+        2,
+        2,
+        2,
+        2
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_special_1.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        34,
+        34,
+        44,
+        34
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_special_2.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        30,
+        20,
+        50,
+        30
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_special_3.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        36,
+        26,
+        82,
+        30
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_special_4.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        46,
+        30,
+        46,
+        30
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_special_5.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        46,
+        50,
+        40,
+        42
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "303030",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_special_6.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        36,
+        10,
+        50,
+        10
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_tag_1.png",
+      "thumbnailName" : "bubble_tag_1_thumbnail.png",
+      "contentCapInsets" : [
+        6,
+        6,
+        6,
+        58
+      ],
+      "imageCapInsets" : [
+        0,
+        10,
+        0,
+        60
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_tag_2.png",
+      "thumbnailName" : "bubble_tag_2_thumbnail.png",
+      "contentCapInsets" : [
+        10,
+        60,
+        10,
+        10
+      ],
+      "imageCapInsets" : [
+        0,
+        60,
+        0,
+        10
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_tag_3.png",
+      "thumbnailName" : "bubble_tag_3_thumbnail.png",
+      "contentCapInsets" : [
+        6,
+        6,
+        36,
+        6
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_tag_4.png",
+      "thumbnailName" : "bubble_tag_4_thumbnail.png",
+      "contentCapInsets" : [
+        50,
+        10,
+        10,
+        10
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_tag_5.png",
+      "thumbnailName" : "bubble_tag_5_thumbnail.png",
+      "contentCapInsets" : [
+        60,
+        10,
+        10,
+        10
+      ],
+      "imageCapInsets" : [
+        60,
+        0,
+        10,
+        0
+      ],
+      "textDirection" : 1,
+      "scaleMode" : 2
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_tag_6.png",
+      "thumbnailName" : "bubble_tag_6_thumbnail.png",
+      "contentCapInsets" : [
+        8,
+        4,
+        58,
+        4
+      ],
+      "imageCapInsets" : [
+        10,
+        0,
+        60,
+        0
+      ],
+      "textDirection" : 1,
+      "scaleMode" : 2
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_title_1.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        6,
+        36,
+        6,
+        36
+      ],
+      "imageCapInsets" : [
+        0,
+        32,
+        0,
+        32
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "545437",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_title_2.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        10,
+        36,
+        10,
+        36
+      ],
+      "imageCapInsets" : [
+        0,
+        36,
+        0,
+        36
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_title_3.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        10,
+        36,
+        18,
+        36
+      ],
+      "imageCapInsets" : [
+        0,
+        52,
+        0,
+        52
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_title_4.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        10,
+        24,
+        10,
+        24
+      ],
+      "imageCapInsets" : [
+        0,
+        22,
+        0,
+        22
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_title_5.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        6,
+        36,
+        6,
+        36
+      ],
+      "imageCapInsets" : [
+        0,
+        32,
+        0,
+        32
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "545437",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_title_6.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        6,
+        40,
+        6,
+        36
+      ],
+      "imageCapInsets" : [
+        0,
+        40,
+        0,
+        36
+      ],
+      "textDirection" : 0,
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "kuang_18.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        12,
+        12,
+        12,
+        12
+      ],
+      "imageCapInsets" : [
+        0,
+        100,
+        6,
+        100
+      ],
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "kuang_19.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        12,
+        12,
+        12,
+        12
+      ],
+      "imageCapInsets" : [
+        0,
+        100,
+        6,
+        100
+      ],
+      "scaleMode" : 1
+    },
+
+    {
+      "textColorString" : "ffffff",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_christmas_1.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        40,
+        10,
+        5,
+        8
+      ],
+      "imageCapInsets" : [
+        40,
+        40,
+        10,
+        30
+      ],
+      "scaleMode" : 3
+    },
+    {
+      "textColorString" : "f2fff1",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_christmas_2.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        3,
+        40,
+        3,
+        40
+      ],
+      "imageCapInsets" : [
+        0,
+        20,
+        0,
+        20
+      ],
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "f2fff1",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_christmas_3.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        12,
+        26,
+        12,
+        26
+      ],
+      "imageCapInsets" : [
+        0,
+        20,
+        0,
+        20
+      ],
+      "scaleMode" : 1
+    },
+    {
+      "textColorString" : "f2fff1",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_christmas_4.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        12,
+        12,
+        12,
+        12
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "0d0e10",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_christmas_5.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        12,
+        16,
+        12,
+        16
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "scaleMode" : 0
+    },
+    {
+      "textColorString" : "0d0e10",
+      "textAlign" : 1 ,
+      "imageName" : "bubble_christmas_6.png",
+      "thumbnailName" : "",
+      "contentCapInsets" : [
+        10,
+        10,
+        10,
+        10
+      ],
+      "imageCapInsets" : [
+        0,
+        0,
+        0,
+        0
+      ],
+      "scaleMode" : 0
+    }
+
+  ],
+  "date" : "2018-08-15 16:00:00"
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.profile.widget.ForegroundLinearLayout android:id="@id/moment_item_foreground" android:paddingLeft="@dimen/profile_moment_time_width" android:paddingRight="@dimen/margin_large" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_comment_operation_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color4_normal" android:gravity="center_vertical" android:id="@id/comment_num" android:background="@drawable/profile_bg_moment_comment_corners_bottom" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:paddingBottom="@dimen/profile_moment_comment_operation_bottom_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.yxcorp.gifshow.profile.widget.ForegroundLinearLayout>

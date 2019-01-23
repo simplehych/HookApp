@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/editor_holder" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="#ffffffff" android:textColorHint="#7fffffff" android:id="@id/editor_holder_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/slide_play_bottom_icon_editor_holder_text_mar" android:hint="@string/please_input" android:singleLine="true" android:layout_centerVertical="true" />
+</RelativeLayout>

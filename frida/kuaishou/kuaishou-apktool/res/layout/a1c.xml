@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color11_normal" android:orientation="vertical" android:id="@id/photo_disclaimer_text" android:background="@color/p_color_red" android:paddingLeft="@dimen/margin_default" android:paddingTop="9.0dip" android:paddingRight="@dimen/margin_default" android:paddingBottom="9.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/moment_header" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_aggregation_header_height">
+        <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/profile_moment_aggregation_header_bg_margin_bottom" android:src="@drawable/profile_tag_background_img" />
+        <TextView android:textSize="@dimen/text_size_22" android:textStyle="bold" android:textColor="@color/text_color1_normal" android:layout_gravity="center_horizontal" android:id="@id/moment_header_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/profile_moment_aggregation_header_tag_margin_top" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color2_normal" android:layout_gravity="bottom|center" android:id="@id/moment_header_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/profile_moment_aggregation_header_num_margin_bottom" />
+        <View android:layout_gravity="bottom" android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" />
+    </FrameLayout>
+</FrameLayout>

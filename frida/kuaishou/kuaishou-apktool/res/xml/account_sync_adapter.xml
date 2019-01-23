@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sync-adapter android:accountType="@string/account_type" android:contentAuthority="@string/account_provider" android:userVisible="true" android:supportsUploading="true" android:allowParallelSyncs="true" android:isAlwaysSyncable="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

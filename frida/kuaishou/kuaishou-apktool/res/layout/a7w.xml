@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color1_normal" android:ellipsize="marquee" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visible_to_whom" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/camera_action_bar_text_color_dark" android:ellipsize="marquee" android:gravity="center|right" android:id="@id/tv_visibility_scope" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+    <ImageView android:layout_gravity="center|right" android:layout_marginLeft="10.0dip" android:src="@drawable/universal_icon_arrow_grey_s_normal" style="@style/Theme.Widget.Setting.RightArrow" />
+</LinearLayout>

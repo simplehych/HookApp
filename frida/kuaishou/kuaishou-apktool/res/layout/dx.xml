@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/transparent_list_selector" android:divider="@color/divider_color_transparent" app:ptrMode="pullDownFromTop" app:ptrShowIndicator="false" app:ptrAnimationStyle="flip" style="@style/Theme.List"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

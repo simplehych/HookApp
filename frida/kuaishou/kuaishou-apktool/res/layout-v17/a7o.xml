@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/at_location_layout" android:layout_width="fill_parent" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/at_button" android:background="@drawable/background_option_item_share_v2" android:paddingLeft="10.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:paddingStart="10.0dip" android:paddingEnd="12.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/release_icon_at_black_s_normal" android:contentDescription="@string/friends" />
+        <TextView android:textSize="@dimen/text_size4" android:textColor="@color/text_color2_normal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/friends" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/topic_button" android:background="@drawable/background_option_item_share_v2" android:paddingLeft="10.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="11.0dip" android:layout_toRightOf="@id/at_button" android:paddingStart="10.0dip" android:paddingEnd="12.0dip" android:layout_marginStart="11.0dip" android:layout_toEndOf="@id/at_button">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/release_icon_hash_black_l_normal" android:contentDescription="@string/topic" />
+        <TextView android:textSize="@dimen/text_size4" android:textColor="@color/text_color2_normal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/topic" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_toRightOf="@id/topic_button" android:layout_alignParentRight="true" android:layout_marginStart="11.0dip" android:layout_toEndOf="@id/topic_button" android:layout_alignParentEnd="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/location_wrapper" android:background="@drawable/background_option_item_share_v2" android:paddingLeft="10.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:paddingStart="10.0dip" android:paddingEnd="12.0dip">
+            <ImageView android:id="@id/location_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/release_icon_location_black_s_normal" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color2_normal" android:id="@id/location_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/user_location" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

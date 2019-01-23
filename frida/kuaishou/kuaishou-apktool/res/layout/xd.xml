@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsingToolbarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap">
+            <RelativeLayout android:id="@id/search_layout" android:background="@color/surface_color1_normal" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <com.yxcorp.gifshow.widget.DrawableCenterTextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/radio_normal_color" android:gravity="center_vertical" android:id="@id/search_btn" android:background="@drawable/background_round_corner_f0f0f0" android:layout_width="fill_parent" android:layout_height="30.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="9.0dip" android:text="@string/find" android:drawableLeft="@drawable/search_icon_big_search" android:drawablePadding="3.0dip" app:textSizeAdjustable="true" />
+                <View android:id="@id/title_bar_divider" android:background="@color/line_color2_normal" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/Kwai.Widget.RefreshLayout">
+        <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/Kwai.Widget.RecyclerView" />
+    </com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/connect_prompt" android:background="#e6c6c6c6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/im_linking" />
+</android.support.design.widget.CoordinatorLayout>

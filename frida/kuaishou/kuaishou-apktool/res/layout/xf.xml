@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_root" android:layout_width="fill_parent" android:layout_height="?actionbarHeight" android:layout_alignParentTop="true" layout="@layout/kwai_title_default" />
+    <RelativeLayout android:id="@id/editor_holder" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_list_item_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dialog_list_item_height">
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color3_normal" android:textColorHint="@color/text_color3_normal" android:gravity="center|left" android:id="@id/editor_holder_text" android:background="@null" android:paddingLeft="9.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/dialog_list_item_height" android:hint="@string/message" android:layout_weight="1.0" style="@style/Theme.Widget.Text" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color3_normal" android:gravity="center" android:id="@id/permission_deny_prompt_tv" android:background="@color/background_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/mail_limit" />
+        <View android:background="#ffdedede" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/editor_holder" android:layout_below="@id/title_root" style="@style/Kwai.Widget.RefreshLayout">
+        <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView style="@style/Kwai.Widget.RecyclerView" />
+    </com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout>
+</RelativeLayout>

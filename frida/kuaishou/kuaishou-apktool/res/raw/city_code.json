@@ -1,0 +1,2114 @@
+{
+  "110000": [
+    "BJ#Beijing",
+    "AA#--"
+  ],
+  "110101": [
+    "BJ#Beijing",
+    "DCQ#Dongcheng District"
+  ],
+  "110102": [
+    "BJ#Beijing",
+    "XCQ#Xicheng District"
+  ],
+  "110105": [
+    "BJ#Beijing",
+    "CYQ#Chaoyang"
+  ],
+  "110106": [
+    "BJ#Beijing",
+    "FTQ#Fengtai"
+  ],
+  "110107": [
+    "BJ#Beijing",
+    "SJS#Shijingshan"
+  ],
+  "110108": [
+    "BJ#Beijing",
+    "HDQ#Haidian"
+  ],
+  "110109": [
+    "BJ#Beijing",
+    "MTG#Mentougou"
+  ],
+  "110111": [
+    "BJ#Beijing",
+    "FSQ#Fangshan"
+  ],
+  "110112": [
+    "BJ#Beijing",
+    "TZQ#Tongzhou"
+  ],
+  "110113": [
+    "BJ#Beijing",
+    "SYQ#Shunyi"
+  ],
+  "110114": [
+    "BJ#Beijing",
+    "CPQ#Changping"
+  ],
+  "110115": [
+    "BJ#Beijing",
+    "DXQ#Daxing"
+  ],
+  "110116": [
+    "BJ#Beijing",
+    "HRQ#Huairou"
+  ],
+  "110117": [
+    "BJ#Beijing",
+    "PGQ#Pinggu"
+  ],
+  "110118": [
+    "BJ#Beijing",
+    "MYQ#Miyun"
+  ],
+  "110119": [
+    "BJ#Beijing",
+    "YQQ#Yanqing"
+  ],
+  "120000": [
+    "TJ#Tianjin",
+    "AA#--"
+  ],
+  "120101": [
+    "TJ#Tianjin",
+    "HPQ#Heping"
+  ],
+  "120102": [
+    "TJ#Tianjin",
+    "HDQ#Hedong"
+  ],
+  "120103": [
+    "TJ#Tianjin",
+    "HXQ#Hexi"
+  ],
+  "120104": [
+    "TJ#Tianjin",
+    "NKQ#Nankai"
+  ],
+  "120105": [
+    "TJ#Tianjin",
+    "HBQ#Hebei"
+  ],
+  "120106": [
+    "TJ#Tianjin",
+    "HQQ#Hongqiao"
+  ],
+  "120110": [
+    "TJ#Tianjin",
+    "DLQ#Dongli"
+  ],
+  "120111": [
+    "TJ#Tianjin",
+    "XQQ#Xiqing"
+  ],
+  "120112": [
+    "TJ#Tianjin",
+    "JNQ#Jinnan"
+  ],
+  "120113": [
+    "TJ#Tianjin",
+    "BCQ#Beichen"
+  ],
+  "120114": [
+    "TJ#Tianjin",
+    "WQQ#Wuqing"
+  ],
+  "120115": [
+    "TJ#Tianjin",
+    "BZQ#Baodi"
+  ],
+  "120116": [
+    "TJ#Tianjin",
+    "BHX#Binhai New Area"
+  ],
+  "120117": [
+    "TJ#Tianjin",
+    "NHQ#Ninghe"
+  ],
+  "120118": [
+    "TJ#Tianjin",
+    "JHQ#Jinghai"
+  ],
+  "120119": [
+    "TJ#Tianjin",
+    "JZQ#Jizhou"
+  ],
+  "130000": [
+    "HB#Hebei",
+    "AA#--"
+  ],
+  "130100": [
+    "HB#Hebei",
+    "SJZ#Shijiazhuang"
+  ],
+  "130200": [
+    "HB#Hebei",
+    "TSS#Tangshan"
+  ],
+  "130300": [
+    "HB#Hebei",
+    "QHD#Qinhuangdao"
+  ],
+  "130400": [
+    "HB#Hebei",
+    "HDS#Handan"
+  ],
+  "130500": [
+    "HB#Hebei",
+    "XTS#Xingtai"
+  ],
+  "130600": [
+    "HB#Hebei",
+    "BDS#Baoding"
+  ],
+  "130700": [
+    "HB#Hebei",
+    "ZJK#Zhangjiakou"
+  ],
+  "130800": [
+    "HB#Hebei",
+    "CDS#Chengde"
+  ],
+  "130900": [
+    "HB#Hebei",
+    "CZS#Cangzhou"
+  ],
+  "131000": [
+    "HB#Hebei",
+    "LFS#Langfang"
+  ],
+  "131100": [
+    "HB#Hebei",
+    "HSS#Hengshui"
+  ],
+  "139001": [
+    "HB#Hebei",
+    "DZS#Dingzhou"
+  ],
+  "139002": [
+    "HB#Hebei",
+    "XJS#Xinji"
+  ],
+  "140000": [
+    "SX#Shanxi",
+    "AA#--"
+  ],
+  "140100": [
+    "SX#Shanxi",
+    "TYS#Taiyuan"
+  ],
+  "140200": [
+    "SX#Shanxi",
+    "DTS#Datong"
+  ],
+  "140300": [
+    "SX#Shanxi",
+    "YQS#Yangquan"
+  ],
+  "140400": [
+    "SX#Shanxi",
+    "CZS#Changzhi"
+  ],
+  "140500": [
+    "SX#Shanxi",
+    "JCS#Jincheng"
+  ],
+  "140600": [
+    "SX#Shanxi",
+    "SZS#Shuozhou"
+  ],
+  "140700": [
+    "SX#Shanxi",
+    "JZS#Jinzhong"
+  ],
+  "140800": [
+    "SX#Shanxi",
+    "YCS#Yuncheng"
+  ],
+  "140900": [
+    "SX#Shanxi",
+    "XZS#Xinzhou"
+  ],
+  "141000": [
+    "SX#Shanxi",
+    "LFS#Linfen"
+  ],
+  "141100": [
+    "SX#Shanxi",
+    "LLS#Luliang"
+  ],
+  "150000": [
+    "NMG#Inner Mongolia",
+    "AA#--"
+  ],
+  "150100": [
+    "NMG#Inner Mongolia",
+    "HHH#Hohhot"
+  ],
+  "150200": [
+    "NMG#Inner Mongolia",
+    "BTS#Baotou"
+  ],
+  "150300": [
+    "NMG#Inner Mongolia",
+    "WHS#Wuhai"
+  ],
+  "150400": [
+    "NMG#Inner Mongolia",
+    "CFS#Chifeng"
+  ],
+  "150500": [
+    "NMG#Inner Mongolia",
+    "TLS#Tongliao"
+  ],
+  "150600": [
+    "NMG#Inner Mongolia",
+    "EED#Erdos"
+  ],
+  "150700": [
+    "NMG#Inner Mongolia",
+    "HLB#Hulunbeier"
+  ],
+  "150800": [
+    "NMG#Inner Mongolia",
+    "BYN#Bayannur"
+  ],
+  "150900": [
+    "NMG#Inner Mongolia",
+    "WLC#Ulanqab"
+  ],
+  "152200": [
+    "NMG#Inner Mongolia",
+    "XAM#Xing"
+  ],
+  "152500": [
+    "NMG#Inner Mongolia",
+    "XLG#Xilin Gol"
+  ],
+  "152900": [
+    "NMG#Inner Mongolia",
+    "ALS#Alxa"
+  ],
+  "210000": [
+    "LN#Liaoning",
+    "AA#--"
+  ],
+  "210100": [
+    "LN#Liaoning",
+    "SYS#Shenyang"
+  ],
+  "210200": [
+    "LN#Liaoning",
+    "DLS#Dalian"
+  ],
+  "210300": [
+    "LN#Liaoning",
+    "ASS#Anshan"
+  ],
+  "210400": [
+    "LN#Liaoning",
+    "FSS#Fushun"
+  ],
+  "210500": [
+    "LN#Liaoning",
+    "BXS#Benxi"
+  ],
+  "210600": [
+    "LN#Liaoning",
+    "DDS#Dandong"
+  ],
+  "210700": [
+    "LN#Liaoning",
+    "JZS#Jinzhou"
+  ],
+  "210800": [
+    "LN#Liaoning",
+    "YKS#Yingkou"
+  ],
+  "210900": [
+    "LN#Liaoning",
+    "FXS#Fuxin"
+  ],
+  "211000": [
+    "LN#Liaoning",
+    "LYS#Liaoyang"
+  ],
+  "211100": [
+    "LN#Liaoning",
+    "PJS#Panjin"
+  ],
+  "211200": [
+    "LN#Liaoning",
+    "TLS#Tieling"
+  ],
+  "211300": [
+    "LN#Liaoning",
+    "CYS#Chaoyang"
+  ],
+  "211400": [
+    "LN#Liaoning",
+    "HLD#Huludao"
+  ],
+  "220100": [
+    "JL#Jilin",
+    "CCS#Changchun"
+  ],
+  "220200": [
+    "JL#Jilin",
+    "JLS#Jilin"
+  ],
+  "220300": [
+    "JL#Jilin",
+    "SPS#Siping"
+  ],
+  "220400": [
+    "JL#Jilin",
+    "LYS#Liaoyuan"
+  ],
+  "220500": [
+    "JL#Jilin",
+    "THS#Tonghua"
+  ],
+  "220600": [
+    "JL#Jilin",
+    "BSS#Baishan"
+  ],
+  "220700": [
+    "JL#Jilin",
+    "SYS#Songyuan"
+  ],
+  "220800": [
+    "JL#Jilin",
+    "BCS#Baicheng"
+  ],
+  "222400": [
+    "JL#Jilin",
+    "YBC#Yanbian"
+  ],
+  "230000": [
+    "HLJ#Heilongjiang",
+    "AA#--"
+  ],
+  "230100": [
+    "HLJ#Heilongjiang",
+    "HEB#Harbin"
+  ],
+  "230200": [
+    "HLJ#Heilongjiang",
+    "QQH#Qiqihar"
+  ],
+  "230300": [
+    "HLJ#Heilongjiang",
+    "JXS#Jixi"
+  ],
+  "230400": [
+    "HLJ#Heilongjiang",
+    "HGS#Hegang"
+  ],
+  "230500": [
+    "HLJ#Heilongjiang",
+    "SYS#Shuangyashan"
+  ],
+  "230600": [
+    "HLJ#Heilongjiang",
+    "DQS#Daqing"
+  ],
+  "230700": [
+    "HLJ#Heilongjiang",
+    "YCS#Yichun"
+  ],
+  "230800": [
+    "HLJ#Heilongjiang",
+    "JMS#Jiamusi"
+  ],
+  "230900": [
+    "HLJ#Heilongjiang",
+    "QTH#Qitaihe"
+  ],
+  "231000": [
+    "HLJ#Heilongjiang",
+    "MDJ#Mudanjiang"
+  ],
+  "231100": [
+    "HLJ#Heilongjiang",
+    "HHS#Heihe"
+  ],
+  "231200": [
+    "HLJ#Heilongjiang",
+    "SHS#Suihua"
+  ],
+  "232700": [
+    "HLJ#Heilongjiang",
+    "DXA#Daxinganling"
+  ],
+  "310000": [
+    "SH#Shanghai",
+    "AA#--"
+  ],
+  "310101": [
+    "SH#Shanghai",
+    "HPQ#Huangpu"
+  ],
+  "310104": [
+    "SH#Shanghai",
+    "XHQ#Xuhui"
+  ],
+  "310105": [
+    "SH#Shanghai",
+    "CNQ#Changning"
+  ],
+  "310106": [
+    "SH#Shanghai",
+    "JAQ#Jingan"
+  ],
+  "310107": [
+    "SH#Shanghai",
+    "PTQ#Putuo"
+  ],
+  "310109": [
+    "SH#Shanghai",
+    "HKQ#Hongkou"
+  ],
+  "310110": [
+    "SH#Shanghai",
+    "YPQ#Yangpu"
+  ],
+  "310112": [
+    "SH#Shanghai",
+    "ZXQ#闵xing"
+  ],
+  "310113": [
+    "SH#Shanghai",
+    "BSQ#Baoshan"
+  ],
+  "310114": [
+    "SH#Shanghai",
+    "JDQ#Jiading"
+  ],
+  "310115": [
+    "SH#Shanghai",
+    "PDX#Pudong New Area"
+  ],
+  "310116": [
+    "SH#Shanghai",
+    "JSQ#Jinshan"
+  ],
+  "310117": [
+    "SH#Shanghai",
+    "SJQ#Songjiang"
+  ],
+  "310118": [
+    "SH#Shanghai",
+    "QPQ#Qingpu"
+  ],
+  "310120": [
+    "SH#Shanghai",
+    "FXQ#Fengxian"
+  ],
+  "310151": [
+    "SH#Shanghai",
+    "CMQ#Chongming"
+  ],
+  "320000": [
+    "JS#Jiangsu",
+    "AA#--"
+  ],
+  "320100": [
+    "JS#Jiangsu",
+    "NJS#Nanjing"
+  ],
+  "320200": [
+    "JS#Jiangsu",
+    "WXS#Wuxi"
+  ],
+  "320300": [
+    "JS#Jiangsu",
+    "XZS#Xuzhou"
+  ],
+  "320400": [
+    "JS#Jiangsu",
+    "CZS#Changzhou"
+  ],
+  "320500": [
+    "JS#Jiangsu",
+    "SZS#Suzhou"
+  ],
+  "320600": [
+    "JS#Jiangsu",
+    "NTS#Nantong"
+  ],
+  "320700": [
+    "JS#Jiangsu",
+    "LYG#Lianyungang"
+  ],
+  "320800": [
+    "JS#Jiangsu",
+    "HAS#Huaian"
+  ],
+  "320900": [
+    "JS#Jiangsu",
+    "YCS#Yancheng"
+  ],
+  "321000": [
+    "JS#Jiangsu",
+    "YZS#Yangzhou"
+  ],
+  "321100": [
+    "JS#Jiangsu",
+    "ZJS#Zhenjiang"
+  ],
+  "321200": [
+    "JS#Jiangsu",
+    "TZS#Taizhou"
+  ],
+  "321300": [
+    "JS#Jiangsu",
+    "SQS#Suqian"
+  ],
+  "330000": [
+    "ZHJ#Zhejiang",
+    "AA#--"
+  ],
+  "330100": [
+    "ZHJ#Zhejiang",
+    "HZS#Hangzhou"
+  ],
+  "330200": [
+    "ZHJ#Zhejiang",
+    "NBS#Ningbo"
+  ],
+  "330300": [
+    "ZHJ#Zhejiang",
+    "WZS#Wenzhou"
+  ],
+  "330400": [
+    "ZHJ#Zhejiang",
+    "JXS#Jiaxing"
+  ],
+  "330500": [
+    "ZHJ#Zhejiang",
+    "HZS#Huzhou"
+  ],
+  "330600": [
+    "ZHJ#Zhejiang",
+    "SXS#Shaoxing"
+  ],
+  "330700": [
+    "ZHJ#Zhejiang",
+    "JHS#Jinhua"
+  ],
+  "330800": [
+    "ZHJ#Zhejiang",
+    "ZZS#Quzhou"
+  ],
+  "330900": [
+    "ZHJ#Zhejiang",
+    "ZSS#Zhoushan"
+  ],
+  "331000": [
+    "ZHJ#Zhejiang",
+    "TZS#Taizhou"
+  ],
+  "331100": [
+    "ZHJ#Zhejiang",
+    "LSS#Lishui"
+  ],
+  "340000": [
+    "AH#Anhui",
+    "AA#--"
+  ],
+  "340100": [
+    "AH#Anhui",
+    "HFS#Hefei"
+  ],
+  "340200": [
+    "AH#Anhui",
+    "WHS#Wuhu"
+  ],
+  "340300": [
+    "AH#Anhui",
+    "BBS#Bengbu"
+  ],
+  "340400": [
+    "AH#Anhui",
+    "HNS#Huainan"
+  ],
+  "340500": [
+    "AH#Anhui",
+    "MAS#Ma'anshan"
+  ],
+  "340600": [
+    "AH#Anhui",
+    "HBS#Huaibei"
+  ],
+  "340700": [
+    "AH#Anhui",
+    "TLS#Tongling"
+  ],
+  "340800": [
+    "AH#Anhui",
+    "AQS#Anqing"
+  ],
+  "341000": [
+    "AH#Anhui",
+    "HSS#Huangshan"
+  ],
+  "341100": [
+    "AH#Anhui",
+    "CZS#Chuzhou"
+  ],
+  "341200": [
+    "AH#Anhui",
+    "FYS#Fuyang"
+  ],
+  "341300": [
+    "AH#Anhui",
+    "SZS#Suzhou"
+  ],
+  "341500": [
+    "AH#Anhui",
+    "LAS#Luan"
+  ],
+  "341600": [
+    "AH#Anhui",
+    "ZZS#Bozhou"
+  ],
+  "341700": [
+    "AH#Anhui",
+    "CZS#Chizhou"
+  ],
+  "341800": [
+    "AH#Anhui",
+    "XCS#Xuancheng"
+  ],
+  "350000": [
+    "FJ#Fujian",
+    "AA#--"
+  ],
+  "350100": [
+    "FJ#Fujian",
+    "FZS#Fuzhou"
+  ],
+  "350200": [
+    "FJ#Fujian",
+    "XMS#Xiamen"
+  ],
+  "350300": [
+    "FJ#Fujian",
+    "PTS#Putian"
+  ],
+  "350400": [
+    "FJ#Fujian",
+    "SMS#Sanming"
+  ],
+  "350500": [
+    "FJ#Fujian",
+    "QZS#Quanzhou"
+  ],
+  "350600": [
+    "FJ#Fujian",
+    "ZZS#Zhangzhou"
+  ],
+  "350700": [
+    "FJ#Fujian",
+    "NPS#Nanping"
+  ],
+  "350800": [
+    "FJ#Fujian",
+    "LYS#Longyan"
+  ],
+  "350900": [
+    "FJ#Fujian",
+    "NDS#Ningde"
+  ],
+  "360000": [
+    "JX#Jiangxi",
+    "AA#--"
+  ],
+  "360100": [
+    "JX#Jiangxi",
+    "NCS#Nanchang"
+  ],
+  "360200": [
+    "JX#Jiangxi",
+    "JDZ#Jingdezhen"
+  ],
+  "360300": [
+    "JX#Jiangxi",
+    "PXS#Pingxiang"
+  ],
+  "360400": [
+    "JX#Jiangxi",
+    "JJS#Jiujiang"
+  ],
+  "360500": [
+    "JX#Jiangxi",
+    "XYS#Xinyu"
+  ],
+  "360600": [
+    "JX#Jiangxi",
+    "YTS#Yingtan"
+  ],
+  "360700": [
+    "JX#Jiangxi",
+    "GZS#Ganzhou"
+  ],
+  "360800": [
+    "JX#Jiangxi",
+    "JAS#Ji'an"
+  ],
+  "360900": [
+    "JX#Jiangxi",
+    "YCS#Yichun"
+  ],
+  "361000": [
+    "JX#Jiangxi",
+    "FZS#Fuzhou"
+  ],
+  "361100": [
+    "JX#Jiangxi",
+    "SRS#Shangrao"
+  ],
+  "370000": [
+    "SD#Shandong",
+    "AA#--"
+  ],
+  "370100": [
+    "SD#Shandong",
+    "JNS#Jinan"
+  ],
+  "370200": [
+    "SD#Shandong",
+    "QDS#Qingdao"
+  ],
+  "370300": [
+    "SD#Shandong",
+    "ZBS#Zibo"
+  ],
+  "370400": [
+    "SD#Shandong",
+    "ZZS#Zaozhuang"
+  ],
+  "370500": [
+    "SD#Shandong",
+    "DYS#Dongying"
+  ],
+  "370600": [
+    "SD#Shandong",
+    "YTS#Yantai"
+  ],
+  "370700": [
+    "SD#Shandong",
+    "WFS#Weifang"
+  ],
+  "370800": [
+    "SD#Shandong",
+    "JNS#Jining"
+  ],
+  "370900": [
+    "SD#Shandong",
+    "TAS#Taian"
+  ],
+  "371000": [
+    "SD#Shandong",
+    "WHS#Weihai"
+  ],
+  "371100": [
+    "SD#Shandong",
+    "RZS#Rizhao"
+  ],
+  "371200": [
+    "SD#Shandong",
+    "LWS#Laiwu"
+  ],
+  "371300": [
+    "SD#Shandong",
+    "LYS#Linyi"
+  ],
+  "371400": [
+    "SD#Shandong",
+    "DZS#Dezhou"
+  ],
+  "371500": [
+    "SD#Shandong",
+    "LCS#Liaocheng"
+  ],
+  "371600": [
+    "SD#Shandong",
+    "BZS#Binzhou"
+  ],
+  "371700": [
+    "SD#Shandong",
+    "HZS#Heze"
+  ],
+  "410000": [
+    "HEN#Henan",
+    "AA#--"
+  ],
+  "410100": [
+    "HEN#Henan",
+    "ZZS#Zhengzhou"
+  ],
+  "410200": [
+    "HEN#Henan",
+    "KFS#Kaifeng"
+  ],
+  "410300": [
+    "HEN#Henan",
+    "LYS#Luoyang"
+  ],
+  "410400": [
+    "HEN#Henan",
+    "PDS#Pingdingshan"
+  ],
+  "410500": [
+    "HEN#Henan",
+    "AYS#Anyang"
+  ],
+  "410600": [
+    "HEN#Henan",
+    "HBS#Hebi"
+  ],
+  "410700": [
+    "HEN#Henan",
+    "XXS#Xinxiang"
+  ],
+  "410800": [
+    "HEN#Henan",
+    "JZS#Jiaozuo"
+  ],
+  "410900": [
+    "HEN#Henan",
+    "ZYS#Puyang"
+  ],
+  "411000": [
+    "HEN#Henan",
+    "XCS#Xuchang"
+  ],
+  "411100": [
+    "HEN#Henan",
+    "ZHS#Luohe"
+  ],
+  "411200": [
+    "HEN#Henan",
+    "SMX#Sanmenxia"
+  ],
+  "411300": [
+    "HEN#Henan",
+    "NYS#Nanyang"
+  ],
+  "411400": [
+    "HEN#Henan",
+    "SQS#Shangqiu"
+  ],
+  "411500": [
+    "HEN#Henan",
+    "XYS#Xinyang"
+  ],
+  "411600": [
+    "HEN#Henan",
+    "ZKS#Zhoukou"
+  ],
+  "411700": [
+    "HEN#Henan",
+    "ZMD#Zhumadian"
+  ],
+  "419001": [
+    "HEN#Henan",
+    "JYS#Jiyuan"
+  ],
+  "420000": [
+    "HB#Hubei",
+    "AA#--"
+  ],
+  "420100": [
+    "HB#Hubei",
+    "WHS#Wuhan"
+  ],
+  "420200": [
+    "HB#Hubei",
+    "HSS#Huangshi"
+  ],
+  "420300": [
+    "HB#Hubei",
+    "SYS#Shiyan"
+  ],
+  "420500": [
+    "HB#Hubei",
+    "YCS#Yichang"
+  ],
+  "420600": [
+    "HB#Hubei",
+    "XYS#Xiangyang"
+  ],
+  "420700": [
+    "HB#Hubei",
+    "EZS#Ezhou"
+  ],
+  "420800": [
+    "HB#Hubei",
+    "JMS#Jingmen"
+  ],
+  "420900": [
+    "HB#Hubei",
+    "XGS#Xiaogan"
+  ],
+  "421000": [
+    "HB#Hubei",
+    "JZS#Jingzhou"
+  ],
+  "421100": [
+    "HB#Hubei",
+    "HGS#Huanggang"
+  ],
+  "421200": [
+    "HB#Hubei",
+    "XNS#Xianning"
+  ],
+  "421300": [
+    "HB#Hubei",
+    "SZS#Suizhou"
+  ],
+  "422800": [
+    "HB#Hubei",
+    "EST#Enshi"
+  ],
+  "429004": [
+    "HB#Hubei",
+    "XTS#Xiantao"
+  ],
+  "429005": [
+    "HB#Hubei",
+    "QJS#Qianjiang"
+  ],
+  "429006": [
+    "HB#Hubei",
+    "TMS#Tianmen"
+  ],
+  "429021": [
+    "HB#Hubei",
+    "SNJ#Shennongjia"
+  ],
+  "430000": [
+    "HUN#Hunan",
+    "AA#--"
+  ],
+  "430100": [
+    "HUN#Hunan",
+    "CSS#Changsha"
+  ],
+  "430200": [
+    "HUN#Hunan",
+    "ZZS#Zhuzhou"
+  ],
+  "430300": [
+    "HUN#Hunan",
+    "XTS#Xiangtan"
+  ],
+  "430400": [
+    "HUN#Hunan",
+    "HYS#Hengyang"
+  ],
+  "430500": [
+    "HUN#Hunan",
+    "SYS#Shaoyang"
+  ],
+  "430600": [
+    "HUN#Hunan",
+    "YYS#Yueyang"
+  ],
+  "430700": [
+    "HUN#Hunan",
+    "CDS#Changde"
+  ],
+  "430800": [
+    "HUN#Hunan",
+    "ZJJ#Zhangjiajie"
+  ],
+  "430900": [
+    "HUN#Hunan",
+    "YYS#Yiyang"
+  ],
+  "431000": [
+    "HUN#Hunan",
+    "CZS#Chenzhou"
+  ],
+  "431100": [
+    "HUN#Hunan",
+    "YZS#Yongzhou"
+  ],
+  "431200": [
+    "HUN#Hunan",
+    "HHS#Huaihua"
+  ],
+  "431300": [
+    "HUN#Hunan",
+    "LDS#Loudi"
+  ],
+  "433100": [
+    "HUN#Hunan",
+    "XXT#Xiangxi"
+  ],
+  "440000": [
+    "GD#Guangdong",
+    "AA#--"
+  ],
+  "440100": [
+    "GD#Guangdong",
+    "GZS#Guangzhou"
+  ],
+  "440200": [
+    "GD#Guangdong",
+    "SGS#Shaoguan"
+  ],
+  "440300": [
+    "GD#Guangdong",
+    "SZS#Shenzhen"
+  ],
+  "440400": [
+    "GD#Guangdong",
+    "ZHS#Zhuhai"
+  ],
+  "440500": [
+    "GD#Guangdong",
+    "STS#Shantou"
+  ],
+  "440600": [
+    "GD#Guangdong",
+    "FSS#Foshan"
+  ],
+  "440700": [
+    "GD#Guangdong",
+    "JMS#Jiangmen"
+  ],
+  "440800": [
+    "GD#Guangdong",
+    "ZJS#Zhanjiang"
+  ],
+  "440900": [
+    "GD#Guangdong",
+    "MMS#Maoming"
+  ],
+  "441200": [
+    "GD#Guangdong",
+    "ZQS#Zhaoqing"
+  ],
+  "441300": [
+    "GD#Guangdong",
+    "HZS#Huizhou"
+  ],
+  "441400": [
+    "GD#Guangdong",
+    "MZS#Meizhou"
+  ],
+  "441500": [
+    "GD#Guangdong",
+    "SWS#Shanwei"
+  ],
+  "441600": [
+    "GD#Guangdong",
+    "HYS#Heyuan"
+  ],
+  "441700": [
+    "GD#Guangdong",
+    "YJS#Yangjiang"
+  ],
+  "441800": [
+    "GD#Guangdong",
+    "QYS#Qingyuan"
+  ],
+  "441900": [
+    "GD#Guangdong",
+    "DZS#Dongguan"
+  ],
+  "442000": [
+    "GD#Guangdong",
+    "ZSS#Zhongshan"
+  ],
+  "445100": [
+    "GD#Guangdong",
+    "CZS#Chaozhou"
+  ],
+  "445200": [
+    "GD#Guangdong",
+    "JYS#Jieyang"
+  ],
+  "445300": [
+    "GD#Guangdong",
+    "YFS#Yunfu"
+  ],
+  "450000": [
+    "GX#Guangxi",
+    "AA#--"
+  ],
+  "450100": [
+    "GX#Guangxi",
+    "NNS#Nanning"
+  ],
+  "450200": [
+    "GX#Guangxi",
+    "LZS#Liuzhou"
+  ],
+  "450300": [
+    "GX#Guangxi",
+    "GLS#Guilin"
+  ],
+  "450400": [
+    "GX#Guangxi",
+    "WZS#Wuzhou"
+  ],
+  "450500": [
+    "GX#Guangxi",
+    "BHS#Beihai"
+  ],
+  "450600": [
+    "GX#Guangxi",
+    "FCG#Fangchenggang"
+  ],
+  "450700": [
+    "GX#Guangxi",
+    "QZS#Qinzhou"
+  ],
+  "450800": [
+    "GX#Guangxi",
+    "GGS#Guigang"
+  ],
+  "450900": [
+    "GX#Guangxi",
+    "YLS#Yulin"
+  ],
+  "451000": [
+    "GX#Guangxi",
+    "BSS#Baise"
+  ],
+  "451100": [
+    "GX#Guangxi",
+    "HZS#Hezhou"
+  ],
+  "451200": [
+    "GX#Guangxi",
+    "HCS#Hechi"
+  ],
+  "451300": [
+    "GX#Guangxi",
+    "LBS#Laibin"
+  ],
+  "451400": [
+    "GX#Guangxi",
+    "CZS#Chongzuo"
+  ],
+  "460000": [
+    "HAN#Hainan",
+    "AA#--"
+  ],
+  "460100": [
+    "HAN#Hainan",
+    "HKS#Haikou"
+  ],
+  "460200": [
+    "HAN#Hainan",
+    "SYS#Sanya"
+  ],
+  "460300": [
+    "HAN#Hainan",
+    "SSS#Sansha"
+  ],
+  "460400": [
+    "HAN#Hainan",
+    "ZZS#Danzhou"
+  ],
+  "469001": [
+    "HAN#Hainan",
+    "WZS#Wuzhishan"
+  ],
+  "469002": [
+    "HAN#Hainan",
+    "QHS#Qionghai"
+  ],
+  "469005": [
+    "HAN#Hainan",
+    "WCS#Wenchang"
+  ],
+  "469006": [
+    "HAN#Hainan",
+    "WNS#Wanning"
+  ],
+  "469007": [
+    "HAN#Hainan",
+    "DFS#Dongfang"
+  ],
+  "469021": [
+    "HAN#Hainan",
+    "DAX#Ding'an"
+  ],
+  "469022": [
+    "HAN#Hainan",
+    "TCX#Tunchang"
+  ],
+  "469023": [
+    "HAN#Hainan",
+    "CMX#Chengmai"
+  ],
+  "469024": [
+    "HAN#Hainan",
+    "LGX#Lingao"
+  ],
+  "469025": [
+    "HAN#Hainan",
+    "BSL#Baisha"
+  ],
+  "469026": [
+    "HAN#Hainan",
+    "CJL#Changjiang"
+  ],
+  "469027": [
+    "HAN#Hainan",
+    "LDL#Ledong"
+  ],
+  "469028": [
+    "HAN#Hainan",
+    "LSL#Lingshui"
+  ],
+  "469029": [
+    "HAN#Hainan",
+    "BTL#Baoting"
+  ],
+  "469030": [
+    "HAN#Hainan",
+    "QZL#Qiongzhong"
+  ],
+  "500000": [
+    "CQ#Chongqing",
+    "AA#--"
+  ],
+  "500101": [
+    "CQ#Chongqing",
+    "WZQ#Wanzhou"
+  ],
+  "500102": [
+    "CQ#Chongqing",
+    "FLQ#Fuling"
+  ],
+  "500103": [
+    "CQ#Chongqing",
+    "YZQ#Yuzhong"
+  ],
+  "500104": [
+    "CQ#Chongqing",
+    "DDK#Dadongkou"
+  ],
+  "500105": [
+    "CQ#Chongqing",
+    "JBQ#Jiangbei"
+  ],
+  "500106": [
+    "CQ#Chongqing",
+    "SPB#Shapingba"
+  ],
+  "500107": [
+    "CQ#Chongqing",
+    "JLP#Jiulongpo"
+  ],
+  "500108": [
+    "CQ#Chongqing",
+    "NAQ#Nan'an"
+  ],
+  "500109": [
+    "CQ#Chongqing",
+    "BZQ#Beibei"
+  ],
+  "500110": [
+    "CQ#Chongqing",
+    "ZJQ#Qijiang"
+  ],
+  "500111": [
+    "CQ#Chongqing",
+    "DZQ#Dazu"
+  ],
+  "500112": [
+    "CQ#Chongqing",
+    "YBQ#Yubei"
+  ],
+  "500113": [
+    "CQ#Chongqing",
+    "BNQ#Banan"
+  ],
+  "500114": [
+    "CQ#Chongqing",
+    "QJQ#Qianjiang"
+  ],
+  "500115": [
+    "CQ#Chongqing",
+    "CSQ#Changshou"
+  ],
+  "500116": [
+    "CQ#Chongqing",
+    "JJQ#Jiangjin"
+  ],
+  "500117": [
+    "CQ#Chongqing",
+    "HCQ#Hechuan"
+  ],
+  "500118": [
+    "CQ#Chongqing",
+    "YCQ#Yongchuan"
+  ],
+  "500119": [
+    "CQ#Chongqing",
+    "NCQ#Nanchuan"
+  ],
+  "500120": [
+    "CQ#Chongqing",
+    "ZSQ#Bishan"
+  ],
+  "500151": [
+    "CQ#Chongqing",
+    "TLQ#Tongliang"
+  ],
+  "500152": [
+    "CQ#Chongqing",
+    "ZNQ#Tongnan"
+  ],
+  "500153": [
+    "CQ#Chongqing",
+    "RCQ#Rongchang"
+  ],
+  "500154": [
+    "CQ#Chongqing",
+    "KZQ#Kaizhou"
+  ],
+  "500228": [
+    "CQ#Chongqing",
+    "LPX#Liangping"
+  ],
+  "500229": [
+    "CQ#Chongqing",
+    "CKX#Chengkou"
+  ],
+  "500230": [
+    "CQ#Chongqing",
+    "FDX#Fengdu"
+  ],
+  "500231": [
+    "CQ#Chongqing",
+    "DJX#Dianjiang"
+  ],
+  "500232": [
+    "CQ#Chongqing",
+    "WLX#Wulong"
+  ],
+  "500233": [
+    "CQ#Chongqing",
+    "ZX#Zhongxian"
+  ],
+  "500235": [
+    "CQ#Chongqing",
+    "YYX#Yunyang"
+  ],
+  "500236": [
+    "CQ#Chongqing",
+    "FJX#Fengjie"
+  ],
+  "500237": [
+    "CQ#Chongqing",
+    "WSX#Wushan"
+  ],
+  "500238": [
+    "CQ#Chongqing",
+    "WXX#Wuxi"
+  ],
+  "500240": [
+    "CQ#Chongqing",
+    "SZT#Shizhu"
+  ],
+  "500241": [
+    "CQ#Chongqing",
+    "XST#Xiushan"
+  ],
+  "500242": [
+    "CQ#Chongqing",
+    "YYT#Youyang"
+  ],
+  "500243": [
+    "CQ#Chongqing",
+    "PSM#Pengshui"
+  ],
+  "510000": [
+    "SC#Sichuan",
+    "AA#--"
+  ],
+  "510100": [
+    "SC#Sichuan",
+    "CDS#Chengdu"
+  ],
+  "510300": [
+    "SC#Sichuan",
+    "ZGS#Zigong"
+  ],
+  "510400": [
+    "SC#Sichuan",
+    "PZH#Panzhihua"
+  ],
+  "510500": [
+    "SC#Sichuan",
+    "ZZS#Luzhou"
+  ],
+  "510600": [
+    "SC#Sichuan",
+    "DYS#Deyang"
+  ],
+  "510700": [
+    "SC#Sichuan",
+    "MYS#Mianyang"
+  ],
+  "510800": [
+    "SC#Sichuan",
+    "GYS#Guangyuan"
+  ],
+  "510900": [
+    "SC#Sichuan",
+    "SNS#Suining"
+  ],
+  "511000": [
+    "SC#Sichuan",
+    "NJS#Neijiang"
+  ],
+  "511100": [
+    "SC#Sichuan",
+    "LSS#Leshan"
+  ],
+  "511300": [
+    "SC#Sichuan",
+    "NCS#Nanchong"
+  ],
+  "511400": [
+    "SC#Sichuan",
+    "MSS#Meishan"
+  ],
+  "511500": [
+    "SC#Sichuan",
+    "YBS#Yibin"
+  ],
+  "511600": [
+    "SC#Sichuan",
+    "GAS#Guang'an"
+  ],
+  "511700": [
+    "SC#Sichuan",
+    "DZS#Dazhou"
+  ],
+  "511800": [
+    "SC#Sichuan",
+    "YAS#Ya'an"
+  ],
+  "511900": [
+    "SC#Sichuan",
+    "BZS#Bazhong"
+  ],
+  "512000": [
+    "SC#Sichuan",
+    "ZYS#Ziyang"
+  ],
+  "513200": [
+    "SC#Sichuan",
+    "ABC#Aba"
+  ],
+  "513300": [
+    "SC#Sichuan",
+    "GZC#Ganzi"
+  ],
+  "513400": [
+    "SC#Sichuan",
+    "LSY#Liangshan"
+  ],
+  "520000": [
+    "GZH#Guizhou",
+    "AA#--"
+  ],
+  "520100": [
+    "GZH#Guizhou",
+    "GYS#Guiyang"
+  ],
+  "520200": [
+    "GZH#Guizhou",
+    "LPS#Liupanshui"
+  ],
+  "520300": [
+    "GZH#Guizhou",
+    "ZYS#Zunyi"
+  ],
+  "520400": [
+    "GZH#Guizhou",
+    "ASS#Anshun"
+  ],
+  "520500": [
+    "GZH#Guizhou",
+    "BJS#Bijie"
+  ],
+  "520600": [
+    "GZH#Guizhou",
+    "TRS#Tongren"
+  ],
+  "522300": [
+    "GZH#Guizhou",
+    "QXN#Qianxi"
+  ],
+  "522600": [
+    "GZH#Guizhou",
+    "QDN#Qiandongnan"
+  ],
+  "522700": [
+    "GZH#Guizhou",
+    "QNB#Qiannan"
+  ],
+  "530000": [
+    "YN#Yunnan",
+    "AA#--"
+  ],
+  "530100": [
+    "YN#Yunnan",
+    "KMS#Kunming"
+  ],
+  "530300": [
+    "YN#Yunnan",
+    "QJS#Qujing"
+  ],
+  "530400": [
+    "YN#Yunnan",
+    "YXS#Yuxi"
+  ],
+  "530500": [
+    "YN#Yunnan",
+    "BSS#Baoshan"
+  ],
+  "530600": [
+    "YN#Yunnan",
+    "ZTS#Zhaotong"
+  ],
+  "530700": [
+    "YN#Yunnan",
+    "LJS#Lijiang"
+  ],
+  "530800": [
+    "YN#Yunnan",
+    "PES#Pu'er"
+  ],
+  "530900": [
+    "YN#Yunnan",
+    "LCS#Lincang"
+  ],
+  "532300": [
+    "YN#Yunnan",
+    "CXY#Chuxiong"
+  ],
+  "532500": [
+    "YN#Yunnan",
+    "HHH#Honghe"
+  ],
+  "532600": [
+    "YN#Yunnan",
+    "WSZ#Wenshan"
+  ],
+  "532800": [
+    "YN#Yunnan",
+    "XSB#Xishuangbanna"
+  ],
+  "532900": [
+    "YN#Yunnan",
+    "DLB#Dalian"
+  ],
+  "533100": [
+    "YN#Yunnan",
+    "DHD#Dehong"
+  ],
+  "533300": [
+    "YN#Yunnan",
+    "NJL#Nujiang"
+  ],
+  "533400": [
+    "YN#Yunnan",
+    "DQC#Diqing"
+  ],
+  "540000": [
+    "XZ#Tibet",
+    "AA#--"
+  ],
+  "540100": [
+    "XZ#Tibet",
+    "LSS#Lhasa"
+  ],
+  "540200": [
+    "XZ#Tibet",
+    "RKZ#Shigatse"
+  ],
+  "540300": [
+    "XZ#Tibet",
+    "CDS#Qamdo"
+  ],
+  "540400": [
+    "XZ#Tibet",
+    "LZS#Nyingchi"
+  ],
+  "540500": [
+    "XZ#Tibet",
+    "SNS#Shannan"
+  ],
+  "542400": [
+    "XZ#Tibet",
+    "NQD#Nagqu"
+  ],
+  "542500": [
+    "XZ#Tibet",
+    "ALD#Ali"
+  ],
+  "610000": [
+    "SX#Shanxi",
+    "AA#--"
+  ],
+  "610100": [
+    "SX#Shanxi",
+    "XAS#Xi'an"
+  ],
+  "610200": [
+    "SX#Shanxi",
+    "TCS#Tongchuan"
+  ],
+  "610300": [
+    "SX#Shanxi",
+    "BJS#Baoji"
+  ],
+  "610400": [
+    "SX#Shanxi",
+    "XYS#Xianyang"
+  ],
+  "610500": [
+    "SX#Shanxi",
+    "WNS#Weinan"
+  ],
+  "610600": [
+    "SX#Shanxi",
+    "YAS#Yan'an"
+  ],
+  "610700": [
+    "SX#Shanxi",
+    "HZS#Hanzhong"
+  ],
+  "610800": [
+    "SX#Shanxi",
+    "YLS#Yulin"
+  ],
+  "610900": [
+    "SX#Shanxi",
+    "AKS#Ankang"
+  ],
+  "611000": [
+    "SX#Shanxi",
+    "SLS#Shangluo"
+  ],
+  "620000": [
+    "GS#Gansu",
+    "AA#--"
+  ],
+  "620100": [
+    "GS#Gansu",
+    "LZS#Lanzhou"
+  ],
+  "620200": [
+    "GS#Gansu",
+    "JYG#Jiayuguan"
+  ],
+  "620300": [
+    "GS#Gansu",
+    "JCS#Jinchang"
+  ],
+  "620400": [
+    "GS#Gansu",
+    "BYS#Baiyin"
+  ],
+  "620500": [
+    "GS#Gansu",
+    "TSS#Tianshui"
+  ],
+  "620600": [
+    "GS#Gansu",
+    "WWS#Wuwei"
+  ],
+  "620700": [
+    "GS#Gansu",
+    "ZYS#Zhangye"
+  ],
+  "620800": [
+    "GS#Gansu",
+    "PLS#Pingliang"
+  ],
+  "620900": [
+    "GS#Gansu",
+    "JQS#Jiuquan"
+  ],
+  "621000": [
+    "GS#Gansu",
+    "QYS#Qingyang"
+  ],
+  "621100": [
+    "GS#Gansu",
+    "DXS#Dingxi"
+  ],
+  "621200": [
+    "GS#Gansu",
+    "LNS#Longnan"
+  ],
+  "622900": [
+    "GS#Gansu",
+    "LXH#Linxia"
+  ],
+  "623000": [
+    "GS#Gansu",
+    "GNC#Gannan"
+  ],
+  "630000": [
+    "QH#Qinghai",
+    "AA#--"
+  ],
+  "630100": [
+    "QH#Qinghai",
+    "XNS#Xining"
+  ],
+  "630200": [
+    "QH#Qinghai",
+    "HDS#Haidong"
+  ],
+  "632200": [
+    "QH#Qinghai",
+    "HBC#Haibei"
+  ],
+  "632300": [
+    "QH#Qinghai",
+    "HNC#Huangnan"
+  ],
+  "632500": [
+    "QH#Qinghai",
+    "HNC#Hainan"
+  ],
+  "632600": [
+    "QH#Qinghai",
+    "GLC#Guoluo"
+  ],
+  "632700": [
+    "QH#Qinghai",
+    "YSC#Yushu"
+  ],
+  "632800": [
+    "QH#Qinghai",
+    "HXM#Haixi"
+  ],
+  "640000": [
+    "NX#Ningxia",
+    "AA#--"
+  ],
+  "640100": [
+    "NX#Ningxia",
+    "YCS#Yinchuan"
+  ],
+  "640200": [
+    "NX#Ningxia",
+    "SZS#Shizuishan"
+  ],
+  "640300": [
+    "NX#Ningxia",
+    "WZS#Wuzhong"
+  ],
+  "640400": [
+    "NX#Ningxia",
+    "GYS#Guyuan"
+  ],
+  "640500": [
+    "NX#Ningxia",
+    "ZWS#Zhongwei"
+  ],
+  "650000": [
+    "XJ#Xinjiang",
+    "AA#--"
+  ],
+  "650100": [
+    "XJ#Xinjiang",
+    "WLM#Urumqi"
+  ],
+  "650200": [
+    "XJ#Xinjiang",
+    "KLM#Karamay"
+  ],
+  "650400": [
+    "XJ#Xinjiang",
+    "TLF#Turpan"
+  ],
+  "650500": [
+    "XJ#Xinjiang",
+    "HMS#Hamilton"
+  ],
+  "652300": [
+    "XJ#Xinjiang",
+    "CJH#Changji"
+  ],
+  "652700": [
+    "XJ#Xinjiang",
+    "BET#Bortala"
+  ],
+  "652800": [
+    "XJ#Xinjiang",
+    "BYG#Bayinguolin"
+  ],
+  "652900": [
+    "XJ#Xinjiang",
+    "AKS#Aksu"
+  ],
+  "653000": [
+    "XJ#Xinjiang",
+    "KZL#Kizilsu"
+  ],
+  "653100": [
+    "XJ#Xinjiang",
+    "KSD#Kashgar"
+  ],
+  "653200": [
+    "XJ#Xinjiang",
+    "HTD#Hotan"
+  ],
+  "654000": [
+    "XJ#Xinjiang",
+    "YLH#Ili"
+  ],
+  "654200": [
+    "XJ#Xinjiang",
+    "TCD#Tacheng"
+  ],
+  "654300": [
+    "XJ#Xinjiang",
+    "ALT#Altay"
+  ],
+  "659001": [
+    "XJ#Xinjiang",
+    "SHZ#Shihezi"
+  ],
+  "659002": [
+    "XJ#Xinjiang",
+    "ALE#Arar"
+  ],
+  "659003": [
+    "XJ#Xinjiang",
+    "TMS#Tumushuker"
+  ],
+  "659004": [
+    "XJ#Xinjiang",
+    "WJQ#Wujiaqu"
+  ],
+  "659006": [
+    "XJ#Xinjiang",
+    "TMG#Tiemenguan"
+  ],
+  "710000": [
+    "TW#Taiwan",
+    "AA#--"
+  ],
+  "710100": [
+    "TW#Taiwan",
+    "TBS#Taipei"
+  ],
+  "710200": [
+    "TW#Taiwan",
+    "JLS#Keelung City"
+  ],
+  "710207": [
+    "TW#Taiwan",
+    "XBS#New Taipei City"
+  ],
+  "710209": [
+    "TW#Taiwan",
+    "LJX#Lianjiang County"
+  ],
+  "710260": [
+    "TW#Taiwan",
+    "YLX#Yilan County"
+  ],
+  "710300": [
+    "TW#Taiwan",
+    "XZS#Hsinchu City"
+  ],
+  "710302": [
+    "TW#Taiwan",
+    "XZX#Hsinchu County"
+  ],
+  "710320": [
+    "TW#Taiwan",
+    "TYX#Taoyuan County"
+  ],
+  "710350": [
+    "TW#Taiwan",
+    "MLX#Miaoli County"
+  ],
+  "710400": [
+    "TW#Taiwan",
+    "TZS#Taichung City"
+  ],
+  "710500": [
+    "TW#Taiwan",
+    "ZHX#Changhua County"
+  ],
+  "710540": [
+    "TW#Taiwan",
+    "NTX#Nantou County"
+  ],
+  "710600": [
+    "TW#Taiwan",
+    "JYS#Chiayi City"
+  ],
+  "710602": [
+    "TW#Taiwan",
+    "JYX#Chiayi County"
+  ],
+  "710630": [
+    "TW#Taiwan",
+    "YLX#Yunlin County"
+  ],
+  "710700": [
+    "TW#Taiwan",
+    "TNS#Tainan City"
+  ],
+  "710800": [
+    "TW#Taiwan",
+    "GXS#Kaohsiung City"
+  ],
+  "710880": [
+    "TW#Taiwan",
+    "PHX#Penghu County"
+  ],
+  "710890": [
+    "TW#Taiwan",
+    "JMX#Kinmen County"
+  ],
+  "710900": [
+    "TW#Taiwan",
+    "PDX#Pingtung County"
+  ],
+  "710950": [
+    "TW#Taiwan",
+    "TDX#Taitung County"
+  ],
+  "710970": [
+    "TW#Taiwan",
+    "HLX#Hualien County"
+  ],
+  "810000": [
+    "XG#HongKong",
+    "AA#--"
+  ],
+  "810100": [
+    "XG#HongKong",
+    "BQ#North"
+  ],
+  "810110": [
+    "XG#HongKong",
+    "ZWQ#Tsuen Wan"
+  ],
+  "810120": [
+    "XG#HongKong",
+    "SSS#Sham Shui Po"
+  ],
+  "810130": [
+    "XG#HongKong",
+    "STQ#Sha Tin"
+  ],
+  "810140": [
+    "XG#HongKong",
+    "TMQ#Tuen Mun"
+  ],
+  "810150": [
+    "XG#HongKong",
+    "WZQ#Wan Chai"
+  ],
+  "810160": [
+    "XG#HongKong",
+    "XGQ#Sai Kung"
+  ],
+  "810170": [
+    "XG#HongKong",
+    "YJW#Yau Tsim Mong"
+  ],
+  "810180": [
+    "XG#HongKong",
+    "YLQ#Yuen Long"
+  ],
+  "810190": [
+    "XG#HongKong",
+    "ZXQ#Central and Western"
+  ],
+  "810200": [
+    "XG#HongKong",
+    "DPQ#Tai Po "
+  ],
+  "810300": [
+    "XG#HongKong",
+    "DQ#Eastern"
+  ],
+  "810400": [
+    "XG#HongKong",
+    "GTQ#Kwun Tong"
+  ],
+  "810500": [
+    "XG#HongKong",
+    "HDX#Wong Tai Sin"
+  ],
+  "810600": [
+    "XG#HongKong",
+    "JLC#Kowloon City"
+  ],
+  "810700": [
+    "XG#HongKong",
+    "KQQ#Kwai Tsing"
+  ],
+  "810800": [
+    "XG#HongKong",
+    "LDQ#Island"
+  ],
+  "810900": [
+    "XG#HongKong",
+    "NQ#Southern"
+  ],
+  "820000": [
+    "AM#Macau",
+    "AA#--"
+  ],
+  "820100": [
+    "AM#Macau",
+    "DTQ#Cathedral"
+  ],
+  "820200": [
+    "AM#Macau",
+    "DZ#Taipa"
+  ],
+  "820300": [
+    "AM#Macau",
+    "FST#St. Lawrence"
+  ],
+  "820400": [
+    "AM#Macau",
+    "HDM#St.Fatima"
+  ],
+  "820500": [
+    "AM#Macau",
+    "LHD#Coloane"
+  ],
+  "820600": [
+    "AM#Macau",
+    "SAD#St. Anthony"
+  ],
+  "820700": [
+    "AM#Macau",
+    "WDT#St. Lazarus"
+  ],
+  "000000": [
+    "AA#--",
+    "AA#--"
+  ]
+}

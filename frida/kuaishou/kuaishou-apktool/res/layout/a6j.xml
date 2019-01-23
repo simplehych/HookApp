@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/search_pymk_user" />
+    <com.yxcorp.gifshow.widget.SquareChildLinearLayout android:orientation="horizontal" android:id="@id/photo_list_layout" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:sll_item_margin="@dimen/margin_default" app:sll_item_count="3" />
+</LinearLayout>

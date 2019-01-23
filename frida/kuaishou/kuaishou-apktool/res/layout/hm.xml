@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/report_list" android:background="@drawable/popup_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/popup_default_margin" android:layout_marginRight="@dimen/popup_default_margin" android:layout_above="@id/cancel_action" android:overScrollMode="never" />
+    <TextView android:textSize="@dimen/text_size1" android:textColor="@color/text_color1_normal" android:gravity="center" android:id="@id/cancel_action" android:background="@drawable/popup_one_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/popup_cancel_btn_height" android:layout_marginLeft="@dimen/popup_default_margin" android:layout_marginTop="@dimen/popup_default_margin" android:layout_marginRight="@dimen/popup_default_margin" android:layout_marginBottom="@dimen/popup_margin_bottom" android:text="@string/cancel" />
+</LinearLayout>

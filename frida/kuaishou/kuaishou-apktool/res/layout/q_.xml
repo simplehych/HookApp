@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/section_title" style="@style/Theme.ListItemLabel" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/notice_item_container" android:background="@drawable/bg_list_item" android:longClickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/reminder_list_item_min_height">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/notice_avatar" android:background="@null" android:padding="0.0dip" android:layout_width="@dimen/list_avatar_size" android:layout_height="@dimen/list_avatar_size" android:layout_margin="@dimen/margin_default" android:scaleType="centerCrop" app:roundAsCircle="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/notice_list_title_margin_vertical" android:layout_marginRight="@dimen/margin_default" android:layout_marginBottom="@dimen/notice_list_title_margin_vertical_bottom" android:layout_weight="1.0">
+            <com.lsjwzh.widget.text.FastTextView android:id="@id/notice_title" android:lineSpacingExtra="4.0dip" style="@style/Theme.NoticeTitle" />
+            <com.lsjwzh.widget.text.FastTextView android:id="@id/notice_date" android:lineSpacingExtra="4.0dip" style="@style/Theme.NoticeDescription" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/notice_photo" android:visibility="gone" android:layout_margin="@dimen/margin_default" app:placeholderImage="@drawable/message_default_pic" app:failureImage="@drawable/message_default_pic" style="@style/Theme.ReminderImage" />
+            <TextView android:textSize="@dimen/text_style_circle_rect_line_diff" android:textColor="@color/text_black_color" android:ellipsize="end" android:id="@id/notice_text_photo" android:background="@color/background_light" android:visibility="gone" android:layout_width="@dimen/reminder_list_item_image_size" android:layout_height="@dimen/reminder_list_item_image_size" android:layout_margin="@dimen/margin_default" android:maxLines="3" android:lineSpacingExtra="3.0dip" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/notice_follow_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/button_height2" android:layout_marginRight="@dimen/margin_default" android:minWidth="@dimen/common_follow_btn_width" style="@style/Kwai.Widget.Button.B14">
+            <ImageView android:id="@id/notice_follow_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/detail_icon_follow_orange_s" />
+            <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color_button13" android:gravity="center" android:id="@id/notice_follow_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/notice_right_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_default" android:src="@drawable/button_arrow_right" />
+    </LinearLayout>
+</LinearLayout>

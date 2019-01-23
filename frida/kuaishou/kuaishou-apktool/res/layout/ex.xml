@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dialog_loading" android:background="@drawable/background_dialog_loading" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="35.0dip" android:layout_height="35.0dip" style="@style/LoadingProgressBar" />
+    <TextView android:textSize="14.0sp" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.5dip" android:text="@string/loading" android:singleLine="true" style="@style/LoadingDialogTitle" />
+</LinearLayout>

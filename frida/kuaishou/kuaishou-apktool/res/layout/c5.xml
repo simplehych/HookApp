@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/album_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/button_album" android:src="@drawable/camera_album_btn" style="@style/CameraActionBarIcon" />
+    <TextView android:id="@id/button_album_tv" android:text="@string/maker_tab_album" style="@style/CameraActionBarTextView" />
+</LinearLayout>

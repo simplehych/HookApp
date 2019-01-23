@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.PullToRefreshListView android:id="@id/bd_wallet_pull_up_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bd_wallet_empty_list" android:background="@color/wallet_base_window_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/bd_wallet_empty_img" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="78.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/wallet_balance_banzhuanfen_no_hostory" android:scaleType="fitXY" android:contentDescription="@null" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/wallet_balance_baizhuanfen_text_normal" android:gravity="center" android:id="@id/bd_wallet_error_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/wallet_baizhuanfen_new_no_tip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/wallet_balance_baizhuanfen_text_normal" android:id="@id/bd_wallet_error_do" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/wallet_baizhuanfen_new_look_tip" />
+    </LinearLayout>
+</RelativeLayout>

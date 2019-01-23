@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_to_layout" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:id="@id/share_to_button" android:background="@drawable/button_platform_facebook" android:clickable="false" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" android:button="@null" />
+    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color2_normal" android:gravity="center" android:id="@id/share_to_text" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/facebook" app:textSizeAdjustable="true" style="@style/Theme.Widget.Profile.Edit.Text.Black" />
+</LinearLayout>

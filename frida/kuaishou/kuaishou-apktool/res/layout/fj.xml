@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_10" android:textColor="#66ffffff" android:gravity="left" android:layout_gravity="top" android:id="@id/number_tv" android:layout_width="wrap_content" android:layout_height="11.0dip" android:layout_marginTop="8.0dip" android:text="\ 234234234" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/calibration_container" android:layout_width="800.0dip" android:layout_height="6.0dip" android:layout_marginBottom="8.0dip">
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_gravity="bottom|center|left" android:background="#66ffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_gravity="bottom|center|left" android:background="#66ffffff" android:layout_width="1.0dip" android:layout_height="4.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_gravity="bottom|center|left" android:background="#66ffffff" android:layout_width="1.0dip" android:layout_height="4.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_gravity="bottom|center|left" android:background="#66ffffff" android:layout_width="1.0dip" android:layout_height="4.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_gravity="bottom|center|left" android:background="#66ffffff" android:layout_width="1.0dip" android:layout_height="4.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

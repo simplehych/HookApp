@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_to_layout" android:layout_width="65.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/share_to_button" android:background="@drawable/button_platform_facebook" android:clickable="false" android:layout_width="38.5dip" android:layout_height="38.5dip" android:button="@null" />
+    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="11.5sp" android:textColor="?PhotoDownloadShareDialogTextColor" android:gravity="center" android:id="@id/share_to_text" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/facebook" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Text.Black" />
+</LinearLayout>

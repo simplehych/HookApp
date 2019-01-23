@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_guide" />
+    <TextView android:textSize="25.0sp" android:textColor="#ff303030" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginTop="8.0dip" android:text="@string/login_set_new_password" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/login_psd_line" android:layout_width="fill_parent" android:layout_height="@dimen/login_cell_height" android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginTop="77.0dip" android:layout_marginRight="@dimen/login_content_margin">
+        <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/login_psd_et" android:paddingLeft="0.0dip" android:layout_width="0.0dip" android:hint="@string/input_password_hint" android:layout_weight="1.0" android:inputType="textPassword" android:imeOptions="actionGo" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Login" />
+        <FrameLayout android:id="@id/clear_layout" android:paddingRight="30.0dip" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/login_cell_height">
+            <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_clear" />
+        </FrameLayout>
+        <Switch android:layout_gravity="center_vertical" android:id="@id/show_psd_btn" android:background="@drawable/login_password_edit" android:visibility="visible" android:layout_width="18.0dip" android:layout_height="18.0dip" android:checked="true" android:thumb="@android:color/transparent" android:track="@android:color/transparent" />
+    </LinearLayout>
+    <View android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginRight="@dimen/login_content_margin" style="@style/Theme.Widget.LoginDividerVertical" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_hint_black_color" android:id="@id/psd_prompt" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginTop="10.0dip" android:text="@string/signup_password_prompt" />
+    <TextView android:enabled="false" android:layout_gravity="center" android:id="@id/reset_psw_finish" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginTop="13.0dip" android:layout_marginRight="@dimen/login_content_margin" android:text="@string/finish" android:onClick="onClick" style="@style/Kwai.Widget.Button.B12" />
+</LinearLayout>

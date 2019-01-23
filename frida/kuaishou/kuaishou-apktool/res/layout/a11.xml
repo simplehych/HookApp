@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:background="@color/background_black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/preview_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@string/preview" />
+    </RelativeLayout>
+    <include layout="@layout/kwai_title_image_text_text_transparent" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/photo_detail_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" app:direction="left"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/photo_label" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/list_item_photo_player_detail_horizontal" />
+        <include layout="@layout/list_item_photo_label" />
+        <include layout="@layout/list_item_similar_photos" />
+    </LinearLayout>
+</FrameLayout>

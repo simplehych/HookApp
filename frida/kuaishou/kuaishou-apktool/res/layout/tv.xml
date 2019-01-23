@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:visibility="gone" android:clickable="true" android:layout_width="44.0dip" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/background_live_pk_peer_view" android:layout_width="32.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_pk_icon_anchor_mute_selector" />
+    </FrameLayout>
+</FrameLayout>

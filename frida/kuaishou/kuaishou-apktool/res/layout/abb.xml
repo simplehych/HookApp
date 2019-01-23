@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/camera_preview_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/magic_imitation_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="69.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="59.0dip" />
+    <com.yxcorp.gifshow.widget.record.AutoHideTextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_color_white" android:layout_gravity="center" android:id="@id/magic_emoji_tips_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:shadowColor="@color/text_shadow_color" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="4.0" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/no_face_tip_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/magicemoji_icon_undetected_normal" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_face_detected" android:shadowColor="@color/text_shadow_color" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="4.0" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/dimen_5dp" android:paddingRight="@dimen/dimen_5dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/background_round_dialog_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40dp">
+        <ImageView android:id="@id/research_close" android:layout_width="@dimen/dimen_18dp" android:layout_height="@dimen/dimen_18dp" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_10dp" android:src="@drawable/nav_close_without_bg_dark" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/list_item_black" android:gravity="center_horizontal" android:id="@id/research_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.5dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/research_question_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" />
+        <View android:background="@color/gray_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" android:layout_marginTop="@dimen/dimen_30dp" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@drawable/research_confirm_selector" android:gravity="center" android:id="@id/research_confirm_text" android:background="@drawable/background_white_with_corners" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50dp" android:text="@string/ok" />
+    </LinearLayout>
+    <ImageView android:background="@drawable/home_research_laugh_bg" android:padding="6.5dip" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_80dp" android:src="@drawable/feed_laugh_research" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+</RelativeLayout>

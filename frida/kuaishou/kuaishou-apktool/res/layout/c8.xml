@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/button_switch_prettify_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/button_switch_prettify" android:src="@drawable/camera_prettify_btn" style="@style/CameraActionBarIcon" />
+    <TextView android:id="@id/button_switch_prettify_tv" android:text="@string/prettify" style="@style/CameraActionBarTextView" />
+</LinearLayout>

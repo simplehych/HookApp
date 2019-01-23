@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/wallet_pwdfree_faces_imagebutton" android:background="@drawable/wallet_base_pwdfree_faces_selector" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/wallet_pwdfree_faces_text_color" android:id="@id/wallet_pwdfree_faces_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+</LinearLayout>

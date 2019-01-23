@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_pressed="true">
+        <bitmap android:gravity="center" android:src="@drawable/list_choose_selected" />
+    </item>
+    <item android:state_checked="true">
+        <bitmap android:gravity="center" android:src="@drawable/list_choose_selected" />
+    </item>
+    <item android:state_selected="true">
+        <bitmap android:gravity="center" android:src="@drawable/list_choose_selected" />
+    </item>
+    <item android:state_checked="false" android:state_pressed="true">
+        <bitmap android:gravity="center" android:src="@drawable/list_choose_on_image_normal" />
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/list_choose_on_image_normal" />
+    </item>
+</selector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="200.0dip" android:layout_height="97.0dip" android:layout_marginTop="39.0dip" android:src="@drawable/live_quiz_fangchenmi" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="#ff303030" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/prevent_addiction_title" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff777777" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="26.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="26.0dip" android:text="@string/child_lock_input_password_tip" android:lineSpacingExtra="4.0dip" />
+    <TextView android:textSize="@dimen/text_size_16" android:id="@id/confirm_input_password" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/login_input_password" style="@style/Kwai.Widget.Button.B2" />
+</LinearLayout>

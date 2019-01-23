@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.profile.widget.ForegroundLinearLayout android:orientation="vertical" android:id="@id/moment_item_foreground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/head_divider" android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" android:layout_marginLeft="@dimen/profile_moment_time_width" android:layout_marginBottom="@dimen/profile_moment_header_margin_bottom" />
+    <TextView android:textSize="@dimen/text_size_25" android:textColor="@color/profile_moment_time_text_color" android:id="@id/moment_year" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/profile_moment_year_margin_top" android:layout_marginBottom="@dimen/margin_default" />
+    <com.yxcorp.gifshow.profile.widget.ForegroundLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="@dimen/profile_moment_time_width" android:layout_height="wrap_content" layout="@layout/profile_moment_publish_time" />
+        <com.yxcorp.gifshow.profile.widget.ForegroundLinearLayout android:orientation="vertical" android:id="@id/moment_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/moment_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/profile_moment_tags" />
+            <include layout="@layout/profile_moment_operation_profile" />
+            <View android:id="@id/bottom_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_bottom_margin_bottom" />
+            <FrameLayout android:id="@id/bottom_arrow" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_bottom_arrow_height">
+                <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_moment_bottom_arrow_margin_left" android:src="@drawable/profile_icon_uparrow_s_normal" />
+            </FrameLayout>
+            <View android:id="@id/bottom_arrow_offset" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_bottom_arrow_offset_height" />
+        </com.yxcorp.gifshow.profile.widget.ForegroundLinearLayout>
+    </com.yxcorp.gifshow.profile.widget.ForegroundLinearLayout>
+</com.yxcorp.gifshow.profile.widget.ForegroundLinearLayout>

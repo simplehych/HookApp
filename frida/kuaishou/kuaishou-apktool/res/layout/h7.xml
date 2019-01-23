@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/timeline_container_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/time_line_container" android:paddingTop="5.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.yxcorp.gifshow.v3.widget.TimelineCoreView android:id="@id/timeline_core_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/range_skip_box" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/adv_edit_new_box_height" android:layout_marginTop="27.0dip" android:layout_marginBottom="22.0dip">
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/range_skip_undo" android:background="@drawable/background_editor_filter_item" android:layout_width="@dimen/adv_edit_new_box_height" android:layout_height="@dimen/adv_edit_new_box_height" android:src="@drawable/edit_clip_undo_btn" android:scaleType="centerInside" />
+        </FrameLayout>
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/range_skip_add" android:background="@drawable/background_editor_filter_item" android:layout_width="@dimen/adv_edit_new_box_height" android:layout_height="@dimen/adv_edit_new_box_height" android:src="@drawable/edit_crop_cut_btn" android:scaleType="centerInside" />
+        </FrameLayout>
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.yxcorp.gifshow.v3.widget.ExpandFoldHelperView android:id="@id/opview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

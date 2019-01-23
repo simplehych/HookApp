@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_15" android:textColor="@color/tab_text_color" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/right_tv" android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/title_bar_height" android:minWidth="@dimen/title_bar_height" android:text="@string/finish" android:singleLine="true" app:textSizeAdjustable="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

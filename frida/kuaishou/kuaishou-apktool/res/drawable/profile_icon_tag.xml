@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list android:paddingTop="2.0dip">
+            <item>
+                <bitmap android:src="@drawable/shuoshuo_icon_tag_orange_s_normal" android:alpha="@integer/j" />
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list android:paddingTop="2.0dip">
+            <item>
+                <bitmap android:src="@drawable/shuoshuo_icon_tag_orange_s_normal" />
+            </item>
+        </layer-list>
+    </item>
+</selector>

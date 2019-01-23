@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/touch_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.yxcorp.gifshow.camera.record.magic.filter.FilterConfigView android:id="@id/filter_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

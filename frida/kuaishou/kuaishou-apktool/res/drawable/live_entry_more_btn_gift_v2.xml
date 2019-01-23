@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:state_pressed="true">
+        <bitmap android:src="@drawable/shoot_icon_gift_l_selected" android:dither="true" android:alpha="@integer/q" />
+    </item>
+    <item android:state_selected="true" android:drawable="@drawable/shoot_icon_gift_l_selected" />
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/shoot_icon_gift_l_normal" android:dither="true" android:alpha="@integer/q" />
+    </item>
+    <item android:drawable="@drawable/shoot_icon_gift_l_normal" />
+</selector>

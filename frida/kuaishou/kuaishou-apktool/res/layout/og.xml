@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_white_card" android:layout_width="fill_parent" android:layout_height="116.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/iv_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" app:roundAsCircle="true" />
+    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_black_color" android:ellipsize="end" android:gravity="center" android:id="@id/tv_user_name" android:layout_width="84.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" android:layout_below="@id/iv_avatar" android:layout_centerHorizontal="true" app:textSizeAdjustable="false" />
+    <include android:layout_width="70.0dip" android:layout_height="25.0dip" android:layout_marginTop="7.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/list_follow_btn2" />
+    <include android:id="@id/btn_follow_see" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="25.0dip" android:layout_marginTop="7.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/list_followed_see" />
+</RelativeLayout>

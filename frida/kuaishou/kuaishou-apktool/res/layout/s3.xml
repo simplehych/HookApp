@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/follower_layout" android:background="@drawable/profile_recommend_item_background" android:layout_width="125.0dip" android:layout_height="189.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/close" android:paddingTop="7.0dip" android:paddingRight="6.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recommend_btn_close" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center_horizontal" android:id="@id/avatar" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="15.0dip" android:scaleType="fitXY" app:roundAsCircle="true" />
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size3" android:textColor="@color/list_item_black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/name" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/app_name" android:maxLines="1" />
+        <com.lsjwzh.widget.text.FastTextView android:textSize="@dimen/text_size4" android:textColor="@color/text_color15_normal" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/text" android:layout_width="103.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/app_name" android:maxLines="2" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:gravity="center" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginBottom="14.0dip" layout="@layout/list_follow_btn" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

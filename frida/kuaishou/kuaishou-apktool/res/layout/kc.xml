@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.camera.ktv.widget.SlideSwitcher android:id="@id/ktv_mode_switcher" android:background="@drawable/bg_control_speed_v2" android:layout_width="110.0dip" android:layout_height="30.0dip" app:default_select_id="@id/ktv_mode_switcher_song"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/slide_indicator" android:background="@drawable/control_speed_button_fullscreen_v2" android:layout_width="55.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/slide_button_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/ktv_switcher_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ktv_mode_switcher_song" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/music" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/ktv_switcher_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ktv_mode_switcher_mv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ktv_mode_mv" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.yxcorp.gifshow.camera.ktv.widget.SlideSwitcher>

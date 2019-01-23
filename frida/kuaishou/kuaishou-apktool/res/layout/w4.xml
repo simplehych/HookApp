@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_root" layout="@layout/kwai_title_image_text_text" />
+    <include android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/title_root" layout="@layout/line_divider_grey" />
+    <include android:id="@id/permission_guidance_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider" layout="@layout/storage_permission_guidance_layout" />
+    <com.yxcorp.gifshow.widget.KwaiGridView android:gravity="center" android:id="@id/grid" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="true" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:stretchMode="columnWidth" android:numColumns="3" android:layout_below="@id/permission_guidance_view" android:fastScrollEnabled="false" android:overScrollMode="never" />
+    <LinearLayout android:gravity="center" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" style="@style/Theme.Widget.Loading.Small" />
+        <TextView android:textColor="@color/text_hint_black_color" android:gravity="center" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" style="@style/Theme.Widget.Text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.yxcorp.gifshow.homepage.wiget.VideoUploadingRecyclerView android:id="@id/upload_list" android:layout_width="fill_parent" android:layout_height="wrap_content" app:listMaxHeight="@dimen/home_upload_list_max_height" style="@style/Theme.List" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottom_action" android:background="@drawable/background_light_top_line" android:padding="@dimen/margin_default" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <com.yxcorp.gifshow.widget.SizeAdjustableButton android:id="@id/delete_button" android:text="@string/remove" android:layout_weight="1.0" style="@style/Kwai.Widget.Button.B21" />
+            <View android:layout_width="@dimen/margin_default" android:layout_height="wrap_content" />
+            <com.yxcorp.gifshow.widget.SizeAdjustableButton android:textColor="@color/local_album_action_btn_color" android:id="@id/joint_button" android:background="@drawable/local_album_background_button12" android:text="@string/joint" android:layout_weight="1.0" style="@style/Kwai.Widget.Button.B12" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

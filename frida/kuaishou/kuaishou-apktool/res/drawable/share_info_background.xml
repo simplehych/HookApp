@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <bitmap android:src="@drawable/release_icon_info_black_l_normal" android:alpha="0.2" />
+    </item>
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/release_icon_info_black_l_normal" android:alpha="0.2" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/release_icon_info_black_l_normal" android:alpha="0.5" />
+    </item>
+</selector>

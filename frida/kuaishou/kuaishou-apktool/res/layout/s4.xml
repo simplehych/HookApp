@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.HorizontalSlideView android:id="@id/sliding_layout" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/follower_layout" android:background="@drawable/bg_list_item" android:clickable="true" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/list_item_user" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/more_option_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@id/blockuser_button" android:background="@color/light_gray" android:layout_width="70.0dip" android:layout_height="fill_parent" android:src="@drawable/fans_cell_btn_blacklist" android:scaleType="centerInside" />
+                <ImageView android:id="@id/remove_follower_button" android:background="@color/background_rose_red" android:layout_width="70.0dip" android:layout_height="fill_parent" android:src="@drawable/detail_comment_btn_delete" android:scaleType="centerInside" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.yxcorp.gifshow.widget.HorizontalSlideView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ktv_edit_progress_bar" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/player_control_btn_container" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <ImageView android:id="@id/player_control_btn" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/detail_play_icon" android:scaleType="center" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_10" android:textColor="#ffffffff" android:gravity="center" android:id="@id/player_current_position" android:layout_width="43.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="00:00" />
+    <SeekBar android:id="@id/player_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:indeterminate="false" android:progressDrawable="@drawable/photo_video_progressbar_thin" android:thumb="@drawable/ktv_edit_seekbar_thumb" android:layout_weight="1.0" style="@style/Theme.Widget.ProgressBar.PhotoVideo" />
+    <TextView android:textSize="@dimen/text_size_10" android:textColor="#ffffffff" android:gravity="center" android:id="@id/player_duration" android:layout_width="43.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="00:00" />
+</LinearLayout>

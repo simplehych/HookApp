@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.live.entry.LiveCoverOptionLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/close" android:layout_width="@dimen/record_top_bar_icon_size" android:layout_height="@dimen/record_top_bar_icon_size" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/live_nav_btn_close" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/go_back" />
+    <FrameLayout android:id="@id/live_cover_more_options_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/button_switch_camera" android:layout_alignTop="@id/button_switch_camera">
+        <ImageView android:id="@id/more_options" android:background="@drawable/action_nav_btn_more_white" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+        <View android:layout_gravity="center|right|top" android:id="@id/more_options_dot" android:background="@drawable/function_oval_dot" android:visibility="gone" android:layout_width="@dimen/more_grid_dialog_item_dot_size" android:layout_height="@dimen/more_grid_dialog_item_dot_size" />
+    </FrameLayout>
+    <com.yxcorp.gifshow.widget.SwitchCameraView android:id="@id/button_switch_camera" android:layout_width="@dimen/record_top_bar_icon_size" android:layout_height="@dimen/record_top_bar_icon_size" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentRight="true" />
+    <com.yxcorp.plugin.live.widget.SwitchableSpinner android:id="@id/live_stream_type_picker" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true" android:dropDownWidth="fill_parent" android:spinnerMode="dropdown" app:popupTheme="@style/AppTheme.PopupOverlay" />
+</com.yxcorp.plugin.live.entry.LiveCoverOptionLayout>

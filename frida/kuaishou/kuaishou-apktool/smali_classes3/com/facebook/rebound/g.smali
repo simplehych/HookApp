@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/facebook/rebound/g;
+.super Ljava/lang/Object;
+.source "SpringListener.java"
+
+
+# virtual methods
+.method public abstract a()V
+.end method
+
+.method public abstract a(Lcom/facebook/rebound/d;)V
+.end method
+
+.method public abstract b()V
+.end method

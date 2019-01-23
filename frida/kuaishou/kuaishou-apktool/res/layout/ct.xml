@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/camera_tab_scroll_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/radio_indicator" android:background="@drawable/camera_tab_bottom_triangle_black" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <View android:clickable="true" android:layout_width="fill_parent" android:layout_height="9.0dip" android:layout_alignParentBottom="true" />
+    <com.yxcorp.gifshow.camera.record.tab.CameraScrollTabViewGroup android:id="@id/camera_tab_scroll_group" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" app:camera_tab_layout_gravity="center_vertical">
+        <TextView android:id="@id/take_photo_btn" android:tag="@string/tab_take_photo" android:text="@string/tab_take_photo" style="@style/CameraScrollTabTextView" />
+        <TextView android:id="@id/camera_long_long_radio_btn" android:tag="@string/long_long_video_tab_name" android:text="@string/long_long_video_tab_name" style="@style/CameraScrollTabTextView" />
+        <TextView android:id="@id/camera_radio_btn" android:tag="@string/video" android:text="@string/video" style="@style/CameraScrollTabTextView" />
+        <RelativeLayout android:id="@id/live_radio_wrapper" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/live_locked_iamgeview" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="1.0dip" android:src="@drawable/shoot_ic_live_lock" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size3" android:textStyle="bold" android:textColor="@color/camera_tab_black_text_style" android:id="@id/live_radio_btn" android:tag="@string/live" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live" android:layout_centerVertical="true" style="@style/CameraShadow" />
+            <ImageView android:id="@id/live_live_tag" android:layout_width="20.0dip" android:layout_height="10.0dip" android:layout_marginLeft="-20.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/shoot_tag_live_s_normal" android:layout_toRightOf="@id/live_radio_btn" />
+            <ImageView android:id="@id/glasses_tag" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="-20.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/glasses_icon_glasses_s_normal" android:layout_toRightOf="@id/live_radio_btn" />
+        </RelativeLayout>
+        <TextView android:id="@id/ktv_btn" android:tag="@string/ktv" android:text="@string/ktv" style="@style/CameraScrollTabTextView" />
+        <TextView android:id="@id/cobra_radio_btn" android:tag="@string/cobra_album" android:visibility="gone" android:text="@string/cobra_album" style="@style/CameraScrollTabTextView" />
+    </com.yxcorp.gifshow.camera.record.tab.CameraScrollTabViewGroup>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/emotion_package_details_title_layout" />
+    <include layout="@layout/line_divider_grey" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/emotion_package_details_content_layout" />
+    </ScrollView>
+    <View android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <include layout="@layout/emotion_package_details_bottom_layout" />
+</LinearLayout>

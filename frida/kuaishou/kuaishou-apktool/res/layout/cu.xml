@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sidebar_layout" android:layout_width="50.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/speed_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/button_speed" android:src="@drawable/camera_speed_btn" style="@style/RecordTopBarV2" />
+        <TextView android:id="@id/speed_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-7.0dip" android:text="@string/camera_more_toggle_rate" style="@style/RecordSidebarTextView" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/breakpoint_entry" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_side_bar_icon_margin">
+        <ImageView android:id="@id/breakpoint_iv" android:src="@drawable/camera_pointstop_btn" style="@style/RecordTopBarV2" />
+        <TextView android:id="@id/breakpoint_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/record_pointstop" style="@style/RecordSidebarTextView" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lyrics_visibility_btn_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_side_bar_icon_margin">
+        <ImageView android:id="@id/lyrics_visibility_btn" android:src="@drawable/camera_lyrics_btn" style="@style/RecordTopBarV2" />
+        <TextView android:id="@id/lyrics_visibility_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/record_lyrics" style="@style/RecordSidebarTextView" />
+    </LinearLayout>
+    <com.yxcorp.gifshow.camera.record.music.MusicBeatButton android:orientation="vertical" android:id="@id/music_beat_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_side_bar_icon_margin">
+        <ImageView android:id="@id/music_beat_iv" android:src="@drawable/camera_effect_btn" style="@style/RecordTopBarV2" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/effects" style="@style/RecordSidebarTextView" />
+    </com.yxcorp.gifshow.camera.record.music.MusicBeatButton>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sameframe_use_record_sound_btn_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_side_bar_icon_margin">
+        <ImageView android:id="@id/sameframe_use_record_sound_iv" android:src="@drawable/camera_record_btn" style="@style/RecordTopBarV2" />
+        <TextView android:id="@id/sameframe_use_record_sound_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_record" style="@style/RecordSidebarTextView" />
+    </LinearLayout>
+    <ViewStub android:id="@id/follow_shoot_use_sample_btn_layout_stub" android:layout="@layout/gi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_side_bar_icon_margin" />
+</LinearLayout>

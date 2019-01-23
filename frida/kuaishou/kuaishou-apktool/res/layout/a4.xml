@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_auth" android:background="@color/background_light" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <LinearLayout android:orientation="vertical" android:id="@id/auth_body" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="40.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.yxcorp.gifshow.image.KwaiImageView android:layout_width="60.0dip" android:layout_height="60.0dip" fresco:placeholderImage="@drawable/kwai_icon" fresco:roundedCornerRadius="13.5dip" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kwai_app_name" />
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.5dip" android:layout_marginTop="15.0dip" android:layout_marginRight="17.5dip" android:src="@drawable/signin_thirdparty_icon_authorization" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/auth_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" fresco:roundedCornerRadius="13.5dip" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_color" android:id="@id/auth_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/line_divider_grey" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_black_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="40.0dip" android:text="@string/live_partner_auth_title" />
+        <android.support.v7.widget.RecyclerView android:id="@id/permission" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_default_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/login" android:background="@drawable/button21" android:layout_width="325.0dip" android:layout_height="40.0dip" android:layout_marginTop="40.0dip" android:text="@string/authorization_confirm_login" />
+    </LinearLayout>
+</LinearLayout>

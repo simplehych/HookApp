@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_12" android:textColor="@color/site_address_title_text_color" android:gravity="center" android:id="@id/text" android:background="@drawable/hot_scenic_spot_text_bg" android:paddingLeft="@dimen/dimen_10dp" android:paddingTop="@dimen/dimen_7dp" android:paddingRight="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_7dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

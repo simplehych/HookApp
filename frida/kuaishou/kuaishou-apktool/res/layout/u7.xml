@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/background_round_dialog_white" android:padding="20.0dip" android:layout_width="295.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="@string/live_pk_pk_end" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/live_pk_end_content" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/play_again_button" android:layout_marginTop="28.0dip" android:minWidth="240.0dip" android:text="和TA再来一局" style="@style/Kwai.Widget.Button.B12" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/change_opponent_button" android:layout_marginTop="15.0dip" android:minWidth="240.0dip" android:text="@string/live_pk_random_other" style="@style/Kwai.Widget.Button.B12" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/exit_pk_button" android:background="@drawable/background_button_live_pk_dialog_cancel" android:layout_marginTop="15.0dip" android:minWidth="240.0dip" android:text="@string/quit" style="@style/Kwai.Widget.Button.B10" />
+    </LinearLayout>
+</FrameLayout>

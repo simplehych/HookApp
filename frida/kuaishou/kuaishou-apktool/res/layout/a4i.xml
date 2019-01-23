@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip">
+        <ImageView android:id="@id/left_slider" android:layout_width="@dimen/slider_width" android:layout_height="fill_parent" android:src="@drawable/edit_cut_left_phone" android:scaleType="fitXY" />
+        <ImageView android:id="@id/right_slider" android:layout_width="@dimen/slider_width" android:layout_height="fill_parent" android:layout_marginLeft="200.0dip" android:src="@drawable/edit_cut_right_phone" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/range_frame" android:layout_width="200.0dip" android:layout_height="fill_parent" android:layout_marginLeft="-2.0dip" android:layout_toRightOf="@id/left_slider">
+            <View android:background="@drawable/edit_cut_line_phone" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_alignParentTop="true" />
+            <View android:background="@drawable/edit_cut_line_phone" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/progress_indicator" android:background="@drawable/edit_timeline_centralaxis" android:focusable="true" android:clickable="true" android:layout_width="3.0dip" android:layout_height="@dimen/range_center_line_height" />
+</RelativeLayout>

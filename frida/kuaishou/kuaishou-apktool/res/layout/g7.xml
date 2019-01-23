@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.homepage.wiget.VideoUploadingRecyclerView android:id="@id/upload_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:listMaxHeight="50.0dip" style="@style/Theme.List"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

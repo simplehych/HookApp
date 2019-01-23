@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.camera.record.breakpoint.BreakpointPanel android:id="@id/breakpoint_panel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/breakpoint_panel_area" android:background="@color/translucent_50_black" android:paddingBottom="20.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0dip" android:textColor="@color/record_breakpoint_record_btn_text_color" android:gravity="center" android:id="@id/breakpoint_btn_ok" android:background="@drawable/background_record_breakpoint_btn" android:layout_width="200.0dip" android:layout_height="40.0dip" android:text="@string/ok" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/text_color_button11" android:gravity="center" android:id="@id/breakpoint_btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/global_reset" android:drawableTop="@drawable/shoot_icon_redo" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <include android:id="@id/breakpoint_bar" layout="@layout/record_breakpoint_bar" />
+    </RelativeLayout>
+    <com.yxcorp.gifshow.camera.record.widget.SingleLineLyricWordView android:id="@id/breakpoint_lyric" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_above="@id/breakpoint_panel_area" android:layout_centerHorizontal="true">
+        <com.yxcorp.gifshow.camera.ktv.record.widget.KtvLineView android:textSize="24.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/breakpoint_lyric_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" />
+    </com.yxcorp.gifshow.camera.record.widget.SingleLineLyricWordView>
+</com.yxcorp.gifshow.camera.record.breakpoint.BreakpointPanel>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/slide_play_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/slide_profile_feed_cover" android:layout_width="@dimen/music_station_scroll_list_item_width" android:layout_height="@dimen/music_station_scroll_list_item_height" android:scaleType="centerCrop" app:roundedCornerRadius="@dimen/music_station_scroll_list_item_corner" />
+    <View android:id="@id/slide_profile_feed_shadow" android:background="@drawable/music_station_scroll_list_item_shadow_bg" android:layout_width="@dimen/music_station_scroll_list_item_width" android:layout_height="@dimen/music_station_scroll_list_item_height" />
+    <View android:id="@id/slide_profile_feed_selected_bg" android:background="@drawable/music_station_scroll_list_item_bg" android:layout_width="@dimen/music_station_scroll_list_item_width" android:layout_height="@dimen/music_station_scroll_list_item_height" />
+    <View android:background="@drawable/music_station_scroll_list_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="@drawable/music_station_scroll_list_item_bottom_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#e6ffffff" android:ellipsize="end" android:gravity="left" android:id="@id/slide_profile_feed_name" android:background="@null" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:paddingBottom="5.0dip" android:layout_width="@dimen/music_station_scroll_list_item_width" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentBottom="true" />
+</RelativeLayout>

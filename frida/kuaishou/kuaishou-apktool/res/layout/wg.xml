@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_root_layout" layout="@layout/kwai_title_default" />
+    <FrameLayout android:id="@id/tabs_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_root_layout">
+        <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="39.0dip" />
+        <com.yxcorp.gifshow.widget.PagerSlidingTabStrip android:id="@id/tabs" android:layout_width="@dimen/login_switch_tab_width" android:layout_marginLeft="12.5dip" android:layout_marginTop="8.0dip" style="@style/tab_strip.login" />
+    </FrameLayout>
+</RelativeLayout>

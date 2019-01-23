@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/slide_play_share_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="#99ffffff" android:id="@id/im_send_to_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/share_send_message_to" />
+    <android.support.v7.widget.RecyclerView android:id="@id/share_im_list" android:layout_width="fill_parent" android:layout_height="114.0dip" android:overScrollMode="never" />
+    <View android:id="@id/share_im_divider" android:background="#0effffff" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" />
+    <android.support.v7.widget.RecyclerView android:id="@id/share_platform_list" android:layout_width="fill_parent" android:layout_height="114.0dip" android:overScrollMode="never" />
+    <View android:id="@id/share_platform_divide" android:background="#0effffff" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" />
+    <android.support.v7.widget.RecyclerView android:id="@id/function_list" android:layout_width="fill_parent" android:layout_height="114.0dip" android:overScrollMode="never" />
+    <Button android:textSize="@dimen/dialog_list_item_text_size" android:textColor="#99ffffff" android:gravity="center" android:id="@id/cancel_button" android:background="#ff222222" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_list_item_height" android:text="@string/cancel" />
+    <android.support.v4.widget.Space android:id="@id/share_button_space" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</LinearLayout>

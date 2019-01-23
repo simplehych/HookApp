@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.webview.helper.StateListImageView android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center" android:id="@id/pressed_state_image" android:background="@null" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="centerInside" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center" android:id="@id/normal_state_image" android:background="@null" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="centerInside" />
+</com.yxcorp.gifshow.webview.helper.StateListImageView>

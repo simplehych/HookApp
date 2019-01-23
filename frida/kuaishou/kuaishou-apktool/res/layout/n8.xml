@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/toast_info_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/splash_background_offset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_white" android:id="@id/page_url_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:lineSpacingExtra="4.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/page_url_refresh_text" android:paddingLeft="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="刷新" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/page_url_cppy_text" android:paddingLeft="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="复制" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

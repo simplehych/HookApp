@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="62.0dip">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffffffff" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/live_top_up_balance_insufficient" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffffffff" android:layout_gravity="center|right" android:id="@id/live_top_up_hint_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+        </FrameLayout>
+        <View android:background="@color/translucent_10_white" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:id="@id/live_top_up_view" android:background="@drawable/bg_gift_box_item" android:layout_width="fill_parent" android:layout_height="62.0dip">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/live_top_up_rapid_recharge" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/live_top_up_arrow" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/recharge_icon_arrow_white_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffffffff" android:id="@id/live_top_up_figure_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_toLeftOf="@id/live_top_up_arrow" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/live_gift_kcoin_normal" android:scaleType="centerInside" android:layout_toLeftOf="@id/live_top_up_figure_text_view" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/translucent_10_white" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:id="@id/live_top_up_payment" android:background="@drawable/bg_gift_box_item" android:layout_width="fill_parent" android:layout_height="62.0dip">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/live_top_up_payment_methods" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/live_top_up_choose_payment_icon" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/recharge_icon_arrow_white_normal" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffffffff" android:id="@id/live_top_up_current_payment_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_toLeftOf="@id/live_top_up_choose_payment_icon" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/live_top_up_current_payment_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/wallet_icon_wechat_normal" android:scaleType="centerInside" android:layout_toLeftOf="@id/live_top_up_current_payment_name" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/translucent_10_white" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/live_top_up_button" android:layout_width="170.0dip" android:layout_height="40.0dip" android:layout_marginTop="33.0dip" android:layout_marginBottom="33.0dip" android:text="@string/live_top_up_confirm" style="@style/Kwai.Widget.Button.B12" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/live_top_up_payment_methods_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center|right|top" android:orientation="vertical" android:background="@drawable/recharge_toast_bg_white_normal" android:layout_width="140.0dip" android:layout_height="111.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="3.0dip">
+            <RelativeLayout android:id="@id/live_top_up_payment_1_info_container" android:background="@drawable/bg_live_top_up_first_option" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:id="@id/live_top_up_payment_1_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/wallet_icon_alipay_normal" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/list_item_black" android:id="@id/live_top_up_payment_1_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/live_top_up_payment_1_icon" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/live_top_up_payment_2_info_container" android:background="@drawable/bg_live_top_up_last_option" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:id="@id/live_top_up_payment_2_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/wallet_icon_baidu_normal" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/list_item_black" android:id="@id/live_top_up_payment_2_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/live_top_up_payment_2_icon" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

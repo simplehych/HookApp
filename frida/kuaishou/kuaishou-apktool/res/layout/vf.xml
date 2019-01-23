@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/source_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true" />
+        <FrameLayout android:id="@id/battery_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_toRightOf="@id/source_image" android:layout_alignBottom="@id/source_image">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_icon_nobattery_orange_s_normal" android:scaleType="centerCrop" />
+            <com.yxcorp.widget.BatteryView android:layout_gravity="center" android:id="@id/battery" android:layout_width="5.0dip" android:layout_height="6.5dip" android:layout_marginTop="1.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progress" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="1.5dip" style="@style/Theme.Widget.Loading.Small" />
+        <TextView android:textSize="14.0sp" android:textColor="#80ffffff" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/source_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/device_name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="10.0sp" android:textColor="#40ffffff" android:ellipsize="middle" android:id="@id/device_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/label_layout" android:background="@drawable/bg_list_item" android:paddingLeft="15.0dip" android:paddingTop="28.0dip" android:paddingRight="15.0dip" android:paddingBottom="12.0dip" android:clickable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_black_color" android:id="@id/label_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/gender_label" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/text_search_hint_color" android:gravity="center" android:id="@id/more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/more" android:drawableRight="@drawable/universal_icon_rightarrow_black_s_normal" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.detail.slideplay.SlidePlayShootRefreshView android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" shoot:strokeColor="#ffffffff" shoot:strokeWidth="1.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shoot="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.recycler.widget.ShootRefreshView android:id="@id/slide_play_refresh_view" android:layout_width="25.0dip" android:layout_height="25.0dip" shoot:strokeColor="#ffffffff" shoot:strokeWidth="1.5dip" shoot:gradientStartColor="#ffffffff" shoot:gradientEndColor="#0dffffff" />
+    <TextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/text_color11_normal" android:id="@id/slide_play_refresh_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/continue_to_pull_to_refresh" />
+</com.yxcorp.gifshow.detail.slideplay.SlidePlayShootRefreshView>

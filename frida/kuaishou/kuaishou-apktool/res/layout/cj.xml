@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/no_face_tip_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/magicemoji_icon_undetected_normal" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_face_detected" android:shadowColor="@color/text_shadow_color" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="4.0" />
+</LinearLayout>

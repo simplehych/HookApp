@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?PhotoCommentBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="?PhotoCommentMoreTextColor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/slide_play_comment_slide_more_height" android:text="@string/comment_slide_more" android:layout_centerHorizontal="true" />
+</RelativeLayout>

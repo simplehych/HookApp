@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/poi_header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/poi_divider_one" layout="@layout/layout_site_address" />
+    <include layout="@layout/layout_site_info" />
+    <View android:id="@id/poi_divider_one" android:background="@drawable/default_horizontal_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/rl_info" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/poi_divider_one" layout="@layout/layout_map_more" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_address" layout="@layout/layout_site_recent_activity" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_address" layout="@layout/layout_site_hot_scenic_spot" />
+</RelativeLayout>

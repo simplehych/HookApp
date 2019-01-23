@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" style="@style/Theme.Widget.Setting.Row">
+        <com.yxcorp.gifshow.widget.EmojiEditText android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/device_name" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:maxLength="100" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/clear" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_clear" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator android:label="@string/kwai_app_name" android:icon="@drawable/kwai_icon" android:accountType="@string/account_type" android:smallIcon="@drawable/kwai_icon"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

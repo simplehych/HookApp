@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.profile.widget.ForegroundLinearLayout android:orientation="vertical" android:id="@id/moment_item_foreground" android:paddingLeft="@dimen/profile_moment_aggregation_content_margin_left" android:paddingRight="@dimen/margin_large" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/praise_top" android:background="@drawable/profile_bg_moment_comment_corners_top" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_comment_corner" />
+    <FrameLayout android:background="@drawable/profile_bg_moment_comment_corners_none" android:paddingLeft="@dimen/profile_moment_praise_info_left_padding" android:paddingRight="@dimen/profile_moment_praise_info_left_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color14_normal" android:gravity="center_vertical" android:id="@id/praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/profile_moment_praise_info_min_height" android:lineSpacingExtra="@dimen/profile_moment_praise_comment_line_space_extra" android:textDirection="ltr" />
+    </FrameLayout>
+    <View android:id="@id/praise_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_comment_corner" />
+    <View android:id="@id/praise_divider" android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" />
+</com.yxcorp.gifshow.profile.widget.ForegroundLinearLayout>

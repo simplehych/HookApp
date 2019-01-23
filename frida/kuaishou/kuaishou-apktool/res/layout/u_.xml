@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center" android:id="@id/live_pk_score_top_bar" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginTop="@dimen/margin_large">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center|left" android:id="@id/self_pk_result_image" android:layout_width="wrap_content" android:layout_height="15.0dip" />
+                <ImageView android:layout_gravity="center|right" android:id="@id/opponent_pk_result_image" android:layout_width="wrap_content" android:layout_height="15.0dip" />
+            </FrameLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/pk_count_down_control_bar" android:background="@drawable/live_bg_pk_score" android:paddingLeft="3.0dip" android:paddingTop="0.0dip" android:paddingRight="3.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="1.0">
+                <ImageView android:layout_width="14.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:src="@drawable/live_icon_pk_vs" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_default_color" android:gravity="center" android:id="@id/pk_name_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:minWidth="48.0dip" android:maxLines="1" />
+                <ImageView android:id="@id/live_pk_like_moment_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_pk_like_moment_logo" />
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/text_color_white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/live_pk_like_moment_count_down" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="10" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/text_default_color" android:gravity="center" android:id="@id/count_down_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="6.0dip" android:minWidth="32.0dip" android:text="00:30" android:maxLines="1" />
+                <View android:id="@id/end_pk_button_divider" android:background="@color/translucent_40_white" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/live_pk_score_view_self_score_color" android:gravity="center" android:id="@id/end_pk_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:minWidth="24.0dip" android:text="@string/live_pk_end" android:maxLines="1" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/live_pk_score_bottom_bar" android:layout_width="fill_parent" android:layout_height="@dimen/live_pk_score_progress_bar_height" android:layout_below="@id/live_pk_score_top_bar">
+            <com.yxcorp.plugin.pk.LivePkScoreProgressBar android:id="@id/pk_score_progressbar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_margin="5.0dip" android:src="@drawable/live_icon_pk_score" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/live_pk_score_view_text_color" android:layout_gravity="center" android:id="@id/self_score_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/live_pk_score_view_text_color" android:layout_gravity="center" android:id="@id/opponent_score_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_margin="5.0dip" android:src="@drawable/live_icon_pk_score" />
+            </LinearLayout>
+        </FrameLayout>
+        <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size_25" android:typeface="sans" android:textStyle="bold|italic" android:textColor="#ffffd100" android:id="@id/live_pk_combo_text" android:paddingLeft="0.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="7.0dip" android:layout_above="@id/live_pk_score_bottom_bar" app:textStrokeColor="#ffcd8e2a" app:textStrokeSize="2.0dip" />
+    </RelativeLayout>
+</FrameLayout>

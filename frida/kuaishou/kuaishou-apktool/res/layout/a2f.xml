@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.KwaiActionBar android:id="@id/title_root" android:layout_width="fill_parent" android:layout_height="?actionbarHeight">
+        <ImageButton android:id="@id/left_btn" android:background="@null" android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="?actionbarTitleTextSize" android:textColor="?actionbarTitleTextColor" android:gravity="center" android:id="@id/title_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/common_padding" android:layout_marginRight="@dimen/common_padding" android:singleLine="true" android:layout_toLeftOf="@id/right_btn" android:layout_toRightOf="@id/left_btn" android:layout_centerInParent="true" app:textSizeAdjustable="true" />
+        <TextView android:enabled="false" android:textSize="@dimen/text_size_17" android:textColor="@color/profile_cover_confirm" android:gravity="center" android:id="@id/right_btn" android:background="@null" android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/divider_line" android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" android:layout_alignParentBottom="true" />
+    </com.yxcorp.gifshow.widget.KwaiActionBar>
+    <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView android:id="@id/recycler_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_root" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <RelativeLayout android:id="@id/upload_layout" android:background="@color/background_light" android:padding="@dimen/dimen_20dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/upload_btn" android:text="@string/profile_add_cover" style="@style/Kwai.Widget.Button.B12" />
+    </RelativeLayout>
+</RelativeLayout>

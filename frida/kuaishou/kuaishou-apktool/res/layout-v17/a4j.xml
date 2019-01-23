@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/pay_bg_recharge_first_time_success" android:layout_width="260.0dip" android:layout_height="255.0dip">
+        <TextView android:textSize="19.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/title_text_view" android:layout_width="fill_parent" android:layout_height="27.0dip" android:layout_marginTop="40.0dip" android:text="@string/recharge_kwai_coin_success_title" />
+        <TextView android:textSize="30.0sp" android:textColor="@android:color/white" android:id="@id/coin_count_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="90.0dip" android:layout_marginBottom="121.0dip" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="23.0sp" android:textColor="@android:color/white" android:id="@id/kwai_coin_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="124.0dip" android:text="@string/kwai_coin" android:layout_toRightOf="@id/coin_count_text_view" android:layout_alignParentBottom="true" android:layout_toEndOf="@id/coin_count_text_view" />
+        <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/notice_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="98.0dip" android:text="@string/recharge_first_time_success_notice" android:layout_alignParentBottom="true" />
+        <Button android:textColor="@color/text_red_dark" android:gravity="center" android:id="@id/sure_button" android:background="@drawable/recharge_first_time_button_bg" android:layout_width="210.0dip" android:layout_height="40.0dip" android:layout_marginBottom="20.0dip" android:text="@string/know_already" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

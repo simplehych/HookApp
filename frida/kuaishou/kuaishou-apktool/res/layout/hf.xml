@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ktv_crop_fragment_container" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/ktv_crop_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/ktv_crop_tips">
+            <ImageView android:id="@id/ktv_crop_play_control" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@drawable/edit_btn_cut_play_normal" android:layout_centerVertical="true" />
+            <com.yxcorp.gifshow.widget.trimvideo.CustomHorizontalScroller android:id="@id/ktv_timeline_scroller" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="@dimen/range_container_height" android:layout_marginLeft="28.0dip" android:fillViewport="true" android:layout_toRightOf="@id/ktv_crop_play_control" android:layout_centerVertical="true" android:fadeScrollbars="false" android:overScrollMode="never" android:requiresFadingEdge="none" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.yxcorp.gifshow.v3.widget.ExpandFoldHelperView android:id="@id/opview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

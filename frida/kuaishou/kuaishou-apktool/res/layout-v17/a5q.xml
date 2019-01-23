@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/roam_city_title" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_container" layout="@layout/roam_search_layout" />
+    <RelativeLayout android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/title_container_background" android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/title_bar" android:layout_alignBottom="@id/title_bar" />
+        <RelativeLayout android:id="@id/title_bar" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="fill_parent" android:layout_height="@dimen/roam_city_action_height">
+            <ImageButton android:id="@id/close_btn" android:background="@null" android:layout_width="@dimen/title_image_width" android:layout_height="@dimen/title_image_height" android:layout_marginLeft="@dimen/dimen_5dp" android:src="@drawable/location_icon_back_gray_l_normal" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:gravity="center" android:paddingLeft="@dimen/dimen_5dp" android:paddingRight="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.5dip" android:layout_toLeftOf="@id/title_btn_share" android:layout_toRightOf="@id/close_btn" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/text_size1" android:textStyle="bold" android:textColor="#ff303030" android:ellipsize="end" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15dp" android:text="@string/city_roam_title" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textDirection="ltr" />
+                <ImageView android:id="@id/title_icon" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="2.5dip" android:src="@drawable/nav_btn_city_triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageButton android:id="@id/title_btn_share" android:background="@null" android:layout_width="@dimen/title_image_width" android:layout_height="@dimen/title_image_height" android:src="@drawable/location_icon_share_gray_l_normal" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

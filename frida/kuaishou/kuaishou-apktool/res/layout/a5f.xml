@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View style="@style/Theme.Widget.DefaultDividerVertical" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_weight="0.0">
+        <ImageButton android:id="@id/share_button" android:background="@null" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/nav_btn_share_black" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" android:contentDescription="@string/share" />
+        <ImageButton android:id="@id/more_button" android:background="@null" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/nav_btn_more_black" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" android:contentDescription="@string/more" />
+        <TextView android:typeface="monospace" android:textStyle="bold" android:textColor="@color/text_black_color" android:gravity="center" android:id="@id/file_info_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/more_button" android:layout_toRightOf="@id/share_button" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

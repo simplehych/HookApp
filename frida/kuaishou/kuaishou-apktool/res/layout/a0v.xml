@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/pay_title_root" layout="@layout/pay_webview_titlebar" />
+    <View android:id="@id/pay_title_divider" android:background="@color/pay_divider_default_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/pay_title_root" />
+    <com.yxcorp.gateway.pay.webview.PayWebView android:id="@id/pay_web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pay_title_divider" />
+</RelativeLayout>

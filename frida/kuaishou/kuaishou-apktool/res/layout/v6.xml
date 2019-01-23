@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size1" android:textColor="@color/text_color1" android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/popup_list_item_default_height" android:text="@string/cancel"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

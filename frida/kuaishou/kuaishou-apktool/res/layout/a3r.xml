@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_praise_parent_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/profile_moment_location_margin_right" android:layout_toLeftOf="@id/profile_moment_operation">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color15_normal" android:id="@id/moment_publish_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_default" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color15_normal" android:ellipsize="end" android:id="@id/location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/profile_moment_operation" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/moment_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_moment_operation_vertical" />
+        <ImageView android:id="@id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_moment_praise_more_margin_left" android:layout_marginRight="@dimen/profile_moment_praise_comment_margin_right" android:src="@drawable/profile_moment_comment" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/like" android:layout_width="@dimen/profile_moment_praise_size" android:layout_height="@dimen/profile_moment_praise_size" />
+    </LinearLayout>
+    <ImageView android:id="@id/profile_moment_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_icon_pre_moment_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

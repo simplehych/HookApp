@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/timeline_root_container" android:layout_width="fill_parent" android:layout_height="@dimen/range_center_line_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/btn_play_layout" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="@dimen/range_playbtn_width" android:layout_height="fill_parent">
+        <ImageView android:id="@id/btn_play_control" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/edit_clip_pause_btn" android:scaleType="centerInside" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.yxcorp.gifshow.v3.widget.EditorTimeLineView android:id="@id/editor_timeline" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="@dimen/range_container_height" android:layout_toRightOf="@id/btn_play_layout" android:layout_centerVertical="true" android:overScrollMode="never" />
+    <View android:id="@id/center_handler" android:background="@drawable/edit_timeline_centralaxis" android:focusableInTouchMode="false" android:layout_width="3.0dip" android:layout_height="@dimen/range_center_line_height" android:layout_marginLeft="-2.0dip" android:layout_alignParentLeft="true" />
+</RelativeLayout>

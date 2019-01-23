@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ktv_edit_panel_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/ktv_edit_progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="58.0dip" android:layout_alignParentTop="true" layout="@layout/ktv_edit_preview_progress" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/ktv_song_change_cover" android:background="@drawable/ktv_background_change_song_cover" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="100.0dip" android:text="@string/ktv_edit_change_cover" android:maxLines="1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/ktv_song_init_cover" android:background="@drawable/button_round_corner_white_20" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/set_cover_image" android:maxLines="1" android:layout_centerInParent="true" />
+</RelativeLayout>

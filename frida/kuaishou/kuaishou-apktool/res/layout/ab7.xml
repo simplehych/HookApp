@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_5dp" android:layout_weight="1.0">
+        <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center|right" android:id="@id/downloadtip_img1" android:layout_width="30.0dip" android:layout_height="30.0dip" fresco:roundedCornerRadius="8.0dip" fresco:roundingBorderWidth="1.5dip" fresco:roundingBorderColor="#ffffffff" fresco:roundingBorderPadding="1.0dip" />
+        <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center|right" android:id="@id/downloadtip_img2" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="25.0dip" fresco:roundedCornerRadius="8.0dip" fresco:roundingBorderWidth="1.5dip" fresco:roundingBorderColor="#ffffffff" fresco:roundingBorderPadding="1.0dip" />
+        <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center|right" android:id="@id/downloadtip_img3" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="50.0dip" fresco:roundedCornerRadius="8.0dip" fresco:roundingBorderWidth="1.5dip" fresco:roundingBorderColor="#ffffffff" fresco:roundingBorderPadding="1.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="14.0dip" android:textColor="#ffc6c6c6" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/downloadtip_finishtip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_5dp" android:text="@string/download_finished" />
+</LinearLayout>

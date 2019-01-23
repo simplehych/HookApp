@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/record_flash_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

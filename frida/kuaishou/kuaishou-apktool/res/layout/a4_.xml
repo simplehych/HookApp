@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/transparent" android:paddingLeft="@dimen/dimen_8dp" android:paddingRight="@dimen/dimen_8dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:id="@id/alert_dialog_grid" android:background="@drawable/picker_view_common_bg" android:paddingTop="@dimen/dimen_30dp" android:paddingBottom="@dimen/dimen_25dp" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:stretchMode="spacingWidthUniform" android:columnWidth="80.0dip" android:numColumns="2" android:overScrollMode="never" />
+    <TextView android:textSize="@dimen/dialog_list_item_text_size" android:textColor="@color/text_color1" android:gravity="center" android:id="@id/alert_dialog_cancle_tv" android:background="@drawable/picker_view_common_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_55dp" android:layout_marginTop="7.5dip" android:text="@string/cancel" />
+</LinearLayout>

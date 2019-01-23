@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/logo1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/splash_logo1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/logo2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/splash_logo2" android:layout_toRightOf="@id/logo1" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_hint_black_color" android:gravity="center_vertical" android:id="@id/skip_btn" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/launch_ad_skip" android:drawableRight="@drawable/button_arrow_right" android:drawablePadding="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/advertisement" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_above="@id/bottom_layout" fresco:fadeDuration="0" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/item_root" android:background="@drawable/bg_list_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:background="@null" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:scaleType="fitXY" app:roundAsCircle="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_large">
+        <com.lsjwzh.widget.text.FastTextView android:textSize="@dimen/text_size2" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <com.lsjwzh.widget.text.FastTextView android:textSize="@dimen/text_size4" android:textColor="@color/text_color15_normal" android:ellipsize="end" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

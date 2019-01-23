@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.plugin.voiceComment.VoiceRecordingVolumeView android:layout_gravity="center_horizontal" android:id="@id/volume_view" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginTop="@dimen/margin_default" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/voice_comment_record_dialog_image" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/live_ic_voice_xl_normal" />
+    <TextView android:textSize="@dimen/text_size_25" android:textColor="@color/text_color_white" android:layout_gravity="center_horizontal" android:id="@id/voice_comment_record_count_down_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_white" android:layout_gravity="bottom|center" android:id="@id/voice_comment_record_dialog_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_default" android:text="@string/live_voiceinput_slideupcancel" android:maxLines="1" />
+</FrameLayout>

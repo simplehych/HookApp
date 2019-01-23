@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/root" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:gravity="center_vertical" android:id="@id/style_name" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_alignParentStart="true" />
+    <RelativeLayout android:id="@id/select_btn_touch_area" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <ToggleButton android:id="@id/select_btn" android:background="@drawable/file_select_toggle_button_background" android:clickable="false" android:duplicateParentState="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

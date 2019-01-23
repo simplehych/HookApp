@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_image_text_text" />
+    <FrameLayout android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/search_bar_height" android:layout_below="@id/title_root">
+        <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <include android:id="@id/search_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_root" layout="@layout/user_tag_search_layout" />
+</RelativeLayout>

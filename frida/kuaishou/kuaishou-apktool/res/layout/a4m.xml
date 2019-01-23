@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="horizontal" android:layout_marginTop="10.0dip" style="@style/Theme.Widget.Payment.Row">
+            <TextView android:textSize="@dimen/text_size2" android:textColor="@color/text_color1_normal" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/wallet_balance" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_size2" android:textColor="@color/text_color1_normal" android:gravity="center" android:id="@id/kwai_coin_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:drawableRight="@drawable/wallet_icon_kcoin" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color2_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/please_choose_recharge_amount" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color5_normal" android:id="@id/minors_recharge_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/minors_recharge_notice" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView android:id="@id/recharge_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/white_button_normal_color" android:id="@id/gift_coins_notice" android:background="@drawable/pay_icon_first_recharge" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="9.0dip" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color2_normal" android:gravity="bottom|center|left" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:text="@string/please_choose_recharge_method" />
+        <com.yxcorp.gifshow.widget.UnScrollableGridView android:id="@id/recharge_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="2" />
+        <Button android:id="@id/recharge_button" android:layout_marginTop="10.0dip" android:text="@string/recharge_now" style="@style/Theme.Widget.Payment.Button" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/wallet_base_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.BdActionBar android:id="@id/bdactionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.baidu.wallet.base.widget.SafeScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bdactionbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="96.0dip">
+            <TextView android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/bd_wallet_balance_trans_queqiao_111111" android:gravity="center" android:id="@id/pwd_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ebpay_pwd_set_tip" />
+            <com.baidu.wallet.base.widget.SixNumberPwdView android:id="@id/pwd_input_box" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="40.0dip" />
+            <RelativeLayout android:id="@id/error_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="38.0dip">
+                <TextView android:textSize="@dimen/bd_wallet_text_size_small" android:textColor="@color/wallet_base_click_text_color" android:id="@id/forget_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebpay_pwd_forget" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/bd_wallet_text_size_small" android:textColor="@color/ebpay_red" android:id="@id/error_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebpay_pwd_changed" android:layout_toLeftOf="@id/forget_pwd" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.baidu.wallet.base.widget.SafeScrollView>
+</RelativeLayout>

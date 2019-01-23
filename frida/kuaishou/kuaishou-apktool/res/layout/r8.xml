@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/item_root" android:background="@drawable/background_list_selector" android:layout_width="fill_parent" android:layout_height="@dimen/tag_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tag_tv" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="@dimen/tag_list_item_height" android:text="@string/tag" android:singleLine="true" android:drawableLeft="@drawable/share_icon_hash_normal" android:drawablePadding="@dimen/margin_default" />
+</RelativeLayout>

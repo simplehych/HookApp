@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/popup_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/popup_default_margin" android:layout_marginRight="@dimen/popup_default_margin">
+        <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color2_normal" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_marginBottom="19.0dip" android:layout_toLeftOf="@id/confirm_button" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:overScrollMode="never" />
+        <View android:background="@color/p_color_light" android:layout_width="fill_parent" android:layout_height="@dimen/popup_default_divider_size" android:layout_marginTop="22.0dip" />
+        <Button android:textSize="@dimen/text_size1" android:textColor="@color/p_color_orange" android:gravity="center" android:id="@id/confirm_button" android:background="@drawable/popup_bottom_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/text_size1" android:textColor="@color/text_color1_normal" android:gravity="center" android:id="@id/cancel_button" android:background="@drawable/popup_one_item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="@dimen/popup_default_margin" android:layout_marginTop="@dimen/popup_default_margin" android:layout_marginRight="@dimen/popup_default_margin" android:layout_marginBottom="@dimen/popup_margin_bottom" android:text="@string/cancel" />
+</LinearLayout>

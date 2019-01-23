@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sliding_layout_container" android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.profile.widget.ProfileSlideView android:id="@id/sliding_layout" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/profile_header_iv" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginLeft="32.5dip" android:layout_marginRight="32.5dip" android:scaleType="centerCrop" android:layout_centerHorizontal="false" app:layout_constraintDimensionRatio="h,5:3" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:roundedCornerRadius="3.0dip" />
+                <RelativeLayout android:gravity="center" android:id="@id/profile_cover_loading" android:background="@color/divider_color_transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <ProgressBar android:id="@id/progress_large" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Theme.Widget.Loading.Small" />
+                </RelativeLayout>
+            </android.support.constraint.ConstraintLayout>
+            <LinearLayout android:gravity="center_vertical" android:paddingRight="@dimen/dimen_30dp" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/bg_change_iv" android:background="@drawable/profile_bg_change" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp" android:scaleType="centerCrop" />
+                <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/bg_delete_iv" android:background="@drawable/profile_bg_delete" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp" android:layout_marginLeft="@dimen/dimen_20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.yxcorp.gifshow.profile.widget.ProfileSlideView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.plugin.magicemoji.widget.FaceEffectPlayerView android:id="@id/player_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/kwai_title_image_text_text_transparent" />
+    <ProgressBar android:id="@id/loading_view" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_centerInParent="true" style="@style/Theme.Widget.Loading" />
+</RelativeLayout>

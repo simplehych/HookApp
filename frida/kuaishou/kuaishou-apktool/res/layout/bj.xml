@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foregroundGravity="bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/record_layout" android:background="#80000000" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="4.0dip">
+            <com.yxcorp.gifshow.widget.SegmentProgressBar android:gravity="top" android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="4.0dip" android:max="100" android:progress="0" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color11_normal" android:gravity="center" android:id="@id/record_time_tv" android:background="@drawable/background_record_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+        <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="0.0dip">
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/cancel_button" android:background="@drawable/round_audio_recoder" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/button_recorder_close_v3" android:scaleType="centerInside" android:contentDescription="@string/cancel" style="@style/Theme.Widget.Button" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/delete_button" android:background="@drawable/round_audio_recoder" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/button_stop_capture_v3" android:scaleType="centerInside" style="@style/Theme.Widget.Button" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/record_button_layout" android:clipChildren="false" android:layout_width="66.0dip" android:layout_height="66.0dip">
+                <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/record_shrink_image" android:background="@drawable/transparent_round_audio_recorder" android:visibility="visible" android:layout_width="66.0dip" android:layout_height="66.0dip" android:src="@drawable/ktv_recording_btn" android:scaleType="center" android:contentDescription="@string/music_record" />
+                <ImageButton android:layout_gravity="center" android:id="@id/record_button" android:background="@drawable/transparent_round_audio_recorder" android:visibility="visible" android:layout_width="66.0dip" android:layout_height="66.0dip" android:src="@drawable/edit_btn_record" android:scaleType="centerInside" android:contentDescription="@string/press_to_record" style="@style/Theme.Widget.Button" />
+            </FrameLayout>
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/accept_button" android:background="@drawable/round_audio_recoder" android:paddingRight="0.5dip" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/button_capture_finish_v3" android:scaleType="centerInside" android:contentDescription="@string/ok" style="@style/Theme.Widget.Button" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/music_record" />
+    </LinearLayout>
+</FrameLayout>

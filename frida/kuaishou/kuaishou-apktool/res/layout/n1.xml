@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/local_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_local_title_container" android:background="@android:color/white" android:padding="@dimen/dimen_15dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="#ff303030" android:id="@id/tv_local_address" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/loading_progress_bar" android:visibility="invisible" android:layout_marginLeft="@dimen/dimen_5dp" style="@style/Theme.Widget.Loading.Small" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_local_address_container" android:background="@android:color/white" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_local_title_container">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/site_address_title_text_color" android:id="@id/tv_local_detail_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_5dp" android:layout_toLeftOf="@id/divider" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/site_address_sub_title_text_color" android:id="@id/tv_local_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_local_detail_address" />
+        <ImageView android:id="@id/iv_location_icon" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:src="@drawable/location_button_background" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/divider" android:background="@drawable/gray_vertical_divider" android:layout_width="@dimen/default_divider_size" android:layout_height="@dimen/dimen_20dp" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_toLeftOf="@id/iv_location_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/local_horizontal_divider" android:background="@color/gray_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" android:layout_below="@id/ll_local_title_container" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/local_horizontal_divider" layout="@layout/layout_map_more" />
+</RelativeLayout>

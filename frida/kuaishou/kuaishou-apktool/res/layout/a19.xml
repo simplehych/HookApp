@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/photo_label" layout="@layout/list_item_photo_detail_horizontal" />
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/photo_fragment_top_margin" />
+    <View android:id="@id/photo_detail_edit_panel_background" android:background="@drawable/detail_edit_panel_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" />
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/photo_editor_holder_height" android:layout_alignParentBottom="true" layout="@layout/photo_detail_bottom" />
+    <ViewStub android:id="@id/photo_detail_next_page_btn_stub" android:layout="@layout/n9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <View android:id="@id/photo_detail_title_background" android:background="@drawable/background_photo_toolbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+    <FrameLayout android:id="@id/ad_action_bar_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/photo_recommend_container" android:visibility="gone" android:layout="@layout/mp" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/title_container" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/kwai_title_photo" />
+        <include android:id="@id/title_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/title_root" layout="@layout/line_divider_grey" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/share_container" android:visibility="gone" android:layout="@layout/mq" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/title_container" android:layout_centerHorizontal="true" />
+</RelativeLayout>

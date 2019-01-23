@@ -1,0 +1,122 @@
+.class public final Lkotlin/coroutines/intrinsics/IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$2;
+.super Lkotlin/coroutines/jvm/internal/ContinuationImpl;
+.source "IntrinsicsJvm.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lkotlin/coroutines/intrinsics/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic $completion:Lkotlin/coroutines/a;
+
+.field final synthetic $context:Lkotlin/coroutines/c;
+
+.field final synthetic $this_createCoroutineUnintercepted$inlined:Lkotlin/jvm/a/b;
+
+.field private label:I
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/coroutines/a;Lkotlin/coroutines/c;Lkotlin/coroutines/a;Lkotlin/coroutines/c;Lkotlin/jvm/a/b;)V
+    .locals 0
+
+    .prologue
+    iput-object p1, p0, Lkotlin/coroutines/intrinsics/IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$2;->$completion:Lkotlin/coroutines/a;
+
+    iput-object p2, p0, Lkotlin/coroutines/intrinsics/IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$2;->$context:Lkotlin/coroutines/c;
+
+    iput-object p5, p0, Lkotlin/coroutines/intrinsics/IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$2;->$this_createCoroutineUnintercepted$inlined:Lkotlin/jvm/a/b;
+
+    .line 180
+    invoke-direct {p0, p3, p4}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/a;Lkotlin/coroutines/c;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    .prologue
+    const/4 v2, 0x1
+
+    .line 184
+    iget v0, p0, Lkotlin/coroutines/intrinsics/IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$2;->label:I
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 194
+    const-string/jumbo v1, "This coroutine had already completed"
+
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    check-cast v0, Ljava/lang/Throwable;
+
+    throw v0
+
+    .line 186
+    :pswitch_0
+    iput v2, p0, Lkotlin/coroutines/intrinsics/IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$2;->label:I
+
+    move-object v0, p0
+
+    .line 188
+    check-cast v0, Lkotlin/coroutines/a;
+
+    .line 199
+    iget-object v1, p0, Lkotlin/coroutines/intrinsics/IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$2;->$this_createCoroutineUnintercepted$inlined:Lkotlin/jvm/a/b;
+
+    if-nez v1, :cond_0
+
+    new-instance v0, Lkotlin/TypeCastException;
+
+    const-string/jumbo v1, "null cannot be cast to non-null type (kotlin.coroutines.Continuation<T>) -> kotlin.Any?"
+
+    invoke-direct {v0, v1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_0
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/v;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lkotlin/jvm/a/b;
+
+    invoke-interface {v1, v0}, Lkotlin/jvm/a/b;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    :goto_0
+    return-object p1
+
+    .line 191
+    :pswitch_1
+    const/4 v0, 0x2
+
+    iput v0, p0, Lkotlin/coroutines/intrinsics/IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$2;->label:I
+
+    goto :goto_0
+
+    .line 184
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method

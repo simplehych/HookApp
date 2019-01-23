@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.kwai.video.editorsdk2.PreviewTextureView android:id="@id/editor_sdk_player" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/editor_sdk_cover" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/preview" fresco:fadeDuration="0" fresco:actualImageScaleType="fitCenter" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="#fff7101d" android:id="@id/video_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

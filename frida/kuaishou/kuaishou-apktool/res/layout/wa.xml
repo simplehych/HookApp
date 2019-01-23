@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.ImageViewRatioExtension android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:src="@drawable/login_bg_cover" android:scaleType="centerCrop" android:contentDescription="@string/background" ratioimage:ratio="0.841121" xmlns:ratioimage="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yxcorp.gifshow.widget.ScrollViewEx android:id="@id/adjust_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:src="@drawable/login_logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@string/kwai_app_name" />
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="190.0dip">
+                    <ImageView android:id="@id/signup_cursor" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_icon_triangle" android:layout_weight="1.0" android:contentDescription="@string/signup" />
+                    <ImageView android:id="@id/login_cursor" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_icon_triangle" android:layout_weight="1.0" android:contentDescription="@string/login" />
+                </LinearLayout>
+                <RadioGroup android:orientation="horizontal" android:id="@id/signup_login_radiogroup" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="190.0dip" android:checkedButton="@id/gender_male">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/text_default_color" android:gravity="center" android:id="@id/signup_radio" android:background="@null" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="44.0dip" android:button="@null" android:text="@string/signup" android:singleLine="true" android:layout_weight="1.0" app:textSizeAdjustable="true" />
+                    <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/text_default_color" android:gravity="center" android:id="@id/login_radio" android:background="@null" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="44.0dip" android:button="@null" android:text="@string/login" android:singleLine="true" android:layout_weight="1.0" app:textSizeAdjustable="true" />
+                </RadioGroup>
+                <LinearLayout android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/signup_login_radiogroup">
+                    <RelativeLayout android:orientation="horizontal" android:id="@id/signup_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.yxcorp.gifshow.widget.SafeEditText android:gravity="center" android:id="@id/signup_name_et" android:inputType="number" android:imeOptions="actionGo" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Login">
+                            <requestFocus />
+                        </com.yxcorp.gifshow.widget.SafeEditText>
+                        <FrameLayout android:id="@id/signup_clear_layout" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/login_line_height" android:layout_alignTop="@id/signup_name_et" android:layout_alignBottom="@id/signup_name_et" android:layout_alignParentRight="true" android:onClick="onClick">
+                            <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/icon_clear" android:contentDescription="@string/delete_selected" />
+                        </FrameLayout>
+                        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/default_link_color" android:gravity="center" android:id="@id/signup_next" android:background="@drawable/background_login_top_line" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/login_cell_height" android:text="@string/next_step" android:layout_below="@id/signup_name_et" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/or_layout" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="-10.0dip" android:layout_below="@id/signup_name_et">
+                            <View android:background="@color/list_divider_default_color" android:layout_width="0.0dip" android:layout_height="@dimen/login_line_divider_size" android:layout_weight="1.0" />
+                            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_hint_black_color" android:id="@id/or_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/or" />
+                            <View android:background="@color/list_divider_default_color" android:layout_width="0.0dip" android:layout_height="@dimen/login_line_divider_size" android:layout_weight="1.0" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/login_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/login_name_line" android:layout_width="fill_parent" android:layout_height="@dimen/login_cell_height">
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/country_code_layout" android:layout_width="@dimen/login_cell_width" android:layout_height="@dimen/login_cell_height">
+                                <ImageView android:id="@id/country_code_iv" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="15.0dip" android:scaleType="fitCenter" />
+                                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_hint_black_color" android:id="@id/country_code_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxWidth="100.0dip" android:singleLine="true" />
+                                <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_hint_black_color" android:id="@id/mercury_country_code_tv" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:text="@string/password" android:singleLine="true" app:textSizeAdjustable="true" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/email_title_layout" android:visibility="gone" android:layout_width="@dimen/login_cell_width" android:layout_height="@dimen/login_cell_height">
+                                <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_hint_black_color" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:text="@string/email" android:singleLine="true" app:textSizeAdjustable="true" />
+                            </LinearLayout>
+                            <View style="@style/Theme.Widget.DefaultDividerHorizontal" />
+                            <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/login_name_et" android:paddingLeft="@dimen/margin_default" android:layout_width="0.0dip" android:layout_weight="1.0" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Login" />
+                            <FrameLayout android:id="@id/login_name_clear_layout" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/login_cell_height" android:onClick="onClick">
+                                <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_clear" />
+                            </FrameLayout>
+                        </LinearLayout>
+                        <View style="@style/Theme.Widget.DefaultDividerVertical" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/login_psd_line" android:layout_width="fill_parent" android:layout_height="@dimen/login_cell_height">
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/psd_title_layout" android:layout_width="@dimen/login_cell_width" android:layout_height="@dimen/login_cell_height">
+                                <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_hint_black_color" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:text="@string/password" android:singleLine="true" app:textSizeAdjustable="true" />
+                            </LinearLayout>
+                            <View style="@style/Theme.Widget.DefaultDividerHorizontal" />
+                            <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/login_psd_et" android:layout_width="0.0dip" android:layout_weight="1.0" android:inputType="textPassword" android:imeOptions="actionGo" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Login" />
+                            <Button android:textSize="@dimen/text_size_14" android:textColor="@color/default_link_color" android:id="@id/forget_psd_btn" android:background="@null" android:paddingRight="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/forget_password" />
+                            <FrameLayout android:id="@id/login_clear_layout" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/login_cell_height" android:onClick="onClick">
+                                <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_clear" />
+                            </FrameLayout>
+                            <FrameLayout android:id="@id/login_next_layout" android:paddingLeft="@dimen/margin_default" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/login_cell_height">
+                                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/login_button_next" android:contentDescription="@string/next_step" />
+                            </FrameLayout>
+                        </LinearLayout>
+                        <View style="@style/Theme.Widget.DefaultDividerVertical" />
+                        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/login_or_layout" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                            <View android:background="@color/list_divider_default_color" android:layout_width="0.0dip" android:layout_height="@dimen/login_line_divider_size" android:layout_weight="1.0" />
+                            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_hint_black_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/or" />
+                            <View android:background="@color/list_divider_default_color" android:layout_width="0.0dip" android:layout_height="@dimen/login_line_divider_size" android:layout_weight="1.0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/third_login_layout_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" android:layout_marginBottom="10.0dip">
+                        <include android:id="@id/third_signup_layout" layout="@layout/third_signup_layout" />
+                        <include android:id="@id/third_login_layout" layout="@layout/third_login_layout" />
+                        <ImageView android:id="@id/signup_more_platform" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/login_button_more" android:layout_alignParentRight="true" android:onClick="onClick" android:contentDescription="@string/more" />
+                        <ImageView android:id="@id/login_more_platform" android:visibility="gone" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/login_button_more" android:layout_alignParentRight="true" android:onClick="onClick" android:contentDescription="@string/more" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </com.yxcorp.gifshow.widget.ScrollViewEx>
+        <include layout="@layout/kwai_title_default" />
+    </FrameLayout>
+</RelativeLayout>

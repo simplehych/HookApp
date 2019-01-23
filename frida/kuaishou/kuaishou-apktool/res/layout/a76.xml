@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dialog_content_layout" android:background="@drawable/send_red_packet_background" android:layout_width="@dimen/red_packet_dialog_layout_width" android:layout_height="@dimen/red_packet_send_dialog_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/live_bg_tips_upleft" android:layout_width="72.5dip" android:layout_height="80.5dip" />
+    <View android:background="@drawable/live_bg_tips_lowerleft" android:layout_width="45.5dip" android:layout_height="35.5dip" android:layout_alignParentBottom="true" />
+    <View android:background="@drawable/live_bg_tips_right" android:layout_width="90.0dip" android:layout_height="113.5dip" android:layout_marginTop="104.5dip" android:layout_alignParentRight="true" />
+    <com.yxcorp.plugin.redpacket.PacketAlertCloseView android:id="@id/close_view" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffcd7a" android:id="@id/title_name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="30.0dip" android:text="@string/send_red_packet" android:singleLine="true" android:layout_centerHorizontal="true" app:textSizeAdjustable="true" app:minTextSize="11.0sp" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_name_view">
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="12.0sp" android:textColor="#fffaa66a" android:id="@id/append_message_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="@string/raise_red_packet_only" android:singleLine="true" app:textSizeAdjustable="true" app:minTextSize="9.0sp" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+            <RelativeLayout android:id="@id/loading_layout" android:layout_width="fill_parent" android:layout_height="82.5dip">
+                <com.yxcorp.gifshow.widget.LoadingView android:id="@id/loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <com.yxcorp.plugin.redpacket.SendPacketCoinSelectItemView android:id="@id/first_coin_select_item_view" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="82.5dip" />
+            <com.yxcorp.plugin.redpacket.SendPacketCoinSelectItemView android:id="@id/second_coin_select_item_view" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="82.5dip" />
+            <com.yxcorp.plugin.redpacket.SendPacketCoinSelectItemView android:id="@id/third_coin_select_item_view" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="82.5dip" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#fffaa66a" android:gravity="center" android:id="@id/send_message_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="#fff04b48" android:gravity="center" android:id="@id/confirm_btn" android:background="@drawable/send_red_packet_confirm_btn_normal_background" android:layout_width="200.0dip" android:layout_height="40.0dip" android:layout_marginBottom="20.0dip" android:text="@string/send_red_packet_to_other" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

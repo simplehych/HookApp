@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/pickerview_topbar_height" layout="@layout/include_pickerview_topbar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/timepicker" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.contrarywind.view.WheelView android:id="@id/year" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.96" />
+        <com.contrarywind.view.WheelView android:id="@id/month" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView android:id="@id/day" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView android:id="@id/hour" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView android:id="@id/min" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView android:id="@id/second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

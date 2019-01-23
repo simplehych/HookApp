@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.widget.KwaiDeepLevelRadioGroup android:orientation="vertical" android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:radioButtonIds="@array/share_radio_buttons_names"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/share_custom_gender_all_wrapper" style="@style/ShareCustomGender">
+        <TextView android:id="@id/share_custom_gender_all_text" android:text="@string/all" style="@style/ShareCustomGenderTitle" />
+        <TextView android:id="@id/share_custom_gender_all_hint" android:text="@string/share_custom_gender_all_hint" android:layout_below="@id/share_custom_gender_all_text" style="@style/ShareCustomGenderHint" />
+        <RadioButton android:id="@id/share_custom_gender_all" style="@style/ShareCustomGenderRadio" />
+    </RelativeLayout>
+    <View android:background="@drawable/line_vertical_divider_short" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/share_custom_gender_male_wrapper" style="@style/ShareCustomGender">
+        <TextView android:id="@id/share_custom_gender_male_text" android:text="@string/share_custom_gender_male_title" style="@style/ShareCustomGenderTitle" />
+        <TextView android:id="@id/share_custom_gender_male_hint" android:text="@string/share_custom_gender_hint" android:layout_below="@id/share_custom_gender_male_text" style="@style/ShareCustomGenderHint" />
+        <RadioButton android:id="@id/share_custom_gender_male" style="@style/ShareCustomGenderRadio" />
+    </RelativeLayout>
+    <View android:background="@drawable/line_vertical_divider_short" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/share_custom_gender_female_wrapper" style="@style/ShareCustomGender">
+        <TextView android:id="@id/share_custom_gender_female_text" android:text="@string/share_custom_gender_female_title" style="@style/ShareCustomGenderTitle" />
+        <TextView android:id="@id/share_custom_gender_female_hint" android:text="@string/share_custom_gender_hint" android:layout_below="@id/share_custom_gender_female_text" style="@style/ShareCustomGenderHint" />
+        <RadioButton android:id="@id/share_custom_gender_female" style="@style/ShareCustomGenderRadio" />
+    </RelativeLayout>
+</com.yxcorp.widget.KwaiDeepLevelRadioGroup>

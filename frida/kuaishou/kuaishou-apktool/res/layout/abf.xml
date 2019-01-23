@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/vote_options_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/options_left_container" android:layout_width="125.0dip" android:layout_height="wrap_content">
+        <com.yxcorp.gifshow.vote.VoteTextView android:textSize="25.0dip" android:textColorHint="#803847ff" android:layout_gravity="center" android:id="@id/options_left" android:paddingLeft="14.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="59.0dip" android:maxWidth="125.0dip" android:hint="@string/voting_option1" app:use_medium_font="true" app:height_when_single_line="59.0dip" app:height_when_multi_line="69.0dip" app:text_size_when_single_line="25.0dip" app:text_size_when_multi_line="20.0dip" app:gradient_color_start="#ff3847ff" app:gradient_color_end="#ff476fff" />
+    </FrameLayout>
+    <ImageView android:layout_width="26.0dip" android:layout_height="fill_parent" android:src="@drawable/vote_vs_icon" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/options_right_container" android:layout_width="125.0dip" android:layout_height="wrap_content">
+        <com.yxcorp.gifshow.vote.VoteTextView android:textSize="25.0dip" android:textColorHint="#80ff2d55" android:layout_gravity="center" android:id="@id/options_right" android:paddingLeft="10.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="59.0dip" android:maxWidth="125.0dip" android:hint="@string/voting_option2" app:use_medium_font="true" app:height_when_single_line="59.0dip" app:height_when_multi_line="69.0dip" app:text_size_when_single_line="25.0dip" app:text_size_when_multi_line="20.0dip" app:gradient_color_start="#ffff2d55" app:gradient_color_end="#ffff6359" />
+    </FrameLayout>
+</LinearLayout>

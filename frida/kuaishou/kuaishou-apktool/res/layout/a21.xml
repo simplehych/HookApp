@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/picker_view_common_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@drawable/picker_view_title_text_background" android:gravity="center" android:id="@id/cancel" android:paddingLeft="@dimen/margin_large" android:paddingRight="@dimen/margin_large" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" />
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_color17_normal" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@drawable/picker_view_title_text_background" android:gravity="center" android:id="@id/finish" android:paddingLeft="@dimen/margin_large" android:paddingRight="@dimen/margin_large" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/finish" android:layout_alignParentRight="true" />
+</RelativeLayout>

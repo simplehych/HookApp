@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="105.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/ktv_melody_selection_text_color_v2" android:id="@id/selection_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ktv_melody_selection_full" android:drawableTop="@drawable/ktv_icon_full_mode" android:drawablePadding="10.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

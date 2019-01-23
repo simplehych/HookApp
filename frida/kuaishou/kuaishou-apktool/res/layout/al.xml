@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/content" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/center_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="180.0dip" android:src="@drawable/welcome_img_logo" />
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/bottom_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="44.0dip" android:src="@drawable/welcome_img_words" />
+    <ViewStub android:id="@id/ad_splash" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/splash" />
+</FrameLayout>

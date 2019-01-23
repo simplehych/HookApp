@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/preview_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/preview" android:background="@drawable/placeholder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@string/preview" />
+        <ImageView android:gravity="center" android:id="@id/tag_label" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="20.0dip" android:layout_margin="4.0dip" android:layout_alignParentRight="true" />
+        <View android:id="@id/cobra_item_mask" android:background="@color/translucent_20_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/video_marker" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/play_icon" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/gallery_ic_movie" android:scaleType="fitCenter" android:contentDescription="@string/video" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/background_light" android:gravity="center|right" android:id="@id/label" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:shadowColor="#5e000000" android:shadowRadius="1.0" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.yxcorp.gifshow.widget.DownloadProgressBar android:id="@id/download_progress" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminate="false" android:indeterminateOnly="false" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/cobra_delete_choose" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="5.0dip" android:src="@drawable/album_icon_piccheck_m_selected" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

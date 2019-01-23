@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="32.0sp" android:textColor="@color/orange_color" android:gravity="center" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Reward" />
+    <include layout="@layout/line_divider_grey" />
+    <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/reward_immediately" android:background="@drawable/button12" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="reward immediately" />
+</LinearLayout>

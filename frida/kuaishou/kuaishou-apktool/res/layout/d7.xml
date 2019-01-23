@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/text_color3_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_above="@id/title_descript" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:id="@id/title_descript" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_above="@id/ll_point_container" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_point_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="171.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/title_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/left_btn" android:src="@drawable/action_nav_btn_back_white" style="@style/Theme.PhotoOperationView.Large" />
+        <TextView android:textSize="@dimen/text_size1" android:textColor="@color/text_color11_normal" android:id="@id/cobra_to_official" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="@string/cobra_compelling_videos" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <Button android:id="@id/cobra_start_peer" android:layout_width="300.0dip" android:layout_marginBottom="60.0dip" android:text="@string/cobra_peer_button" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Kwai.Widget.Button.B15" />
+    <Button android:id="@id/cobra_buy_glasses" android:layout_width="300.0dip" android:layout_marginBottom="110.0dip" android:text="@string/cobra_buy_glasses" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Kwai.Widget.Button.B12" />
+    <Button android:id="@id/cobra_about_glasses" android:visibility="gone" android:layout_width="300.0dip" android:layout_marginBottom="70.0dip" android:text="@string/cobra_know_glasses" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Kwai.Widget.Button.B12" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/text_color11_normal" android:gravity="center" android:id="@id/cobra_guide_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip" android:text="@string/cobra_bottom_know" android:layout_alignParentBottom="true" />
+</RelativeLayout>

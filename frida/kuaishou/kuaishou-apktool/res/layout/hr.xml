@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.map.widget.NoTouchContentScrollView android:id="@id/sv_animation" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.yxcorp.map.util.DraggedFrameLayout android:id="@id/drag_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/layout_map_hot_spot_header" />
+            </com.yxcorp.map.util.DraggedFrameLayout>
+            <com.yxcorp.map.widget.NestedScrollingLinearLayout android:orientation="vertical" android:id="@id/recycler_view_container" android:background="@color/background_light" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/drag_layout">
+                <com.yxcorp.gifshow.widget.SwipeLayout android:id="@id/swipe_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout style="@style/Kwai.Widget.RefreshLayout">
+                        <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView style="@style/Kwai.Widget.RecyclerView" />
+                    </com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout>
+                </com.yxcorp.gifshow.widget.SwipeLayout>
+            </com.yxcorp.map.widget.NestedScrollingLinearLayout>
+        </RelativeLayout>
+    </com.yxcorp.map.widget.NoTouchContentScrollView>
+</RelativeLayout>

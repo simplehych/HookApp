@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_content" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yxcorp.gifshow.widget.SnappyRecyclerView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/recyclerView" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yxcorp.gifshow.image.KwaiShapedImageView android:id="@id/visibale_image" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="140.0dip" android:scaleType="fitCenter" app:background="@color/message_img_placeholder_bg" app:maskShape="@drawable/message_background_send" app:placeholder="@drawable/message_placeholder_img_icon" />
+</RelativeLayout>

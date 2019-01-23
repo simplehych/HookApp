@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/surface_color1_pressed" />
+            <corners android:radius="@dimen/moment_publish_pic_radius" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/profile_icon_addphoto_m" android:tileMode="disabled" />
+    </item>
+</layer-list>

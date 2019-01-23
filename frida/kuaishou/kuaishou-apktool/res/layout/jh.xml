@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/cobra_thumb_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/glasses_icon_charge_l_normal" app:roundedCornerRadius="3.0dip" />
+    <ImageView android:id="@id/cobra_video_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/glasses_icon_video" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

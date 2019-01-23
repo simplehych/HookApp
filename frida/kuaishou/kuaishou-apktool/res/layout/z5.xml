@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/music_type_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" app:placeholderImage="@drawable/tips_empty_music" />
+    <Space android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color1_normal" android:gravity="center" android:id="@id/music_type_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="24.0dip" app:textSizeAdjustable="true" app:minTextSize="1.0sp" />
+</LinearLayout>

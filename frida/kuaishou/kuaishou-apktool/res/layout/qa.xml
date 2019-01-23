@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="68.5dip" android:layout_height="68.5dip" android:maxWidth="68.5dip" android:maxHeight="68.5dip" android:minWidth="68.5dip" android:minHeight="68.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiBindableImageView android:id="@id/emotion_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <TextView android:id="@id/emotion_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

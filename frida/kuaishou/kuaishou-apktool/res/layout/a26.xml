@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.detail.view.SlidePlayAlphaLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/slide_play_detail_tag_background_creation" android:layout_width="wrap_content" android:layout_height="28.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon_view" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/detail_tag_music_yellow_s_normal" />
+    <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/live_audio_progress_color" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="@string/music_playscript_tag_creation" />
+    <com.yxcorp.gifshow.detail.slideplay.SlidePlayMarqueeTextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/text_white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/text_content_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="1.0dip" android:maxWidth="98.0dip" android:singleLine="true" />
+    <View android:background="@color/text_white" android:layout_width="1.0dip" android:layout_height="8.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+    <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/text_white" android:gravity="center" android:id="@id/participate" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="3.5dip" android:layout_marginRight="3.5dip" android:src="@drawable/tagpage_icon_m_entrance" />
+</com.yxcorp.gifshow.detail.view.SlidePlayAlphaLinearLayout>

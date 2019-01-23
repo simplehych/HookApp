@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bd_wallet_logo" android:layout_width="@dimen/bd_wallet_empty_view_logo_width" android:layout_height="@dimen/bd_wallet_empty_view_logo_height" android:layout_marginTop="37.0dip" android:src="@drawable/wallet_base_trans_tip" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/bd_wallet_text_size_normal" android:textColor="@color/bd_wallet_text_gray" android:gravity="center_horizontal" android:id="@id/bd_wallet_empty_view_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/bd_wallet_logo" android:layout_centerHorizontal="true" />
+</RelativeLayout>

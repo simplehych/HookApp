@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/grant_permission_hint_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/button_close" android:src="@drawable/nav_btn_close_black" android:contentDescription="@string/go_back" style="@style/Theme.Navigator.ImageButton" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size6" android:textColor="@color/text_black_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/request_live_record_permission_title" />
+        <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color15_normal" android:gravity="center" android:layout_gravity="center" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/request_live_record_permission_message" android:lineSpacingExtra="6.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="126.0dip">
+            <Button android:textSize="@dimen/text_size4" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/grant_camera_permission_btn" android:background="@drawable/bg_request_permission_button" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginTop="15.0dip" android:text="@string/click_to_grant_camera_permission" />
+            <Button android:textSize="@dimen/text_size4" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/grant_record_audio_permission_btn" android:background="@drawable/bg_request_permission_button" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginTop="15.0dip" android:text="@string/click_to_grant_record_audio_permission" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

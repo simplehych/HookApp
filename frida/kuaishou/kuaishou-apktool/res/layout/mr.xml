@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:layout_width="125.0dip" android:layout_height="125.0dip" android:layout_toLeftOf="@id/tv_left_swipe_to_profile" app:lottie_rawRes="@raw/double_tab_like" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_repeatMode="restart" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/translucent_90_white" android:id="@id/tv_double_tab_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_play_double_tap_like_hint" />
+</LinearLayout>

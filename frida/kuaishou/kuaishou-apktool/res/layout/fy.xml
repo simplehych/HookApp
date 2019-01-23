@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/emotion_btn_keyboard" android:layout_width="45.0dip" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiBindableImageView android:id="@id/tabIndicator" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/loading01" android:layout_centerInParent="true" />
+    <View android:background="@color/divider_color_grey" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/line_color2_normal" android:layout_height="10.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+    <TextView android:textSize="@dimen/text_size2" android:textColor="@color/blue_gray" android:gravity="center" android:id="@id/cancel_action" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/cancel" />
+</LinearLayout>

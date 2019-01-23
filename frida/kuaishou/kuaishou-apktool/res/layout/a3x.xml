@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/recommend_view" android:background="@drawable/profile_recommend_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="10.0dip">
+            <View android:background="@color/list_divider_default_color" android:layout_width="0.0dip" android:layout_height="@dimen/default_divider_size" android:layout_weight="1.0" />
+            <View android:background="@drawable/profile_bg_triangle" android:layout_width="10.0dip" android:layout_height="5.5dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <View android:background="@color/list_divider_default_color" android:layout_width="20.0dip" android:layout_height="@dimen/default_divider_size" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_light" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="13.0dip" android:text="@string/suggested_users" />
+        <com.yxcorp.gifshow.fragment.RecommendUserRecyclerView android:id="@id/recommend_user_list" android:layout_width="fill_parent" android:layout_height="189.0dip" />
+        <View android:layout_width="fill_parent" android:layout_height="11.5dip" />
+    </LinearLayout>
+</FrameLayout>

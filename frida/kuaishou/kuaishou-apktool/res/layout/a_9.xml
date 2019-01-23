@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/camera_bottom_background" android:layout_width="fill_parent" android:layout_height="@dimen/camera_bottom_shader_height" android:layout_alignParentBottom="true" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/camera_magic_layout" />
+    <android.support.constraint.ConstraintLayout android:id="@id/take_picture_layout" android:layout_width="fill_parent" android:layout_height="@dimen/take_picture_btn_height" android:layout_marginBottom="57.0dip" android:layout_alignParentBottom="true" android:splitMotionEvents="false">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_chainStyle="spread" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/take_picture_btn" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" layout="@layout/camera_action_bar_magic_layout" />
+        <include layout="@layout/camera_action_bar_magic_banner_layout" />
+        <include layout="@layout/camera_action_bar_takepicture_layout" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_chainStyle="spread" app:layout_constraintLeft_toRightOf="@id/take_picture_btn" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" layout="@layout/camera_action_bar_prettify_layout" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/album_layout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip">
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/button_album" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            <TextView android:id="@id/button_album_tv" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="@string/maker_tab_album" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+    <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size_17" android:textColor="@android:color/white" android:gravity="center" android:id="@id/shoot_cover_tips_tv" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="21.0dip" android:layout_above="@id/take_picture_layout" android:layout_centerHorizontal="true" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="1.5dip" />
+    <include layout="@layout/take_picture_flash_bar_v2" />
+</RelativeLayout>

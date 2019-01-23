@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/title_bar_height" />
+    <include layout="@layout/kwai_title_default" />
+    <include android:id="@id/title_bar_divider" layout="@layout/line_divider_grey" />
+    <RelativeLayout android:id="@id/editor_holder" android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="@dimen/photo_editor_holder_height" android:layout_alignParentBottom="true">
+        <View android:id="@id/editor_holder_divider" android:background="?dividerColor" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" android:layout_alignParentTop="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/write_comment_layout" android:background="?PhotoCommentEditBackground" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_list_item_height">
+            <ImageButton android:id="@id/at_button" android:background="@null" android:layout_width="60.0dip" android:layout_height="50.0dip" android:src="@drawable/share_btn_at_normal" android:scaleType="centerInside" android:onClick="onClick" android:contentDescription="@string/friends" />
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textColor="?PhotoCommentTextColor" android:textColorHint="?PhotoCommentEditTextHintColor" android:gravity="center_vertical" android:id="@id/editor_holder_text" android:background="@null" android:layout_marginLeft="0.0dip" android:hint="@string/please_input" android:singleLine="true" style="@style/Theme.ListItemDetail.Comment" />
+        </LinearLayout>
+        <TextView android:textColor="@color/text_color15_normal" android:gravity="center" android:id="@id/permission_deny_prompt_tv" android:visibility="gone" android:layout_height="fill_parent" android:text="@string/comment_limit" style="@style/Theme.ListItemDetail.Comment" />
+    </RelativeLayout>
+</RelativeLayout>

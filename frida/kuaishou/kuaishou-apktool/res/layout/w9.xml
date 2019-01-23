@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_11dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/news_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/intown_news_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/location_intown_drawable_padding" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tongxiang_icon_arrow_grey_s_normal" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_name_container" android:paddingBottom="@dimen/dimen_11dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/news_layout">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/list_item_black" android:ellipsize="end" android:id="@id/intown_name_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="9" android:singleLine="true" />
+        <View android:background="#ffe2e2e2" android:layout_width="@dimen/divider_width" android:layout_height="@dimen/dimen_15dp" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/list_item_light_black" android:ellipsize="end" android:id="@id/intown_weather_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/news_layout" android:layout_below="@id/ll_name_container" android:layout_alignParentLeft="true">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="#ffff8000" android:gravity="center" android:layout_gravity="center" android:id="@id/intown_name_sub_title" android:background="@drawable/background_intown_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/town_enter_sub_title" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/list_item_light_black" android:ellipsize="end" android:id="@id/intown_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

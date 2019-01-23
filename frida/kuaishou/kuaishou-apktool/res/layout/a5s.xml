@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_root" layout="@layout/kwai_title_default" />
+    <ImageView android:id="@id/guid_icon" android:layout_width="115.0dip" android:layout_height="115.0dip" android:layout_marginTop="@dimen/child_icon_margin_top" android:layout_below="@id/title_root" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_25" android:textColor="@color/text_color1_normal" android:id="@id/guid_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.5dip" android:layout_below="@id/guid_icon" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_below="@id/guid_text">
+        <android.support.percent.PercentRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:layout_marginLeftPercent="19.000006%" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color1_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/child_lock_render_suitable_content" android:layout_toRightOf="@id/icon_one" android:layout_centerVertical="true" app:layout_marginRightPercent="19.000006%" />
+        </android.support.percent.PercentRelativeLayout>
+        <android.support.percent.PercentRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <ImageView android:id="@id/icon_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:layout_marginLeftPercent="19.000006%" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color1_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/child_lock_forbidden_send_gift" android:layout_toRightOf="@id/icon_two" android:layout_centerVertical="true" app:layout_marginRightPercent="19.000006%" />
+        </android.support.percent.PercentRelativeLayout>
+        <android.support.percent.PercentRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <ImageView android:id="@id/icon_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:layout_marginLeftPercent="19.000006%" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color1_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/child_lock_forbidden_live" android:layout_toRightOf="@id/icon_three" android:layout_centerVertical="true" app:layout_marginRightPercent="19.000006%" />
+        </android.support.percent.PercentRelativeLayout>
+        <android.support.percent.PercentRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <ImageView android:id="@id/icon_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:layout_marginLeftPercent="19.000006%" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color1_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/child_lock_prevent_addiction" android:layout_toRightOf="@id/icon_four" android:layout_centerVertical="true" app:layout_marginRightPercent="19.000006%" />
+        </android.support.percent.PercentRelativeLayout>
+    </LinearLayout>
+    <Button android:id="@id/open_btn" android:layout_width="270.0dip" android:layout_height="40.0dip" android:layout_marginBottom="45.0dip" android:text="@string/open_child_lock" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Kwai.Widget.Button.B12" />
+    <Button android:id="@id/close_btn" android:visibility="gone" android:layout_width="270.0dip" android:layout_height="40.0dip" android:layout_marginBottom="45.0dip" android:text="@string/close_child_lock" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Kwai.Widget.Button.B21" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_layout" android:background="#ff000001" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/slide_play_background" android:background="#ff1a1a1a" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+    <com.yxcorp.gifshow.detail.slideplay.SlidePlayViewPager android:id="@id/vertical_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+    <include layout="@layout/music_station_scale_cover_layout" />
+    <View android:id="@id/slide_play_top_float_cover" android:background="@drawable/music_station_float_cover_shadow" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <ImageView android:id="@id/music_station_more_video_pendant" android:layout_width="30.0dip" android:layout_height="90.0dip" android:layout_marginTop="90.0dip" android:src="@drawable/music_station_more_video" android:layout_alignParentRight="true" />
+    <FrameLayout android:id="@id/user_profile_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/fragment_loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Theme.Widget.Loading.Small" />
+    <com.yxcorp.gifshow.detail.slideplay.SlidePlayRefreshView style="@style/Kwai.Widget.RefreshLayout">
+        <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.yxcorp.gifshow.detail.slideplay.SlidePlayRefreshView>
+    <include layout="@layout/music_station_profile_feed_light" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="39.0dip" android:layout_alignParentTop="true" layout="@layout/music_station_user_info_layout" />
+    <include android:layout_width="@dimen/music_station_scroll_list_width" android:layout_height="fill_parent" android:layout_alignParentRight="true" layout="@layout/music_station_profile_feed_layout" />
+    <View android:id="@id/photo_detail_back_btn" android:background="@drawable/slide_play_detail_nav_btn_back_white" android:layout_width="@dimen/slide_play_back_size" android:layout_height="@dimen/slide_play_back_size" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:contentDescription="@string/go_back" />
+    <com.yxcorp.gifshow.detail.musicstation.widget.VisualizerView android:id="@id/music_station_visualizer_view" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" app:spaceWidth="1.0dip" app:lineWidth="2.0dip" app:baseHeight="3.5dip" app:lineIsSingleColor="false" app:firstPartColor="@color/p_color_white_alpha40" app:secondPartColor="@color/detail_edit_panel_divider_background" />
+</RelativeLayout>

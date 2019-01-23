@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/line_divider_grey" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/background_light" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <com.yxcorp.gifshow.recycler.widget.HorizontalScrollingRecyclerView android:scrollbarSize="2.0dip" android:scrollbarStyle="outsideOverlay" android:id="@id/recycler_view_2" android:focusable="true" android:scrollbars="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" app:maxWidth="280.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/find_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_default" android:src="@drawable/search_icon_big_search" />
+        <com.yxcorp.gifshow.widget.EmojiEditText android:textSize="@dimen/text_size_16" android:textColor="@color/recyclerview_scrollbar_color" android:id="@id/find" android:background="@null" android:paddingLeft="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="60.0dip" android:hint="@string/find" android:singleLine="true" android:textCursorDrawable="@drawable/icon_text_cursor" />
+    </LinearLayout>
+</LinearLayout>

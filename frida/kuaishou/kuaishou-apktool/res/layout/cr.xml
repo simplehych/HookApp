@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.camera.record.widget.AnimCameraView android:id="@id/camera_preview_layout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="@color/translucent_50_black" android:layout_width="fill_parent" android:layout_height="76.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="76.0dip">
+        <ImageView android:id="@id/face_contour_image_view" android:layout_width="280.0dip" android:layout_height="364.0dip" android:src="@drawable/produce_pic_facedetection_xxxl_normal" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+        <com.airbnb.lottie.LottieAnimationView android:layout_width="280.0dip" android:layout_height="364.0dip" android:layout_centerHorizontal="true" app:lottie_rawRes="@raw/lottie_kmoji_face_scan" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_repeatMode="restart" />
+        <View android:background="@color/translucent_50_black" android:layout_width="fill_parent" android:layout_height="364.0dip" android:layout_toLeftOf="@id/face_contour_image_view" />
+        <View android:background="@color/translucent_50_black" android:layout_width="fill_parent" android:layout_height="364.0dip" android:layout_toRightOf="@id/face_contour_image_view" />
+        <View android:background="@color/translucent_50_black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/face_contour_image_view" />
+        <View android:id="@id/temp_one" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_below="@id/face_contour_image_view" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_size_22" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/tip_face_in_rect_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/put_face_to_recognize" android:layout_below="@id/temp_one" android:layout_centerHorizontal="true" />
+        <View android:id="@id/temp_two" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_below="@id/tip_face_in_rect_text_view" android:layout_centerHorizontal="true" />
+        <FrameLayout android:id="@id/skip_frame_layout" android:layout_width="49.0dip" android:layout_height="wrap_content" android:layout_below="@id/temp_two" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/dialog_normal_gray_white" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skip_recognize_kmoji" />
+            <ImageView android:layout_gravity="center|right" android:layout_width="10.0dip" android:layout_height="15.0dip" android:src="@drawable/universal_icon_arrow_grey_s" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/tip_recognized_success_frame_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_below="@id/temp_one" android:layout_centerHorizontal="true">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:background="@drawable/produce_icon_check_m_selected" android:layout_width="23.0dip" android:layout_height="23.0dip" />
+                <TextView android:textSize="@dimen/text_size_22" android:textColor="@color/text_color_white" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recognize_succeed" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_size_22" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/tip_recognizing_text_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recognizing_exclusive_kmoji" android:layout_below="@id/temp_one" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_color_white" android:id="@id/cancel_recognition_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:text="@string/cancel" />
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/grant_permission_hint_view" android:background="@drawable/camera_permission_layout_bg" android:layout_width="280.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/permission_button_close" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/permission_dialog_icon_close_normal" android:contentDescription="@string/go_back" android:alpha="0.9" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/text_black_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="31.5dip" android:layout_marginTop="3.5dip" android:text="@string/now_start_shoot_title" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_color2_normal" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/open_permission_record_slogan" />
+    <RelativeLayout android:layout_marginTop="24.0dip" style="@style/camera_permission_btn_layout">
+        <ImageView android:id="@id/iv_camera_permission" style="@style/camera_permission_grant_image" />
+        <TextView android:id="@id/grant_camera_permission_btn" android:drawableLeft="@drawable/camera_permisssion_camera_image" style="@style/camera_permission_grant_btn" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_marginTop="15.0dip" style="@style/camera_permission_btn_layout">
+        <TextView android:id="@id/grant_record_audio_permission_btn" android:drawableLeft="@drawable/camera_permission_micro_image" style="@style/camera_permission_grant_btn" />
+        <ImageView android:id="@id/iv_audio_permission" style="@style/camera_permission_grant_image" />
+    </RelativeLayout>
+    <RelativeLayout android:visibility="gone" android:layout_marginTop="15.0dip" style="@style/camera_permission_btn_layout">
+        <TextView android:id="@id/grant_album_permission_btn" android:drawableLeft="@drawable/camera_permission_album_image" style="@style/camera_permission_grant_btn" />
+        <ImageView android:id="@id/iv_album_permission" style="@style/camera_permission_grant_image" />
+    </RelativeLayout>
+    <Button android:textSize="16.0sp" android:textColor="@color/text_white" android:layout_gravity="center" android:id="@id/grant_record_all_permission_btn" android:background="@drawable/camera_permission_all_grant_btn" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="29.0dip" android:text="@string/open_all_permissions" />
+</LinearLayout>

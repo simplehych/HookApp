@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.media.watermark.WatermarkShareTip android:id="@id/watermark_tip" android:background="#ffc6c6c6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="#eeffffff" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/set_wartermark_tip" />
+    <android.support.v7.widget.AppCompatImageView android:layout_gravity="center|right" android:layout_marginRight="10.0dip" android:tint="#ffffffff" android:tintMode="src_in" style="@style/Theme.Widget.Setting.RightArrow" />
+</com.yxcorp.gifshow.media.watermark.WatermarkShareTip>

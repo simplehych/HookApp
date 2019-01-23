@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/preview_player_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.yxcorp.gifshow.widget.adv.AtlasCoverEditor android:id="@id/image_editor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size_16" android:textColor="@color/editor_tab_text_color" android:id="@id/long_video_hint" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:includeFontPadding="false" android:layout_alignTop="@id/preview" android:layout_alignRight="@id/preview" app:textSizeAdjustable="true" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="2.0dip" />
+</RelativeLayout>

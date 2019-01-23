@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.SwipeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:direction="left"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/background_light" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <include layout="@layout/list_item_photo_player" />
+        <include layout="@layout/list_item_photo_label" />
+    </LinearLayout>
+</com.yxcorp.gifshow.widget.SwipeLayout>

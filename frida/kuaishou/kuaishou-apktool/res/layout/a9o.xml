@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/switch_dialog_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/switch_dialog_icon_iv" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="#ffffffff" android:id="@id/switch_dialog_tittle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_35dp" android:layout_marginRight="@dimen/dimen_75dp" android:layout_alignLeft="@id/switch_dialog_icon_iv" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.yxcorp.gifshow.widget.SlipSwitchButton android:id="@id/switch_dialog_slip_button" android:layout_width="51.0dip" android:layout_height="31.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:onBg="@drawable/setting_switch_bg_on" app:offBg="@drawable/setting_switch_bg_off" app:slipBg="@drawable/setting_handle_normal" app:switch_state="true" />
+    </RelativeLayout>
+    <View android:id="@id/switch_dialog_divider" android:background="@color/translucent_10_white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/dimen_20dp" android:layout_above="@id/switch_dialog_description_tv" />
+    <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/translucent_50_white" android:id="@id/switch_dialog_description_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_20dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

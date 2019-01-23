@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/background_round_corner_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:id="@id/image_button" android:background="@drawable/home_icon_invite_l_normal" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/arrow_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffff8000" android:layout_gravity="center_vertical" android:id="@id/arrow_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dip" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/arrow" android:background="@drawable/universal_icon_arrow_orange_s_normal" android:layout_width="10.0dip" android:layout_height="14.0dip" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff303030" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/arrow_layout" android:layout_toRightOf="@id/image_button" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

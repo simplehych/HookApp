@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="32.0dip" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:id="@id/outer_ring" android:background="@drawable/stroke_color_bg_outer_ring" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+    <View android:layout_gravity="center" android:id="@id/inner_ring" android:background="@drawable/stroke_color_bg_inner_ring" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+</FrameLayout>

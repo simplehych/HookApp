@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_hot_scenic_spot" android:background="@android:color/white" android:padding="@dimen/dimen_15dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/site_address_title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ks_poi_famous_attractions" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rl_hot_scenic_spot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/pay_cashier_desk_root" android:background="#ffffffff" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@id/pay_close_image" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/pay_close_background" android:scaleType="centerInside" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff303030" android:gravity="center" android:id="@id/pay_title_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/pay_title" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="30.0sp" android:textColor="#ff303030" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/pay_money_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:singleLine="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffababab" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/pay_subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+    <View android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/pay_provider_container" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="16.0sp" android:textColor="@drawable/pay_text_background" android:gravity="center" android:id="@id/pay_btn" android:background="@drawable/pay_btn_background" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="@string/pay_confirm" />
+    <View android:id="@id/pay_bottom_view" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+</LinearLayout>

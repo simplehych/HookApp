@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/live_combo_comment_background" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="@dimen/live_combo_comment_message_height" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.lsjwzh.widget.text.FastTextView android:textSize="@dimen/text_size_15" android:textStyle="bold" android:textColor="@color/text_color11_normal" android:ellipsize="end" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:text="content" android:maxLines="1" android:layout_centerVertical="true" />
+    <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size_15" android:typeface="sans" android:textStyle="bold|italic" android:textColor="@color/text_color9_normal" android:id="@id/combo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="6.0dip" android:text="x 20" android:maxLines="1" android:layout_toRightOf="@id/content" android:layout_centerVertical="true" app:textStrokeColor="#00ffffff" app:textStrokeSize="1.5dip" />
+</RelativeLayout>

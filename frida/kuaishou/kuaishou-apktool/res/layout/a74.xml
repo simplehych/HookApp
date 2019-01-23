@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_edit_info_title_layout" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/edit_user_info_input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="15.5dip" android:layout_marginRight="@dimen/margin_large">
+        <com.yxcorp.gifshow.widget.EmojiEditText android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:textColorHint="@color/text_hint_black_color" android:gravity="center|left|top" android:id="@id/input" android:background="@null" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_20dp" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="200.0dip" android:hint="@string/profile_my_default_description" android:maxLength="500" android:textCursorDrawable="@drawable/user_info_edit_cursor" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_hint_black_color" android:layout_gravity="bottom|center|right" android:id="@id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_default" android:layout_marginRight="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/margin_default" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/red_button_normal_color" android:id="@id/tip" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+</LinearLayout>

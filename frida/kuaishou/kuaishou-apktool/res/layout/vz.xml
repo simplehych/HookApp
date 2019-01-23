@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/live_wish_list_detail_sponsors_size" android:layout_height="@dimen/live_wish_list_detail_sponsors_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center" android:id="@id/live_wish_list_avatar" android:layout_width="@dimen/live_wish_list_detail_sponsors_icon_size" android:layout_height="@dimen/live_wish_list_detail_sponsors_icon_size" app:roundAsCircle="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/text_color_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/live_wish_spent_coin_text_view" android:background="@drawable/live_wish_viewer_spent_coin_bg" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="14.0dip" android:maxWidth="33.0dip" android:minWidth="@dimen/live_wish_list_item_sponsored_min_size" android:maxLines="1" />
+</FrameLayout>

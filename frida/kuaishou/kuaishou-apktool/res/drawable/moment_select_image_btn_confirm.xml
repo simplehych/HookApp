@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/p_color_orange" />
+            <size android:height="70.0dip" android:width="70.0dip" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/magicemoji_btn_complete_new" />
+</layer-list>

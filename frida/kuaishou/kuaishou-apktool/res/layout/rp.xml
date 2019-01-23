@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.SquareRelativeLayout android:id="@id/photo_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/photo" android:background="#ffe3e3e3" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/photo" />
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/foreground" android:background="@android:color/transparent" android:padding="1.0px" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginTop="0.0dip" android:layout_centerHorizontal="true" android:contentDescription="@string/photo" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="#ffffffff" android:id="@id/take_picture_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/take_photo" android:layout_below="@id/foreground" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/checked_iv" android:background="@null" android:padding="5.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/photo_picker_check_btn" android:scaleType="fitCenter" android:layout_alignRight="@id/photo" android:layout_alignBottom="@id/photo" android:contentDescription="@string/remove" />
+    </com.yxcorp.gifshow.widget.SquareRelativeLayout>
+</LinearLayout>

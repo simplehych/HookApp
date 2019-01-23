@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout style="@style/Kwai.Widget.RefreshLayout" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/Kwai.Widget.RecyclerView" />
+</com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout>

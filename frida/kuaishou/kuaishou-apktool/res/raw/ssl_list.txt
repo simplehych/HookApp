@@ -1,0 +1,10 @@
+{
+    "https": [
+        "apissl.gifshow.com",
+        "apissl.ksapisrv.com",
+        "apissl.kuaishou.com",
+        "push.gifshow.com",
+        "push.ksapisrv.com",
+        "kp.game.kuaishou.com"
+    ]
+}

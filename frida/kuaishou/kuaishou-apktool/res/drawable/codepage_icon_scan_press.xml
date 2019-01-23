@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:height="50.0dip" android:width="50.0dip">
+        <bitmap android:src="@drawable/codepage_icon_scan" android:dither="true" android:alpha="@integer/q" />
+    </item>
+    <item android:state_pressed="true" android:height="50.0dip" android:width="50.0dip">
+        <bitmap android:src="@drawable/codepage_icon_scan" android:dither="true" android:alpha="@integer/q" />
+    </item>
+    <item android:height="50.0dip" android:width="50.0dip" android:drawable="@drawable/codepage_icon_scan" />
+</selector>

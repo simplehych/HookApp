@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:background="@color/bd_wallet_home_outer_separator" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/bd_wallet_home_group_gap_width"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

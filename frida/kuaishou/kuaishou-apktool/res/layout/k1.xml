@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_root" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/rank_image" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff777777" android:layout_gravity="center" android:id="@id/rank_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.yxcorp.gifshow.image.KwaiFixRatioImageView android:id="@id/avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="48.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:fadeDuration="0" app:roundAsCircle="true" />
+    <ImageView android:id="@id/entry_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/ktv_button_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="16.0dip" android:textColor="#ff303030" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.5dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/entry_arrow" android:layout_toRightOf="@id/avatar" android:layout_alignParentTop="true" style="@style/Theme.Widget.Text" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="37.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/entry_arrow" android:layout_alignLeft="@id/name" android:layout_alignParentTop="true">
+        <TextView android:textSize="9.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/mv_tip" android:background="@drawable/ktv_coversing_mv" android:paddingLeft="3.5dip" android:paddingRight="3.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:layout_marginRight="5.0dip" android:text="@string/ktv_mode_mv" android:singleLine="true" />
+        <ImageView android:gravity="center_vertical" android:id="@id/like_count_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:src="@drawable/ktv_icon_like_grey_normal" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffababab" android:id="@id/like_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

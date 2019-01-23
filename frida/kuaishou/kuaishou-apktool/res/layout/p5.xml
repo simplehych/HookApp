@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:background="@drawable/background_magic_emoji_mul_rom" android:layout_width="@dimen/lovely_face_magic_emoji_item_size" android:layout_height="@dimen/lovely_face_magic_emoji_item_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/translucent_70_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/magic_emoji_name_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="86.0dip" android:layout_height="86.0dip" android:layout_marginBottom="@dimen/dimen_5dp" android:layout_above="@id/magic_emoji_name_tv" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="true">
+        <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center" android:id="@id/magic_emoji_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/undownload_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_magic_emoji_undownload" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/notify_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_magic_face_notify" />
+        <com.yxcorp.gifshow.widget.DownloadProgressBar android:layout_gravity="center" android:id="@id/download_progress" android:layout_width="33.0dip" android:layout_height="33.0dip" android:indeterminate="false" android:indeterminateOnly="false" />
+    </FrameLayout>
+</RelativeLayout>

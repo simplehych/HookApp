@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/kwai_player_debug_info_vod_runtime" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" layout="@layout/kwai_player_debug_info_vod_runtime" />
+    <include android:id="@id/layout_root_debug_info_vod_static_detail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" layout="@layout/kwai_player_debug_info_vod_static_detail" />
+    <include android:id="@id/layout_root_debug_info_vod_adaptive" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" layout="@layout/kwai_player_debug_info_vod_adaptive" />
+</FrameLayout>

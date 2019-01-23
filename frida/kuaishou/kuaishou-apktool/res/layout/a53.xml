@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="111.0dip" android:layout_height="@dimen/red_packet_float_tips_view_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/background_view" android:layout_width="@dimen/red_packet_float_tips_view_size" android:layout_height="@dimen/red_packet_float_tips_view_size" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/background_view_normal" android:background="@drawable/live_btn_redpacket_close" android:layout_width="@dimen/red_packet_float_tips_view_size" android:layout_height="@dimen/red_packet_float_tips_view_size" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/timer_view" android:background="@drawable/red_packet_float_tips_timer_better_background" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="33.0dip" android:layout_marginTop="22.0dip">
+            <com.yxcorp.plugin.live.widget.LiveUserView android:id="@id/avatar_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:roundAsCircle="true" />
+            <View android:id="@id/line_background_view" android:background="@drawable/red_packet_float_tips_timer_line_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" />
+            <View android:id="@id/open_icon_view" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffba5832" android:id="@id/time_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

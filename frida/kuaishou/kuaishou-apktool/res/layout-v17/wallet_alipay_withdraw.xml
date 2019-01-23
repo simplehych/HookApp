@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:layout_marginTop="10.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+    <LinearLayout android:orientation="vertical" android:id="@id/table" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider">
+        <LinearLayout android:orientation="horizontal" android:layout_height="@dimen/user_info_payment_item_height" style="@style/Theme.Widget.Payment.Row">
+            <TextView android:id="@id/diamond_name" android:text="@string/yellow_diamond" android:singleLine="true" style="@style/Theme.Widget.Payment.Label.Left" />
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/diamond_amount" android:layout_width="fill_parent" android:hint="@string/input_withdraw_yellow_diamond_nums" android:inputType="number" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Payment.EditText" />
+                <TextView android:id="@id/all" android:text="@string/all" style="@style/Theme.Widget.Payment.Label.All" />
+            </FrameLayout>
+        </LinearLayout>
+        <View style="@style/Theme.Widget.DefaultDividerVertical" />
+        <LinearLayout android:orientation="horizontal" android:layout_height="@dimen/user_info_payment_item_height" style="@style/Theme.Widget.Payment.Row">
+            <TextView android:text="@string/money" android:singleLine="true" style="@style/Theme.Widget.Payment.Label.Left" />
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/money_amount" android:layout_width="fill_parent" android:hint="@string/input_withdraw_money" android:inputType="number" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Payment.EditText" />
+                <TextView android:textColor="@color/text_grey_color" android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/yuan" />
+            </FrameLayout>
+        </LinearLayout>
+        <View style="@style/Theme.Widget.DefaultDividerVertical" />
+        <LinearLayout android:orientation="horizontal" android:layout_height="@dimen/user_info_payment_item_height" style="@style/Theme.Widget.Payment.Row">
+            <TextView android:text="@string/alipay" android:singleLine="true" style="@style/Theme.Widget.Payment.Label.Left" />
+            <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/alipay_account" android:layout_width="0.0dip" android:hint="@string/input_alipay_account" android:singleLine="true" android:maxLength="100" android:layout_weight="1.0" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Payment.EditText" />
+        </LinearLayout>
+        <View style="@style/Theme.Widget.DefaultDividerVertical" />
+        <LinearLayout android:orientation="horizontal" android:layout_height="@dimen/user_info_payment_item_height" style="@style/Theme.Widget.Payment.Row">
+            <TextView android:text="@string/name" android:singleLine="true" style="@style/Theme.Widget.Payment.Label.Left" />
+            <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/alipay_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/input_alipay_name" android:singleLine="true" android:maxLength="100" android:layout_weight="1.0" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Payment.EditText" />
+        </LinearLayout>
+        <View style="@style/Theme.Widget.DefaultDividerVertical" />
+        <LinearLayout android:orientation="horizontal" android:layout_height="@dimen/user_info_payment_item_height" style="@style/Theme.Widget.Payment.Row">
+            <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:gravity="center" android:id="@id/verify_code_tv" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:text="@string/verification_code" android:maxLines="1" android:drawableRight="@drawable/line_horizontal_divider" style="@style/Theme.Widget.Text.Signup" />
+            <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/verify_code" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/input_verification_code" android:maxLines="1" android:layout_weight="1.0" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Payment.EditText" />
+            <FrameLayout android:id="@id/verify_layout" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/user_info_payment_item_height" android:layout_marginRight="15.0dip" android:layout_marginEnd="15.0dip">
+                <com.yxcorp.gifshow.widget.verifycode.GetVerifyCodeTextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_orange_color" android:gravity="end" android:layout_gravity="center" android:id="@id/get_verification_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80.0dip" android:text="@string/get_verification_code" />
+            </FrameLayout>
+        </LinearLayout>
+        <View style="@style/Theme.Widget.DefaultDividerVertical" />
+    </LinearLayout>
+    <Button android:id="@id/withdraw_button" android:text="@string/withdraw" android:layout_below="@id/table" style="@style/Theme.Widget.Payment.Button" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/withdraw_button" android:layout_alignParentBottom="true">
+        <include layout="@layout/kwai_payment_service_desc" />
+    </RelativeLayout>
+</RelativeLayout>

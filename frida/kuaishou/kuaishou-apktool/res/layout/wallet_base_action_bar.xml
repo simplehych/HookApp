@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/wallet_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_left_imgzone2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" style="@style/wallet_titlebar_left_imgzone2">
+        <ImageView android:id="@id/title_left_imgzone2_img" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" style="@style/wallet_titlebar_left_imgzone2_img" />
+        <TextView android:id="@id/title_left_imgzone2_notify" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/title_left_imgzone2_img" android:contentDescription="@string/ebpay_img" style="@style/wallet_titlebar_left_imgzone2_notify" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:gravity="center" android:id="@id/title_center_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/wallet_titlebar_center_text" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_center_safe_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/title_center_safe_icon" />
+            <TextView android:id="@id/title_center_safe_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxWidth="160.0dip" style="@style/wallet_titlebar_center_safe_tip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/title_right_imgzone2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/title_right_imgzone2_img" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:contentDescription="@null" />
+        <TextView android:id="@id/title_right_imgzone2_notify" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/wallet_titlebar_right_imgzone2_notify" />
+    </RelativeLayout>
+    <ImageView android:id="@id/title_bottom_seperator" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" style="@style/wallet_titlebar_bottom_seperator" />
+</RelativeLayout>

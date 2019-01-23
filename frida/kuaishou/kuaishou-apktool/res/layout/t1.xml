@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/live_entry_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/live_cover_imageview" android:background="@color/record_camera_bg_color" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <include android:id="@id/show_layout" layout="@layout/live_show_cover_layout" />
+    <include android:id="@id/options_layout" layout="@layout/live_cover_options_v2" />
+    <include layout="@layout/live_cover_shoot_options_layout_v2" />
+    <include android:id="@id/modify_layout" layout="@layout/live_modify_cover_layout" />
+    <View android:layout_gravity="bottom" android:background="@drawable/background_live_cover_bottom_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/live_cover_bottom_background_height" />
+    <com.yxcorp.plugin.live.widget.LivePendantView android:id="@id/live_pendant" android:visibility="gone" android:layout_width="@dimen/live_pendant_width" android:layout_height="@dimen/live_pendant_height" android:layout_marginLeft="@dimen/margin_default" android:layout_marginTop="@dimen/live_pendant_margin_top" />
+    <include layout="@layout/live_entry_permission_hint_layout" />
+    <FrameLayout android:id="@id/more_option_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/glasses_tip" android:background="@drawable/live_glasses_tip_bg" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="44.0dip" android:layout_marginRight="15.0dip" android:text="@string/live_glasses_start_hint" />
+</FrameLayout>

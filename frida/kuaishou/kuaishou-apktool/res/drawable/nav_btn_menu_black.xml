@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/home_icon_menu_black_l_normal" android:dither="true" android:alpha="@integer/q" />
+    </item>
+    <item android:drawable="@drawable/home_icon_menu_black_l_normal" />
+</selector>

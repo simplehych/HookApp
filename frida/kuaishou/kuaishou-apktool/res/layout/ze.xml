@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#90000000" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/artist_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" android:scaleType="fitXY" android:layout_centerVertical="true" app:placeholderImage="@drawable/edit_music_icon_default" app:roundAsCircle="true" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_default_color" android:ellipsize="end" android:id="@id/music_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginRight="10.0dip" android:maxLines="1" android:layout_toRightOf="@id/artist_avatar" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_default_color" android:ellipsize="end" android:id="@id/artist_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:maxLines="1" android:layout_toRightOf="@id/artist_avatar" android:layout_alignParentBottom="true" />
+    <LinearLayout android:id="@id/more_music" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_default_color" android:gravity="center" android:id="@id/more_music_tv" android:paddingLeft="10.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/more_music_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/contacts_icon_arrow_normal" />
+    </LinearLayout>
+</RelativeLayout>

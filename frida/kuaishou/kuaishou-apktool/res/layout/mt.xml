@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/music_station_logo" android:visibility="gone" android:layout_width="65.0dip" android:layout_height="50.0dip" android:layout_above="@id/music_station_title" android:layout_centerHorizontal="true" app:lottie_rawRes="@raw/lottie_music_station_logo" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_repeatMode="restart" />
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="left" android:id="@id/music_station_title" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerInParent="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#b2ffffff" android:ellipsize="end" android:gravity="left" android:id="@id/music_station_content" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/music_station_title" android:layout_centerHorizontal="true" />
+</RelativeLayout>

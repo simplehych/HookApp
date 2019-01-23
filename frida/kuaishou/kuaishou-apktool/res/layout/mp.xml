@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/photo_recommend_container" android:background="@drawable/background_round_corner_sharer_label_detail" android:paddingLeft="4.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center_vertical" android:id="@id/recommend_avatar" android:layout_width="18.0dip" android:layout_height="18.0dip" fresco:roundAsCircle="true" fresco:roundingBorderWidth="0.5dip" fresco:roundingBorderColor="@color/p_color_white" />
+    <com.yxcorp.gifshow.widget.CharactersFitMarqueeTextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/recommend_content_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:maxWidth="240.0dip" android:singleLine="true" />
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="2.0dip" android:src="@drawable/detail_icon_next_white_l_normal" />
+</LinearLayout>

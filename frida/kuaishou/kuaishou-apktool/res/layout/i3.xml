@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout style="@style/Kwai.Widget.RefreshLayout">
+        <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/Kwai.Widget.RecyclerView" />
+    </com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout>
+    <com.yxcorp.gifshow.widget.SideBarLayout android:id="@id/side_bar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

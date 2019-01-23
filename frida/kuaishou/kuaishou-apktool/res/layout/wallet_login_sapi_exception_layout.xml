@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="#ffefefef" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/bd_wallet_text_size_normal" android:textColor="#ffc6c6c6" android:id="@id/exception_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/ebpay_no_network" android:layout_centerHorizontal="true" />
+    <Button android:textSize="@dimen/bd_wallet_text_size_normal" android:textColor="#fff02216" android:gravity="center" android:id="@id/exception_try_again" android:background="@color/ebpay_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="重试" android:layout_below="@id/exception_text_view" android:layout_centerHorizontal="true" />
+</RelativeLayout>

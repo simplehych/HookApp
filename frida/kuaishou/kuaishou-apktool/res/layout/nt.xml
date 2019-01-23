@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/follow_button" android:layout_width="wrap_content" android:layout_height="@dimen/button_height2" android:minWidth="@dimen/common_follow_btn_width" style="@style/Kwai.Widget.Button.B14"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/follow_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/detail_icon_follow_orange_s" />
+    <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color_button13" android:gravity="center" android:id="@id/follow_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow" />
+</LinearLayout>

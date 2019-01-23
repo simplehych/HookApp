@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_image_text_text" />
+    <View android:id="@id/title_bar_divider" android:background="@color/line_color2_normal" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/title_root" />
+    <com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout android:layout_below="@id/title_bar_divider" style="@style/Kwai.Widget.RefreshLayout" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/Kwai.Widget.RecyclerView" />
+    </com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout>
+    <include android:id="@id/search_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_root" layout="@layout/search_layout" />
+</RelativeLayout>

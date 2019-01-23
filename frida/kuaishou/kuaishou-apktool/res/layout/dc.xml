@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_root" android:background="?actionbarBackground" android:layout_width="fill_parent" android:layout_height="46.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size1" android:textStyle="bold" android:textColor="#ff525252" android:gravity="center" android:id="@id/title_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cobra_glasses" android:singleLine="true" android:layout_centerInParent="true" app:textSizeAdjustable="true" />
+        <ImageButton android:id="@id/left_btn" android:background="@drawable/nav_btn_back_black" android:layout_width="@dimen/title_image_width" android:layout_height="@dimen/title_image_height" android:layout_marginLeft="@dimen/default_margin" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff303030" android:id="@id/my_glasses_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/cobra_my_glasses" />
+    <LinearLayout android:orientation="vertical" android:id="@id/my_glasses_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff303030" android:id="@id/add_glass" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/cobra_add" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/paired_entrance" android:background="@drawable/bg_list_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cobra_pair_glasses" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffc6c6c6" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.5dip" style="@style/Theme.Widget.Setting.RightArrow" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff303030" android:id="@id/other" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/cobra_other" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/help" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="49.5dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cobra_common_issue" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.5dip" style="@style/Theme.Widget.Setting.RightArrow" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/help_divider" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/to_guide" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="49.5dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cobra_operation" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.5dip" style="@style/Theme.Widget.Setting.RightArrow" />
+    </LinearLayout>
+    <View android:id="@id/to_guide_divider" android:background="#ffe2e2e2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/apply_live" android:background="@drawable/bg_list_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.5dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cobra_apply_live" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.5dip" style="@style/Theme.Widget.Setting.RightArrow" />
+    </LinearLayout>
+    <View android:id="@id/to_official_page_divider" android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/to_official_page" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="49.5dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cobra_know_glasses" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.5dip" style="@style/Theme.Widget.Setting.RightArrow" />
+    </LinearLayout>
+</LinearLayout>

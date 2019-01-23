@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/news_privacy_tip" android:background="#e6c6c6c6" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color11_normal" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="@string/gossip_privacy_set_tip" />
+    <ImageView android:layout_gravity="center|right" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/setting_icon_arrow_green_normal" android:scaleType="centerInside" />
+</FrameLayout>

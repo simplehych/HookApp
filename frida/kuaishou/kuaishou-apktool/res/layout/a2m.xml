@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/background_iv" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/user_background_height" android:src="@color/profile_background" android:scaleType="centerCrop" android:contentDescription="@string/background" />
+</RelativeLayout>

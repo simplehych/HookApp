@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/group_qrcode_layout" layout="@layout/share_group_qrcode" />
+    <RelativeLayout android:background="#011b1c22" android:layout_alignParentTop="true" style="@style/Theme.Navigator">
+        <ImageButton android:id="@id/left_btn" android:src="@drawable/nav_btn_back_white" android:layout_alignParentLeft="true" android:contentDescription="@string/go_back" style="@style/Theme.Navigator.ImageButton" />
+        <TextView android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_new_member" android:singleLine="true" android:layout_centerInParent="true" style="@style/Theme.Navigator.Title" />
+        <ImageButton android:id="@id/right_btn" android:background="@drawable/chat_icon_share_m_white_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/share_draw_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/ktv_sub_fragment_container" android:background="@color/edit_fragment_background" android:layout_width="fill_parent" android:layout_height="203.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:background="@color/edit_fragment_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/panel_radio_group_with_indicator" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="54.0dip" android:layout_marginRight="54.0dip" android:layout_centerInParent="true">
+            <com.yxcorp.gifshow.widget.KwaiRadioGroup android:orientation="horizontal" android:id="@id/panel_radio_group" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="15.0dip" android:textColor="@color/ktv_editor_tab_text_color" android:gravity="center" android:id="@id/edit_volume" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:button="@null" android:text="@string/ktv_edit_volumn" app:textSizeAdjustable="true" />
+                <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="15.0dip" android:textColor="@color/ktv_editor_tab_text_color" android:gravity="center" android:id="@id/edit_effect" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:button="@null" android:text="@string/ktv_sound_seg2" app:textSizeAdjustable="true" />
+                <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="15.0dip" android:textColor="@color/ktv_editor_tab_text_color" android:gravity="center" android:id="@id/edit_change" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:button="@null" android:text="@string/ktv_sound_seg1" app:textSizeAdjustable="true" />
+            </com.yxcorp.gifshow.widget.KwaiRadioGroup>
+            <View android:id="@id/radio_indicator" android:background="@color/record_primary_color" android:layout_width="30.0dip" android:layout_height="2.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <com.yxcorp.gifshow.v3.widget.ExpandFoldHelperView android:layout_gravity="center_vertical" android:id="@id/opview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

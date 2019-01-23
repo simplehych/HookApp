@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/title_root" android:background="?actionbarBackground" android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size1" android:textStyle="bold" android:textColor="#ff525252" android:gravity="center" android:id="@id/title_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cobra_glasses" android:singleLine="true" android:layout_centerInParent="true" app:textSizeAdjustable="true" />
+            <ImageButton android:id="@id/left_btn" android:background="@drawable/nav_btn_back_black" android:layout_width="@dimen/title_image_width" android:layout_height="@dimen/title_image_height" android:layout_marginLeft="@dimen/default_margin" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff303030" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/cobra_status" />
+        <RelativeLayout android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cobra_named" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffc6c6c6" android:ellipsize="middle" android:id="@id/cobra_glasses_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" android:singleLine="true" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/arrow" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.5dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.Widget.Setting.RightArrow" />
+        </RelativeLayout>
+        <FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_list_item" android:paddingRight="9.5dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cobra_status" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff61d575" android:layout_gravity="center_vertical" android:id="@id/cobra_connect_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cobra_disconnect" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/connect_icon" android:layout_marginLeft="5.0dip" style="@style/Theme.Widget.Setting.RightArrow" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/battery_status_divider" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/cobra_battery_status_layout" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cobra_battery_status" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/cobra_battery_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nav_btn_battery_normal" />
+                <com.yxcorp.widget.BatteryView android:layout_gravity="center" android:id="@id/cobra_battery" android:layout_width="11.0dip" android:layout_height="13.0dip" android:layout_marginTop="1.0dip" />
+                <ImageView android:layout_gravity="center" android:id="@id/charge_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/glasses_icon_charge_l_normal" />
+            </FrameLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ffc6c6c6" android:layout_gravity="center_vertical" android:id="@id/cobra_battery_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="50%" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ff303030" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/cobra_setting" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/check_upgrade_layout" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cobra_check_upgrade" />
+            <View android:layout_gravity="center_vertical" android:id="@id/tips" android:background="@drawable/cobra_upgrade_tip_bg" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="10.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffc6c6c6" android:layout_gravity="center_vertical" android:id="@id/cobra_glasses_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.5dip" style="@style/Theme.Widget.Setting.RightArrow" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/upgrade_divider" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/restart_layout" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cobra_restart_glasses" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.5dip" style="@style/Theme.Widget.Setting.RightArrow" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/restart_divider" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/delete_layout" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cobra_delete_glasses" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.5dip" style="@style/Theme.Widget.Setting.RightArrow" />
+        </LinearLayout>
+        <FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/restore_layout" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cobra_restore_setting" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.5dip" style="@style/Theme.Widget.Setting.RightArrow" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/progress_layout" android:background="@drawable/cobra_download_progress_bg" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="95.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.yxcorp.gifshow.widget.DownloadProgressBar android:id="@id/download_progress" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminate="false" android:indeterminateOnly="false" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/progress_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="5.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/reboot_layout" android:background="@drawable/cobra_download_progress_bg" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="95.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:layout_gravity="center" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" style="@style/Theme.Widget.Loading.Small" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cobra_is_rebooting" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

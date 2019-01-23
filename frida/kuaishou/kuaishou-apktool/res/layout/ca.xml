@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/camera_btn" android:clickable="true" style="@style/CameraButtonStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/tagpage_shoot_icon_white" />
+    <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/white_gray" android:gravity="center" android:layout_gravity="center" android:id="@id/camera_btn_tv" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/i_wanna_share" />
+</LinearLayout>

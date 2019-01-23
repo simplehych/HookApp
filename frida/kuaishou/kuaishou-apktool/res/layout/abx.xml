@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.v3.widget.StrokeWidthSeekBar android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" app:stroke_min_size="2.0dip" app:stroke_max_size="20.0dip" app:stroke_default_size="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/stroke_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/edit_btn_magic_size_normal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:id="@id/stroke_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/magic_finger_stroke_size" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:alpha="0.0" />
+    <com.yxcorp.widget.KwaiSeekBar android:id="@id/stroke_seekbar" android:visibility="gone" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:minHeight="15.0dip" android:layout_toRightOf="@id/stroke_label" android:layout_centerVertical="true" app:KwaiSeekBarBackground="#ffffffff" app:KwaiSeekBarProgress="@color/record_primary_color" style="@style/Theme.Widget.SeekBarNewEdit.Kwai" />
+</com.yxcorp.gifshow.v3.widget.StrokeWidthSeekBar>

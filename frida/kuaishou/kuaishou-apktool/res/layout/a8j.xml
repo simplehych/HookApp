@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_100dp" />
+    <View android:id="@id/bottom_shadow" android:layout_width="fill_parent" android:layout_height="350.0dip" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/slide_play_like_image" android:visibility="invisible" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/slide_play_detail_mid_icon_like" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottom_top_info_layout" android:layout_width="wrap_content" android:layout_height="@dimen/slide_play_back_size" android:layout_marginTop="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="?PhotoPanelSummaryTextColor" android:gravity="center_vertical" android:id="@id/number_review" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_narrow" android:maxLines="1" android:drawablePadding="2.0dip" />
+        <ImageView android:id="@id/negative_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_default" android:src="@drawable/slide_play_negative_white" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/slide_play_photo_bottom_layout" android:layout_width="fill_parent" android:layout_height="@dimen/slide_play_bottom_edit_height" android:layout_alignParentBottom="true">
+        <com.yxcorp.gifshow.detail.view.SlidePlaySeekBar android:id="@id/slide_play_progress" style="@style/Theme.Widget.ProgressBar.SlidePlay" />
+        <com.yxcorp.gifshow.detail.view.SlidePlayVideoLoadingProgressBar android:id="@id/slide_play_loading_progress" android:background="@color/slide_play_progress_background" android:visibility="gone" android:progressDrawable="@null" style="@style/Theme.Widget.ProgressBar.SlidePlay" />
+        <include android:id="@id/slide_play_photo_button_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" layout="@layout/slide_play_bottom_photo_button_layout" />
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/slide_play_photo_button_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" layout="@layout/slide_play_bottom_photo_bottom_edit" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ad_action_bar_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/slide_play_photo_bottom_layout" />
+    <View android:id="@id/bottom_text_content_intercept_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/slide_play_label_top_content" android:layout_alignBottom="@id/slide_play_label_bottom_content" />
+    <include android:id="@id/slide_play_label_bottom_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" android:layout_above="@id/ad_action_bar_container" layout="@layout/slide_play_photo_label_bottom_layout" />
+    <include android:id="@id/slide_play_label_middle_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_default" android:layout_above="@id/slide_play_label_bottom_content" layout="@layout/slide_play_photo_label_middle_layout" />
+    <include android:id="@id/slide_play_label_top_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" android:layout_above="@id/slide_play_label_middle_content" layout="@layout/slide_play_photo_label_top_layout" />
+    <include android:id="@id/slide_play_live_tip" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginBottom="-7.5dip" android:layout_above="@id/slide_play_label_bottom_content" layout="@layout/slide_play_photo_live_tip" />
+    <ViewStub android:id="@id/empty_photo_tip_stub" android:layout="@layout/a8s" android:inflatedId="@id/empty_photo_tip_stub_inflated" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/slide_play_comment_intercept_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/comment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+</merge>

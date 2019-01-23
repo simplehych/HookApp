@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Theme.BottomSheet"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="#ffffffff" android:gravity="center" android:id="@id/apply_users" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50dp" android:text="@string/live_chat_apply_users_tittle" />
+    <View android:background="@color/translucent_10_white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@id/apply_users_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/translucent_40_white" android:gravity="center" android:id="@id/no_apply_users" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/live_chat_no_apply_users" android:layout_weight="1.0" />
+</LinearLayout>

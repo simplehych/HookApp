@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.gift.DrawingGiftGallery android:background="#e0000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/operation_layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/cancel_btn" android:background="@drawable/button6" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/select_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="@string/title_action_select" android:layout_weight="1.0" style="@style/Kwai.Widget.Button.B2" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/operation_layout" />
+    <com.yxcorp.widget.viewpager.PageIndicator android:id="@id/pager_indicator" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_above="@id/operation_layout" app:pageIndicatorSize="5.0dip" app:pageIndicatorMargin="6.0dip" app:pageIndicatorDrawable="@drawable/dot_indicator" />
+</com.yxcorp.plugin.gift.DrawingGiftGallery>

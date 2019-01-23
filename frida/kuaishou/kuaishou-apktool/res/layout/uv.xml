@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/live_push_audience_normal_width" android:layout_height="@dimen/live_push_audience_bordered_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.plugin.live.widget.GreyscaleImageView android:layout_gravity="center" android:id="@id/live_avatar_icon" android:layout_width="@dimen/live_push_audience_normal_width" android:layout_height="@dimen/live_push_audience_normal_width" app:roundAsCircle="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <include layout="@layout/live_audience_coin_text_view" />
+</FrameLayout>

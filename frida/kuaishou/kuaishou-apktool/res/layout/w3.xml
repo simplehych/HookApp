@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/loadingLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_progress" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/progress_layout" android:paddingTop="15.0dip" android:paddingRight="@dimen/margin_default" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center" android:id="@id/progress_small" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Theme.Widget.Loading.Small" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/progress_large" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Theme.Widget.Loading.Small" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_hint_black_color" android:gravity="center" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:drawablePadding="5.0dip" style="@style/Theme.Widget.Text" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_hint_black_color" android:gravity="center" android:id="@id/title_detail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" style="@style/Theme.Widget.Text" />
+    </LinearLayout>
+    <TextView android:id="@id/button" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginTop="15.0dip" android:minWidth="100.0dip" android:layout_below="@id/loading_progress" android:layout_centerHorizontal="true" style="@style/Kwai.Widget.Button.B1" />
+    <View android:id="@id/stub" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/loading_progress" />
+</RelativeLayout>

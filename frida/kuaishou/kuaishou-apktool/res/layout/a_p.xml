@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.image.KwaiImageView android:id="@id/thumbnail" android:layout_width="155.0dip" android:layout_height="266.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

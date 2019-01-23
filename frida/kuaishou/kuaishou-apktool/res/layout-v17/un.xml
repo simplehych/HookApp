@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/header" android:background="@color/background_light" android:paddingBottom="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/user_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/gender" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/profile_icon_unknown_m_normal" android:contentDescription="@string/gender" />
+        <TextView android:textSize="@dimen/text_size3" android:textColor="@color/list_item_remark" android:gravity="center" android:id="@id/unknown_constellation_and_address" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <TextView android:textSize="@dimen/text_size3" android:textColor="@color/list_item_remark" android:gravity="center" android:id="@id/user_constellation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <TextView android:textSize="@dimen/text_size3" android:textColor="@color/list_item_remark" android:gravity="center" android:id="@id/user_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+    <com.yxcorp.plugin.live.widget.ExpandEmojiTextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color2_normal" android:id="@id/user_text" android:paddingTop="@dimen/margin_default" android:hint="@string/empty_user_text" android:textDirection="ltr" style="@style/Theme.ProfileTextView" />
+</LinearLayout>

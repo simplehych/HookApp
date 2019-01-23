@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <com.yxcorp.gifshow.widget.PagerSlidingTabStrip android:id="@id/tabs" style="@style/tab_strip.explore_friend" />
+    <com.yxcorp.gifshow.log.widget.CommonLogViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

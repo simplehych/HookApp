@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/banner_container_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.homepage.wiget.BannerViewPager android:id="@id/banner_container" android:layout_width="fill_parent" android:layout_height="@dimen/search_banner_height" />
+    <com.yxcorp.widget.viewpager.PageIndicator android:layout_gravity="bottom" android:id="@id/page_indicator" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginBottom="3.0dip" app:pageIndicatorSize="3.0dip" app:pageIndicatorMargin="5.0dip" app:pageIndicatorDrawable="@drawable/dot_banner_indicator" />
+</FrameLayout>

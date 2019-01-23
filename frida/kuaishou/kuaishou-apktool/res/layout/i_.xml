@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_content" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.SnappyRecyclerView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/recyclerView" android:background="@color/background_black" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/top_bar" android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/Theme.Navigator.White">
+        <ImageButton android:id="@id/left_btn" android:src="@drawable/nav_btn_back_black" android:contentDescription="@string/go_back" style="@style/Theme.Navigator.ImageButton" />
+        <Button android:textSize="@dimen/text_size2" android:textColor="@color/send_text_color" android:gravity="center" android:layout_gravity="end|center" android:id="@id/right_btn" android:background="@drawable/message_photo_picker_send_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:minWidth="70.0dip" android:text="@string/send" android:maxLines="1" android:contentDescription="@string/send" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_bar" android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/select_wrapper" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:background="@drawable/message_pick_photo_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/title_action_select" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/follow_shoot_foreground_sample_view" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.widget.SafeTextureView android:id="@id/texture_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/image_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+</RelativeLayout>

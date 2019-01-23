@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_stub_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/close_btn" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/edit_btn_close" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <Button android:textSize="@dimen/text_size3" android:textColor="@color/editor_nav_text_btn_color" android:gravity="center" android:id="@id/finish_btn" android:background="@drawable/editor_nav_text_btn_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/finish" android:maxLines="1" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <com.yxcorp.gifshow.v3.widget.TimelineCoreView android:id="@id/timeline_core_view" android:background="@color/edit_fragment_background" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

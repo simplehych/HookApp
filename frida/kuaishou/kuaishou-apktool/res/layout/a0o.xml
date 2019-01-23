@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/confirm_button" android:background="@drawable/button_round_corner_orange" android:layout_width="59.0dip" android:layout_height="28.0dip" android:layout_marginRight="10.0dip" android:text="@string/ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <EditText android:textSize="@dimen/text_size_18" android:textColor="@color/text_black_color" android:textColorHint="@color/text_hint_black_color" android:gravity="center_vertical" android:id="@id/number_text" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/confirm_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="number" android:imeOptions="actionDone" />
+</RelativeLayout>

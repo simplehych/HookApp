@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.widget.CustomFadeEdgeRecyclerView android:id="@id/live_shop_orders_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:overScrollMode="never" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/translucent_60_white" android:layout_gravity="center" android:id="@id/live_shop_orders_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_no_product_purchase_record" />
+</FrameLayout>

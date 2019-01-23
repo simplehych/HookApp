@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/share_tip" android:background="@drawable/share_tip_background_shadow" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.5dip" android:layout_marginRight="10.0dip" android:layout_below="@id/title_root"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/share_avatar1" android:background="@drawable/home_share_tip_avatar_border_ring" android:padding="1.5dip" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:scaleType="centerCrop" app:roundAsCircle="true" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/share_avatar2" android:background="@drawable/home_share_tip_avatar_border_ring" android:padding="1.5dip" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="-10.0dip" android:scaleType="centerCrop" app:roundAsCircle="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/share_title_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip">
+        <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color1_normal" android:id="@id/share_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size3" android:textColor="@color/text_color1_normal" android:id="@id/share_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/share_tip_arrow" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

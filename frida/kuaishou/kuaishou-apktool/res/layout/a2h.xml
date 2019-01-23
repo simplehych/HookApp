@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/divider_color_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="32.5dip" android:layout_marginRight="32.5dip" android:progressDrawable="@drawable/progressbar_update_circle_loading_layer" android:layout_centerHorizontal="false" app:layout_constraintDimensionRatio="h,5:3" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" style="?android:attr/progressBarStyleHorizontal" />
+</FrameLayout>

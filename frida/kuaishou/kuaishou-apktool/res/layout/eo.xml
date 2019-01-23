@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="260.0dip" android:layout_height="350.0dip">
+        <com.yxcorp.widget.SafeTextureView android:id="@id/magic_emoji_guide_video_play" android:layout_width="260.0dip" android:layout_height="350.0dip" />
+        <ImageButton android:id="@id/close_magic_video_dialog" android:background="@drawable/button_close_camera_magic_video_dialog" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignRight="@id/magic_emoji_guide_video_play" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_15" android:layout_gravity="center_horizontal" android:id="@id/jump_to_look_other_video" android:clickable="true" android:layout_width="173.0dip" android:layout_height="28.0dip" android:layout_marginTop="15.0dip" android:text="看看别人怎么拍" style="@style/Kwai.Widget.Button.B9" />
+</LinearLayout>

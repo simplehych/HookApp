@@ -1,0 +1,305 @@
+[{
+		"displayName": "瘦脸",
+		"hasNegative": false,
+		"mode": 6,
+		"data": [{
+				"radius": 0.9,
+				"intensity": 0.07,
+				"end": "99",
+				"type": "forward",
+				"start": "4",
+				"useGradient": 0
+			},
+			{
+				"radius": 0.9,
+				"intensity": 0.07,
+				"end": "99",
+				"type": "forward",
+				"start": "14"
+			},
+			{
+				"radius": 0.8,
+				"intensity": 0.12,
+				"end": "86",
+				"type": "forward",
+				"start": "6"
+			},
+			{
+				"radius": 0.8,
+				"intensity": 0.12,
+				"end": "82",
+				"type": "forward",
+				"start": "12"
+			},
+			{
+				"radius": 0.87,
+				"intensity": 0.09,
+				"end": "86",
+				"type": "forward",
+				"start": "10"
+			},
+			{
+				"radius": 0.87,
+				"intensity": 0.09,
+				"end": "82",
+				"type": "forward",
+				"start": "8"
+			},
+			{
+				"type": "forward",
+				"start": "1",
+				"end": "125",
+				"intensity": 0.1,
+				"radius": 0.6
+			},
+			{
+				"type": "forward",
+				"start": "17",
+				"end": "126",
+				"intensity": 0.1,
+				"radius": 0.6
+			},
+			{
+				"type": "forward",
+				"start": "9",
+				"end": "110",
+				"intensity": -0.02,
+				"radius": 0.84
+			},
+			{
+				"type": "forward",
+				"start": "0",
+				"end": "125",
+				"intensity": 0.02,
+				"radius": 0.5
+			},
+			{
+				"type": "forward",
+				"start": "18",
+				"end": "126",
+				"intensity": 0.02,
+				"radius": 0.5
+			}
+		]
+	},
+	{
+		"displayName": "削脸",
+		"hasNegative": false,
+		"mode": 7,
+		"data": [{
+				"type": "forward",
+				"start": "3",
+				"end": "104",
+				"intensity": -0.1,
+				"radius": 0.7
+			},
+			{
+				"type": "forward",
+				"start": "15",
+				"end": "116",
+				"intensity": -0.1,
+				"radius": 0.7
+			},
+			{
+				"type": "forward",
+				"start": "5",
+				"end": "106",
+				"intensity": -0.12,
+				"radius": 0.6
+			},
+			{
+				"type": "forward",
+				"start": "13",
+				"end": "114",
+				"intensity": -0.12,
+				"radius": 0.6
+			},
+			{
+				"type": "forward",
+				"start": "7",
+				"end": "108",
+				"intensity": -0.1,
+				"radius": 0.6
+			},
+			{
+				"type": "forward",
+				"start": "11",
+				"end": "112",
+				"intensity": -0.1,
+				"radius": 0.6
+			}
+		]
+	},
+	{
+		"displayName": "小脸",
+		"hasNegative": false,
+		"mode": 8,
+		"data": [
+		   {
+                 "displayName": "小脸",
+                 "type": "forward",
+                 "start": "3",
+                 "end": "104",
+                 "intensity": -0.07,
+                 "radius": 1
+               },
+               {
+                 "type": "forward",
+                 "start": "15",
+                 "end": "116",
+                 "intensity": -0.07,
+                 "radius": 1
+               },
+               {
+                 "type": "forward",
+                 "start": "6",
+                 "end": "107",
+                 "intensity": -0.1,
+                 "radius": 1.2
+               },
+               {
+                 "type": "forward",
+                 "start": "12",
+                 "end": "113",
+                 "intensity": -0.1,
+                 "radius": 1.2
+               },
+               {
+                 "type": "forward",
+                 "start": "9",
+                 "end": "110",
+                 "intensity": -0.15,
+                 "radius": 1.6
+               }
+		]
+	},
+	{
+		"displayName": "下巴",
+		"hasNegative": true,
+		"mode": 9,
+		"data": [{
+				"type": "forward",
+				"start": "7",
+				"end": "108",
+				"intensity": 0.05,
+				"radius": 0.6
+			},
+			{
+				"type": "forward",
+				"start": "11",
+				"end": "112",
+				"intensity": 0.05,
+				"radius": 0.6
+			},
+			{
+				"type": "forward",
+				"start": "9",
+				"end": "110",
+				"intensity": 0.15,
+				"radius": 0.6
+			}
+		]
+	},
+	{
+		"name": "eyeSize",
+		"displayName": "大眼",
+		"hasNegative": true,
+		"mode": 1
+	},
+	{
+		"displayName": "眼间距",
+		"hasNegative": true,
+		"name": "eyeDistance",
+		"desc": "眼间距",
+		"mode": 0
+	},
+	{
+		"displayName": "瘦鼻",
+		"hasNegative": false,
+		"mode": 10,
+		"data": [{
+				"type": "forward",
+				"start": "72",
+				"end": "126",
+				"intensity": -0.06,
+				"radius": 0.3
+			},
+			{
+				"type": "forward",
+				"start": "65",
+				"end": "125",
+				"intensity": -0.06,
+				"radius": 0.3
+			},
+			{
+				"type": "forward",
+				"start": "71",
+				"end": "128",
+				"intensity": -0.06,
+				"radius": 0.3
+			},
+			{
+				"type": "forward",
+				"start": "66",
+				"end": "127",
+				"intensity": -0.06,
+				"radius": 0.3
+			}
+		]
+	},
+	{
+		"displayName": "长鼻",
+		"hasNegative": false,
+		"mode": 11,
+		"data": [{
+			"type": "forward",
+			"start": "99",
+			"end": "100",
+			"intensity": 0.3,
+			"radius": 0.4
+		}]
+	},
+	{
+		"name": "mouthSize",
+		"displayName": "嘴型",
+		"hasNegative": true,
+		"mode": 3
+	},
+	{
+		"displayName": "额头",
+		"hasNegative": false,
+		"mode": 12,
+		"data": [{
+				"type": "forward",
+				"start": [
+					"120",
+					"121",
+					"0.5"
+				],
+				"end": "124",
+				"intensity": -0.11,
+				"radius": 1
+			},
+			{
+				"type": "forward",
+				"start": "120",
+				"end": "22",
+				"intensity": -0.1,
+				"radius": 1
+			},
+			{
+				"type": "forward",
+				"start": "121",
+				"end": "31",
+				"intensity": -0.1,
+				"radius": 1
+			}
+		]
+	},
+	{
+		"name": "canthus",
+		"displayName": "眼角",
+		"hasNegative": true,
+		"mode": 5
+	}
+]

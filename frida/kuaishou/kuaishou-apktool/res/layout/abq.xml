@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/result_Ll" android:background="@color/wbcf_sdk_guide_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_horizontal" android:id="@id/verify_result_fail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:src="@mipmap/c" />
+    <ImageView android:gravity="center_horizontal" android:id="@id/verify_result_sucess" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160.0dip" android:src="@mipmap/d" />
+    <LinearLayout android:orientation="vertical" android:id="@id/fail_info" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/wbcf_grey_text" android:layout_gravity="center_horizontal" android:id="@id/tip_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/reasonLl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <TextView android:textSize="@dimen/wbcf_size1" android:textColor="@color/wbcf_result_text" android:id="@id/reason" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/wbcf_size1" android:textColor="@color/wbcf_result_text" android:id="@id/reason2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" />
+                <TextView android:textSize="@dimen/wbcf_size1" android:textColor="@color/wbcf_result_text" android:id="@id/reason3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/wbcf_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/complete_button" android:background="@drawable/wbcf_button_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="49.0dip" android:text="@string/wbcf_complete_verify" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/wbcf_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/retry_button" android:background="@drawable/wbcf_button_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="49.0dip" android:text="@string/wbcf_try_again" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/wbcf_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/exit_button" android:background="@drawable/wbcf_button_bg_cancle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/wbcf_no_try" />
+    </LinearLayout>
+</LinearLayout>

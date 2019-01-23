@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom" android:id="@id/horizontal_divider" android:background="@color/md_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/md_divider_height" android:layout_marginBottom="@dimen/md_button_height" />
+    <View android:layout_gravity="bottom|center" android:id="@id/vertical_divider" android:background="@color/md_divider_color" android:visibility="invisible" android:layout_width="@dimen/md_divider_height" android:layout_height="@dimen/md_button_height" />
+</merge>

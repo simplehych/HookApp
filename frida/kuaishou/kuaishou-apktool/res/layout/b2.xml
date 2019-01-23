@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ad_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="75.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/ad_image" android:layout_width="75.0dip" android:layout_height="75.0dip" android:scaleType="centerCrop" />
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size5" android:textColor="@color/text_color11_normal" android:gravity="center" android:id="@id/ad_price" android:background="@color/surface_color11_normal" android:layout_width="fill_parent" android:layout_height="17.0dip" app:textSizeAdjustable="true" app:minTextSize="1.0sp" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/ad_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/button_ad_close" android:scaleType="centerCrop" />
+</FrameLayout>

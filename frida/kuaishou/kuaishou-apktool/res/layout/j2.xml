@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/home_feed_empty_layout" />
+    <View android:id="@id/home_empty_loading" android:background="@drawable/swipe_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/base_refresh_recycler_list_layout" />
+</FrameLayout>

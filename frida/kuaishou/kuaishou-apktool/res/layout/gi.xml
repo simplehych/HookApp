@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/follow_shoot_use_sample_btn_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/follow_shoot_use_sample_btn" android:src="@drawable/camera_use_sample_btn" style="@style/RecordTopBarV2" />
+    <TextView android:id="@id/follow_shoot_use_sample_tv" android:text="@string/follow_shoot_sample" style="@style/RecordSidebarTextView" />
+</LinearLayout>

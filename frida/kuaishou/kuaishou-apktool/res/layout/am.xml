@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/normal_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="normal_dialog" />
+        <Button android:id="@id/normal_dialog_content_multi_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="normal_dialog_content_multi_line" />
+        <Button android:id="@id/normal_dialog_title_content_multi_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="normal_dialog_title_content_multi_line" />
+        <Button android:id="@id/normal_dialog_two_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="normal_dialog_two_button" />
+        <Button android:id="@id/normal_dialog_only_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="normal_dialog_only_title" />
+        <Button android:id="@id/normal_dialog_only_title_multi_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="normal_dialog_only_title_multi_line" />
+        <Button android:id="@id/input_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="input_dialog" />
+        <Button android:id="@id/list_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="list_dialog" />
+        <Button android:id="@id/list_dialog_multi_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="list_dialog_multi_line" />
+        <Button android:id="@id/multi_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="multi_dialog" />
+        <Button android:id="@id/single_choice_regular_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="single_choice_regular_dialog" />
+        <Button android:id="@id/single_choice_right_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="single_choice_right_dialog" />
+        <Button android:id="@id/single_choice_divider_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="single_choice_divider_dialog" />
+        <Button android:id="@id/single_choice_divider_content_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="single_choice_divider_content_dialog" />
+        <Button android:id="@id/small_icon_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="small_icon_dialog" />
+        <Button android:id="@id/big_icon_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="big_icon_dialog" />
+        <Button android:id="@id/big_icon_dialog_two_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="big_icon_dialog_two_button" />
+    </LinearLayout>
+</ScrollView>

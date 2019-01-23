@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout style="@style/Theme.Widget.Setting.Row">
+        <ImageView android:id="@id/entry_icon" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_default" android:layout_centerVertical="true" />
+        <TextView android:ellipsize="end" android:id="@id/entry_text" android:background="@android:color/transparent" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:maxLines="1" android:layout_toRightOf="@id/entry_icon" android:layout_centerVertical="true" style="@style/Theme.Widget.Setting.ItemText" />
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_grey_color" android:ellipsize="end" android:gravity="center|right" android:id="@id/entry_sub_text" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/entry_arrow" android:layout_toRightOf="@id/entry_text" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" app:textSizeAdjustable="true" style="@style/Theme.Widget.Setting.ItemText" />
+        <ImageView android:id="@id/entry_checkout" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_check_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/entry_splitter" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" />
+</LinearLayout>

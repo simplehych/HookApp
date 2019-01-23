@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background_dialog_white" android:layout_width="270.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_light" android:gravity="center" android:layout_width="fill_parent" android:layout_height="120.0dip" android:text="@string/download_video_share" />
+    <View android:id="@id/divider" android:background="@color/p_color_light" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_black_light" android:gravity="center" android:id="@id/cancel" android:background="@drawable/background_button_bottomleft_round" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:background="@color/p_color_light" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/p_color_orange" android:gravity="center" android:id="@id/upload" android:background="@drawable/background_button_bottomround_round" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/go_upload" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

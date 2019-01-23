@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <selector>
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/p_color_orange_alpha50" />
+                    <corners android:radius="@dimen/moment_tag_corner_radius" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/p_color_orange" />
+                    <corners android:radius="@dimen/moment_tag_corner_radius" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item>
+        <selector>
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/p_color_light_alpha50" />
+                    <corners android:radius="@dimen/moment_tag_corner_radius" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/line_color1_normal" />
+                    <corners android:radius="@dimen/moment_tag_corner_radius" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</selector>

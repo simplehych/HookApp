@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/pay_loading_root" android:background="#33000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/pay_loading_container" android:background="@drawable/pay_loading_background" android:paddingLeft="15.0dip" android:paddingTop="9.5dip" android:paddingRight="15.0dip" android:paddingBottom="6.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/pay_progress" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminateDrawable="@drawable/pay_circle_loading" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pay_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.5dip" android:text="@string/pay_loading" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

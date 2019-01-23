@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false" android:drawable="@drawable/free_traffic_dialog_not_remind_normal" />
+    <item android:state_selected="true" android:drawable="@drawable/free_traffic_dialog_not_remind_selected" />
+</selector>

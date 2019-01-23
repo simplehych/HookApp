@@ -1,0 +1,47 @@
+.class abstract Lcom/baidu/mapsdkplatform/comapi/synchronization/b/a$a;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/baidu/mapsdkplatform/comapi/synchronization/b/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x40a
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/baidu/mapsdkplatform/comapi/synchronization/b/b;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/baidu/mapsdkplatform/comapi/synchronization/b/a$a;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract a()V
+.end method
+
+.method public run()V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/baidu/mapsdkplatform/comapi/synchronization/b/a$a;->a()V
+
+    return-void
+.end method

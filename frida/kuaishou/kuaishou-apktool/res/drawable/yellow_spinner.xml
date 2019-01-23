@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:variablePadding="true" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="60" android:drawable="@drawable/yellow_spinner_1" />
+    <item android:duration="60" android:drawable="@drawable/yellow_spinner_2" />
+    <item android:duration="60" android:drawable="@drawable/yellow_spinner_3" />
+    <item android:duration="60" android:drawable="@drawable/yellow_spinner_4" />
+    <item android:duration="60" android:drawable="@drawable/yellow_spinner_5" />
+    <item android:duration="60" android:drawable="@drawable/yellow_spinner_6" />
+    <item android:duration="60" android:drawable="@drawable/yellow_spinner_7" />
+    <item android:duration="60" android:drawable="@drawable/yellow_spinner_8" />
+    <item android:duration="60" android:drawable="@drawable/yellow_spinner_9" />
+    <item android:duration="60" android:drawable="@drawable/yellow_spinner_10" />
+    <item android:duration="60" android:drawable="@drawable/yellow_spinner_11" />
+    <item android:duration="60" android:drawable="@drawable/yellow_spinner_12" />
+</animation-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/album_icon_piccheck_m_selected" />
+    <item android:drawable="@drawable/album_icon_piccheck_m_normal" />
+</selector>

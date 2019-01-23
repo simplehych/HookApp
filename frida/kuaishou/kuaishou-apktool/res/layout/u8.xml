@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/background_round_dialog_white" android:padding="20.0dip" android:layout_width="295.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/result_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/text_color1_normal" android:layout_gravity="center" android:id="@id/result_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color2_normal" android:layout_gravity="center_horizontal" android:id="@id/result_punish_other_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/live_pk_punish_other_tips" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_color2_normal" android:layout_gravity="center" android:id="@id/count_down_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    </LinearLayout>
+</FrameLayout>

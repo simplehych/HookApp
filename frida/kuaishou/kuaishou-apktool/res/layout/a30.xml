@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.profile.widget.ForegroundFrameLayout android:id="@id/moment_item_foreground" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_bottom_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

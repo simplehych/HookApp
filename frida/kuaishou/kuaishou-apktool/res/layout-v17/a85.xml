@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/avatar_wrapper" android:layout_width="35.0dip" android:layout_height="35.0dip" style="@style/Theme.ReminderAvatar" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_14" android:textColor="@color/list_item_black" android:autoLink="none" android:linksClickable="false" android:id="@id/name" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kwai_app_name" android:singleLine="true" android:includeFontPadding="false" android:textDirection="ltr" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/splash_game_icon">
+        <TextView android:textSize="25.0sp" android:textColor="@color/text_color1_normal" android:id="@id/splash_game_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/splash_game_title" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/splash_game_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:src="@drawable/img_gamebackground_welcome" android:layout_centerInParent="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_color2_normal" android:id="@id/splash_game_enter_kwai" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/enter_kwai" android:drawableRight="@drawable/icon_arrow_welcome_m" android:drawablePadding="6.5dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/splash_game_icon">
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_color1" android:gravity="center" android:id="@id/splash_game_enter_game" android:background="@drawable/background_splash_game_enter" android:layout_width="172.5dip" android:layout_height="40.0dip" android:text="@string/start_game" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/splash_loading_view" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="7.0dip" app:lottie_rawRes="@raw/lottie_splash_loading" app:lottie_loop="true" />
+    </LinearLayout>
+</RelativeLayout>

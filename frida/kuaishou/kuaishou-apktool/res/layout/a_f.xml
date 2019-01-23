@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/Theme.Widget.Setting.Row">
+        <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Magic face version : " />
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/magic_face_version" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/Theme.Widget.Setting.Row">
+        <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Channel : " />
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/channel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="50.0dip" style="@style/Theme.Widget.Setting.Row">
+        <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Commid Id: " />
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/commit_id" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

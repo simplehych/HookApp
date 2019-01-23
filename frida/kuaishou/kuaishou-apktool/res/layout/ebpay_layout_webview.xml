@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.BdActionBar android:id="@id/bdactionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <WebView android:id="@id/cust_webview" android:background="@color/wallet_base_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/bdactionbar" />
+</RelativeLayout>

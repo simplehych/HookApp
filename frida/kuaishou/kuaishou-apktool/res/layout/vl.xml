@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_users_top_empty_view" android:background="#01000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/top_users_content_layout" />
+    <View android:id="@id/top_users_left_empty_view" android:background="#01000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/top_users_content_layout" />
+    <com.yxcorp.plugin.live.widget.LiveTopUsersContentContainerView android:id="@id/top_users_content_layout" android:background="@color/live_top_users_bg" android:layout_width="fill_parent" android:layout_height="@dimen/live_top_users_content_height" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/top_users_title" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/live_online_audiences" />
+        <View android:id="@id/split_line" android:background="@color/live_top_user_layout_split_line_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/top_users_title" />
+        <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView android:id="@id/top_users_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/split_line" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <com.yxcorp.gifshow.widget.LoadingView android:id="@id/top_users_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_users_title" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/no_top_users_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_users_title" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/no_top_users_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46.0dip" android:src="@drawable/live_norecommend_live_normal" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="#99ffffff" android:layout_gravity="center_horizontal" android:id="@id/no_top_users_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/loading_failed" />
+        </LinearLayout>
+    </com.yxcorp.plugin.live.widget.LiveTopUsersContentContainerView>
+</RelativeLayout>

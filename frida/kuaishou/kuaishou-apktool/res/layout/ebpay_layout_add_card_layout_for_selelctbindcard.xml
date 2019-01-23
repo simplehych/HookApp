@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ebpay_selectbindcard_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@color/bd_wallet_pwdpay_light_gray" android:layout_width="fill_parent" android:layout_height="@dimen/bd_wallet_normal_line_height_1px" android:layout_marginLeft="@dimen/ebpay_line_margin_15" android:layout_weight="0.0" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ebpay_layout_add_card_layout" />
+    <ImageView android:background="@color/bd_wallet_pwdpay_light_gray" android:layout_width="fill_parent" android:layout_height="@dimen/bd_wallet_normal_line_height_1px" />
+</LinearLayout>

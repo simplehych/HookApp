@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/status_bar_padding_view" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+        <com.yxcorp.gifshow.widget.KwaiActionBar android:id="@id/title_root" android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="?actionbarHeight" android:layout_below="@id/status_bar_padding_view">
+            <ImageButton android:id="@id/left_btn" android:background="@null" android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="?actionbarTitleTextSize" android:textColor="?actionbarTitleTextColor" android:gravity="center" android:id="@id/title_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/common_padding" android:layout_marginRight="@dimen/common_padding" android:text="@string/profile_moment" android:singleLine="true" android:layout_toLeftOf="@id/right_btn" android:layout_toRightOf="@id/left_btn" android:layout_centerInParent="true" android:textDirection="ltr" app:textSizeAdjustable="true" />
+            <ImageButton android:id="@id/right_btn" android:background="@null" android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:id="@id/profile_moment_root_divider" android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" android:layout_alignParentBottom="true" />
+        </com.yxcorp.gifshow.widget.KwaiActionBar>
+        <com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout android:layout_below="@id/status_bar_padding_view" style="@style/Kwai.Widget.RefreshLayout">
+            <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView android:id="@id/recycler_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout>
+    </LinearLayout>
+    <com.yxcorp.gifshow.profile.widget.MomentWriteView style="@style/MomentWriteViewStyle" />
+    <include layout="@layout/profile_moment_comment_tip" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ktv_panel_below" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/ktv_blur_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ktv_record_blur_bg" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ktv_record_prepare_panel_v2" />
+    <include android:id="@id/ktv_song_title_bar" android:layout_width="fill_parent" android:layout_height="50.0dip" layout="@layout/ktv_record_song_title_bar_v2" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" layout="@layout/ktv_record_song_layout_v2" />
+    <include android:id="@id/ktv_music_origin_btn" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" layout="@layout/ktv_record_origin_misic_btn_v2" />
+    <include android:id="@id/ktv_recording_lyric_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" layout="@layout/ktv_recording_lyric_layout" />
+    <include android:id="@id/ktv_record_mv_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/ktv_record_mv_layout" />
+</RelativeLayout>

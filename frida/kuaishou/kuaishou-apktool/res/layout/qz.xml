@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/action" android:background="@color/background_light" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/photo_operation_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.detail.view.LikeView android:id="@id/like_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/like_button" android:contentDescription="@string/like" android:importantForAccessibility="no" style="@style/Theme.PhotoOperationView" />
+        <ImageView android:id="@id/iv_like_help" android:visibility="gone" android:contentDescription="@string/like" android:importantForAccessibility="no" style="@style/Theme.PhotoOperationView" />
+    </com.yxcorp.gifshow.detail.view.LikeView>
+    <ImageView android:id="@id/more_button" android:layout_marginLeft="@dimen/photo_operation_btn_space" android:contentDescription="@string/more" style="@style/Theme.PhotoOperationView" />
+    <ImageView android:id="@id/forward_button" android:layout_marginLeft="@dimen/photo_operation_btn_space" android:contentDescription="@string/share" style="@style/Theme.PhotoOperationView" />
+    <ImageView android:id="@id/download_button" android:visibility="gone" android:layout_marginLeft="@dimen/photo_operation_btn_space" style="@style/Theme.PhotoOperationView" />
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/avatar_wrapper" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="17.5dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/follow" android:background="?PhotoActionBarFollowBackground" android:paddingLeft="13.0dip" android:paddingRight="27.5dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@id/follow_button" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/profile_nav_btn_follow_black_normal" android:scaleType="center" android:contentDescription="@string/follow" />
+                <FrameLayout android:id="@id/follow_text_container" android:paddingBottom="0.5dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_15" android:textColor="?PhotoActionBarFollowWhiteTextColor" android:gravity="center" android:id="@id/follow_text_white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/follow" android:maxLines="1" android:alpha="0.0" app:textSizeAdjustable="true" app:minTextSize="5.0sp" />
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_15" android:textColor="?PhotoActionBarFollowTextColor" android:gravity="center" android:id="@id/follow_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/follow" android:maxLines="1" app:textSizeAdjustable="true" app:minTextSize="5.0sp" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="right" android:id="@id/avatar" android:layout_width="@dimen/photo_opertion_avatar_size" android:layout_height="@dimen/photo_opertion_avatar_size" android:src="@null" android:scaleType="fitXY" android:contentDescription="@string/avatar" app:roundAsCircle="true" app:roundingBorderWidth="@dimen/avatar_border_size" app:roundingBorderColor="@color/detail_avatar_border_color" />
+    </FrameLayout>
+</LinearLayout>

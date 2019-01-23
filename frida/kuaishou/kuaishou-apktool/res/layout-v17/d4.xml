@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_root" android:background="?actionbarBackground" android:layout_width="fill_parent" android:layout_height="46.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff525252" android:gravity="center" android:id="@id/title_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cobra_help_title" android:singleLine="true" android:layout_centerInParent="true" android:textDirection="ltr" app:textSizeAdjustable="true" />
+        <ImageButton android:id="@id/left_btn" android:background="@drawable/nav_btn_back_black" android:layout_width="@dimen/title_image_width" android:layout_height="@dimen/title_image_height" android:layout_marginLeft="10.0dip" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="#ff303030" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="@string/cobra_help_cotent_title" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="#ff777777" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/cobra_help_content" android:lineSpacingExtra="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:top="1.5dip">
+                <bitmap android:src="@drawable/share_icon_arrow_grey_s_pressed" android:alpha="@integer/q" />
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:drawable="@drawable/share_icon_arrow_grey_s_normal" android:top="1.5dip" />
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ktv_prepare_action_bar" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <FrameLayout android:layout_width="100.0dip" android:layout_height="100.0dip">
+        <FrameLayout android:layout_gravity="center" android:id="@id/ktv_download_layout" android:layout_width="80.0dip" android:layout_height="80.0dip">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/ktv_download_btn" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/button_record_btn_fullscreen_outer" android:scaleType="fitXY" />
+            <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/ktv_download_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.yxcorp.gifshow.widget.record.RoundProgressView android:layout_gravity="center" android:id="@id/ktv_download_progress" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="0" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/ktv_music_selection_btn" android:background="@drawable/camera_button_round_background_dark" android:src="@drawable/ktv_icon_hot_mode_normal" style="@style/Theme.CameraActionButtonFullScreen" />
+    </FrameLayout>
+</LinearLayout>

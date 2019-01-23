@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:gravity="center_vertical" android:background="@drawable/background_login_top_line" android:layout_width="fill_parent" android:layout_height="@dimen/signup_line_height">
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:text="@string/email" style="@style/Theme.Widget.Text.Signup" />
+        <View style="@style/Theme.Widget.HangDividerHorizontal" />
+        <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/name_et" android:hint="@string/email_hint" android:inputType="textEmailAddress" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Signup" />
+        <FrameLayout android:id="@id/clear_layout" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/signup_line_height" android:onClick="onClick">
+            <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/icon_clear" android:contentDescription="@string/delete_selected" />
+        </FrameLayout>
+    </TableRow>
+    <TableRow android:gravity="center_vertical" android:id="@id/psd_row" android:background="@drawable/background_login_top_line" android:layout_width="fill_parent" android:layout_height="@dimen/signup_line_height">
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:id="@id/password_tv" android:text="@string/password" style="@style/Theme.Widget.Text.Signup" />
+        <View style="@style/Theme.Widget.HangDividerHorizontal" />
+        <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/password_et" android:hint="@string/password_hint" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Signup" />
+    </TableRow>
+    <TableRow android:gravity="center_vertical" android:id="@id/nickname_row" android:background="@drawable/background_login_top_line" android:layout_width="fill_parent" android:layout_height="@dimen/signup_line_height">
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:text="@string/nickname" style="@style/Theme.Widget.Text.Signup" />
+        <View style="@style/Theme.Widget.HangDividerHorizontal" />
+        <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/nickname_et" android:hint="@string/nickname_hint" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Signup" />
+    </TableRow>
+    <TableRow android:gravity="center_vertical" android:id="@id/gender_row" android:background="@drawable/background_login_top_line" android:layout_width="fill_parent" android:layout_height="@dimen/signup_line_height">
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:text="@string/gender" style="@style/Theme.Widget.Text.Signup" />
+        <View style="@style/Theme.Widget.HangDividerHorizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gender" android:layout_width="fill_parent" android:layout_height="@dimen/signup_line_height" android:layout_span="2" style="@style/Theme.Widget.Edit.Signup">
+            <ImageView android:id="@id/gender_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_icon_unknown_m_normal" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color17_normal" android:id="@id/gender_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sex_unknow" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color17_normal" android:id="@id/empty_gender_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/need_select_gender" android:layout_weight="1.0" />
+            <ImageView android:id="@id/empty_gender_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_arrow_right" />
+        </LinearLayout>
+    </TableRow>
+</TableLayout>

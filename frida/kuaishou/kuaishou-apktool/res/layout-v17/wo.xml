@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/touch_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/tabs_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/seek_bar_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip">
+            <com.yxcorp.widget.LiveSeekBar android:id="@id/slimming_seek_bar" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:layout_toLeftOf="@id/slimming_value_tv" android:layout_alignParentLeft="true" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" app:KwaiSeekBarDisplayProgressText="false" style="@style/Theme.Widget.SeekBar.Kwai.White_Bg_White" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_default_color" android:id="@id/slimming_value_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/tab_title" android:background="@color/translucent_50_black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/camera_photo_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_color2_normal" android:gravity="center_vertical" android:id="@id/camera_photo_title_name" android:background="@null" android:paddingLeft="11.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/magic_face" android:layout_alignParentLeft="true" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/button_complete_magic_emoji" android:background="@null" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_magicemoji_complete_black" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <FrameLayout android:id="@id/fl_magic_clear_container" android:visibility="gone" android:layout_width="@dimen/dimen_45dp" android:layout_height="fill_parent">
+                    <ImageButton android:layout_gravity="center" android:id="@id/iv_magic_clear" android:background="@drawable/background_magic_emoji_clear" android:layout_width="@dimen/dimen_35dp" android:layout_height="@dimen/dimen_35dp" />
+                    <View android:layout_gravity="right" android:background="@color/white_with_10_alpha" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_10dp" />
+                </FrameLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/button_complete_magic_emoji_sure" android:background="@null" android:padding="4.0dip" android:layout_width="@dimen/dimen_45dp" android:layout_height="@dimen/dimen_45dp" android:src="@drawable/magicemoji_btn_complete_new" android:layout_alignParentRight="true" />
+                <com.yxcorp.gifshow.widget.PagerSlidingTabStrip android:textSize="@dimen/text_size_15" android:textColor="@color/tab_item_text_color_magic_emoji_mul_row" android:layout_gravity="left" android:id="@id/tabs" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="50.0dip" android:layout_toRightOf="@id/fl_magic_clear_container" android:layout_alignParentLeft="true" app:pstsIndicatorColor="@color/tab_item_text_color_magic_emoji_mul_row" app:pstsUnderlineColor="@color/divider_color_transparent" app:pstsIndicatorHeight="2.0dip" app:pstsDividerPadding="0.0dip" app:pstsTabPaddingLeftRight="10.0dip" app:pstsIndicatorPadding="8.0dip" style="@style/tab_strip.magicEmoji" />
+            </RelativeLayout>
+            <View android:id="@id/title_divider" android:background="#19ffffff" android:layout_width="fill_parent" android:layout_height="0.5dip" layout="@layout/line_divider_grey" />
+        </LinearLayout>
+        <android.support.v4.view.ViewPager android:id="@id/view_pager" android:background="@color/translucent_50_black" android:layout_width="fill_parent" android:layout_height="220.0dip" />
+    </LinearLayout>
+</LinearLayout>

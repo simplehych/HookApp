@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/action_bar_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_white" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="35.0dip" android:layout_marginRight="35.0dip" android:layout_marginStart="35.0dip" android:layout_marginEnd="35.0dip">
+        <TextView android:textSize="25.0sp" android:textColor="@color/phone_verify_title_text_color" android:id="@id/verify_phone_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_account_verify_title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/phone_verify_desc_text_color" android:id="@id/verify_phone_prompt_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:lineSpacingExtra="7.0sp" />
+        <com.yxcorp.gifshow.widget.edittext.VerificationCodeView android:theme="@style/VerifyCodeEditText" android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center" android:orientation="horizontal" android:id="@id/verify_code_input_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:vcv_et_number="6" app:vcv_et_inputType="number" app:vcv_et_width="38.0dip" app:vcv_et_text_color="@android:color/black" app:vcv_et_text_size="12.0sp" app:vcv_et_cursor="@drawable/icon_text_cursor" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_gray_orange" android:id="@id/verify_code_resend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebpay_line_margin_20" android:text="@string/resend" />
+    </LinearLayout>
+</LinearLayout>

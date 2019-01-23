@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:layout_gravity="center" android:id="@id/magic_imitation_tips_stub" android:layout="@layout/ci" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center" android:id="@id/magic_emoji_tips_tv_stub" android:layout="@layout/ck" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center" android:id="@id/magic_emoji_no_face_tips_stub" android:layout="@layout/cj" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/filter_name_container" android:paddingLeft="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="32.0sp" android:textColor="@color/text_color_white" android:layout_gravity="left" android:id="@id/filter_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="2.0dip" />
+        <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_white" android:layout_gravity="left" android:id="@id/filter_subname_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="2.0dip" />
+    </LinearLayout>
+    <ViewStub android:id="@id/camera_magic_banner_stub" android:layout="@layout/ch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="65.0dip" android:layout_alignParentLeft="true" />
+    <FrameLayout android:id="@id/magic_emoji_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/filter_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/beautify_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    <ViewStub android:layout_gravity="right" android:id="@id/color_picker_stub" android:layout="@layout/ab9" android:inflatedId="@id/color_picker_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="65.0dip" android:layout_marginRight="50.0dip" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/camera_magic_picture_list_stub" android:layout="@layout/cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="280.0dip" />
+    <ViewStub android:id="@id/magic_emoji_wish_stub" android:layout="@layout/wr" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

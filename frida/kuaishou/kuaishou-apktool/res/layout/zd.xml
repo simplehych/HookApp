@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" style="@style/Theme.Widget.Loading.Small" />
+        <TextView android:gravity="center" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_music" style="@style/Theme.Widget.Text" />
+    </LinearLayout>
+</LinearLayout>

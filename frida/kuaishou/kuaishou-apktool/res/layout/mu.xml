@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/share_container" android:background="@drawable/background_round_corner_sharer_label_feed" android:paddingLeft="2.5dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/share_avatar2" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="6.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" fresco:roundAsCircle="true" fresco:roundingBorderWidth="0.5dip" fresco:roundingBorderColor="@color/p_color_white" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/share_avatar1" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" fresco:roundAsCircle="true" fresco:roundingBorderWidth="0.5dip" fresco:roundingBorderColor="@color/p_color_white" />
+    <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/text_color_white" android:ellipsize="middle" android:gravity="center" android:id="@id/share_text" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="9" android:singleLine="true" android:layout_toRightOf="@id/share_avatar1" android:layout_centerVertical="true" />
+</RelativeLayout>

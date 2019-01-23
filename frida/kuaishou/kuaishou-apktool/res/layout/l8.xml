@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/kwai_player_debug_info_vod_root" android:visibility="gone" layout="@layout/kwai_player_debug_info_vod" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/toggle_btn_of_debug_info" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/tv_switch_mode" android:background="@drawable/bg_toggle_btn_of_debug_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="8.0dip" android:text="開" android:height="@dimen/toggle_btn_size" android:width="@dimen/toggle_btn_size" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.49" />
+</FrameLayout>

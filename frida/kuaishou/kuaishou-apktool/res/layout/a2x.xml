@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="@dimen/profile_moment_time_divider_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/head_divider" android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color15" android:gravity="center" android:layout_gravity="center" android:id="@id/moment_discovery" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/profile_moment_friend_last_position" />
+</FrameLayout>

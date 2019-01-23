@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="50.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/preview" android:background="@drawable/background_editor_filter_item" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="centerInside" android:contentDescription="@string/preview" app:fadeDuration="0" app:roundAsCircle="true" />
+        <ImageView android:id="@id/slider_indicator" android:background="@drawable/background_editor_filter_indicator" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="centerInside" />
+    </RelativeLayout>
+    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size4" android:textColor="@color/preview_effect_text_color_white_v3" android:ellipsize="end" android:gravity="center" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/preview" android:singleLine="true" android:includeFontPadding="false" app:textSizeAdjustable="false" app:textSizeAdjustWithHeight="true" app:minTextSize="@dimen/text_size_9" />
+</LinearLayout>

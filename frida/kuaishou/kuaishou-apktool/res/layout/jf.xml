@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_white" />
+    <include android:id="@id/divider" layout="@layout/line_divider_grey" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yxcorp.gifshow.image.KwaiZoomImageView android:id="@id/image_editor" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+        <com.albinmathew.photocrop.cropoverlay.CropOverlayView android:layout_gravity="center" android:id="@id/crop_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" app:colv_guideLines="false" app:colv_marginSide="10.0dip" app:colv_borderColor="@color/orange_color" />
+        <RelativeLayout android:id="@id/image_reverse_layout" android:paddingLeft="@dimen/dimen_30dp" android:paddingRight="@dimen/dimen_20dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_45dp" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/image_reverse" android:background="@drawable/edit_icon_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/text_default_color" android:id="@id/image_reverse_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_cover_rotate_cancel" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

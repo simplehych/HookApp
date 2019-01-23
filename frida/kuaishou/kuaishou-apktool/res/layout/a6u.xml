@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.UnScrollableGridView android:gravity="center" android:id="@id/primary_type_grid" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="174.0dip" android:listSelector="@null" android:cacheColorHint="@null" android:verticalSpacing="15.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+    <View android:id="@id/divider" android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

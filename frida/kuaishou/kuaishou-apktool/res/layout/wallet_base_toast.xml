@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/wallet_base_toast_bg" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/wallet_base_toast_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/ebpay_text_size_15" android:textColor="@android:color/white" android:id="@id/wallet_base_toast_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

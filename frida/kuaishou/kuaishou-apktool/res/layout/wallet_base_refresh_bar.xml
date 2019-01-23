@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/bd_wallet_refresh_bar" android:layout_width="fill_parent" android:layout_height="@dimen/bd_wallet_header_max_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/bd_wallet_logo_layout" android:layout_width="wrap_content" android:layout_height="@dimen/bd_wallet_header_max_padding">
+        <ImageView android:layout_gravity="center" android:id="@id/bd_wallet_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wallet_base_refresh_loading" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center" android:id="@id/bd_wallet_tip_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wallet_base_refresh_arrow" android:contentDescription="@null" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/bd_wallet_logo_layout" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/bd_wallet_text_gray" android:id="@id/bd_wallet_tip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下拉" />
+        <TextView android:textSize="@dimen/bd_wallet_text_size_xsmall" android:textColor="@color/wallet_base_6c" android:id="@id/bd_wallet_tip_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="更新" />
+    </LinearLayout>
+</RelativeLayout>

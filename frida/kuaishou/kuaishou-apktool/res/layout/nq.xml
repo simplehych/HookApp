@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_content_rl" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/top_users_content_layout" android:layout_width="fill_parent" android:layout_height="59.0dip">
+        <RelativeLayout android:id="@id/top_users_left_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/top_users_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" app:roundAsCircle="true" />
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_black_color" android:ellipsize="end" android:id="@id/top_users_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/top_users_avatar" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/button_height2" android:layout_marginRight="@dimen/dimen_15dp" android:minWidth="@dimen/common_follow_btn_width" android:layout_alignParentRight="true" android:layout_centerVertical="true" layout="@layout/list_follow_btn" />
+    </RelativeLayout>
+    <View android:id="@id/like_users_split_line" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="55.0dip" android:layout_below="@id/top_users_content_layout" />
+</RelativeLayout>

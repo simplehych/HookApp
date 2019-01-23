@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avatar="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/kwai_title_default" />
+    <include android:id="@id/title_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" layout="@layout/line_divider_grey" />
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/avatar_layout_one" android:layout_width="fill_parent" android:layout_height="@dimen/login_select_user_avatar">
+            <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center_vertical" android:id="@id/icon_one" android:background="@null" android:layout_width="@dimen/retrieve_select_user_avatar" android:layout_height="@dimen/retrieve_select_user_avatar" android:layout_marginLeft="15.0dip" android:src="@drawable/profile_btn_avatar_secret" android:scaleType="fitXY" android:contentDescription="@string/avatar" avatar:roundAsCircle="true" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/login_select_user_name_text_color" android:layout_gravity="center_vertical" android:id="@id/user_name_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <View android:background="#ffe2e2e2" android:layout_marginLeft="80.0dip" style="@style/Theme.Widget.LoginDividerVertical" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/avatar_layout_two" android:layout_width="fill_parent" android:layout_height="@dimen/login_select_user_avatar">
+            <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center_vertical" android:id="@id/icon_two" android:background="@null" android:layout_width="@dimen/retrieve_select_user_avatar" android:layout_height="@dimen/retrieve_select_user_avatar" android:layout_marginLeft="15.0dip" android:src="@drawable/profile_btn_avatar_secret" android:scaleType="fitXY" android:contentDescription="@string/avatar" avatar:roundAsCircle="true" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/login_select_user_name_text_color" android:layout_gravity="center_vertical" android:id="@id/user_name_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

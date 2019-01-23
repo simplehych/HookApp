@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <include android:id="@id/shield_contacts_friend" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/setting_slip_switch_layout" />
+    <include android:id="@id/shield_qq_friend" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/setting_slip_switch_layout" />
+</LinearLayout>

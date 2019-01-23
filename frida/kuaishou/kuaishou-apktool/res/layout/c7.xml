@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/camera_magic_emoji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="magic_face" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/camera_magic_emoji_btn" android:clickable="false" android:src="@drawable/camera_magic_btn" android:layout_centerHorizontal="true" style="@style/CameraActionBarIcon" />
+    <TextView android:id="@id/camera_magic_emoji_tv" android:text="@string/magic" android:layout_below="@id/camera_magic_emoji_btn" android:layout_centerHorizontal="true" style="@style/CameraActionBarTextView" />
+    <ImageView android:id="@id/notify_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_magic_face_notify" android:layout_alignRight="@id/camera_magic_emoji_btn" />
+</RelativeLayout>

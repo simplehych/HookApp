@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/logo" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/kwai_icon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_light" android:id="@id/version_tv" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/logo" android:layout_centerHorizontal="true" />
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size3" android:textColor="@color/text_black_light" android:gravity="left" android:id="@id/about_us_propaganda" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="@string/about_us_detail" android:layout_below="@id/version_tv" app:textSizeAdjustable="true" app:textSizeAdjustWithHeight="true" />
+        <FrameLayout android:id="@id/entry_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_below="@id/about_us_propaganda" />
+        <TextView android:textSize="@dimen/text_size4" android:textColor="@color/text_color3_normal" android:gravity="center" android:id="@id/copyright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" android:layout_marginBottom="@dimen/margin_default" android:text="@string/about_us_copyright" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

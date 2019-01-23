@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/wallet_home_item_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="72.0dip">
+        <com.baidu.wallet.base.widget.NetImageView android:id="@id/wallet_home_o2o_img" android:layout_width="39.0dip" android:layout_height="39.0dip" android:src="@drawable/wallet_home_o2o_fuma" android:scaleType="fitXY" />
+        <TextView android:textSize="18.0sp" android:id="@id/wallet_home_o2o_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="扫一扫" />
+    </LinearLayout>
+    <include layout="@layout/wallet_home_outer_horizontal_seperator" />
+</LinearLayout>

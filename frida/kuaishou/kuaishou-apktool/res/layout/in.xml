@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/live_more_option_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/live_more_option_item_height">
+        <ImageView android:id="@id/icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+        <View android:id="@id/dot_view" android:background="@drawable/function_oval_dot" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_alignRight="@id/icon" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_function_item_color_v2" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#4c000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="4.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

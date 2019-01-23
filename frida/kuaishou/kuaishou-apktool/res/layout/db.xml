@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:ellipsize="middle" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="80.0dip" android:singleLine="true" android:layout_centerVertical="true" />
+        <View android:id="@id/tip_relative" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignRight="@id/name" />
+        <View android:id="@id/upgrade_tips" android:background="@drawable/cobra_upgrade_tip_bg" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/tip_relative" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/arrow" android:layout_marginRight="9.5dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.Widget.Setting.RightArrow" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff61d575" android:id="@id/connect_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="已连接" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/divider" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+    </FrameLayout>
+</LinearLayout>

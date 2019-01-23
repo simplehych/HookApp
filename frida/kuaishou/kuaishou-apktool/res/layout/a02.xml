@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/background_round_corner_dialog" android:layout_width="260.0dip" android:layout_height="320.0dip">
+        <ImageButton android:layout_gravity="left" android:id="@id/dialog_cancel_image_button" android:background="@drawable/new_user_red_envelope_dialog_close_btn" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:layout_margin="@dimen/recommend_user_item_margin_8dp" />
+        <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="center_horizontal" android:id="@id/dialog_bg_iv" android:background="@drawable/login_pic_redpocket" android:layout_width="200.0dip" android:layout_height="125.0dip" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/dialog_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" />
+        <TextView android:textSize="@dimen/text_size_14" android:layout_gravity="center_horizontal" android:id="@id/dialog_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebpay_line_margin_10" android:text="@string/red_envelope_into_mywallet" />
+        <Button android:id="@id/next_view" android:layout_width="230.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="@dimen/ebpay_line_margin_20" android:layout_marginRight="@dimen/dimen_15dp" android:layout_marginBottom="25.0dip" android:text="@string/go_withdraw" style="@style/Kwai.Widget.Button.B12" />
+    </LinearLayout>
+</FrameLayout>

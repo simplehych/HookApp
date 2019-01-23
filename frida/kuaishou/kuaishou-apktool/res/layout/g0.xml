@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/diamond_container" android:background="@drawable/login_bg_cover" android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/diamond_name_title" style="@style/Theme.Widget.Payment.Title" />
+            <TextView android:id="@id/diamond_amount_total" style="@style/Theme.Widget.Payment.Title.Bottom" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:layout_marginTop="10.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:id="@id/withdraw_amount_container" android:showDividers="middle" style="@style/Theme.Widget.Payment.Row">
+            <TextView android:textColor="@color/text_hint_black_color" android:id="@id/diamond_name" android:layout_height="@dimen/user_info_item_height" android:layout_column="0" android:text="@string/yellow_diamond" android:maxLines="1" style="@style/Theme.Widget.Payment.Label.Left" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="@dimen/user_info_edit_text_height" android:layout_column="1" android:layout_weight="3.0">
+                <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/diamond_amount" android:paddingRight="60.0dip" android:layout_width="fill_parent" android:inputType="number" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Payment.EditText" />
+                <TextView android:id="@id/all" android:text="@string/all" style="@style/Theme.Widget.Payment.Label.All" />
+            </FrameLayout>
+        </TableRow>
+        <View style="@style/Theme.Widget.DefaultDividerVertical" />
+        <TableRow android:id="@id/withdraw_money_container" style="@style/Theme.Widget.Payment.Row">
+            <TextView android:textColor="@color/text_hint_black_color" android:layout_height="@dimen/user_info_item_height" android:layout_column="0" android:text="@string/kwai_coin" android:maxLines="1" style="@style/Theme.Widget.Payment.Label.Left" />
+            <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/kwai_coin_amount" android:layout_width="fill_parent" android:layout_column="1" android:hint="@string/kwai_coin_count" android:layout_weight="3.0" android:inputType="number" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Payment.EditText" />
+        </TableRow>
+        <View style="@style/Theme.Widget.DefaultDividerVertical" />
+    </TableLayout>
+    <Button android:id="@id/exchange_button" android:text="@string/exchange" style="@style/Theme.Widget.Payment.Button" />
+</LinearLayout>

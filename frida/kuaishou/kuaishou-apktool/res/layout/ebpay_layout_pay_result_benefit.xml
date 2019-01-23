@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/wallet_base_result_success_benefit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebpay_dimen_20dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ebpay_text_size_18" android:textColor="#ffffef3c" android:gravity="center" android:id="@id/pay_success_benifit_title" android:paddingTop="@dimen/ebpay_line_margin_10" android:paddingBottom="@dimen/ebpay_line_margin_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:maxLength="15" />
+    <TextView android:textSize="@dimen/ebpay_text_size_12" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/pay_success_benefit_content" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:maxLines="3" />
+</LinearLayout>

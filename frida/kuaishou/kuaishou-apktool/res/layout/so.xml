@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/live_chat_call_margin" android:paddingTop="25.0dip" android:paddingRight="@dimen/live_chat_call_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:layout_width="@dimen/live_chat_call_avatar_size" android:layout_height="@dimen/live_chat_call_avatar_size" android:layout_centerHorizontal="true" app:roundAsCircle="true" />
+    <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/text_black_color" android:gravity="center_horizontal" android:id="@id/live_chat_user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/avatar" style="@style/Theme.ProfileTextView" />
+    <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/text_black_color" android:gravity="center_horizontal" android:id="@id/live_chat_invitation_tips" android:layout_width="fill_parent" android:layout_below="@id/live_chat_user_name" android:layout_centerHorizontal="true" style="@style/Theme.ProfileTextView" />
+</RelativeLayout>

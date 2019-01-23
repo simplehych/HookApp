@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_location_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_location_container" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color1_normal" android:ellipsize="marquee" android:id="@id/tv_location_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_location" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/camera_action_bar_text_color_dark" android:ellipsize="marquee" android:gravity="center|right" android:id="@id/tv_location_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+            <ImageView android:id="@id/iv_location_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/universal_icon_arrow_grey_s_normal" style="@style/Theme.Widget.Setting.RightArrow" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/ll_location_result" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_color2_normal" android:gravity="center" android:id="@id/tv_location" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/iv_location_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:src="@drawable/universal_icon_close_grey_s_normal" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView android:id="@id/location_recyclerview" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" />
+        <View android:id="@id/locationv2_divider" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" style="@style/Theme.Widget.ShareDividerVertical" />
+    </LinearLayout>
+</FrameLayout>

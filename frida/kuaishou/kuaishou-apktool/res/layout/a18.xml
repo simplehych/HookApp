@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/root" android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/animation_bg_mask" android:background="#ff2c2e33" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yxcorp.gifshow.image.KwaiZoomImageView android:id="@id/animation_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="matrix" android:contentDescription="@null" />
+    <android.support.v4.view.ViewPager android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/view_pager_photos" android:background="#ff2c2e33" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Kwai.Widget.RecyclerView" />
+    <com.yxcorp.gifshow.widget.CircleIndicator android:layout_gravity="bottom|center" android:id="@id/indicator" android:layout_width="105.0dip" android:layout_height="25.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:ci_width="3.0dip" app:ci_height="3.0dip" app:ci_margin="3.0dip" />
+    <ImageView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

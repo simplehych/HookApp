@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_pressed="true">
+        <rotate android:drawable="@drawable/joint_btn_voice_open_pressed" android:fromDegrees="180.0" />
+    </item>
+    <item android:state_checked="true">
+        <rotate android:drawable="@drawable/joint_btn_voice_open_normal" android:fromDegrees="180.0" />
+    </item>
+    <item android:state_checked="false" android:state_pressed="true">
+        <rotate android:drawable="@drawable/joint_btn_voice_close_pressed" android:fromDegrees="180.0" />
+    </item>
+    <item>
+        <rotate android:drawable="@drawable/joint_btn_voice_close_normal" android:fromDegrees="180.0" />
+    </item>
+</selector>

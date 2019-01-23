@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.HorizontalSlideView android:id="@id/sliding_layout" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/item_root" android:background="@drawable/bg_list_item" android:clickable="true" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/margin_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.yxcorp.gifshow.widget.EllipsizingTextView android:textSize="15.0sp" android:textColor="@color/text_black_color" android:ellipsize="end" android:id="@id/device_name" android:layout_marginTop="2.0dip" android:layout_marginRight="@dimen/margin_default" android:text="@string/kwai_app_name" android:singleLine="true" style="@style/Theme.ListItemDetail" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_hint_black_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/device_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="@dimen/margin_default" android:text="@string/friends" android:layout_below="@id/device_name" style="@style/Theme.Widget.Text" />
+            <ImageView android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.Widget.Setting.RightArrow" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/more_option_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/remove_follower_button" android:background="@color/background_rose_red" android:layout_width="70.0dip" android:layout_height="fill_parent" android:src="@drawable/detail_comment_btn_delete" android:scaleType="centerInside" />
+        </LinearLayout>
+    </LinearLayout>
+</com.yxcorp.gifshow.widget.HorizontalSlideView>

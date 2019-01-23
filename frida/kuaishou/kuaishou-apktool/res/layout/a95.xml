@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/live_tip_ring" android:background="@drawable/slide_play_circle_yellow_background" android:layout_width="@dimen/slide_play_bottom_text_height" android:layout_height="@dimen/slide_play_bottom_text_height" android:layout_centerHorizontal="true" />
+    <View android:id="@id/live_tip_ring_anim" android:background="@drawable/slide_play_circle_yellow_background" android:layout_width="@dimen/slide_play_bottom_text_height" android:layout_height="@dimen/slide_play_bottom_text_height" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_9" android:textColor="@color/text_color11_normal" android:gravity="center" android:id="@id/live_tip_text" android:background="@drawable/slide_play_corner_live_tip" android:paddingLeft="4.5dip" android:paddingRight="4.5dip" android:layout_width="wrap_content" android:layout_height="13.0dip" android:layout_marginTop="29.0dip" android:maxWidth="@dimen/slide_play_bottom_text_height" android:text="LIVE" android:layout_centerHorizontal="true" />
+    <View android:id="@id/moment_dot_view" android:background="@drawable/slide_play_dot_moment_background" android:visibility="gone" android:layout_width="@dimen/dimen_10dp" android:layout_height="@dimen/dimen_10dp" android:layout_marginLeft="@dimen/dimen_35dp" />
+</RelativeLayout>

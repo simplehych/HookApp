@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_marginTop="20.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/edit_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Theme.Widget.Profile.Row">
+                <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/cover" android:background="@color/background_grey" android:padding="0.0dip" android:layout_width="@dimen/common_avatar_size" android:layout_height="@dimen/common_avatar_size" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="30.0dip" android:scaleType="centerInside" android:contentDescription="@string/avatar" />
+                <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/profile_edit_avatar_text_color" android:gravity="center_vertical" android:clickable="false" android:layout_width="0.0dip" android:layout_height="@dimen/user_info_item_height" android:layout_marginLeft="@dimen/margin_default" android:text="@string/edit_image" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_arrow_right" />
+            </LinearLayout>
+            <View android:id="@id/divider" android:layout_width="fill_parent" style="@style/Theme.Widget.DefaultDividerVertical" />
+            <LinearLayout android:orientation="vertical" android:id="@id/topic_description" android:paddingTop="@dimen/margin_default" android:paddingBottom="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Theme.Widget.Profile.Row">
+                <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_hint_black_color" android:id="@id/intro_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topic_introduce_title" android:singleLine="true" android:includeFontPadding="false" style="@style/Theme.Widget.Profile.Edit.Label" />
+                <com.yxcorp.gifshow.widget.EmojiTextView android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_default" android:includeFontPadding="false" style="@style/Theme.Tag.Text" />
+            </LinearLayout>
+            <View style="@style/Theme.Widget.DefaultDividerVertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

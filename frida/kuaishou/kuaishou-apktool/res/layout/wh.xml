@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="88.0dip" android:layout_height="88.0dip" android:layout_marginTop="8.0dip">
+        <com.yxcorp.gifshow.widget.RoundedImageViewWithForeground android:layout_gravity="center_horizontal" android:id="@id/avatar" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/profile_btn_avatar_secret" android:contentDescription="@string/avatar" />
+        <ImageView android:id="@id/album_icon" android:layout_width="24.5dip" android:layout_height="24.5dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/login_avatar_ico_normal" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ff777777" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/user_info_set_avatar" />
+    <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/radio_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <RadioButton android:textSize="@dimen/text_size_14" android:textColor="@color/sex_radio_button_text_color" android:gravity="center" android:id="@id/radio_male" android:background="@drawable/background_male" android:layout_width="60.0dip" android:layout_height="25.0dip" android:checked="false" android:button="@null" android:text="@string/male" />
+        <RadioButton android:textSize="@dimen/text_size_14" android:textColor="@color/sex_radio_button_text_color" android:gravity="center" android:id="@id/radio_female" android:background="@drawable/background_female" android:layout_width="60.0dip" android:layout_height="25.0dip" android:layout_marginLeft="40.0dip" android:button="@null" android:text="@string/female" />
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:id="@id/psd_line" android:layout_width="fill_parent" android:layout_height="@dimen/login_cell_height" android:layout_marginLeft="@dimen/login_view_default_margin" android:layout_marginTop="45.0dip" android:layout_marginRight="@dimen/login_view_default_margin">
+        <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/login_nick_et" android:paddingLeft="0.0dip" android:layout_width="0.0dip" android:hint="@string/nickname_hint" android:layout_weight="1.0" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Login" />
+        <FrameLayout android:id="@id/login_clear_layout" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/login_cell_height">
+            <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_clear" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginRight="@dimen/login_content_margin" style="@style/Theme.Widget.LoginDividerVertical" />
+    <RelativeLayout android:id="@id/button_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:enabled="false" android:gravity="center" android:layout_gravity="center" android:id="@id/login_button" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/login_content_margin" android:layout_marginTop="40.0dip" android:layout_marginRight="@dimen/login_content_margin" android:text="@string/finish" style="@style/Kwai.Widget.Button.B12" />
+    </RelativeLayout>
+</LinearLayout>

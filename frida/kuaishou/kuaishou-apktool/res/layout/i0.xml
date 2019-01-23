@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:id="@id/scroll_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/history_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView android:id="@id/history_recycler_view" android:layout_height="wrap_content" style="@style/Kwai.Widget.RecyclerView" />
+            <include android:id="@id/history_footer_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/search_history_expand_clear" />
+        </LinearLayout>
+        <include layout="@layout/hot_query_recycler_view" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

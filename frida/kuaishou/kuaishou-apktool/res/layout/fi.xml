@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/editor_nav_text_btn_color_activiteable" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/photo_filter" android:shadowColor="@color/translucent_30_black" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" />
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="1.0dip" android:layout_marginBottom="26.0dip" android:src="@drawable/photo_filter_v3" android:layout_above="@id/text" />
+</FrameLayout>

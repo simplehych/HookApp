@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.pulltozoom.PullToZoomRecyclerView android:id="@id/pull_to_zoom_view" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="fill_parent" app:ptrAnimationStyle="flip">
+        <com.yxcorp.gifshow.widget.recyclerview.StickyHeadersRecyclerViewWrapper android:id="@id/sticky_headers_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.yxcorp.gifshow.widget.recyclerview.StickyHeadersRecyclerViewWrapper>
+    </com.yxcorp.gifshow.widget.pulltozoom.PullToZoomRecyclerView>
+    <include android:id="@id/title_root" layout="@layout/kwai_title_profile_v2" />
+    <include android:orientation="horizontal" android:id="@id/profile_switcher_sticky" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/profile_switcher_min_height" android:layout_below="@id/title_root" layout="@layout/profile_switcher" />
+    <View android:id="@id/profile_switcher_sticky_divider" android:background="#ffe2e2e2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/profile_switcher_sticky" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.yxcorp.gifshow.profile.widget.MomentWriteView android:layout_gravity="right" style="@style/MomentWriteViewStyle" />
+        <FrameLayout android:layout_gravity="right" android:id="@id/mytprofile_publish_first_photo_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+            <ImageView android:layout_width="170.0dip" android:layout_height="100.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/profile_icon_newworks_normal" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:text="@string/post_first_work" />
+        </FrameLayout>
+        <com.yxcorp.gifshow.profile.widget.MomentWriteView android:layout_gravity="right" android:id="@id/mytprofile_record_guide" android:visibility="gone" app:icon="@drawable/profile_icon_shoot_normal" app:content_text="@string/i_wanna_share" style="@style/MomentWriteViewStyle" />
+        <include android:id="@id/profile_fill_info_hint" layout="@layout/profile_fill_info_hint_layout" />
+    </LinearLayout>
+    <include layout="@layout/profile_moment_comment_tip" />
+</RelativeLayout>

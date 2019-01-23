@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_image_text_text" />
+    <include layout="@layout/line_divider_grey" />
+    <android.support.v7.widget.RecyclerView android:id="@id/download_item_list" android:background="@color/background" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" />
+    <FrameLayout android:id="@id/download_no_content_container" android:paddingBottom="100.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="100.0dip" android:layout_height="90.0dip" android:src="@drawable/download_center_no_content" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/text_hint_black_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/empty_prompt" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/pay_amount_bg_selected" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/recharge_item" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size2" android:textColor="@color/text_color1_normal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/left_arrow" android:background="@drawable/toast_bubble_arrow_red_left_small" android:visibility="gone" android:layout_width="3.0dip" android:layout_height="7.0dip" android:layout_marginLeft="4.0dip" />
+        <TextView android:textSize="@dimen/text_size_10" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recommend_text" android:background="@drawable/pay_recommend_type_bg" android:paddingLeft="4.0dip" android:paddingTop="1.5dip" android:paddingRight="4.0dip" android:paddingBottom="1.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_channel_recommend" />
+    </LinearLayout>
+</FrameLayout>

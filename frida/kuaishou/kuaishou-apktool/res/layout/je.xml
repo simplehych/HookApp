@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/title_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/radio_area" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/title_bar_height" android:layout_centerInParent="true">
+        <RadioButton android:textStyle="bold" android:layout_gravity="center" android:id="@id/irb_radioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="radio" android:layout_centerInParent="true" style="@style/Theme.Navigator.RadioButton" />
+        <ImageView android:id="@id/irb_iconify" android:visibility="invisible" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginTop="1.5dip" android:layout_marginRight="-4.0dip" android:src="@drawable/background_orange_circle2" android:layout_alignTop="@id/irb_radioButton" android:layout_alignRight="@id/irb_radioButton" />
+        <ImageView android:id="@id/irb_iconify_live" android:visibility="invisible" android:layout_width="23.0dip" android:layout_height="12.0dip" android:layout_marginTop="-3.0dip" android:layout_marginRight="-19.0dip" android:src="@drawable/nav_badge_live" android:scaleType="centerInside" android:layout_alignTop="@id/irb_radioButton" android:layout_alignRight="@id/irb_radioButton" />
+    </RelativeLayout>
+    <TextView android:id="@id/irb_iconify_num" android:visibility="invisible" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/radio_area" style="@style/Theme.Widget.SideMenu.TabRedNotifyText" />
+    <ImageView android:id="@id/irb_nav_btn_triangle" android:paddingLeft="13.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nav_btn_city_triangle" android:scaleType="center" android:layout_toRightOf="@id/radio_area" android:layout_centerVertical="true" />
+</RelativeLayout>

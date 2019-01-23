@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/grant_permission_hint_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/title_bar_height" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size6" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/request_import_photo_permission_title" />
+        <TextView android:textColor="@color/text_color15_normal" android:gravity="center" android:layout_gravity="center" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/request_import_photo_permission_message" android:lineSpacingExtra="6.0dip" />
+        <Button android:layout_gravity="center" android:id="@id/click_to_grant_storage_permission_button" android:layout_width="wrap_content" android:layout_marginTop="14.0dip" android:minWidth="126.0dip" android:text="@string/click_to_grant_external_storage_permission" style="@style/Kwai.Widget.Button.B1" />
+    </LinearLayout>
+</FrameLayout>

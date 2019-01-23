@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/background_alert_dialog_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_light" android:gravity="center" android:id="@id/alert_dialog_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/popup_list_title_margin_left_right" android:layout_marginRight="@dimen/popup_list_title_margin_left_right" android:minHeight="@dimen/popup_list_item_default_height" android:lineSpacingExtra="2.0dip" />
+    <View android:id="@id/alert_dialog_title_divider" android:background="@color/translucent_06_white" android:layout_width="fill_parent" android:layout_height="@dimen/popup_default_divider_size" />
+    <ListView android:id="@id/alert_dialog_list" android:background="@color/translucent_08_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/alert_dialog_list_item_dark_drawable" android:divider="@color/translucent_06_white" android:dividerHeight="@dimen/popup_default_divider_size" />
+    <View android:id="@id/alert_dialog_cancel_divider" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:textSize="@dimen/dialog_list_item_text_size" android:textColor="@color/translucent_60_white" android:gravity="center" android:id="@id/alert_dialog_cancle_tv" android:background="@color/translucent_08_white" android:layout_width="fill_parent" android:layout_height="@dimen/popup_list_item_default_height" android:text="@string/cancel" />
+</LinearLayout>

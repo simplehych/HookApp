@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" android:useLevel="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/ebpay_line_width_0.5" android:color="@color/ebpay_six_number_pwd_9f9f9f" />
+    <solid android:color="@color/ebpay_white" />
+</shape>

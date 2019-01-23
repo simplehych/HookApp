@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fffdfdff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.baidu.wallet.base.widget.BdActionBar android:id="@id/bdactionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:scrollbarSize="5.0dip" android:scrollbarThumbVertical="@drawable/wallet_base_shape_scrollbar" android:scrollbarStyle="outsideOverlay" android:id="@id/wallet_home_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/wallet_home_content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/wallet_home_title" layout="@layout/wallet_home_main_vip_title" />
+            <LinearLayout android:orientation="vertical" android:id="@id/wallet_home_asset_layout" android:background="@color/bd_wallet_home_inner_separator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:background="@drawable/wallet_home_item_bg" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                    <include android:id="@id/wallet_home_asset_balance" layout="@layout/wallet_home_asset_item_vip" />
+                    <View android:background="@color/bd_wallet_home_inner_separator" android:layout_width="@dimen/bd_wallet_home_separator_line_width" android:layout_height="15.0dip" android:layout_marginBottom="25.0dip" />
+                    <include android:id="@id/wallet_home_asset_bankcard" layout="@layout/wallet_home_asset_item_vip" />
+                    <View android:background="@color/bd_wallet_home_inner_separator" android:layout_width="@dimen/bd_wallet_home_separator_line_width" android:layout_height="15.0dip" android:layout_marginBottom="25.0dip" />
+                    <include android:id="@id/wallet_home_asset_discount" layout="@layout/wallet_home_asset_item_vip" />
+                    <View android:background="@color/bd_wallet_home_inner_separator" android:layout_width="@dimen/bd_wallet_home_separator_line_width" android:layout_height="15.0dip" android:layout_marginBottom="25.0dip" />
+                    <include android:id="@id/wallet_home_asset_history" layout="@layout/wallet_home_asset_item_vip" />
+                </LinearLayout>
+                <include layout="@layout/wallet_home_outer_horizontal_seperator" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/wallet_home_paycode_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/wallet_home_service_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:src="@drawable/wallet_home_logo" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff0052bf" android:layout_gravity="center_horizontal" android:id="@id/wallet_home_feedback" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="14.0dip" android:text="@string/wallet_home_feedback" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.SideBar android:id="@id/side_bar" android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" app:letterUpper="true" app:letterItemHeigh="18.0dip" app:letterSize="11.0sp" app:letterColor="@color/list_item_light_black" app:letterSelectedColor="@color/text_color_white" />
+    <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/text_color_white" android:gravity="center_vertical" android:id="@id/selectd_letter" android:background="@drawable/universal_indexes_bubble_black" android:paddingLeft="23.0dip" android:visibility="gone" android:layout_width="78.0dip" android:layout_height="65.0dip" android:layout_marginRight="31.0dip" android:layout_toLeftOf="@id/side_bar" />
+</RelativeLayout>

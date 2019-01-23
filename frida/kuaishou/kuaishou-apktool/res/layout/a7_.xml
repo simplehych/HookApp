@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black" android:gravity="center" android:id="@id/second_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:background="@drawable/set_alias_edit_bg" android:paddingLeft="4.5dip" android:paddingRight="4.5dip" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/second_title">
+        <FrameLayout android:id="@id/clear_layout" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_clear" />
+        </FrameLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/nick_alias_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/clear_layout" android:layout_centerVertical="true">
+            <com.yxcorp.gifshow.widget.SafeEditText android:id="@id/nick_alias_et" android:maxLength="12" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/icon_text_cursor" style="@style/Theme.Widget.Edit.Alias" />
+            <TextView android:textColor="@color/text_hint_black_color" android:id="@id/nick_alias_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/nick_alias_et" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

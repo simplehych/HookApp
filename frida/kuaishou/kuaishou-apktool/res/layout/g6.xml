@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/fans_top_popup_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/fans_top_popup_close" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="5.0dip" android:src="@drawable/camera_magic_emoji_video_close_normal" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:minWidth="240.0dip" android:alpha="@integer/j">
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_red_dark" android:gravity="center" android:id="@id/fans_top_popup_confirm" android:background="@drawable/yellow_fill_big_shadow_corner_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="14.0dip" />
+        <TextView android:textSize="@dimen/fans_top_popup_detail_size" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/fans_top_popup_view_detail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="19.0dip" android:includeFontPadding="false" android:drawableRight="@drawable/setting_icon_arrow_green_normal" />
+    </LinearLayout>
+</FrameLayout>

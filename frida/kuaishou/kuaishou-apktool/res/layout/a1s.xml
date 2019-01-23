@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/photo_reward_item_container" android:background="@drawable/background_photo_reward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="60.0">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="38.0">
+            <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/record_ico_money_normal" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color1_normal" android:id="@id/photo_reward_item_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_narrow" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/photo_reward_grid_item_fen_color" android:gravity="center" android:id="@id/photo_reward_item_fen" android:background="@drawable/background_photo_reward_fen" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="1.0dip" android:layout_weight="22.0" />
+    </LinearLayout>
+</FrameLayout>

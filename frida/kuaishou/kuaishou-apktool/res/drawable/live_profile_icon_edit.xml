@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/live_icon_editprofile_black_s_normal" android:dither="true" android:alpha="@integer/q" />
+    </item>
+    <item android:drawable="@drawable/live_icon_editprofile_black_s_normal" />
+</selector>

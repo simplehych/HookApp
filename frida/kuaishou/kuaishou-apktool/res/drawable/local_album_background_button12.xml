@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/p_color_orange_pressed" />
+            <corners android:radius="@dimen/button_radius1" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/p_color_orange_pressed" />
+            <corners android:radius="@dimen/button_radius1" />
+        </shape>
+    </item>
+    <item android:state_activated="false">
+        <shape>
+            <solid android:color="@color/p_color_orange_pressed" />
+            <corners android:radius="@dimen/button_radius1" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/background_button12_normal" />
+</selector>

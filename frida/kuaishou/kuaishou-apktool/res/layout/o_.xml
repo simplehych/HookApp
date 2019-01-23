@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_root" android:layout_width="80.0dip" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/photo" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" android:contentDescription="@string/photo" app:foregroundImage="@drawable/adv_edit_photo_border" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <ImageView android:id="@id/remove_button" android:background="@null" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="11.0dip" android:src="@drawable/button_delete" android:scaleType="fitXY" android:contentDescription="@string/remove" />
+</RelativeLayout>

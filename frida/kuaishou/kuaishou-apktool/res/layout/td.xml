@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar_view" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="27.5dip" android:scaleType="centerCrop" android:layout_centerVertical="true" app:roundAsCircle="true" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="14.0sp" android:textColor="#ff525252" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/kwai_coin_view" android:layout_toRightOf="@id/avatar_view" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffff8000" android:gravity="center_vertical" android:id="@id/kwai_coin_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="27.5dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.tag.common.view.KwaiPullToZoomContainer android:id="@id/tag_page_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.PullToZoomCoreChild android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/background_image" android:background="@color/background_grey" android:layout_width="fill_parent" android:layout_height="180.0dip" android:scaleType="fitXY" app:actionWhenOverScroll="scale" />
+        <android.support.constraint.ConstraintLayout android:id="@id/recycler_view_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.lsjwzh.widget.text.FastTextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_light" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="192.0dip" android:maxLines="2" android:lineSpacingExtra="6.0dip" android:layout_marginStart="15.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <View android:id="@id/camera_btn_bottom_guide" android:layout_width="fill_parent" android:layout_height="25.0dip" app:layout_constraintTop_toBottomOf="@id/description" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/camera_btn_bottom_guide" layout="@layout/similar_tag_layout" />
+            <android.support.constraint.Barrier android:id="@id/tab_barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="similar_tags_layout, camera_btn_bottom_guide" />
+            <include android:id="@id/tab_top_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" app:layout_constraintTop_toBottomOf="@id/tab_barrier" layout="@layout/line_divider_grey" />
+            <android.support.design.widget.TabLayout android:id="@id/tab_layout" app:layout_constraintTop_toBottomOf="@id/tab_top_divider" style="@style/TabLayoutStyle" />
+            <include android:id="@id/tab_bottom_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" app:layout_constraintTop_toBottomOf="@id/tab_layout" layout="@layout/line_divider_grey" />
+            <RelativeLayout android:id="@id/tips_container" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintTop_toBottomOf="@id/tab_bottom_divider" />
+            <com.lsjwzh.widget.multirvcontainer.CoordinateScrollRecyclerView android:id="@id/recycler_view_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tips_container" style="@style/Kwai.Widget.RecyclerView"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.lsjwzh.widget.multirvcontainer.CoordinateScrollRecyclerView android:id="@id/recycler_view_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tips_container" style="@style/Kwai.Widget.RecyclerView"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.design.widget.PullToZoomCoreChild>
+    <include layout="@layout/tag_title_layout" />
+    <View android:id="@id/tag_divider_line" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/title_bar_height" app:actionType="sticky" />
+    <com.yxcorp.gifshow.widget.LoadingView android:layout_gravity="bottom" android:id="@id/loading_more" android:layout_width="fill_parent" android:layout_height="wrap_content" app:actionType="sticky" />
+    <include android:id="@id/float_camera_btn" app:actionType="sticky" style="@style/CameraButtonStyle" layout="@layout/camera_button" />
+</com.yxcorp.plugin.tag.common.view.KwaiPullToZoomContainer>

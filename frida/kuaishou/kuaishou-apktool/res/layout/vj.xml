@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/split_line" android:background="@color/live_top_user_layout_split_line_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/live_top_users_fans_count_color" android:gravity="center" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="59.0dip" android:text="@string/live_top_user_more_load_limit" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_pressed="true">
+        <bitmap android:gravity="center" android:src="@drawable/universal_icon_check_m_selected_im" />
+    </item>
+    <item android:state_checked="true">
+        <bitmap android:gravity="center" android:src="@drawable/universal_icon_check_m_selected_im" />
+    </item>
+    <item android:state_checked="false" android:state_selected="true">
+        <bitmap android:gravity="center" android:src="@drawable/universal_icon_check_gray_m_selected" />
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/album_icon_listcheck_m_normal" />
+    </item>
+</selector>

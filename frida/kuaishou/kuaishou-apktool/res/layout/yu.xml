@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/edit_fragment_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/voice_seek_bar_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size4" android:textColor="@drawable/edit_music_selector" android:layout_gravity="center_vertical" android:id="@id/voice_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_voice" />
+            <com.yxcorp.widget.KwaiSeekBar android:id="@id/voice_seek_bar" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:KwaiSeekBarBackground="#99ffffff" app:KwaiSeekBarProgress="@color/light_orange_color" style="@style/Theme.Widget.SeekBarNewEdit.Kwai" />
+        </LinearLayout>
+        <View android:id="@id/seekbar_fill" android:layout_width="5.0dip" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/music_seek_bar_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size4" android:textColor="@drawable/edit_music_selector" android:gravity="center" android:id="@id/music_type_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_background" />
+            <com.yxcorp.widget.KwaiSeekBar android:id="@id/music_seek_bar" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:KwaiSeekBarBackground="#99ffffff" app:KwaiSeekBarProgress="@color/light_orange_color" style="@style/Theme.Widget.SeekBarNewEdit.Kwai" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/gallery_music_preview" android:paddingLeft="0.0dip" android:paddingTop="15.0dip" android:paddingRight="0.0dip" android:paddingBottom="10.0dip" android:layout_height="wrap_content" style="@style/Theme.Preview.EditItemsList" />
+    <android.support.v7.widget.RecyclerView android:id="@id/gallery_voice_preview" android:paddingLeft="0.0dip" android:paddingTop="15.0dip" android:paddingRight="0.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_height="wrap_content" style="@style/Theme.Preview.EditItemsList" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="vertical" android:id="@id/music_tabs_container" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="54.0dip" android:layout_marginRight="54.0dip" android:layout_marginBottom="0.0dip">
+            <com.yxcorp.gifshow.widget.KwaiRadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@id/radio_group" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="@dimen/text_size2" android:textColor="@color/editor_tab_text_color" android:gravity="center" android:id="@id/music_btn" android:background="@drawable/tab_item_bg_with_indicator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:checked="true" android:button="@null" android:text="@string/music_background" app:textSizeAdjustable="true" />
+                <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="@dimen/text_size2" android:textColor="@color/editor_tab_text_color" android:gravity="center" android:id="@id/voice_btn" android:background="@drawable/tab_item_bg_with_indicator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:button="@null" android:text="@string/edit_music_voice_change" app:textSizeAdjustable="true" />
+            </com.yxcorp.gifshow.widget.KwaiRadioGroup>
+        </FrameLayout>
+        <com.yxcorp.gifshow.v3.widget.ExpandFoldHelperView android:id="@id/opview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

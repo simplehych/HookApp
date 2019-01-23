@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:layout_gravity="right" android:id="@id/slide_profile_feed_light" android:background="@drawable/music_station_image_label_light" android:layout_width="@dimen/music_station_scroll_list_light_width" android:layout_height="@dimen/music_station_scroll_list_light_height" android:layout_alignParentRight="true" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

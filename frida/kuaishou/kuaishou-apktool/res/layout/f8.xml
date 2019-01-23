@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_black_light" android:layout_gravity="left" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stranger_filter_age" />
+    <com.yxcorp.widget.UnSrollGridView android:id="@id/filter_grid_item_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:listSelector="@android:color/transparent" android:horizontalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+</LinearLayout>

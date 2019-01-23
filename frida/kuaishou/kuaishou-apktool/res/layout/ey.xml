@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/background_dialog_white_top_round" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/text_black_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/stranger_filter_dialog_title" />
+    <View android:id="@id/divider_line" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="25.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_black_light" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stranger_filter_sex" />
+        <com.yxcorp.gifshow.widget.FlowRadioGroup android:id="@id/sex_radio_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" app:horizontalSpace="@dimen/dimen_10dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="25.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_black_light" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stranger_filter_age" />
+        <com.yxcorp.gifshow.widget.FlowRadioGroup android:id="@id/age_radio_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" app:horizontalSpace="@dimen/dimen_10dp" />
+    </LinearLayout>
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <Button android:textSize="@dimen/dialog_list_item_text_size" android:textColor="@color/text_black_color" android:gravity="center" android:id="@id/sure_button" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_list_item_height" android:text="@string/setting_confirm" />
+</LinearLayout>

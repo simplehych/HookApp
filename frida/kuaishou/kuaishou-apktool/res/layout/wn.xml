@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/tabs_container" android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/operation_bar" android:layout_width="fill_parent" android:layout_height="@dimen/magic_emoji_title_height_with_divider">
+            <ImageView android:id="@id/iv_magic_clear" android:visibility="gone" android:layout_width="@dimen/dimen_35dp" android:layout_height="@dimen/dimen_35dp" android:src="@drawable/background_magic_emoji_clear" android:layout_centerVertical="true" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/button_complete_magic_emoji_sure" android:background="@null" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/button_magicemoji_complete_black" android:layout_alignParentRight="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/magic_emoji_title_height" android:layout_toLeftOf="@id/button_complete_magic_emoji_sure" android:layout_toRightOf="@id/iv_magic_clear">
+                <com.yxcorp.gifshow.widget.PagerSlidingTabStrip android:textSize="@dimen/text_size_15" android:textColor="@color/tab_item_text_color_magic_emoji" android:layout_gravity="left" android:id="@id/tabs" android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/magic_emoji_title_height" app:pstsUnderlineColor="@color/divider_color_transparent" style="@style/tab_strip.magicEmoji" />
+            </RelativeLayout>
+            <include android:id="@id/title_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="39.5dip" layout="@layout/line_divider_grey" />
+            <include android:layout_gravity="bottom" android:id="@id/tab_split_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="@dimen/magic_emoji_tab_item_height" layout="@layout/line_divider_grey" />
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

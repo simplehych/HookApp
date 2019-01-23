@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.NoticePushGuideHeaderView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/close_btn" android:background="@drawable/nav_btn_close_black" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="12.5dip" android:layout_marginTop="13.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="#ff303030" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.5dip" android:layout_marginTop="15.0dip" android:layout_marginRight="32.5dip" android:text="@string/guide_notification_push_open_title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffababab" android:gravity="center_horizontal" android:id="@id/sub_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.5dip" android:layout_marginTop="6.0dip" android:layout_marginRight="32.5dip" android:text="@string/guide_notification_push_subtitle_new" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/push_open_button" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="16.5dip" android:text="@string/guide_notification_push_open" android:layout_below="@id/sub_title" android:layout_centerHorizontal="true" style="@style/Kwai.Widget.Button.B1" />
+    </RelativeLayout>
+    <View android:background="@android:color/transparent" android:layout_height="10.5dip" android:layout_below="@id/title_container" style="@style/Theme.Widget.DefaultDividerVertical" />
+</com.yxcorp.gifshow.widget.NoticePushGuideHeaderView>

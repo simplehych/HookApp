@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/surface_color7_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_root" android:layout_width="fill_parent" android:layout_height="?actionbarHeight" layout="@layout/kwai_title_default" />
+    <View android:id="@id/divider_line" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <com.yxcorp.gifshow.widget.ScrollViewEx android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/user_info_layout" android:background="@drawable/tab_action_button" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:background="@null" android:padding="0.0dip" android:layout_width="@dimen/list_avatar_size" android:layout_height="@dimen/list_avatar_size" android:layout_marginLeft="10.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@string/message" app:roundAsCircle="true" />
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/avatar" android:layout_centerVertical="true">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_black_color" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/list_item_remark" android:id="@id/relationship" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/name" />
+                </RelativeLayout>
+                <ImageView android:id="@id/right_arrow" android:background="@android:color/transparent" android:visibility="gone" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.Widget.Setting.RightArrow" />
+                <com.yxcorp.gifshow.widget.SizeAdjustableToggleButton android:textColor="@color/profile_follow_text" android:id="@id/follow_button" android:background="@drawable/profile_btn_follow" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="70.0dip" android:layout_height="28.0dip" android:layout_marginRight="10.0dip" android:textOn="@string/follow" android:textOff="@string/follow" android:text="@string/followed" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" app:textSizeAdjustable="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/create_group" android:background="@drawable/setting_row_background" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" style="@style/Theme.Widget.Setting.Row.Message">
+                <View android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/margin_default" />
+                <TextView android:ellipsize="end" android:background="@android:color/transparent" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/message_begin_group_chat" android:maxLines="1" android:drawableLeft="@drawable/nav_btn_msg_create_group_from_single" android:drawablePadding="10.0dip" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" style="@style/Theme.Widget.Setting.ItemText" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/add_black" android:layout_marginTop="20.0dip" style="@style/Theme.Widget.Setting.Row.Message">
+                <TextView android:ellipsize="end" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_blacklist" android:maxLines="1" android:layout_centerVertical="true" style="@style/Theme.Widget.Setting.ItemText" />
+                <com.yxcorp.gifshow.widget.SlipSwitchButton android:id="@id/add_black_btn" android:background="@android:color/transparent" app:onBg="@drawable/setting_switch_bg_on" app:offBg="@drawable/setting_switch_bg_off" app:slipBg="@drawable/setting_handle_normal" app:switch_state="false" style="@style/Theme.Widget.Slip.Switch" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/clear_msg" android:layout_width="fill_parent" android:layout_marginTop="20.0dip" style="@style/Theme.Widget.Setting.Row.Message">
+                <TextView android:ellipsize="end" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_clear_msg_content" android:maxLines="1" android:layout_centerVertical="true" style="@style/Theme.Widget.Setting.ItemText" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/report" android:background="@color/background_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginTop="20.0dip" style="@style/Theme.Widget.Setting.Row">
+                <TextView android:ellipsize="end" android:background="@android:color/transparent" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report" android:maxLines="1" android:layout_centerVertical="true" style="@style/Theme.Widget.Setting.ItemText" />
+                <ImageView android:layout_gravity="center|right" android:background="@android:color/transparent" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Theme.Widget.Setting.RightArrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.yxcorp.gifshow.widget.ScrollViewEx>
+</LinearLayout>

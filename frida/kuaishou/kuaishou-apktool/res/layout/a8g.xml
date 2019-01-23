@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ad_download_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/text_size3" android:textColor="@color/p_color_white" android:gravity="center_vertical" android:id="@id/ad_install_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/install_now" android:includeFontPadding="false" android:drawablePadding="3.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/text_size4" android:textColor="@color/slide_play_ad_label_color" android:gravity="right" android:id="@id/ad_download_title_downloading_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/download_title_downloading" android:layout_toRightOf="@id/enhance_install_text" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/ad_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/slide_play_detail_icon_like_more_normal" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</merge>

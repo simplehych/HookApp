@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/background_button13" android:layout_width="70.0dip" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_orange_color_2" android:gravity="center" android:id="@id/follow_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kwai_token_go_and_see" />
+</LinearLayout>

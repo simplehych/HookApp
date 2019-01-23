@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.recycler.widget.HorizontalScrollingRecyclerView android:scrollbarSize="2.0dip" android:scrollbarStyle="outsideOverlay" android:id="@id/recycler_view_2" android:focusable="true" android:visibility="gone" android:scrollbars="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" app:maxWidth="280.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include android:id="@id/search_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_root" layout="@layout/search_single_friend_layout" />
+</RelativeLayout>
