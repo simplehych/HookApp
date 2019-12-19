@@ -1,5 +1,5 @@
 1 insert test
-2
+2 git reset -- files
 3
 
 # HookApp
