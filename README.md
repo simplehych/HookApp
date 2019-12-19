@@ -1,6 +1,10 @@
 1 insert test
 2 git reset -- files
-3
+3 hi
+
+4 git diff
+5 current
+6 add
 
 # HookApp
 
