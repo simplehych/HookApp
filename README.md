@@ -4,6 +4,12 @@
 4
 5 cherry-pick
 
+2 git reset -- files
+3 hi
+4 git diff
+5 current
+6 add
+
 # HookApp
 
 安卓应用安全学习
